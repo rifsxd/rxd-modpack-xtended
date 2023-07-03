@@ -1,0 +1,6 @@
+1
+atgm_circle.packed.webp
+216 216
+1
+0 216 216 216 0 0 0 
+

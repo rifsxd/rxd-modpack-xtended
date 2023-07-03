@@ -1,0 +1,5 @@
+1
+rxd_Eq@2x.packed.webp
+96 96
+1
+602 2 96 96 0 0 0 frame0

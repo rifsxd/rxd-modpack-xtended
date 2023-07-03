@@ -1,0 +1,6 @@
+1
+rxd_marker.packed.webp
+36 36
+2
+468 0 26 26 5 5 0 frame0
+468 28 26 26 5 5 0 frame1

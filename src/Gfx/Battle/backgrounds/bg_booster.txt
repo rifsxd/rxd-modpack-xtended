@@ -1,0 +1,5 @@
+1
+RXD_BOOSTER.packed.webp
+17 104
+1
+0 0 17 104 0 0 0 

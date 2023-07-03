@@ -1,0 +1,5 @@
+1
+rxd_battle_type.packed.webp
+72 72
+1
+88 3 71 72 -2 1 0

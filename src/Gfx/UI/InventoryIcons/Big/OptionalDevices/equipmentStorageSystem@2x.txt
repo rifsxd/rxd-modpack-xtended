@@ -1,0 +1,5 @@
+1
+rxd_options@2x.packed.webp
+128 128
+1
+1722 0 86 88 20 20 0 frame0

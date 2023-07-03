@@ -1,0 +1,5 @@
+1
+rxd_mini@2x.packed.webp
+792 792
+1
+4 4 792 792 0 396 0 frame0

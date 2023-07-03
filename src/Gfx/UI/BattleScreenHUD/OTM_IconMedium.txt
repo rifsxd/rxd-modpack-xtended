@@ -1,0 +1,5 @@
+1
+OTM_CountingTank.packed.webp
+40 40
+1
+121 100 40 40 0 0 0 frame0

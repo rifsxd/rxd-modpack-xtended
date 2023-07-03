@@ -1,0 +1,5 @@
+1
+StatusEffectIcons.packed.webp
+50 50
+1
+43 1 40 40 5 5 0 frame0

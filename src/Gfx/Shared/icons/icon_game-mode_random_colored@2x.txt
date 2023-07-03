@@ -1,0 +1,5 @@
+1
+rxd_battle_type@2x.packed.webp
+144 144
+1
+176 6 142 144 -4 2 0

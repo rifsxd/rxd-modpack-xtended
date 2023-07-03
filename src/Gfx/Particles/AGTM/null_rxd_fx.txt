@@ -1,0 +1,5 @@
+1
+texture1.packed.webp
+60 60
+1
+0 0 60 60 0 0 0 frame1

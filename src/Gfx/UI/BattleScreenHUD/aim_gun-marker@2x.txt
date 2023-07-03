@@ -1,0 +1,6 @@
+1
+rxd_mark@2x.packed.webp
+56 56
+2
+2 2 56 56 0 -18 0 frame0
+62 2 56 56 0 -18 0 frame1

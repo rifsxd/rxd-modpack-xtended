@@ -1,0 +1,6 @@
+1
+rxd_sight1.packed.webp
+400 400
+2
+0 0 400 400 0 0 0 frame0
+400 0 400 400 0 0 0 frame1

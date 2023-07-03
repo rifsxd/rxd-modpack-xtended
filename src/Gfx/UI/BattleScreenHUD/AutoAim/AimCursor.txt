@@ -1,0 +1,5 @@
+1
+texture0.packed.webp
+219 219
+1
+0 0 207 212 6 3 0 frame0

@@ -1,0 +1,6 @@
+1
+rxd_marker@2x.packed.webp
+72 72
+2
+936 0 52 52 10 10 0 frame0
+936 56 52 52 10 10 0 frame1

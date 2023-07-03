@@ -1,0 +1,5 @@
+1
+RXD@2x.packed.webp
+98 98
+1
+3340 140 98 98 0 0 0 frame0

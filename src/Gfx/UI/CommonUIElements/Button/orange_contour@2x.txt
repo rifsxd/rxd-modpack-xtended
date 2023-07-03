@@ -1,0 +1,5 @@
+1
+rxd_button@2x.packed.webp
+128 128
+1
+390 260 128 128 0 0 0 frame0

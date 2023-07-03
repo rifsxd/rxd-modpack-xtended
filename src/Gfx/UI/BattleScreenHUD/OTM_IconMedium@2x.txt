@@ -1,0 +1,5 @@
+1
+OTM_CountingTank@2x.packed.webp
+80 80
+1
+242 200 80 80 0 0 0 frame0

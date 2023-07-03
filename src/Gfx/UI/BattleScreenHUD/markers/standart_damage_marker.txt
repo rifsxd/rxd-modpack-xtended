@@ -1,0 +1,6 @@
+1
+Damage_Marker_New.packed.webp
+512 256
+2
+1 300 512 256 0 0 0 frame0
+1 1 512 256 0 0 0 frame1

@@ -1,0 +1,5 @@
+1
+BackgroundLoading.packed.webp
+2048 2048
+1
+0 0 2048 2048 0 0 0 frame0

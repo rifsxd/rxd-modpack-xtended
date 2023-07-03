@@ -1,0 +1,5 @@
+1
+rxd_button.packed.webp
+64 64
+1
+1320 0 64 64 0 0 0 frame0

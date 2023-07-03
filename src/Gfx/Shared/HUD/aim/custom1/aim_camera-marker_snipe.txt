@@ -1,0 +1,6 @@
+1
+rxd_sniper.packed.webp
+1024 1024
+1
+0 0 1024 1024 0 0 0 frame0
+

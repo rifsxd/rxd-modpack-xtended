@@ -1,0 +1,6 @@
+1
+Damage_Marker_New@2x.packed.webp
+1024 512
+2
+2 600 1024 512 0 0 0 frame0
+2 2 1024 512 0 0 0 frame1
