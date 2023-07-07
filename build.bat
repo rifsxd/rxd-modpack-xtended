@@ -43,7 +43,7 @@ timeout 2
 
 ECHO Encoding To LZ4 Compression - DVPL!
 
-dvpl cp
+..\..\..\bin\dvpl.exe cp
 
 ECHO Encoded To LZ4 Compression - DVPL!
 
@@ -75,7 +75,7 @@ timeout 2
 
 ECHO Encoding To LZ4 Compression - DVPL!
 
-dvpl cp
+..\..\..\bin\dvpl.exe cp
 
 ECHO Encoded To LZ4 Compression - DVPL!
 
@@ -85,4 +85,4 @@ ECHO Finished Packaging Process!
 
 ECHO ------------------------------------------
 
-pause
+@pause
