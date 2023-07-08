@@ -3,6 +3,8 @@
 REM Sets Variable & And Pull Infro From File.
 set /p version=<version.md
 set /p verbose=<verbose.md
+set versioning=version.md
+set modv=xtendedmodversion.txt
 
 CLS
 :MENU
@@ -100,6 +102,8 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
+type .\%versioning% > ./pack/pc/data/%modv%
+
 GOTO MENU
 
 :ASTC
@@ -165,6 +169,8 @@ ECHO.
 REM Does Fallback To Source Path.
 
 cd "../../.."
+
+type .\%versioning% > ./pack/mobile/data/%modv%
 
 GOTO MENU
 
@@ -253,7 +259,9 @@ ECHO.
 
 REM Does Fallback To Source Path.
 
-cd "../../.."
+cd "../../..
+
+type .\%versioning% > ./pack/pc/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -316,6 +324,8 @@ ECHO.
 REM Does Fallback To Source Path.
 
 cd "../../.."
+
+type .\%versioning% > ./pack/mobile/data/%modv%
 
 GOTO MENU
 
@@ -392,5 +402,7 @@ ECHO.
 REM Does Fallback To Source Path.
 
 cd "../../.."
+
+type .\%versioning% > ./pack/mobile-embed/data/%modv%
 
 GOTO MENU

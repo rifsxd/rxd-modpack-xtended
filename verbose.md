@@ -1,3 +1,33 @@
+commit 10976fa46cce891c094f57961002c0b61c356bed
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 8 23:48:54 2023 +0600
+
+    cleaned unused files
+
+commit fa981f5a0d3efe72b88f0e36dec4d6833fe9208e
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 8 16:28:45 2023 +0600
+
+    Update build.bat
+
+commit 9ee0e7894931c9e3d8b3a12f761f8368399f7675
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 8 16:18:10 2023 +0600
+
+    Update build.bat
+
+commit 92dae0cf41f617d08d6eafc34c23ca129e3d615f
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 8 15:59:30 2023 +0600
+
+    Update build.bat
+
+commit 40c3014ea64d7f34d9be589ce2edd1481bfde5d4
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 8 15:36:11 2023 +0600
+
+    new dvplc build method with new menu based build tool
+
 commit 16b8821de0bfe31b928e6fe783e3f92553c12342
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Sat Jul 8 03:34:25 2023 +0600
