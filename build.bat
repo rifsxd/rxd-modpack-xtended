@@ -70,7 +70,9 @@ ECHO.
 
 del /S "*.pvr"
 
+ECHO.
 ECHO Selected GPU Specific Textures - DX11!
+ECHO.
 
 timeout 2
 
