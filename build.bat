@@ -6,6 +6,7 @@ set /p verbose=<verbose.md
 
 CLS
 :MENU
+ECHO.
 ECHO *****************************************************************
 ECHO ************** RXD - MODPACK - XTENDED **************************
 ECHO ************ Source Version - %version% ***********************
@@ -24,7 +25,7 @@ ECHO c - Clean WwiseCache
 ECHO a - Compile For Both ( PC - DX11 ) And ( MOBILE - ASTC )
 ECHO 4 - EXIT
 ECHO.
-SET /P M=Type 1, 2, 3, or 4 then press ENTER:
+SET /P M=Type 1, 2, 3, a, c or 4 then press ENTER:
 ECHO.
 IF %M%==1 GOTO DX11
 IF %M%==2 GOTO ASTC
@@ -83,11 +84,13 @@ ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
+ECHO.
 ECHO ------------------------------------------
 
 ECHO Finished Packaging Process For DX11!
 
 ECHO ------------------------------------------
+ECHO.
 
 REM Does Fallback To Source Path.
 
@@ -147,11 +150,13 @@ ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
+ECHO.
 ECHO ------------------------------------------
 
 ECHO Finished Packaging Process For ASTC!
 
 ECHO ------------------------------------------
+ECHO.
 
 REM Does Fallback To Source Path.
 
@@ -234,11 +239,13 @@ ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
+ECHO.
 ECHO ------------------------------------------
 
 ECHO Finished Packaging Process For DX11!
 
 ECHO ------------------------------------------
+ECHO.
 
 REM Does Fallback To Source Path.
 
@@ -294,11 +301,13 @@ ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
+ECHO.
 ECHO ------------------------------------------
 
 ECHO Finished Packaging Process For ASTC!
 
 ECHO ------------------------------------------
+ECHO.
 
 REM Does Fallback To Source Path.
 
