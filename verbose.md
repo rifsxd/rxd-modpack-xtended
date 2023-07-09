@@ -1,3 +1,27 @@
+commit 39d6a8c74ae8340aa39f0f2d28d8e2c4d7fc6a94
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 9 21:49:53 2023 +0600
+
+    source code bump -> v2.2.0
+
+commit 48f280be98c372eff139eb2071d413ff92cf9a59
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 9 01:40:44 2023 +0600
+
+    info files
+
+commit 9851de750e8c6a60e945934b7564193a05db5210
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 9 01:38:38 2023 +0600
+
+    full packaging tool for release
+
+commit e2b74a25e8be5d146a2e788374c8edd7c495b025
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 9 01:14:52 2023 +0600
+
+    auto log
+
 commit b89067fddd6138eba1d9ae6b28e2b8bf5827f406
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Sun Jul 9 01:13:08 2023 +0600
