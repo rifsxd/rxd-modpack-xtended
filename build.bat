@@ -17,23 +17,25 @@ ECHO.
 ECHO Starting Source Code Compiler... %time%
 ECHO.
 ECHO ...................................................................
-ECHO ..... PRESS 1, 2, 3, 4, c OR v to select your task, or e to EXIT .....
+ECHO ..... PRESS 1, 2, 3, 4, 5, c OR v to select your task, or e to EXIT .....
 ECHO ...................................................................
 ECHO.
 ECHO 1 - Compile For PC - DX11
 ECHO 2 - Compile For MOBILE - ASTC
-ECHO 3 - Compile For MOBILE-EMBED - ASTC
-ECHO 4 - Compile For Both ( PC - DX11 ) And ( MOBILE - ASTC )
+ECHO 3 - Compile For MOBILE - Lesta - ASTC
+ECHO 4 - Compile For MOBILE-EMBED - ASTC
+ECHO 5 - Compile For All ( PC - DX11 ) , ( MOBILE - ASTC ) And ( MOBILE - Lesta - ASTC )
 ECHO c - Clean WwiseCache
 ECHO v - Verbose Source Code Commits
 ECHO e - EXIT
 ECHO.
-SET /P M=Type 1, 2, 3, 4, c, v or e then press ENTER:
+SET /P M=Type 1, 2, 3, 4, 5, c, v or e then press ENTER:
 ECHO.
 IF %M%==1 GOTO DX11
 IF %M%==2 GOTO ASTC
-IF %M%==3 GOTO EMBED
-IF %M%==4 GOTO ALL
+IF %M%==3 GOTO ASTC-LESTA
+IF %M%==4 GOTO EMBED
+IF %M%==5 GOTO ALL
 IF %M%==c GOTO CLEAN
 IF %M%==v GOTO VER
 IF %M%==e GOTO EOF
@@ -252,7 +254,9 @@ ECHO.
 
 del /S "*.pvr"
 
+ECHO.
 ECHO Selected GPU Specific Textures - DX11!
+ECHO.
 
 timeout 2
 
@@ -354,10 +358,83 @@ ECHO Finished Packaging Process For ASTC!
 ECHO --------------------+----------------------
 ECHO.
 
+REM Does Fallback To Source Path.
+
+cd "../../.."
+
+type .\%versioning% > ./pack/mobile/data/%modv%
+
+ECHO ------------------------------------------
+
+REM Does Cleaning Of Old Cache For MOBILE - Lesta.
+
+rd /s /q "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Cleaned Cache Data For Pack - MOBILE - Lesta!
+ECHO.
+
+timeout 5
+
+REM Does Pack For MOBILE - Lesta Platform.
+
+ECHO.
+ECHO Copying Data To Pack-MOBILE!
+ECHO.
+
+xcopy /s /y "src\*" "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Copyied Data To Pack-MOBILE - Lesta!
+ECHO.
+
+timeout 2
+
+cd "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Clearing Unused GPU Specific Textures - ASTC!
+ECHO.
+
+del /S "*.dds"
+
+del /S "*.pvr"
+
+ECHO.
+ECHO Cleared Unused GPU Specific Textures - ASTC!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Cleaning Embed Specific Configs!
+ECHO.
+
+del /S "*.yaml"
+
+del /S "keyart*.webp"
+
+
+ECHO.
+ECHO Cleaned Embed Specific Configs!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Encoding To LZ4 Compression - DVPL!
+ECHO.
+
+..\..\..\bin\dvplc.exe encode ./ --replace --force
+
+ECHO.
+ECHO Encoded To LZ4 Compression - DVPL!
+ECHO.
+
 ECHO.
 ECHO --------------------X----------------------
 
-ECHO Finished Packaging Process For All!
+ECHO Finished Packaging Process For ASTC - Lesta!
 
 ECHO --------------------X----------------------
 ECHO.
@@ -366,7 +443,15 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile/data/%modv%
+type .\%versioning% > ./pack/mobile-lesta/data/%modv%
+
+ECHO.
+ECHO --------------------X----------------------
+
+ECHO Finished Packaging Process For All!
+
+ECHO --------------------X----------------------
+ECHO.
 
 GOTO MENU
 
@@ -445,5 +530,90 @@ REM Does Fallback To Source Path.
 cd "../../.."
 
 type .\%versioning% > ./pack/mobile-embed/data/%modv%
+
+GOTO MENU
+
+:ASTC-LESTA
+
+ECHO ------------------------------------------
+
+REM Does Cleaning Of Old Cache For MOBILE - Lesta.
+
+rd /s /q "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Cleaned Cache Data For Pack - MOBILE - Lesta!
+ECHO.
+
+timeout 5
+
+REM Does Pack For MOBILE - Lesta Platform.
+
+ECHO.
+ECHO Copying Data To Pack-MOBILE!
+ECHO.
+
+xcopy /s /y "src\*" "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Copyied Data To Pack-MOBILE - Lesta!
+ECHO.
+
+timeout 2
+
+cd "pack\mobile-lesta\Data\"
+
+ECHO.
+ECHO Clearing Unused GPU Specific Textures - ASTC!
+ECHO.
+
+del /S "*.dds"
+
+del /S "*.pvr"
+
+ECHO.
+ECHO Cleared Unused GPU Specific Textures - ASTC!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Cleaning Embed Specific Configs!
+ECHO.
+
+del /S "*.yaml"
+
+del /S "keyart*.webp"
+
+
+ECHO.
+ECHO Cleaned Embed Specific Configs!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Encoding To LZ4 Compression - DVPL!
+ECHO.
+
+..\..\..\bin\dvplc.exe encode ./ --replace --force
+
+ECHO.
+ECHO Encoded To LZ4 Compression - DVPL!
+ECHO.
+
+ECHO.
+ECHO --------------------X----------------------
+
+ECHO Finished Packaging Process For ASTC - Lesta!
+
+ECHO --------------------X----------------------
+ECHO.
+
+REM Does Fallback To Source Path.
+
+cd "../../.."
+
+type .\%versioning% > ./pack/mobile-lesta/data/%modv%
 
 GOTO MENU
