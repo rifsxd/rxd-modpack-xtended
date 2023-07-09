@@ -91,11 +91,11 @@ ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
 ECHO.
-ECHO ------------------------------------------
+ECHO --------------------X----------------------
 
 ECHO Finished Packaging Process For DX11!
 
-ECHO ------------------------------------------
+ECHO --------------------X----------------------
 ECHO.
 
 REM Does Fallback To Source Path.
@@ -137,13 +137,30 @@ timeout 2
 cd "pack\mobile\Data\"
 
 ECHO.
-ECHO Selecting GPU Specific Textures - ASTC!
+ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
 del /S "*.dds"
 
+del /S "*.pvr"
+
 ECHO.
-ECHO Selected GPU Specific Textures - ASTC!
+ECHO Cleared Unused GPU Specific Textures - ASTC!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Cleaning Embed Specific Configs!
+ECHO.
+
+del /S "*.yaml"
+
+del /S "keyart*.webp"
+
+
+ECHO.
+ECHO Cleaned Embed Specific Configs!
 ECHO.
 
 timeout 2
@@ -159,11 +176,11 @@ ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
 ECHO.
-ECHO ------------------------------------------
+ECHO --------------------X----------------------
 
 ECHO Finished Packaging Process For ASTC!
 
-ECHO ------------------------------------------
+ECHO --------------------X----------------------
 ECHO.
 
 REM Does Fallback To Source Path.
@@ -250,11 +267,11 @@ ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
 ECHO.
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
 
 ECHO Finished Packaging Process For DX11!
 
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
 ECHO.
 
 REM Does Fallback To Source Path.
@@ -292,13 +309,29 @@ timeout 2
 cd "pack\mobile\Data\"
 
 ECHO.
-ECHO Selecting GPU Specific Textures - ASTC!
+ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
 del /S "*.dds"
 
+del /S "*.pvr"
+
 ECHO.
-ECHO Selected GPU Specific Textures - ASTC!
+ECHO Cleared Unused GPU Specific Textures - ASTC!
+ECHO.
+
+timeout 2
+
+ECHO.
+ECHO Cleaning Embed Specific Configs!
+ECHO.
+
+del /S "*.yaml"
+
+del /S "keyart*.webp"
+
+ECHO.
+ECHO Cleaned Embed Specific Configs!
 ECHO.
 
 timeout 2
@@ -314,11 +347,19 @@ ECHO Encoded To LZ4 Compression - DVPL!
 ECHO.
 
 ECHO.
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
 
 ECHO Finished Packaging Process For ASTC!
 
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
+ECHO.
+
+ECHO.
+ECHO --------------------X----------------------
+
+ECHO Finished Packaging Process For All!
+
+ECHO --------------------X----------------------
 ECHO.
 
 REM Does Fallback To Source Path.
@@ -392,11 +433,11 @@ ECHO Decoded To LZ4 Compression - DVPL!
 ECHO.
 
 ECHO.
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
 
-ECHO Finished Packaging Process For ASTC!
+ECHO Finished Packaging Process For ASTC-EMBED!
 
-ECHO ------------------------------------------
+ECHO --------------------+----------------------
 ECHO.
 
 REM Does Fallback To Source Path.
