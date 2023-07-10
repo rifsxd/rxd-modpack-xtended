@@ -38,7 +38,7 @@ ECHO w - Include Wwise Bank Files To Source
 ECHO v - Verbose Source Code Commits
 ECHO e - EXIT
 ECHO.
-SET /P "M=Type 1, 2, 3, 4, 5, c, v or e then press ENTER: "
+SET /P "M=Type 1, 2, 3, 4, 5, w, v or e then press ENTER: "
 ECHO.
 IF "%M%" EQU "" GOTO ERROR
 IF "%M%" EQU "1" GOTO DX11
@@ -184,7 +184,13 @@ del /S "*.yaml"
 
 del /S "keyart*.webp"
 
+del /S "music_maps_battle.bnk"
+
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
+
+rd /s /q "WwiseSound/sv"
 
 
 ECHO.
@@ -365,7 +371,13 @@ del /S "*.yaml"
 
 del /S "keyart*.webp"
 
+del /S "music_maps_battle.bnk"
+
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
+
+rd /s /q "WwiseSound/sv"
 
 ECHO.
 ECHO Cleaned Embed Specific Configs!
@@ -449,7 +461,13 @@ del /S "*.yaml"
 
 del /S "keyart*.webp"
 
+del /S "music_maps_battle.bnk"
+
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
+
+rd /s /q "WwiseSound/sv"
 
 
 ECHO.
@@ -702,7 +720,13 @@ del /S "*.yaml"
 
 del /S "keyart*.webp"
 
+del /S "music_maps_battle.bnk"
+
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
+
+rd /s /q "WwiseSound/sv"
 
 
 ECHO.

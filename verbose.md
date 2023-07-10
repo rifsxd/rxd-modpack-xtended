@@ -1,3 +1,27 @@
+commit 01ba5d63dee870ddaf00921f6d7ade96aa77c975
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Mon Jul 10 22:10:15 2023 +0600
+
+    source code bump -> 2.3.0
+
+commit 6b44c01e09932cce1a94f0b741f5a7eac15dfc59
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Mon Jul 10 02:22:31 2023 +0600
+
+    Update zip-mobile-lesta-pack.bat
+
+commit 950143c27b9c106f31244fc6bf7aef19442637bf
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Mon Jul 10 02:00:15 2023 +0600
+
+    new platform added mobile - lesta
+
+commit 3c98677cf18e10933da5f4bdc8cc589cf7bf7976
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 9 22:10:43 2023 +0600
+
+    new code changes for zip packer
+
 commit 39d6a8c74ae8340aa39f0f2d28d8e2c4d7fc6a94
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Sun Jul 9 21:49:53 2023 +0600

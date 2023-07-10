@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="121235285" Language="SFX" Hash="4170462432">
+		<SoundBank Id="121235285" Language="SFX" Hash="3202707504">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_japan</ObjectPath>
 			<ShortName>music_maps_japan</ShortName>
 			<Path>music_maps_japan.bnk</Path>
@@ -45,7 +45,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="446961960" Language="SFX" Hash="2625286235">
+		<SoundBank Id="446961960" Language="SFX" Hash="4201297849">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_america_lakville</ObjectPath>
 			<ShortName>music_maps_america_lakville</ShortName>
 			<Path>music_maps_america_lakville.bnk</Path>
@@ -540,7 +540,7 @@
 				<GameParameter Id="3753593413" Name="hover" ObjectPath="\Game Parameters\RxD\hover"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1069707800" Language="SFX" Hash="123397355">
+		<SoundBank Id="1069707800" Language="SFX" Hash="3403677439">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_europe_himmelsdorf</ObjectPath>
 			<ShortName>music_maps_europe_himmelsdorf</ShortName>
 			<Path>music_maps_europe_himmelsdorf.bnk</Path>
@@ -618,7 +618,7 @@
 				<GameParameter Id="3753593413" Name="hover" ObjectPath="\Game Parameters\RxD\hover"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1501193180" Language="SFX" Hash="2393336359">
+		<SoundBank Id="1501193180" Language="SFX" Hash="374749476">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui_battle</ObjectPath>
 			<ShortName>ui_battle</ShortName>
 			<Path>ui_battle.bnk</Path>
@@ -791,7 +791,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="63955837" Name="play_ui_btl_minimap_tap" ObjectPath="\Events\RxD\play_ui_btl_minimap_tap" DurationType="OneShot" DurationMin="0.175601" DurationMax="0.175601">
+				<Event Id="63955837" Name="play_ui_btl_minimap_tap" ObjectPath="\Events\RxD\play_ui_btl_minimap_tap" DurationType="OneShot" DurationMin="0.525601" DurationMax="0.525601">
 					<IncludedMemoryFiles>
 						<File Id="512436786" Language="SFX">
 							<ShortName>512436786.wav</ShortName>
@@ -804,7 +804,7 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1609140572" Language="SFX" Hash="1540160858">
+		<SoundBank Id="1609140572" Language="SFX" Hash="3135033032">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_europe_ruinberg</ObjectPath>
 			<ShortName>music_maps_europe_ruinberg</ShortName>
 			<Path>music_maps_europe_ruinberg.bnk</Path>
@@ -838,12 +838,20 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1642149657" Language="SFX" Hash="1837128045">
+		<SoundBank Id="1642149657" Language="SFX" Hash="3163842339">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_battle</ObjectPath>
 			<ShortName>music_maps_battle</ShortName>
 			<Path>music_maps_battle.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2255742578" Name="Play_airfield" ObjectPath="\Events\RxD\Play_airfield" DurationType="OneShot" DurationMin="284.161072" DurationMax="284.161072">
+				<Event Id="394955153" Name="a1ekw6m6" ObjectPath="\Events\RxD\a1ekw6m6" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667">
+					<IncludedMemoryFiles>
+						<File Id="200535613" Language="SFX">
+							<ShortName>200535613.wav</ShortName>
+							<Path>SFX\200535613_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2255742578" Name="Play_Airfield" ObjectPath="\Events\RxD\Play_Airfield" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="179016090" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Airfield (Battle).wav</ShortName>
@@ -851,7 +859,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3278906387" Name="Play_chinese" ObjectPath="\Events\RxD\Play_chinese" DurationType="OneShot" DurationMin="340.936005" DurationMax="340.936005">
+				<Event Id="3278906387" Name="Play_Chinese" ObjectPath="\Events\RxD\Play_Chinese" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="164308990" Language="SFX">
 							<ShortName>Andrey_Kulik_feat._Andrius_Klimka_-_Empire's_Border_(battle).wav</ShortName>
@@ -859,7 +867,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3369067514" Name="Play_himmelsdorf" ObjectPath="\Events\RxD\Play_himmelsdorf" DurationType="OneShot" DurationMin="288.106232" DurationMax="288.106232">
+				<Event Id="3369067514" Name="Play_Himmelsdorf" ObjectPath="\Events\RxD\Play_Himmelsdorf" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="402875311" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Himmelsdorf (Battle).wav</ShortName>
@@ -867,7 +875,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2824912106" Name="Play_japan" ObjectPath="\Events\RxD\Play_japan" DurationType="OneShot" DurationMin="327.393738" DurationMax="327.393738">
+				<Event Id="2824912106" Name="Play_Japan" ObjectPath="\Events\RxD\Play_Japan" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="416470072" Language="SFX">
 							<ShortName>21. Safe Haven (Battle).wav</ShortName>
@@ -875,7 +883,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1365093674" Name="Play_lakville" ObjectPath="\Events\RxD\Play_lakville" DurationType="OneShot" DurationMin="309.461639" DurationMax="309.461639">
+				<Event Id="1365093674" Name="Play_Lakville" ObjectPath="\Events\RxD\Play_Lakville" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="477001439" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Lakeville (Battle).wav</ShortName>
@@ -883,7 +891,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4104758542" Name="Play_malinovka" ObjectPath="\Events\RxD\Play_malinovka" DurationType="OneShot" DurationMin="284.157227" DurationMax="284.157227">
+				<Event Id="4104758542" Name="Play_Malinovka" ObjectPath="\Events\RxD\Play_Malinovka" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1048941344" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Malinovka (Battle).wav</ShortName>
@@ -891,7 +899,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3833344012" Name="Play_mannerheilm" ObjectPath="\Events\RxD\Play_mannerheilm" DurationType="OneShot" DurationMin="353.045959" DurationMax="353.045959">
+				<Event Id="3833344012" Name="Play_Mannerheilm" ObjectPath="\Events\RxD\Play_Mannerheilm" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="980818960" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Mannerheim Line (Battle).wav</ShortName>
@@ -899,7 +907,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1515595929" Name="Play_overlord" ObjectPath="\Events\RxD\Play_overlord" DurationType="OneShot" DurationMin="304.673645" DurationMax="304.673645">
+				<Event Id="1515595929" Name="Play_Overlord" ObjectPath="\Events\RxD\Play_Overlord" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="208547345" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Overlord (Battle).wav</ShortName>
@@ -907,7 +915,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2457481446" Name="Play_prokhorovka" ObjectPath="\Events\RxD\Play_prokhorovka" DurationType="OneShot" DurationMin="288.346619" DurationMax="288.346619">
+				<Event Id="2457481446" Name="Play_Prokhorovka" ObjectPath="\Events\RxD\Play_Prokhorovka" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="572644875" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Prokhorovka (Battle).wav</ShortName>
@@ -915,7 +923,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1099636654" Name="Play_ruinberg" ObjectPath="\Events\RxD\Play_ruinberg" DurationType="OneShot" DurationMin="354.942688" DurationMax="354.942688">
+				<Event Id="1099636654" Name="Play_Ruinberg" ObjectPath="\Events\RxD\Play_Ruinberg" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="440897738" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Ruinberg (Battle).wav</ShortName>
@@ -923,7 +931,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="978382838" Name="Play_sandriver" ObjectPath="\Events\RxD\Play_sandriver" DurationType="OneShot" DurationMin="286.557404" DurationMax="286.557404">
+				<Event Id="1322730107" Name="Play_Sand_River" ObjectPath="\Events\RxD\Play_Sand_River" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="970015481" Language="SFX">
 							<ShortName>Andrey Kulik feat. Andrius Klimka - Sand River (Battle).wav</ShortName>
@@ -2649,7 +2657,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2021218106" Language="SFX" Hash="1096541205">
+		<SoundBank Id="2021218106" Language="SFX" Hash="1468654">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_desert_sand_river</ObjectPath>
 			<ShortName>music_maps_desert_sand_river</ShortName>
 			<Path>music_maps_desert_sand_river.bnk</Path>
@@ -2683,7 +2691,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2526625828" Language="SFX" Hash="2376253315">
+		<SoundBank Id="2526625828" Language="SFX" Hash="2393980070">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_chinese</ObjectPath>
 			<ShortName>music_maps_chinese</ShortName>
 			<Path>music_maps_chinese.bnk</Path>
@@ -2717,7 +2725,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3112195339" Language="SFX" Hash="2468793121">
+		<SoundBank Id="3112195339" Language="SFX" Hash="3771265933">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_russian_prokhorovka</ObjectPath>
 			<ShortName>music_maps_russian_prokhorovka</ShortName>
 			<Path>music_maps_russian_prokhorovka.bnk</Path>
@@ -2751,7 +2759,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3144885743" Language="SFX" Hash="1216843486">
+		<SoundBank Id="3144885743" Language="SFX" Hash="4057146068">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_russian_malinovka</ObjectPath>
 			<ShortName>music_maps_russian_malinovka</ShortName>
 			<Path>music_maps_russian_malinovka.bnk</Path>
@@ -8892,7 +8900,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3457466987" Language="SFX" Hash="4277809084">
+		<SoundBank Id="3457466987" Language="SFX" Hash="2616532489">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_desert_airfield</ObjectPath>
 			<ShortName>music_maps_desert_airfield</ShortName>
 			<Path>music_maps_desert_airfield.bnk</Path>
@@ -8926,7 +8934,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3742831600" Language="SFX" Hash="2087851353">
+		<SoundBank Id="3742831600" Language="SFX" Hash="1010169585">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_europe_mannerheim</ObjectPath>
 			<ShortName>music_maps_europe_mannerheim</ShortName>
 			<Path>music_maps_europe_mannerheim.bnk</Path>
@@ -10626,7 +10634,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3937048291" Language="SFX" Hash="1455718946">
+		<SoundBank Id="3937048291" Language="SFX" Hash="2349884013">
 			<ObjectPath>\SoundBanks\Default Work Unit\music_maps_america_overlord</ObjectPath>
 			<ShortName>music_maps_america_overlord</ShortName>
 			<Path>music_maps_america_overlord.bnk</Path>

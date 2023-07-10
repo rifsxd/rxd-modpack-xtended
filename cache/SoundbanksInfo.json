@@ -18,7 +18,7 @@
    {
     "Id": "121235285",
     "Language": "SFX",
-    "Hash": "4170462432",
+    "Hash": "3202707504",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_japan",
     "ShortName": "music_maps_japan",
     "Path": "music_maps_japan.bnk",
@@ -83,7 +83,7 @@
    {
     "Id": "446961960",
     "Language": "SFX",
-    "Hash": "2625286235",
+    "Hash": "4201297849",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_america_lakville",
     "ShortName": "music_maps_america_lakville",
     "Path": "music_maps_america_lakville.bnk",
@@ -1022,7 +1022,7 @@
    {
     "Id": "1069707800",
     "Language": "SFX",
-    "Hash": "123397355",
+    "Hash": "3403677439",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_europe_himmelsdorf",
     "ShortName": "music_maps_europe_himmelsdorf",
     "Path": "music_maps_europe_himmelsdorf.bnk",
@@ -1165,7 +1165,7 @@
    {
     "Id": "1501193180",
     "Language": "SFX",
-    "Hash": "2393336359",
+    "Hash": "374749476",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui_battle",
     "ShortName": "ui_battle",
     "Path": "ui_battle.bnk",
@@ -1503,8 +1503,8 @@
       "Name": "play_ui_btl_minimap_tap",
       "ObjectPath": "\\Events\\RxD\\play_ui_btl_minimap_tap",
       "DurationType": "OneShot",
-      "DurationMin": "0.175601",
-      "DurationMax": "0.175601",
+      "DurationMin": "0.525601",
+      "DurationMax": "0.525601",
       "IncludedMemoryFiles": [
        {
         "Id": "512436786",
@@ -1526,7 +1526,7 @@
    {
     "Id": "1609140572",
     "Language": "SFX",
-    "Hash": "1540160858",
+    "Hash": "3135033032",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_europe_ruinberg",
     "ShortName": "music_maps_europe_ruinberg",
     "Path": "music_maps_europe_ruinberg.bnk",
@@ -1591,18 +1591,32 @@
    {
     "Id": "1642149657",
     "Language": "SFX",
-    "Hash": "1837128045",
+    "Hash": "3163842339",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_battle",
     "ShortName": "music_maps_battle",
     "Path": "music_maps_battle.bnk",
     "IncludedEvents": [
      {
-      "Id": "2255742578",
-      "Name": "Play_airfield",
-      "ObjectPath": "\\Events\\RxD\\Play_airfield",
+      "Id": "394955153",
+      "Name": "a1ekw6m6",
+      "ObjectPath": "\\Events\\RxD\\a1ekw6m6",
       "DurationType": "OneShot",
-      "DurationMin": "284.161072",
-      "DurationMax": "284.161072",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "200535613",
+        "Language": "SFX",
+        "ShortName": "200535613.wav",
+        "Path": "SFX\\200535613_3F75BDB9.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2255742578",
+      "Name": "Play_Airfield",
+      "ObjectPath": "\\Events\\RxD\\Play_Airfield",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "179016090",
@@ -1614,11 +1628,9 @@
      },
      {
       "Id": "3278906387",
-      "Name": "Play_chinese",
-      "ObjectPath": "\\Events\\RxD\\Play_chinese",
-      "DurationType": "OneShot",
-      "DurationMin": "340.936005",
-      "DurationMax": "340.936005",
+      "Name": "Play_Chinese",
+      "ObjectPath": "\\Events\\RxD\\Play_Chinese",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "164308990",
@@ -1630,11 +1642,9 @@
      },
      {
       "Id": "3369067514",
-      "Name": "Play_himmelsdorf",
-      "ObjectPath": "\\Events\\RxD\\Play_himmelsdorf",
-      "DurationType": "OneShot",
-      "DurationMin": "288.106232",
-      "DurationMax": "288.106232",
+      "Name": "Play_Himmelsdorf",
+      "ObjectPath": "\\Events\\RxD\\Play_Himmelsdorf",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "402875311",
@@ -1646,11 +1656,9 @@
      },
      {
       "Id": "2824912106",
-      "Name": "Play_japan",
-      "ObjectPath": "\\Events\\RxD\\Play_japan",
-      "DurationType": "OneShot",
-      "DurationMin": "327.393738",
-      "DurationMax": "327.393738",
+      "Name": "Play_Japan",
+      "ObjectPath": "\\Events\\RxD\\Play_Japan",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "416470072",
@@ -1662,11 +1670,9 @@
      },
      {
       "Id": "1365093674",
-      "Name": "Play_lakville",
-      "ObjectPath": "\\Events\\RxD\\Play_lakville",
-      "DurationType": "OneShot",
-      "DurationMin": "309.461639",
-      "DurationMax": "309.461639",
+      "Name": "Play_Lakville",
+      "ObjectPath": "\\Events\\RxD\\Play_Lakville",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "477001439",
@@ -1678,11 +1684,9 @@
      },
      {
       "Id": "4104758542",
-      "Name": "Play_malinovka",
-      "ObjectPath": "\\Events\\RxD\\Play_malinovka",
-      "DurationType": "OneShot",
-      "DurationMin": "284.157227",
-      "DurationMax": "284.157227",
+      "Name": "Play_Malinovka",
+      "ObjectPath": "\\Events\\RxD\\Play_Malinovka",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "1048941344",
@@ -1694,11 +1698,9 @@
      },
      {
       "Id": "3833344012",
-      "Name": "Play_mannerheilm",
-      "ObjectPath": "\\Events\\RxD\\Play_mannerheilm",
-      "DurationType": "OneShot",
-      "DurationMin": "353.045959",
-      "DurationMax": "353.045959",
+      "Name": "Play_Mannerheilm",
+      "ObjectPath": "\\Events\\RxD\\Play_Mannerheilm",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "980818960",
@@ -1710,11 +1712,9 @@
      },
      {
       "Id": "1515595929",
-      "Name": "Play_overlord",
-      "ObjectPath": "\\Events\\RxD\\Play_overlord",
-      "DurationType": "OneShot",
-      "DurationMin": "304.673645",
-      "DurationMax": "304.673645",
+      "Name": "Play_Overlord",
+      "ObjectPath": "\\Events\\RxD\\Play_Overlord",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "208547345",
@@ -1726,11 +1726,9 @@
      },
      {
       "Id": "2457481446",
-      "Name": "Play_prokhorovka",
-      "ObjectPath": "\\Events\\RxD\\Play_prokhorovka",
-      "DurationType": "OneShot",
-      "DurationMin": "288.346619",
-      "DurationMax": "288.346619",
+      "Name": "Play_Prokhorovka",
+      "ObjectPath": "\\Events\\RxD\\Play_Prokhorovka",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "572644875",
@@ -1742,11 +1740,9 @@
      },
      {
       "Id": "1099636654",
-      "Name": "Play_ruinberg",
-      "ObjectPath": "\\Events\\RxD\\Play_ruinberg",
-      "DurationType": "OneShot",
-      "DurationMin": "354.942688",
-      "DurationMax": "354.942688",
+      "Name": "Play_Ruinberg",
+      "ObjectPath": "\\Events\\RxD\\Play_Ruinberg",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "440897738",
@@ -1757,12 +1753,10 @@
       ]
      },
      {
-      "Id": "978382838",
-      "Name": "Play_sandriver",
-      "ObjectPath": "\\Events\\RxD\\Play_sandriver",
-      "DurationType": "OneShot",
-      "DurationMin": "286.557404",
-      "DurationMax": "286.557404",
+      "Id": "1322730107",
+      "Name": "Play_Sand_River",
+      "ObjectPath": "\\Events\\RxD\\Play_Sand_River",
+      "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
         "Id": "970015481",
@@ -4549,7 +4543,7 @@
    {
     "Id": "2021218106",
     "Language": "SFX",
-    "Hash": "1096541205",
+    "Hash": "1468654",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_desert_sand_river",
     "ShortName": "music_maps_desert_sand_river",
     "Path": "music_maps_desert_sand_river.bnk",
@@ -4614,7 +4608,7 @@
    {
     "Id": "2526625828",
     "Language": "SFX",
-    "Hash": "2376253315",
+    "Hash": "2393980070",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_chinese",
     "ShortName": "music_maps_chinese",
     "Path": "music_maps_chinese.bnk",
@@ -4679,7 +4673,7 @@
    {
     "Id": "3112195339",
     "Language": "SFX",
-    "Hash": "2468793121",
+    "Hash": "3771265933",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_russian_prokhorovka",
     "ShortName": "music_maps_russian_prokhorovka",
     "Path": "music_maps_russian_prokhorovka.bnk",
@@ -4744,7 +4738,7 @@
    {
     "Id": "3144885743",
     "Language": "SFX",
-    "Hash": "1216843486",
+    "Hash": "4057146068",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_russian_malinovka",
     "ShortName": "music_maps_russian_malinovka",
     "Path": "music_maps_russian_malinovka.bnk",
@@ -14575,7 +14569,7 @@
    {
     "Id": "3457466987",
     "Language": "SFX",
-    "Hash": "4277809084",
+    "Hash": "2616532489",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_desert_airfield",
     "ShortName": "music_maps_desert_airfield",
     "Path": "music_maps_desert_airfield.bnk",
@@ -14640,7 +14634,7 @@
    {
     "Id": "3742831600",
     "Language": "SFX",
-    "Hash": "2087851353",
+    "Hash": "1010169585",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_europe_mannerheim",
     "ShortName": "music_maps_europe_mannerheim",
     "Path": "music_maps_europe_mannerheim.bnk",
@@ -17373,7 +17367,7 @@
    {
     "Id": "3937048291",
     "Language": "SFX",
-    "Hash": "1455718946",
+    "Hash": "2349884013",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music_maps_america_overlord",
     "ShortName": "music_maps_america_overlord",
     "Path": "music_maps_america_overlord.bnk",

@@ -12,9 +12,13 @@ subnations:
     poland: "pl"
     finland: "fi"
     czech: "cs"
+    sweden: "sv"
 tanks:
     "japan:Pz_IV_AusfH": "gup"
     "japan:G09_Hetzer_GuP": "gup"
     "japan:PzVI_GuP": "gup"
     "japan:Firefly_GuP": "gup"
     "japan:IS-2_GuP": "gup"
+#---- Fury >--->
+    "usa:A104_M4A3E8A": "fury"
+#---- Fury <---<
