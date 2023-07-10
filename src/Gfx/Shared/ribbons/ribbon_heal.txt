@@ -1,0 +1,5 @@
+1
+rxd_texture1.packed.webp
+50 50
+1
+250 0 50 50 0 0 0 

@@ -1,0 +1,256 @@
+Header:
+    version: 155
+ImportedPackages:
+- "~res:/UI/Styles/Battle/BattleHUD.yaml"
+StyleSheets:
+-   selectors:
+    - ".minimap-cell-ally #CellFill"
+    properties:
+        bg-color: [0.619608, 0.968627, 0.262745, 1.000000]
+-   selectors:
+    - ".minimap-cell-squad #CellFill"
+    properties:
+        bg-color: [1.000000, 0.541176, 0.000000, 1.000000]
+-   selectors:
+    - ".minimap-cell-disabled #CellFill"
+    properties:
+        bg-color: [0.172549, 0.188235, 0.301961, 1.000000]
+-   selectors:
+    - ".minimap-bottom-left"
+    properties:
+        pivot: [0.000000, 1.000000]
+        anchor-leftAnchorEnabled: true
+        anchor-leftAnchor: 0.000000
+        anchor-bottomAnchorEnabled: true
+        anchor-topAnchorEnabled: false
+        anchor-hCenterAnchorEnabled: false
+-   selectors:
+    - ".minimap-top-center"
+    properties:
+        pivot: [0.000000, 0.000000]
+        anchor-leftAnchorEnabled: false
+        anchor-bottomAnchorEnabled: false
+        anchor-topAnchorEnabled: true
+        anchor-hCenterAnchorEnabled: true
+-   selectors:
+    - ".minimap-top-left"
+    properties:
+        pivot: [0.000000, 0.000000]
+        anchor-leftAnchorEnabled: true
+        anchor-bottomAnchorEnabled: false
+        anchor-topAnchorEnabled: true
+        anchor-hCenterAnchorEnabled: false
+Prototypes:
+-   class: "UIControl"
+    name: "ChatCommandAnimation"
+    input: false
+    components:
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml;~res:/UI/Screens/Battle/Styles/ChatActionStyles.style.yaml"
+-   class: "UIControl"
+    name: "FirstEncounterAnimation"
+    size: [30.000000, 30.000000]
+    pivot: [0.500000, 0.500000]
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapFirstEncounterAnimation"
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+-   class: "UIControl"
+    name: "SpawnMarker"
+    size: [28.000000, 28.000000]
+    pivot: [0.500000, 0.500000]
+    input: false
+    classes: "color-bg=ally-color-bg"
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapRespawn"
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+-   class: "UIControl"
+    name: "VehicleMarker"
+    size: [14.000000, 14.000000]
+    pivot: [0.500000, 0.500000]
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapTank"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml;~res:/UI/Screens/Battle/Styles/ChatActionStyles.style.yaml"
+-   class: "UIControl"
+    name: "PlayerVehicle"
+    pivot: [0.500000, 0.500000]
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapPlayer"
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+-   class: "UIControl"
+    name: "BossModeBossMarker"
+    pivot: [0.500000, 0.500000]
+    input: false
+    components:
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL"
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 36.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 18.000000
+-   class: "UIControl"
+    name: "ViewDirection"
+    pivot: [0.500000, 1.000000]
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapLookDirection"
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+-   class: "UIControl"
+    name: "MinimapLayer"
+    size: [163.000000, 163.000000]
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/minimap"
+            frame: 0
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+-   class: "UIControl"
+    name: "MinimapTouchCell"
+    classes: "minimap-color=minimap-cell-disabled"
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [1.000000, 1.000000, 1.000000, 0.000000]
+        Anchor: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalValue: 33.333332
+            verticalPolicy: "PercentOfParent"
+            verticalValue: 33.333332
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+    children:
+    -   class: "UIControl"
+        name: "CellFill"
+        input: false
+        components:
+            Background:
+                drawType: "DRAW_FILL"
+                colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 1.000000
+                rightAnchorEnabled: true
+                rightAnchor: 1.000000
+                topAnchorEnabled: true
+                topAnchor: 1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 1.000000
+-   class: "UIControl"
+    name: "Minimap"
+    size: [163.000000, 163.000000]
+    classes: "minimap-placement=minimap-top-center"
+    components:
+        Background: {}
+        ClipContent: {}
+        Anchor: {}
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+    children:
+    -   class: "UIControl"
+        name: "MinimapTouchzone"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_1"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    topAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_2"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_3"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_4"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_5"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_6"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_7"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    bottomAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_8"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+        -   prototype: "MinimapTouchCell"
+            name: "MinimapTouchCell_9"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   prototype: "MinimapLayer"
+        name: "StaticMarkersLayer"
+    -   prototype: "MinimapLayer"
+        name: "DynamicMarkersLayer"
+    -   prototype: "MinimapLayer"
+        name: "ForegroundObjectsLayer"

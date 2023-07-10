@@ -1,0 +1,154 @@
+Header:
+    version: "111"
+StyleSheets:
+-   selectors:
+    - ".custom-cont.loaded ?"
+    properties:
+        text-shadowColor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".custom-cont.rangefinder ?"
+    properties:
+        text-shadowColor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".cont.loaded ?"
+    properties:
+        text-shadowColor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".cont.rangefinder ?"
+    properties:
+        text-fontSize: 15.000000
+        text-shadowColor: [0.000000, 0.000000, 0.000000, 0.500000]
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".cont.loaded-last-wheel ?"
+    properties:
+        text-shadowColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        text-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".cont.loaded-last-type ?"
+    properties:
+        text-shadowColor: [1.000000, 1.000000, 1.000000, 0.700000]
+        text-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".cont.loading ?"
+    - ".custom-cont.loading ?"
+    properties:
+        text-shadowColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        text-shadowOffset: [1.000000, 1.000000]
+        text-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".cont.over ?"
+    - ".custom-cont.over ?"
+    properties:
+        text-shadowColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".cont.broken ?"
+    - ".custom-cont.broken ?"
+    properties:
+        text-shadowColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        text-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".sight.default-aim ? .snipe-sight"
+    - ".sight-cursor.default-aim .arcade-sight"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".sight.atgm .arcade-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center"
+-   selectors:
+    - ".sight.atgm ? .snipe-sight .camera-aim"
+    - ".sight.default-aim.atgm ? .snipe-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".sight.shell.default-aim .arcade-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_camera-marker"
+-   selectors:
+    - ".sight.shell.default-aim ? .snipe-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_camera-marker_snipe"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".sight.shell.aim1 .arcade-sight"
+    - ".sight.shell.aim1 ? .snipe-sight .camera-aim"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_camera-marker"
+-   selectors:
+    - ".sight.shell.aim2 .arcade-sight"
+    - ".sight.shell.aim2 ? .snipe-sight .camera-aim"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom2/aim_camera-marker"
+-   selectors:
+    - ".sight.shell.aimed .arcade-sight"
+    - ".sight.shell.aimed ? .snipe-sight"
+    - ".sight.shell.aimed * .camera-aim"
+    - ".sight.shell.aimed * .sight-ear"
+    properties:
+        bg-frame: 1
+-   selectors:
+    - ".sight.atgm.aimed .arcade-sight"
+    - ".sight.atgm.aimed ? .snipe-sight .camera-aim"
+    - ".sight.default-aim.atgm.aimed ? .snipe-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-green"
+-   selectors:
+    - ".sight.atgm * #fuelIcon"
+    properties:
+        visible: true
+-   selectors:
+    - ".sight.shell * #fuelIcon"
+    properties:
+        visible: false
+-   selectors:
+    - ".sight.atgm * .decoration"
+    properties:
+        visible: false
+-   selectors:
+    - ".sight.shell * .decoration"
+    properties:
+        visible: true
+-   selectors:
+    - ".sight.shell * #reloadAndFuelContainer"
+    properties:
+        anchor-hCenterAnchor: -84.000000
+-   selectors:
+    - ".sight.default-aim.shell * #reloadAndFuelContainer"
+    properties:
+        anchor-hCenterAnchor: -89.000000
+        anchor-vCenterAnchor: 10.000000
+-   selectors:
+    - ".sight.atgm * #reloadAndFuelContainer"
+    properties:
+        anchor-hCenterAnchor: -78.000000
+-   selectors:
+    - ".sight.default-aim.atgm * #reloadAndFuelContainer"
+    properties:
+        anchor-hCenterAnchor: -89.000000
+-   selectors:
+    - ".sight.shell ? #distanceContainer"
+    properties:
+        anchor-hCenterAnchor: 97.000000
+-   selectors:
+    - ".sight.default-aim.shell ? #distanceContainer"
+    properties:
+        anchor-hCenterAnchor: 78.000000
+        anchor-vCenterAnchor: 10.000000
+-   selectors:
+    - ".sight.atgm ? #distanceContainer"
+    properties:
+        anchor-hCenterAnchor: 94.000000
+-   selectors:
+    - ".sight.default-aim.atgm ? #distanceContainer"
+    properties:
+        anchor-hCenterAnchor: 79.000000
+-   selectors:
+    - ".sight.shell * #reloadAndFuelContainer"
+    properties:
+        anchor-hCenterAnchor: -78.000000

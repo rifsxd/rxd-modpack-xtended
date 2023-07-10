@@ -1,0 +1,5 @@
+1
+texture0@2x.packed.webp
+128 128
+1
+315 165 94 91 13 20 0 frame0

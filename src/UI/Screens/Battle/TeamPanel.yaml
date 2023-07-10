@@ -1,0 +1,435 @@
+Header:
+    version: 155
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/Resource/PlayerAvatar.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+- "~res:/UI/Screens/Battle/GunStatus.yaml"
+StyleSheets:
+-   selectors:
+    - ".black-tanks"
+    properties:
+        bg-drawType: "DRAW_FILL"
+        bg-color: [0.000000, 0.000000, 0.000000, 0.000000]
+Prototypes:
+-   class: "UIControl"
+    customClass: "UITeamPanel"
+    name: "UITeamPanel"
+    size: [410.000000, 26.000000]
+    tag: 116
+    classes: "team-panel place=left state=expanded"
+    components:
+        UIIdentifierComponent: {}
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+    children:
+    -   class: "UIControl"
+        name: "Arrow"
+        size: [10.000000, 26.000000]
+        input: false
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/Arrow"
+            Anchor: {}
+    -   class: "UIControl"
+        customClass: "UITankPanelRandom"
+        name: "UITankPanel"
+        classes: "tank-panel command-visibility=no-chat-command reload-tag=show-reload"
+        components:
+            Anchor: {}
+            LinearLayout:
+                spacing: 2.000000
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 406.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 26.000000
+            UIIdentifierComponent:
+                id: "player_badge"
+        children:
+        -   class: "UIControl"
+            name: "Back"
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_VERTICAL"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/TankIconBG"
+                Anchor: {}
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 397.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 26.000000
+        -   class: "UIControl"
+            name: "Left"
+            input: false
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 58.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 26.000000
+            children:
+            -   prototype: "PlayerAvatar/PlayerAvatar"
+                name: "PlayerAvatar"
+                classes: "avatar-type=icon-default team-panel"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   path: "Avatar"
+                    position: [8.000000, -16.000000]
+            -   class: "UIControl"
+                name: "Spacer"
+                input: false
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 10.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 26.000000
+                children:
+                -   class: "UIControl"
+                    name: "SquadNumberBg"
+                    size: [24.000000, 25.000000]
+                    input: false
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/vzvods"
+                        UIOpacityComponent: {}
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                        IgnoreLayout: {}
+                    children:
+                    -   class: "UIControl"
+                        name: "SquadNumberValue"
+                        position: [1.000000, -2.000000]
+                        size: [23.000000, 25.000000]
+                        input: false
+                        classes: "text3-small-battle"
+                        components:
+                            UIOpacityComponent: {}
+                            UITextComponent:
+                                fitting: "FITTING_POINTS"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens/Battle/Fonts.yaml"
+        -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+            name: "PlayerName"
+            classes: "player-name"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfMaxChild"
+                StyleSheet:
+                    styles: "~res:/UI/Styles/Clans/ClansStyles.yaml;~res:/UI/Screens/Common/Styles/PlayerNameWithTag.style.yaml;~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+            children:
+            -   path: "spacer"
+                visible: true
+                components:
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 0.000000
+            -   path: "name"
+                classes: "text3-small"
+                components:
+                    UITextComponent:
+                        text: "MamaBudetRu"
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    UIIdentifierComponent:
+                        id: "player_name"
+            -   path: "tag"
+                position: [65.000000, 0.000000]
+                classes: "text3-small clan-tag"
+                components:
+                    UITextComponent:
+                        text: "[WG]"
+                        color: [1.000000, 1.000000, 1.000000, 1.000000]
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "Spacer"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 8.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 26.000000
+        -   class: "UIControl"
+            name: "TankName"
+            input: false
+            classes: "bold-text-loading-small tank-name"
+            components:
+                UIOpacityComponent: {}
+                UITextComponent:
+                    text: "[TANK]"
+                    fitting: "FITTING_POINTS"
+                Anchor:
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "Formula"
+                    horizontalFormula: "min (92, min(parentRest, content))"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/Fonts.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+        -   class: "UIControl"
+            name: "Spacing"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 2.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 26.000000
+        -   class: "UIControl"
+            name: "RankWrapper"
+            input: false
+            classes: "rank-icon"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 20.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 20.000000
+            children:
+            -   class: "UIControl"
+                name: "RankIcon"
+                input: false
+                classes: "grade-color=white-wild-sand-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+                        sprite: "~res:/Gfx/Shared/backgrounds/rank"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 20.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 20.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Inventory/TankProgress/TankRankSmall.style.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "RankShadow"
+                    input: false
+                    classes: "grade-color=white-wild-sand-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_SCALE_PROPORTIONAL"
+                            sprite: "~res:/Gfx/Shared/backgrounds/rank_shadow"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "Rank"
+                input: false
+                classes: "tank-rank"
+                components:
+                    UITextComponent:
+                        text: "10"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -2.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Battle/Fonts.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+        -   class: "UIControl"
+            name: "Right"
+            input: false
+            classes: ""
+            components:
+                Anchor: {}
+                LinearLayout:
+                    skipInvisible: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 26.000000
+            children:
+            -   class: "UIControl"
+                name: "Spacing"
+                input: false
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 10.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 26.000000
+            -   class: "UIControl"
+                name: "KillsHolder"
+                input: false
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 26.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 26.000000
+                children:
+                -   class: "UIControl"
+                    name: "Kills"
+                    input: false
+                    classes: "header5 kills"
+                    components:
+                        UIOpacityComponent: {}
+                        UITextComponent:
+                            text: "0"
+                            fitting: "FITTING_POINTS"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 26.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 26.000000
+                        StyleSheet:
+                            styles: "~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "StoryBooster"
+                        input: false
+                        classes: "story-booster-visibility=hide-story-booster"
+                        components:
+                            Background:
+                                drawType: "DRAW_SCALE_PROPORTIONAL"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 24.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 24.000000
+                            StyleSheet:
+                                styles: "~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+            -   class: "UIControl"
+                name: "TankIcon"
+                size: [48.000000, 26.000000]
+                input: false
+                classes: "black-tanks"
+                refreshStylesOnInteract: false
+                components:
+                    LinearLayout:
+                        orientation: "LeftToRight"
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/_default.psd"
+                    UIOpacityComponent:
+                        opacity: 0.900000
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 50.000000
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        inheritsStylesFromParent: true
+                        styles: "~res:/UI/Screens/Battle/HUDLayer.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "Level"
+                    size: [17.000000, 18.000000]
+                    input: false
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/Levels"
+                            frame: 14
+                            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 50.000000
+                            verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "ChatCommand"
+                size: [32.000000, 32.000000]
+                components:
+                    Background: {}
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "CommandsBack"
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/back_comands_icon"
+                            frame: 0
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIControl"
+                    name: "CommandsIcon"
+                    position: [5.000000, 0.000000]
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/comands_icon"
+                            frame: 0
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIControl"
+                    name: "BaseName"
+                    position: [5.000000, 0.000000]
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/comands_icon"
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+        -   prototype: "GunStatus/GunStatus"
+            name: "GunStatusMinimized"
+            position: [288.000000, 22.000000]
+            size: [54.000000, 4.000000]
+            classes: "style=teampanel-style"
+            components:
+                Anchor: {}
+                IgnoreLayout: {}
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/GunStatus.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+            children:
+            -   path: "ShellBack"
+                position: [3.000000, 1.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 50.000000
+                        verticalValue: 50.000000
+                children: []
+            -   path: "ShellBack/ShellItem"
+                classes: "shell lock-enabled"
+                children: []
+        -   prototype: "GunStatus/GunStatus"
+            name: "GunStatusMaximized"
+            position: [-6.000000, 22.000000]
+            size: [348.000000, 4.000000]
+            classes: "style=teampanel-style"
+            components:
+                Anchor: {}
+                IgnoreLayout: {}
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/GunStatus.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+            children:
+            -   path: "ShellBack"
+                position: [3.000000, 1.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 344.000000
+                        verticalValue: 50.000000
+                children: []
+            -   path: "ShellBack/ShellItem"
+                classes: "shell lock-enabled"
+                children: []

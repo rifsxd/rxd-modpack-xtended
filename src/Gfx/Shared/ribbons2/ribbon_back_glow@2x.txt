@@ -1,0 +1,8 @@
+1
+texture0@2x.packed.webp
+64 60
+4
+804 153 64 60 0 0 0 frame0
+715 155 64 60 0 0 0 frame1
+604 160 64 60 0 0 0 frame2
+870 184 64 60 0 0 0 frame3

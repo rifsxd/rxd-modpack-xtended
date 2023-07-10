@@ -1,0 +1,885 @@
+Header:
+    version: 151
+ImportedPackages:
+- "~res:/UI/Screens/Battle/Tips.yaml"
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+- "~res:/UI/Screens/Lobby/Common/Resource/PlayerAvatar.yaml"
+- "~res:/UI/Screens/Battle/Fonts.yaml"
+StyleSheets:     
+-   selectors:
+    - ".black-tankss"
+    properties:
+        bg-drawType: "DRAW_FILL"
+        bg-color: [0.000000, 0.000000, 0.000000, 0.000000]
+Prototypes:
+-   class: "UIControl"
+    name: "squad"
+    input: false
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleLoadingScreen/vzvods"
+        IgnoreLayout: {}
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 14.000000
+            verticalPolicy: "PercentOfContent"
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+    children:
+    -   class: "UIStaticText"
+        name: "squadNum"
+        input: false
+        classes: "fs-13 bold"
+        components:
+            UITextComponent:
+                text: "1"
+                colorInheritType: "COLOR_IGNORE_PARENT"
+                align: ["HCENTER", "VCENTER"]
+                useRtlAlign: "DONT_USE"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 4.000000
+            StyleSheet:
+                styles: "~res:/UI/Screens/Fonts.yaml"
+-   class: "UIControl"
+    name: "table-cell"
+    size: [450.000000, 40.000000]
+    input: false
+    classes: "table-cell"
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/BattleLoadingScreen/table-cell-bg.psd"
+        LinearLayout:
+            padding: "4.000000"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 40.000000
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens/Battle/BattleLoadingScreen.actions"
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+    children:
+    -   prototype: "squad"
+        name: "squad"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+    -   prototype: "PlayerAvatar/PlayerAvatar"
+        name: "PlayerAvatar"
+        classes: "avatar-type=grade-rare size-38"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            UIDataParamsComponent:
+                eventActions:
+                - ["AVATAR_IMAGE_LOADED", "AVATAR_IMAGE_LOADED", ""]
+        children:
+        -   path: "GradeTeamPanel"
+            input: false
+    -   class: "UIControl"
+        name: "spacer"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 5.000000
+                verticalPolicy: "PercentOfParent"
+    -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+        name: "name"
+        classes: "name-with-tag"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfMaxChild"
+            StyleSheet:
+                styles: "~res:/UI/Styles/Clans/ClansStyles.yaml;~res:/UI/Screens/Common/Styles/PlayerNameWithTag.style.yaml;~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+        children:
+        -   path: "name"
+            classes: "fs-16 regular color=text-color-white"
+            components:
+                UITextComponent:
+                    text: "LoooooooongPlayerName"
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Fonts.yaml"
+        -   path: "tag"
+            classes: "fs-16 regular color=text-color-white"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+    -   class: "UIControl"
+        name: "spacer"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalMax: 28.000000
+                verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "tank-name"
+        input: false
+        classes: "fs-16 bold text-color-white"
+        components:
+            UITextComponent:
+                text: "Long Tank NameLong Tank Name"
+                colorInheritType: "COLOR_IGNORE_PARENT"
+                fitting: "FITTING_POINTS"
+                align: ["RIGHT", "VCENTER"]
+            Anchor:
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "Formula"
+                horizontalFormula: "min (184, min(parentRest, content))"
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+    -   class: "UIControl"
+        name: "spacer"
+        visible: true
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalMax: 8.000000
+                verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "RankWrapper"
+        input: false
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 3.000000
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 23.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 23.000000
+        children:
+        -   class: "UIControl"
+            name: "RankIcon"
+            input: false
+            classes: "grade-color=white-wild-sand-bg"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                    sprite: "~res:/Gfx/Shared/backgrounds/rank"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 23.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 23.000000
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Inventory/TankProgress/TankRankSmall.style.yaml"
+            children:
+            -   class: "UIControl"
+                name: "RankShadow"
+                input: false
+                classes: "grade-color=white-wild-sand-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+                        sprite: "~res:/Gfx/Shared/backgrounds/rank_shadow"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "Rank"
+            input: false
+            classes: "tank-rank"
+            components:
+                UITextComponent:
+                    text: "10"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/Fonts.yaml;~res:/UI/Screens/Battle/Styles/HUDLayerUITeamPanelStyles.yaml"
+    -   class: "UIControl"
+        name: "spacer"
+        visible: true
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 8.000000
+                verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "tank-icon"
+        classes: "black-tankss"
+        input: false
+        components:
+            LinearLayout:
+                orientation: "LeftToRight"
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/_default.psd"
+            UIOpacityComponent:
+                opacity: 0.900000
+            Anchor:
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 76.000000
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                inheritsStylesFromParent: true
+                styles: "~res:/UI/Screens/Battle/BattleLoadingScreen.yaml"
+        children:
+        -   class: "UIControl"
+            name: "tank-level"
+            size: [76.000000, 15.000000]
+            input: false
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/Levels"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 76.000000
+-   class: "UIControl"
+    name: "table-cell-empty"
+    size: [450.000000, 40.000000]
+    input: false
+    classes: "table-cell-empty"
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/BattleLoadingScreen/table-cell-bg.psd"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 40.000000
+-   class: "UIControl"
+    name: "battle-type"
+    input: false
+    components:
+        SizePolicy:
+            horizontalPolicy: "Formula"
+            horizontalFormula: "lastChild + 16"
+            verticalPolicy: "FixedSize"
+            verticalValue: 25.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        input: false
+        classes: "color-orange"
+        components:
+            Background:
+                drawType: "DRAW_FILL"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            StyleSheet:
+                styles: "~res:/UI/Styles/ColorStyles.yaml"
+    -   class: "UIControl"
+        name: "value"
+        input: false
+        classes: "fs-15 bold text-color-white"
+        components:
+            UITextComponent:
+                text: "Battle type"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Fonts.yaml"
+-   class: "UIControl"
+    name: "battle-loading-screen"
+    size: [960.000000, 640.000000]
+    input: false
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+    children:
+    -   class: "UIControl"
+        name: "LevelImage"
+        pivot: [0.500000, 0.500000]
+        input: false
+        components:
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            ScalePolicy:
+                horizontalFormula: "(when parentSize.Y / parentSize.X > 0.75 -> parentSize.Y / 0.75, parentSize.X) / size.Y"
+                verticalFormula: "(when parentSize.Y / parentSize.X > 0.75 -> parentSize.Y, parentSize.X * 0.75) / size.Y"
+    -   class: "UIControl"
+        name: "content"
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "Formula"
+                horizontalFormula: "min (1100, parent - 60)"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "spacer"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalMin: 28.000000
+        -   class: "UIControl"
+            name: "header"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                LinearLayout:
+                    spacing: 12.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfFirstChild"
+            children:
+            -   class: "UIControl"
+                name: "map-logo"
+                input: false
+                components:
+                    UITextureComponent:
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 80.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 72.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+            -   class: "UIControl"
+                name: "battle-info-container"
+                input: false
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 4.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIControl"
+                    name: "map-name-container"
+                    input: false
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfMaxChild"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "map-name"
+                        input: false
+                        classes: "header0 text-color-white"
+                        components:
+                            UITextComponent:
+                                text: "Map Name"
+                                shadowOffset: [1.000000, 1.000000]
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens/Fonts.yaml"
+                    -   class: "UIControl"
+                        name: "mission"
+                        visible: false
+                        input: false
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                vCenterAnchorEnabled: false
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 3.000000
+                            SizePolicy:
+                                horizontalPolicy: "Formula"
+                                horizontalFormula: "lastChild + 16"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 25.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "bg"
+                            input: false
+                            components:
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [1.000000, 1.000000, 1.000000, 0.100000]
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                        -   class: "UIControl"
+                            name: "value"
+                            input: false
+                            classes: "text2 text-color-white"
+                            components:
+                                UITextComponent: {}
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: -1.000000
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                StyleSheet:
+                                    styles: "~res:/UI/Screens/Fonts.yaml"
+                -   class: "UIControl"
+                    name: "battle-type-container"
+                    input: false
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                        LinearLayout:
+                            spacing: 8.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                    children:
+                    -   prototype: "battle-type"
+                        name: "battle-type-rating"
+                        children:
+                        -   path: "value"
+                            components:
+                                UITextComponent:
+                                    text: "ratingBattles/battleType/rating"
+                    -   prototype: "battle-type"
+                        name: "battle-type-basic"
+                    -   prototype: "battle-type"
+                        name: "battle-type-supremacy"
+                        children:
+                        -   path: "value"
+                            components:
+                                UITextComponent:
+                                    text: "gameplaymode/Supremacy"
+        -   class: "UIControl"
+            name: "spacer-2"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+        -   class: "UIControl"
+            name: "table"
+            input: false
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 16.000000
+                    skipInvisible: false
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "table-header"
+                input: false
+                classes: "table-header"
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_BG_load"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 40.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "left-separator"
+                    input: false
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/BattleLoadingScreen/gradient-separator.psd"
+                            spriteModification: ["FLIP_HORIZONTAL"]
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 100.000000
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 1.000000
+                -   class: "UIControl"
+                    name: "right-separator"
+                    input: false
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/BattleLoadingScreen/gradient-separator.psd"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            rightAnchor: 100.000000
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 1.000000
+                -   class: "UIControl"
+                    name: "title-left"
+                    input: false
+                    classes: "fs-15 bold text-color-white"
+                    components:
+                        UITextComponent:
+                            text: "TeamAlly"
+                            align: ["LEFT", "VCENTER"]
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 4.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        StyleSheet:
+                            inheritsStylesFromParent: true
+                            styles: "~res:/UI/Screens/Fonts.yaml"
+                -   class: "UIControl"
+                    name: "title-right"
+                    input: false
+                    classes: "fs-15 bold text-color-white"
+                    components:
+                        UITextComponent:
+                            text: "TeamEnemy"
+                            align: ["RIGHT", "VCENTER"]
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 4.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        StyleSheet:
+                            inheritsStylesFromParent: true
+                            styles: "~res:/UI/Screens/Fonts.yaml"
+                -   class: "UIControl"
+                    name: "center"
+                    input: false
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "rating-container"
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            LinearLayout: {}
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 20.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "left-rating"
+                            input: false
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "FixedSize"
+                                    horizontalValue: 80.000000
+                                    verticalPolicy: "PercentOfParent"
+                            children:
+                            -   class: "UIControl"
+                                name: "bg"
+                                input: false
+                                components:
+                                    Background:
+                                        drawType: "DRAW_ALIGNED"
+                                        sprite: "~res:/Gfx/UI/BattleLoadingScreen/rating-bg.psd"
+                                        spriteModification: ["FLIP_HORIZONTAL"]
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                            -   class: "UIControl"
+                                name: "value"
+                                input: false
+                                classes: "fs-15 bold text-color-white"
+                                components:
+                                    UITextComponent:
+                                        text: "2 930"
+                                        align: ["HCENTER", "VCENTER"]
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    StyleSheet:
+                                        styles: "~res:/UI/Screens/Fonts.yaml"
+                        -   class: "UIControl"
+                            name: "right-rating"
+                            input: false
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "FixedSize"
+                                    horizontalValue: 80.000000
+                                    verticalPolicy: "PercentOfParent"
+                            children:
+                            -   class: "UIControl"
+                                name: "bg"
+                                input: false
+                                components:
+                                    Background:
+                                        drawType: "DRAW_ALIGNED"
+                                        sprite: "~res:/Gfx/UI/BattleLoadingScreen/rating-bg.psd"
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                            -   class: "UIControl"
+                                name: "value"
+                                input: false
+                                classes: "fs-15 bold text-color-white"
+                                components:
+                                    UITextComponent:
+                                        text: "2 930"
+                                        align: ["HCENTER", "VCENTER"]
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    StyleSheet:
+                                        styles: "~res:/UI/Screens/Fonts.yaml"
+                    -   prototype: "LoadingSpinner/LoadingSpinner"
+                        name: "LoadingSpinner"
+                        position: [20.000000, 20.000000]
+                        pivot: [0.500000, 0.500000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+            -   class: "UIControl"
+                name: "table-content"
+                input: false
+                components:
+                    LinearLayout:
+                        dynamicPadding: true
+                        spacing: 1.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfMaxChild"
+                        verticalMin: 286.000000
+                children:
+                -   class: "UIControl"
+                    name: "left"
+                    input: false
+                    classes: "table-left"
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            spacing: 1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "free-space"
+                        input: false
+                        components:
+                            ClipContent: {}
+                            LinearLayout:
+                                orientation: "TopDown"
+                                spacing: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                        children:
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_1"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_2"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_3"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_4"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_5"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_6"
+                -   class: "UIControl"
+                    name: "right"
+                    input: false
+                    classes: "table-right"
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            spacing: 1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "free-space"
+                        input: false
+                        components:
+                            ClipContent: {}
+                            LinearLayout:
+                                orientation: "TopDown"
+                                spacing: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                        children:
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_5"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_6"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_7"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_8"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_9"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_10"
+                        -   prototype: "table-cell-empty"
+                            name: "table-cell-empty_11"
+        -   class: "UIControl"
+            name: "spacer"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalMin: 8.000000
+                    verticalMax: 64.000000
+        -   prototype: "Tips/hint"
+            name: "hint"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                LinearLayout:
+                    padding: "0.000000"
+                    spacing: 8.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+            children:
+            -   path: "hintBg"
+                position: [465.500000, 5.000000]
+                size: [192.000000, 119.000000]
+                components:
+                    Anchor:
+                        enabled: true
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                children: []
+            -   path: "hintBg/hintIcon"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+            -   path: "hintText"
+                classes: "text2"
+                components:
+                    UITextComponent:
+                        text: "Arena loading note"
+                        perPixelAccuracyType: "PER_PIXEL_ACCURACY_ENABLED"
+                        shadowOffset: [1.000000, 1.000000]
+                        multiline: "MULTILINE_ENABLED"
+                        align: ["HCENTER", "VCENTER"]
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 700.000000
+        -   class: "UIControl"
+            name: "spacer"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalMin: 8.000000
+        -   class: "UIControl"
+            name: "progressBar"
+            size: [940.000000, 1.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.862745, 1.000000, 0.933333, 1.000000]
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -24.000000
+                LinearLayout: {}
+            children:
+            -   class: "UIControl"
+                name: "initialLoading"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.000000, 0.333333, 1.000000, 1.000000]
+            -   class: "UIControl"
+                name: "mapLoading"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.000000, 0.666667, 0.000000, 1.000000]
+            -   class: "UIControl"
+                name: "afterMapLoading"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 1.000000, 1.000000, 1.000000]
+            -   class: "UIControl"
+                name: "tanksLoading"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 0.000000, 0.000000, 1.000000]
+            -   class: "UIControl"
+                name: "afterTanksLoading"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 1.000000, 0.000000, 1.000000]
+            -   class: "UIControl"
+                name: "waitServer"
+                size: [32.000000, 1.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.333333, 0.000000, 0.498039, 1.000000]

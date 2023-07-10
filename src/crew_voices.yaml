@@ -1,0 +1,20 @@
+nations:
+    ussr: "ru"
+    germany: "de"
+    usa: "en"
+    china: "cn"
+    france: "fr"
+    uk: "en_gb"
+    japan: "ja"
+    european: "en"
+subnations:
+    italy: "it"
+    poland: "pl"
+    finland: "fi"
+    czech: "cs"
+tanks:
+    "japan:Pz_IV_AusfH": "gup"
+    "japan:G09_Hetzer_GuP": "gup"
+    "japan:PzVI_GuP": "gup"
+    "japan:Firefly_GuP": "gup"
+    "japan:IS-2_GuP": "gup"

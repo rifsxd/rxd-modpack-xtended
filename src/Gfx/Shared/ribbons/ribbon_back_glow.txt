@@ -1,0 +1,8 @@
+1
+rxd_texture1.packed.webp
+1 1
+4
+0 0 1 1 0 0 0 frame0
+0 0 1 1 0 0 0 frame1
+0 0 1 1 0 0 0 frame2
+0 0 1 1 0 0 0 frame3

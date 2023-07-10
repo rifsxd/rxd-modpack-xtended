@@ -1,0 +1,5 @@
+1
+texture0@2x.packed.webp
+128 128
+1
+804 62 86 89 19 19 0 frame0

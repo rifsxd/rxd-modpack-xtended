@@ -1,0 +1,5 @@
+1
+texture0.packed.webp
+64 64
+1
+319 32 49 47 8 11 0 frame0

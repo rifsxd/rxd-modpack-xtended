@@ -1,0 +1,5 @@
+1
+texture0.packed.webp
+64 64
+1
+370 32 45 48 11 7 0 frame0

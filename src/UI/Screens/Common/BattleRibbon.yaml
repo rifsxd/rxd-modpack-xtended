@@ -1,0 +1,220 @@
+Header:
+    version: "28"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/BattleRibbons.yaml"
+StyleSheets:
+-   selector: "#New.ribbon.common"
+    properties:
+        bg-frame: 0
+-   selector: "#Current.ribbon.common"
+    properties:
+        bg-frame: 0
+-   selector: ".ribbon.common #RibbonBack"
+    properties:
+        bg-frame: 0
+-   selector: ".ribbon.common #EffectLeft, .ribbon.common #EffectRight"
+    properties:
+        bg-frame: 0
+-   selector: "#New.ribbon.rare"
+    properties:
+        bg-frame: 1
+-   selector: "#Current.ribbon.rare"
+    properties:
+        bg-frame: 1
+-   selector: ".ribbon.rare #RibbonBack"
+    properties:
+        bg-frame: 1
+-   selector: ".ribbon.rare #EffectLeft, .ribbon.rare #EffectRight"
+    properties:
+        bg-frame: 1
+-   selector: "#New.ribbon.epic"
+    properties:
+        bg-frame: 2
+-   selector: "#Current.ribbon.epic"
+    properties:
+        bg-frame: 2
+-   selector: ".ribbon.epic #RibbonBack"
+    properties:
+        bg-frame: 2
+-   selector: ".ribbon.epic #EffectLeft, .ribbon.epic #EffectRight"
+    properties:
+        bg-frame: 2
+-   selector: "#New.ribbon.legendary"
+    properties:
+        bg-frame: 3
+-   selector: "#Current.ribbon.legendary"
+    properties:
+        bg-frame: 3
+-   selector: ".ribbon.legendary #RibbonBack"
+    properties:
+        bg-frame: 3
+-   selector: ".ribbon.legendary #EffectLeft, .ribbon.legendary #EffectRight"
+    properties:
+        bg-frame: 3
+-   selector: ".ribbon.disable-fx #EffectLeft, .ribbon.disable-fx #EffectRight"
+    properties:
+        visible: false
+Prototypes:
+-   class: "UIControl"
+    name: "Ribbon"
+    pivot: [0.500000, 0.500000]
+    input: false
+    classes: "ribbon"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        Background: {}
+        StyleSheet:
+            inheritsStylesFromParent: true
+            styles: "~res:/UI/Screens/Common/BattleRibbon.yaml"
+    children:
+    -   class: "UIControl"
+        name: "EffectLeft"
+        position: [-60.000000, 17.000000]
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 64.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 30.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/Shared/ribbons/ribbon_back_glow"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "EffectRight"
+        position: [92.000000, 17.000000]
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 64.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 30.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/Shared/ribbons/ribbon_back_glow"
+                spriteModification: ["FLIP_HORIZONTAL"]
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "RibbonBack"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfMaxChild"
+            Background:
+                sprite: "~res:/Gfx/Shared/ribbons/ribbon_back"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        children:
+        -   class: "UIControl"
+            name: "AnimationLayer"
+            visible: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfFirstChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "New"
+                position: [48.500000, 15.000000]
+                pivot: [0.500000, 0.500000]
+                classes: "ribbon"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Background:
+                        sprite: "~res:/Gfx/Shared/ribbons/ribbon_back"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "Current"
+                position: [48.500000, 15.000000]
+                pivot: [0.500000, 0.500000]
+                classes: "ribbon"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Background:
+                        sprite: "~res:/Gfx/Shared/ribbons/ribbon_back"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Embelishment"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -4.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "Icon"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 5.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 27.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Info"
+        position: [7.000000, 54.000000]
+        size: [83.000000, 42.000000]
+        input: false
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: -16.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 8.000000
+        children:
+        -   class: "UIControl"
+            name: "Name"
+            size: [77.000000, 16.000000]
+            pivot: [0.500000, 0.500000]
+            input: false
+            classes: "header5"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                UITextComponent:
+                    colorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    shadowOffset: [1.000000, 1.000000]
+        -   class: "UIControl"
+            name: "Counter"
+            size: [34.000000, 16.000000]
+            pivot: [0.500000, 0.500000]
+            input: false
+            classes: "header5"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -125.000000
+                UITextComponent:
+                    colorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    shadowOffset: [1.000000, 1.000000]
