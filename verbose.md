@@ -1,3 +1,9 @@
+commit e3456dd0bb145ca00e7bf3fff229ce8964f3443c
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Tue Jul 11 05:25:29 2023 +0600
+
+    Final commit to source code bump -> 2.3.0
+
 commit 01ba5d63dee870ddaf00921f6d7ade96aa77c975
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Mon Jul 10 22:10:15 2023 +0600
