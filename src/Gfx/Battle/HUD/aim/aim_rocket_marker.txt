@@ -1,5 +1,5 @@
 1
-rxd_marker1.packed.webp
-100 100
+rxd_marker.packed.webp
+200 200
 1
-0 0 100 100 0 0 0 
+0 0 200 200 0 0 0

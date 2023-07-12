@@ -186,6 +186,10 @@ del /S "keyart*.webp"
 
 del /S "music_maps_battle.bnk"
 
+del /S "*.json"
+
+del /S "Init.bnk"
+
 rd /s /q "UI"
 
 rd /s /q "WwiseSound/fury"
@@ -373,6 +377,10 @@ del /S "keyart*.webp"
 
 del /S "music_maps_battle.bnk"
 
+del /S "*.json"
+
+del /S "Init.bnk"
+
 rd /s /q "UI"
 
 rd /s /q "WwiseSound/fury"
@@ -462,6 +470,10 @@ del /S "*.yaml"
 del /S "keyart*.webp"
 
 del /S "music_maps_battle.bnk"
+
+del /S "*.json"
+
+del /S "Init.bnk"
 
 rd /s /q "UI"
 
@@ -721,6 +733,10 @@ del /S "*.yaml"
 del /S "keyart*.webp"
 
 del /S "music_maps_battle.bnk"
+
+del /S "*.json"
+
+del /S "Init.bnk"
 
 rd /s /q "UI"
 
