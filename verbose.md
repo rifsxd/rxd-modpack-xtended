@@ -1,3 +1,23 @@
+commit 16940c1d9a683bae1f3e04f8d68204fd9bb56669
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Thu Jul 13 01:51:36 2023 +0600
+
+    source code bump --> 2.3.1
+    
+    Adapting Realistic ww2 sights replacing wot pc sights
+
+commit 9fddb2477bf5ba7de528398f8034d259aafca97a
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Tue Jul 11 14:46:05 2023 +0600
+
+    Update .gitignore
+
+commit 64940b3586a44fbbe53a3dad2630a47a313b5669
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Tue Jul 11 14:45:38 2023 +0600
+
+    clean
+
 commit e3456dd0bb145ca00e7bf3fff229ce8964f3443c
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Tue Jul 11 05:25:29 2023 +0600
