@@ -1,5 +1,5 @@
 1
-GunSpread.packed.webp
+rxd_Spread.packed.webp
 17 22
 3
 53 13 17 32 1 1 0 frame0
