@@ -825,7 +825,7 @@
    {
     "Id": "899422581",
     "Language": "SFX",
-    "Hash": "1183284262",
+    "Hash": "2021663640",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\apk",
     "ShortName": "apk",
     "Path": "apk.bnk",
@@ -1944,7 +1944,7 @@
    {
     "Id": "1923507432",
     "Language": "SFX",
-    "Hash": "3149438664",
+    "Hash": "2150429145",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\hits_basic",
     "ShortName": "hits_basic",
     "Path": "hits_basic.bnk",
@@ -4904,7 +4904,7 @@
    {
     "Id": "3232033907",
     "Language": "SFX",
-    "Hash": "1648322693",
+    "Hash": "3556846919",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\hits",
     "ShortName": "hits",
     "Path": "hits.bnk",
@@ -14873,7 +14873,7 @@
    {
     "Id": "3854126194",
     "Language": "SFX",
-    "Hash": "3221084088",
+    "Hash": "3711435306",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\weapon_basic",
     "ShortName": "weapon_basic",
     "Path": "weapon_basic.bnk",
@@ -14967,9 +14967,43 @@
       ]
      },
      {
-      "Id": "428435440",
-      "Name": "play_test_guns_1",
-      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_1",
+      "Id": "592354976",
+      "Name": "play_test_guns_1p",
+      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_1p",
+      "DurationType": "OneShot",
+      "DurationMin": "6.113787",
+      "DurationMax": "7.642676",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "442932077",
+        "Language": "SFX",
+        "ShortName": "442932077.wav",
+        "Path": "SFX\\442932077_3F75BDB9.wem"
+       },
+       {
+        "Id": "564073876",
+        "Language": "SFX",
+        "ShortName": "564073876.wav",
+        "Path": "SFX\\564073876_3F75BDB9.wem"
+       },
+       {
+        "Id": "749715526",
+        "Language": "SFX",
+        "ShortName": "749715526.wav",
+        "Path": "SFX\\749715526_3F75BDB9.wem"
+       },
+       {
+        "Id": "857525215",
+        "Language": "SFX",
+        "ShortName": "857525215.wav",
+        "Path": "SFX\\857525215_3F75BDB9.wem"
+       }
+      ]
+     },
+     {
+      "Id": "642687993",
+      "Name": "play_test_guns_2p",
+      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_2p",
       "DurationType": "OneShot",
       "DurationMin": "6.113787",
       "DurationMax": "7.642676",
@@ -15081,40 +15115,6 @@
         "Language": "SFX",
         "ShortName": "1038205208.wav",
         "Path": "SFX\\1038205208_3F75BDB9.wem"
-       }
-      ]
-     },
-     {
-      "Id": "428435443",
-      "Name": "play_test_guns_2",
-      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_2",
-      "DurationType": "OneShot",
-      "DurationMin": "6.113787",
-      "DurationMax": "7.642676",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "442932077",
-        "Language": "SFX",
-        "ShortName": "442932077.wav",
-        "Path": "SFX\\442932077_3F75BDB9.wem"
-       },
-       {
-        "Id": "564073876",
-        "Language": "SFX",
-        "ShortName": "564073876.wav",
-        "Path": "SFX\\564073876_3F75BDB9.wem"
-       },
-       {
-        "Id": "749715526",
-        "Language": "SFX",
-        "ShortName": "749715526.wav",
-        "Path": "SFX\\749715526_3F75BDB9.wem"
-       },
-       {
-        "Id": "857525215",
-        "Language": "SFX",
-        "ShortName": "857525215.wav",
-        "Path": "SFX\\857525215_3F75BDB9.wem"
        }
       ]
      },
@@ -16150,11 +16150,139 @@
    {
     "Id": "3893417221",
     "Language": "SFX",
-    "Hash": "2655079227",
+    "Hash": "1070113366",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\weapon",
     "ShortName": "weapon",
     "Path": "weapon.bnk",
     "IncludedEvents": [
+     {
+      "Id": "2700211032",
+      "Name": "guns_tow_tow_npc",
+      "ObjectPath": "\\Events\\RxD\\Weapon\\guns_tow_tow_npc",
+      "DurationType": "OneShot",
+      "DurationMin": "10.35",
+      "DurationMax": "10.35",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "2149580",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-002.wav",
+        "Path": "SFX\\00 - tow - tow initial-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "8781720",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-002.wav",
+        "Path": "SFX\\00 - tow - tow shot-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "147215145",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-003.wav",
+        "Path": "SFX\\00 - tow - tow initial-003_3F75BDB9.wem"
+       },
+       {
+        "Id": "372848117",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-003.wav",
+        "Path": "SFX\\00 - tow - tow shot-003_3F75BDB9.wem"
+       },
+       {
+        "Id": "434035672",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-001.wav",
+        "Path": "SFX\\00 - tow - tow shot-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "690611517",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-001.wav",
+        "Path": "SFX\\00 - tow - tow initial-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "760080560",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-002.wav",
+        "Path": "SFX\\00 - tow - tow tail-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "988895648",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-001.wav",
+        "Path": "SFX\\00 - tow - tow tail-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "992873128",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-003.wav",
+        "Path": "SFX\\00 - tow - tow tail-003_3F75BDB9.wem"
+       }
+      ]
+     },
+     {
+      "Id": "537782068",
+      "Name": "guns_tow_tow_pc",
+      "ObjectPath": "\\Events\\RxD\\Weapon\\guns_tow_tow_pc",
+      "DurationType": "OneShot",
+      "DurationMin": "10.35",
+      "DurationMax": "10.35",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "2149580",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-002.wav",
+        "Path": "SFX\\00 - tow - tow initial-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "8781720",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-002.wav",
+        "Path": "SFX\\00 - tow - tow shot-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "147215145",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-003.wav",
+        "Path": "SFX\\00 - tow - tow initial-003_3F75BDB9.wem"
+       },
+       {
+        "Id": "372848117",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-003.wav",
+        "Path": "SFX\\00 - tow - tow shot-003_3F75BDB9.wem"
+       },
+       {
+        "Id": "434035672",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow shot-001.wav",
+        "Path": "SFX\\00 - tow - tow shot-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "690611517",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow initial-001.wav",
+        "Path": "SFX\\00 - tow - tow initial-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "760080560",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-002.wav",
+        "Path": "SFX\\00 - tow - tow tail-002_3F75BDB9.wem"
+       },
+       {
+        "Id": "988895648",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-001.wav",
+        "Path": "SFX\\00 - tow - tow tail-001_3F75BDB9.wem"
+       },
+       {
+        "Id": "992873128",
+        "Language": "SFX",
+        "ShortName": "00 - tow - tow tail-003.wav",
+        "Path": "SFX\\00 - tow - tow tail-003_3F75BDB9.wem"
+       }
+      ]
+     },
      {
       "Id": "737532225",
       "Name": "play_wpn_auto_1p",
