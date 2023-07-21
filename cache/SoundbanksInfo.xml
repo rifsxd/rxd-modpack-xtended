@@ -9044,7 +9044,7 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3854126194" Language="SFX" Hash="2816362136">
+		<SoundBank Id="3854126194" Language="SFX" Hash="3464846141">
 			<ObjectPath>\SoundBanks\Default Work Unit\weapon_basic</ObjectPath>
 			<ShortName>weapon_basic</ShortName>
 			<Path>weapon_basic.bnk</Path>
@@ -9117,7 +9117,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="642687993" Name="play_test_guns_2p" ObjectPath="\Events\RxD\Weapon\play_test_guns_2p" DurationType="OneShot" DurationMin="6.113787" DurationMax="7.642676">
+				<Event Id="625910150" Name="play_test_guns_3p" ObjectPath="\Events\RxD\Weapon\play_test_guns_3p" DurationType="OneShot" DurationMin="6.113787" DurationMax="7.642676">
 					<IncludedMemoryFiles>
 						<File Id="50876064" Language="SFX">
 							<ShortName>50876064.wav</ShortName>
@@ -9817,7 +9817,7 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3893417221" Language="SFX" Hash="4138782007">
+		<SoundBank Id="3893417221" Language="SFX" Hash="2530824892">
 			<ObjectPath>\SoundBanks\Default Work Unit\weapon</ObjectPath>
 			<ShortName>weapon</ShortName>
 			<Path>weapon.bnk</Path>
@@ -9862,7 +9862,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="537782068" Name="guns_tow_tow_pc" ObjectPath="\Events\RxD\Weapon\guns_tow_tow_pc" DurationType="OneShot" DurationMin="10.35" DurationMax="10.35">
+				<Event Id="537782068" Name="guns_tow_tow_pc" ObjectPath="\Events\RxD\Weapon\guns_tow_tow_pc" DurationType="OneShot" DurationMin="9.700001" DurationMax="9.700001">
 					<IncludedMemoryFiles>
 						<File Id="2149580" Language="SFX">
 							<ShortName>00 - tow - tow initial-002.wav</ShortName>

@@ -14873,7 +14873,7 @@
    {
     "Id": "3854126194",
     "Language": "SFX",
-    "Hash": "2816362136",
+    "Hash": "3464846141",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\weapon_basic",
     "ShortName": "weapon_basic",
     "Path": "weapon_basic.bnk",
@@ -15001,9 +15001,9 @@
       ]
      },
      {
-      "Id": "642687993",
-      "Name": "play_test_guns_2p",
-      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_2p",
+      "Id": "625910150",
+      "Name": "play_test_guns_3p",
+      "ObjectPath": "\\Events\\RxD\\Weapon\\play_test_guns_3p",
       "DurationType": "OneShot",
       "DurationMin": "6.113787",
       "DurationMax": "7.642676",
@@ -16150,7 +16150,7 @@
    {
     "Id": "3893417221",
     "Language": "SFX",
-    "Hash": "4138782007",
+    "Hash": "2530824892",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\weapon",
     "ShortName": "weapon",
     "Path": "weapon.bnk",
@@ -16224,8 +16224,8 @@
       "Name": "guns_tow_tow_pc",
       "ObjectPath": "\\Events\\RxD\\Weapon\\guns_tow_tow_pc",
       "DurationType": "OneShot",
-      "DurationMin": "10.35",
-      "DurationMax": "10.35",
+      "DurationMin": "9.700001",
+      "DurationMax": "9.700001",
       "IncludedMemoryFiles": [
        {
         "Id": "2149580",
