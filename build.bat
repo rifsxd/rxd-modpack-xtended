@@ -192,6 +192,8 @@ del /S "Init.bnk"
 
 rd /s /q "UI"
 
+rd /s /q "WwiseSound/fury"
+
 rd /s /q "WwiseSound/sv"
 
 
@@ -381,6 +383,8 @@ del /S "Init.bnk"
 
 rd /s /q "UI"
 
+rd /s /q "WwiseSound/fury"
+
 rd /s /q "WwiseSound/sv"
 
 ECHO.
@@ -472,6 +476,8 @@ del /S "*.json"
 del /S "Init.bnk"
 
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
 
 rd /s /q "WwiseSound/sv"
 
@@ -733,6 +739,8 @@ del /S "*.json"
 del /S "Init.bnk"
 
 rd /s /q "UI"
+
+rd /s /q "WwiseSound/fury"
 
 rd /s /q "WwiseSound/sv"
 
