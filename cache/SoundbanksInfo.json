@@ -1188,7 +1188,7 @@
    {
     "Id": "1261675229",
     "Language": "sv",
-    "Hash": "2447674372",
+    "Hash": "3894246246",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "sv\\voiceover_crew.bnk",
@@ -2650,6 +2650,22 @@
         "Path": "Voices\\sv\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -2663,7 +2679,7 @@
    {
     "Id": "1261675229",
     "Language": "ru",
-    "Hash": "4160957141",
+    "Hash": "26222554",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "ru\\voiceover_crew.bnk",
@@ -4125,6 +4141,22 @@
         "Path": "Voices\\ru\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -4138,7 +4170,7 @@
    {
     "Id": "1261675229",
     "Language": "pl",
-    "Hash": "3763717478",
+    "Hash": "3697940780",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "pl\\voiceover_crew.bnk",
@@ -5600,6 +5632,22 @@
         "Path": "Voices\\pl\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -5613,7 +5661,7 @@
    {
     "Id": "1261675229",
     "Language": "ja",
-    "Hash": "210086363",
+    "Hash": "2038791990",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "ja\\voiceover_crew.bnk",
@@ -7075,6 +7123,22 @@
         "Path": "Voices\\ja\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -7088,7 +7152,7 @@
    {
     "Id": "1261675229",
     "Language": "it",
-    "Hash": "3383682994",
+    "Hash": "260859434",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "it\\voiceover_crew.bnk",
@@ -8550,6 +8614,22 @@
         "Path": "Voices\\it\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -8563,7 +8643,7 @@
    {
     "Id": "1261675229",
     "Language": "fr",
-    "Hash": "2765719723",
+    "Hash": "2312296200",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "fr\\voiceover_crew.bnk",
@@ -10025,6 +10105,22 @@
         "Path": "Voices\\fr\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -10038,7 +10134,7 @@
    {
     "Id": "1261675229",
     "Language": "en",
-    "Hash": "2684773999",
+    "Hash": "4040750580",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "en\\voiceover_crew.bnk",
@@ -11500,6 +11596,22 @@
         "Path": "Voices\\en\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -11513,7 +11625,7 @@
    {
     "Id": "1261675229",
     "Language": "de",
-    "Hash": "3781108648",
+    "Hash": "2886322835",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "de\\voiceover_crew.bnk",
@@ -12975,6 +13087,22 @@
         "Path": "Voices\\de\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -12988,7 +13116,7 @@
    {
     "Id": "1261675229",
     "Language": "cs",
-    "Hash": "651853291",
+    "Hash": "1574562359",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "cs\\voiceover_crew.bnk",
@@ -14450,6 +14578,22 @@
         "Path": "Voices\\cs\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -14463,7 +14607,7 @@
    {
     "Id": "1261675229",
     "Language": "cn",
-    "Hash": "2017026552",
+    "Hash": "1491402856",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "cn\\voiceover_crew.bnk",
@@ -15925,6 +16069,22 @@
         "Path": "Voices\\cn\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [
@@ -15938,7 +16098,7 @@
    {
     "Id": "1261675229",
     "Language": "en_gb",
-    "Hash": "1868943802",
+    "Hash": "193195216",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\cv\\voiceover_crew",
     "ShortName": "voiceover_crew",
     "Path": "en_gb\\voiceover_crew.bnk",
@@ -17400,6 +17560,22 @@
         "Path": "Voices\\en_gb\\00 - voice_messages - voice message leave vehicle v1 1_3F75BDB9.wem"
        }
       ]
+     },
+     {
+      "Id": "394955153",
+      "Name": "rxd_dev",
+      "ObjectPath": "\\Events\\RxD\\Copyright\\rxd_dev",
+      "DurationType": "OneShot",
+      "DurationMin": "1.486667",
+      "DurationMax": "1.486667"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "200535613",
+      "Language": "SFX",
+      "ShortName": "200535613.wav",
+      "Path": "SFX\\200535613_3F75BDB9.wem"
      }
     ],
     "GameParameters": [

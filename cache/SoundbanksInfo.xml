@@ -608,7 +608,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="sv" Hash="2447674372">
+		<SoundBank Id="1261675229" Language="sv" Hash="3894246246">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>sv\voiceover_crew.bnk</Path>
@@ -1481,12 +1481,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="ru" Hash="4160957141">
+		<SoundBank Id="1261675229" Language="ru" Hash="26222554">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>ru\voiceover_crew.bnk</Path>
@@ -2359,12 +2366,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="pl" Hash="3763717478">
+		<SoundBank Id="1261675229" Language="pl" Hash="3697940780">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>pl\voiceover_crew.bnk</Path>
@@ -3237,12 +3251,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="ja" Hash="210086363">
+		<SoundBank Id="1261675229" Language="ja" Hash="2038791990">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>ja\voiceover_crew.bnk</Path>
@@ -4115,12 +4136,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="it" Hash="3383682994">
+		<SoundBank Id="1261675229" Language="it" Hash="260859434">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>it\voiceover_crew.bnk</Path>
@@ -4993,12 +5021,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="fr" Hash="2765719723">
+		<SoundBank Id="1261675229" Language="fr" Hash="2312296200">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>fr\voiceover_crew.bnk</Path>
@@ -5871,12 +5906,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="en" Hash="2684773999">
+		<SoundBank Id="1261675229" Language="en" Hash="4040750580">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>en\voiceover_crew.bnk</Path>
@@ -6749,12 +6791,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="de" Hash="3781108648">
+		<SoundBank Id="1261675229" Language="de" Hash="2886322835">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>de\voiceover_crew.bnk</Path>
@@ -7627,12 +7676,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="cs" Hash="651853291">
+		<SoundBank Id="1261675229" Language="cs" Hash="1574562359">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>cs\voiceover_crew.bnk</Path>
@@ -8505,12 +8561,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="cn" Hash="2017026552">
+		<SoundBank Id="1261675229" Language="cn" Hash="1491402856">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>cn\voiceover_crew.bnk</Path>
@@ -9383,12 +9446,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1261675229" Language="en_gb" Hash="1868943802">
+		<SoundBank Id="1261675229" Language="en_gb" Hash="193195216">
 			<ObjectPath>\SoundBanks\Default Work Unit\cv\voiceover_crew</ObjectPath>
 			<ShortName>voiceover_crew</ShortName>
 			<Path>en_gb\voiceover_crew.bnk</Path>
@@ -10261,7 +10331,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="394955153" Name="rxd_dev" ObjectPath="\Events\RxD\Copyright\rxd_dev" DurationType="OneShot" DurationMin="1.486667" DurationMax="1.486667"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="200535613" Language="SFX">
+					<ShortName>200535613.wav</ShortName>
+					<Path>SFX\200535613_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
