@@ -1,0 +1,339 @@
+Header:
+    version: 159
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/BadgeNew.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "GameType"
+    input: false
+    components:
+        Anchor:
+            enabled: true
+            vCenterAnchorEnabled: true
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 250.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 330.000000
+        UIDataParamsComponent:
+            params:
+            - ["GameMode", "mode", "null", "{ \"availabilityStatus\" = eGameModeAvailability.AVAILABLE; \"gameMode\" = eGameMode.Gravitizing; }"]
+            - ["bool", "selected", "false", "true"]
+            - ["bool", "hasBadge", "false", "true"]
+        UIDataLocalBindingsComponent:
+            data:
+            - ["bool", "active", "mode.availabilityStatus == eGameModeAvailability.AVAILABLE"]
+            - ["string", "sprite", "when mode.gameMode == eGameMode.Rating -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_rating\", mode.gameMode == eGameMode.Scuffle -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_normandy\", mode.gameMode == eGameMode.HellGames -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_hellgames\", mode.gameMode == eGameMode.Arcade -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_madgames\", mode.gameMode == eGameMode.Lunar -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_moongame\", mode.gameMode == eGameMode.NanoMaps -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_fast-maps\", mode.gameMode == eGameMode.Vampiric -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_vampiric\", mode.gameMode == eGameMode.BossMode -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_bossmode\", mode.gameMode == eGameMode.Gravitizing -> \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_gravitizing\", \"~res:/Gfx/UI/Hangar/GameTypes/battle-type_regular\""]
+            - ["string", "styleString", "\"game-type\" + (when mode.availabilityStatus == eGameModeAvailability.AVAILABLE -> \" active\", \"\") + (when hasBadge -> \" badge_new\", \"\")"]
+            - ["string", "materialParam", "when active -> (when selected -> \"saturation,0; value,0\", \"saturation,-70; value,0\"), (when selected -> \"saturation,0; value,-60\", \"saturation,-70; value,-60\")"]
+            - ["string", "gameModeSprite", "when mode.gameMode == eGameMode.Regular -> \"~res:/Gfx/Shared/icons/icon_game-mode_random_colored\", mode.gameMode == eGameMode.Rating -> \"~res:/Gfx/Shared/icons/icon_game-mode_rating_colored\", mode.gameMode == eGameMode.Arcade or mode.gameMode == eGameMode.Scuffle or mode.gameMode == eGameMode.HellGames or mode.gameMode == eGameMode.Lunar or mode.gameMode == eGameMode.NanoMaps or mode.gameMode == eGameMode.Vampiric or mode.gameMode == eGameMode.BossMode or mode.gameMode == eGameMode.Gravitizing -> \"~res:/Gfx/Shared/icons/icon_game-mode_realistic_colored\", \"~res:/Gfx/Shared/icons/icon_game-mode_random_colored\""]
+            - ["string", "availabilityString", "when active -> \"\", mode.availabilityMessage"]
+            - ["string", "gameModeBGPath", "when mode.gameMode == eGameMode.Gravitizing-> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_gravitising\", mode.gameMode == eGameMode.Regular -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_random\", mode.gameMode == eGameMode.Tournament -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_tournament\", mode.gameMode == eGameMode.Rating -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_rating\", mode.gameMode == eGameMode.Arcade -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_madgames\", mode.gameMode == eGameMode.HellGames -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_uprising\", mode.gameMode == eGameMode.Scuffle -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_realistic\", mode.gameMode == eGameMode.Lunar -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_gravity\", mode.gameMode == eGameMode.NanoMaps -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_skirmish\", mode.gameMode == eGameMode.Vampiric -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_burninggames\", mode.gameMode == eGameMode.BossMode -> \"~res:/Gfx/Lobby/backgrounds/prebattle/bg_game-mode_bigboss\", \"\""]
+    children:
+    -   class: "UIControl"
+        name: "GamemodeBG"
+        input: false
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        bindings:
+        - ["Background.sprite", "gameModeBGPath"]
+    -   class: "UIControl"
+        name: "GameTypeContent"
+        position: [20.000000, 25.000000]
+        components:
+            Background: {}
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                verticalPolicy: "FixedSize"
+            UIInputEventComponent:
+                onDoubleTouch: "GAME_TYPE_DOUBLE_TAP"
+            UISwitchBarElementComponent: {}
+            Sound:
+                touchUpInside: "GUI/buttons/choose"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Lobby/Hangar/Styles/GameTypeStyles.yaml;~res:/UI/Screens/Fonts.yaml;~res:/UI/Styles/ColorStyles.yaml"
+        bindings:
+        - ["classes", "styleString"]
+        - ["UISwitchBarElementComponent.id", "str(mode.gameMode)"]
+        children:
+        -   class: "UIControl"
+            name: "BgFx"
+            input: false
+            components:
+                ClipContent:
+                    enabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Sprite"
+                input: false
+                components:
+                    UITextureComponent:
+                        materialPath: "~res:/Materials.custom/2d.Textured.HSV.material"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                bindings:
+                - ["UITextureComponent.spritePath", "sprite"]
+                - ["UITextureComponent.materialParams", "materialParam"]
+            -   class: "UIControl"
+                name: "FX"
+                input: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIParticles"
+                    name: "bigSmoke"
+                    position: [-21.000000, 273.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/big_smoke.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "glow"
+                    position: [-21.000000, 311.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/glow.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks1"
+                    position: [20.000000, 311.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks1.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks2"
+                    position: [20.000000, 311.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks2.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks3"
+                    position: [-21.000000, 184.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks3.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks4"
+                    position: [-41.000000, 368.000000]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks4.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks5"
+                    position: [145.000000, 349.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks5.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "dustVortex"
+                    position: [500.000000, 425.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Login5.4/dust_vortex.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "dustVortex_1"
+                    position: [125.000000, 311.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Login5.4/dust_vortex.sc2"
+                    autoStart: true
+            -   class: "UIControl"
+                name: "OutsideFx"
+                position: [-61.666664, 311.000000]
+                size: [81.333328, 76.000000]
+                children:
+                -   class: "UIParticles"
+                    name: "sparks4_1"
+                    position: [40.666664, 38.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks4.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks4_2"
+                    position: [40.666664, 38.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks4.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks5"
+                    position: [171.000000, 38.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks5.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "sparks5_1"
+                    position: [171.000000, 38.000000]
+                    size: [81.333328, 76.000000]
+                    scale: [0.500000, 0.500000]
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks5.sc2"
+                    autoStart: true
+            -   class: "UIControl"
+                name: "BottomGradient"
+                input: false
+                classes: "black-50-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "Formula"
+                        verticalFormula: "parent * 0.5"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "SelectedLarge"
+                size: [210.000000, 8.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 8.000000
+            -   class: "UIControl"
+                name: "SelectedSmall"
+                size: [210.000000, 8.000000]
+                input: false
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 4.000000
+        -   class: "UIControl"
+            name: "Icon"
+            position: [81.000000, 0.000000]
+            size: [39.000000, 44.000000]
+            input: false
+            components:
+                UITextureComponent:
+                    materialPath: "~res:/Materials.custom/2d.Textured.HSV.material"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: -30.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+            bindings:
+            - ["UITextureComponent.spritePath", "gameModeSprite"]
+            - ["UITextureComponent.materialParams", "materialParam"]
+        -   class: "UIControl"
+            name: "NormalText"
+            position: [5.000000, 214.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 16.000000
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 4.000000
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 200.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 50.000000
+            children:
+            -   class: "UIControl"
+                name: "Title"
+                position: [74.000000, -1.000000]
+                input: false
+                classes: "header3 color=text-color-white"
+                components:
+                    UITextComponent:
+                        colorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Fonts.yaml"
+                bindings:
+                - ["UITextComponent.text", "mode.gameModeOptions.title"]
+        -   class: "UIControl"
+            name: "RedText"
+            position: [30.000000, 154.000000]
+            input: false
+            classes: "text2 color=text-color-blue"
+            components:
+                UITextComponent:
+                    colorInheritType: "COLOR_IGNORE_PARENT"
+                    multiline: "MULTILINE_ENABLED"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 200.000000
+                    verticalPolicy: "PercentOfContent"
+            bindings:
+            - ["UITextComponent.text", "availabilityString"]
+        -   prototype: "BadgeNew/BadgeNew"
+            name: "BadgeNew"
