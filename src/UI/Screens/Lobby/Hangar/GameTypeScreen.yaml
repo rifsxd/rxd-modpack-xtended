@@ -1,0 +1,273 @@
+Header:
+    version: 159
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Lobby/Common/ButtonInfoFlat.yaml"
+- "~res:/UI/Screens/Common/ScrollBar.yaml"
+- "~res:/UI/Screens/Lobby/Hangar/CheckBoxContainer.yaml"
+- "~res:/UI/Screens/Common/MenuItem.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "GameType"
+    size: [960.000000, 640.000000]
+    input: false
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        UIDataParamsComponent:
+            params:
+            - ["GameModesGameplay", "gameplay", "null", "{ }"]
+            - ["SessionDataModel", "session", "null", "{ }"]
+        UIDataLocalBindingsComponent:
+            data:
+            - ["bool", "gameplayTypeSelectorVisible", "session.gameModesAccountModel.gameMode == str(eGameMode.Regular)"]
+            - ["int", "allowedLevelsCount", "session.gameModesAccountModel.mode.gameModeOptions.allowedLevels.Size()"]
+            - ["string", "levelRestrictions", "when int(allowedLevelsCount) == 0 -> \"\", int(allowedLevelsCount) == 1 -> localize(\"hangar/battleType/setSingleLevel\", { \"level\" = roman(min(session.gameModesAccountModel.mode.gameModeOptions.allowedLevels)); }), localize(\"hangar/battleType/setSeveralLevels\", { \"levelMin\" = roman(min(session.gameModesAccountModel.mode.gameModeOptions.allowedLevels)); \"levelMax\" = roman(max(session.gameModesAccountModel.mode.gameModeOptions.allowedLevels)); })"]
+    children:
+    -   class: "UIControl"
+        name: "BG"
+        components:
+            Background:
+                sprite: "~res:/Gfx/Lobby/backgrounds/gamemode-selection/bg_game-mode_typeselection"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   prototype: "StyledBackButton/StyledBackButton"
+            name: "BackButton"
+            classes: "button button-color-gray button-close-sound"
+            components:
+                UIInputEventComponent:
+                    onTouchUpInside: "HANDLE_BACK"
+        -   prototype: "ButtonInfoFlat/ButtonInfo"
+            name: "ButtonInfo"
+            classes: "button button-ok-sound"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 30.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 30.000000
+                UIInputEventComponent:
+                    onTouchUpInside: "INFO_PRESSED"
+                Sound: {}
+                StyleSheet:
+                    styles: "~res:/UI/Styles/ButtonStyle.yaml;~res:/UI/Styles/ButtonSoundStyles.yaml"
+            children:
+            -   path: "BG"
+                components:
+                    UIAttachLayoutMasterComponent:
+                        attachId: "BATTLE_TYPE_INFO"
+            -   path: "Icon"
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/Lobby/icons/icon_info_xs"
+        -   prototype: "ScrollBar/HorizontalScrollBar"
+            name: "HorizontalScrollBar"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                UIScrollBarComponent:
+                    delegate: "../../GameTypesScrollView/ScrollArea"
+    -   class: "UIControl"
+        name: "GameTypesScrollView"
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 640.000000
+            StyleSheet:
+                styles: "~res:/UI/Screens/Common/ScrollBar.yaml"
+        children:
+        -   class: "UIControl"
+            name: "Title"
+            input: false
+            classes: "header1 color=text-color-white"
+            components:
+                UITextComponent:
+                    text: "hangar/battleType/chooseBattleType"
+                    colorInheritType: "COLOR_IGNORE_PARENT"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Fonts.yaml"
+        -   class: "UIScrollView"
+            name: "ScrollArea"
+            autoUpdate: true
+            centerContent: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfMaxChild"
+                children:
+                -   prototype: "MenuItem/MenuPane"
+                    name: "Pane"
+                    input: false
+                    classes: ""
+                    components:
+                        Anchor:
+                            enabled: false
+                        LinearLayout:
+                            padding: "30.000000"
+                            dynamicPadding: true
+                            safeAreaPaddingInset: false
+                            spacing: -19.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                            verticalValue: 120.000000
+                        UISwitchBarComponent:
+                            selectionEventType: "TOUCH_UP"
+                        UIRepeatComponent:
+                            control: "~res:/UI/Screens/Lobby/Hangar/GameTypeSelector.yaml"
+                            dataContainer: "session.gameModesAccountModel.gameModes"
+                            args:
+                                "hasBadge": "Contains(session.gameModesBadges.badges, _item.gameMode) and session.gameModesBadges.badges[_item.gameMode].value"
+                                "mode": "_item"
+                                "selected": "_item.gameMode == session.gameModesAccountModel.mode.gameMode"
+                    bindings:
+                    - ["UISwitchBarComponent.selectedElement", "session.gameModesAccountModel.gameMode"]
+        -   class: "UIControl"
+            name: "CheckboxesContainer"
+            input: false
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 30.000000
+                LinearLayout:
+                    padding: "20.000000"
+                    dynamicPadding: true
+                    spacing: 20.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfMaxChild"
+            bindings:
+            - ["visible", "gameplayTypeSelectorVisible"]
+            children:
+            -   prototype: "CheckBoxContainer/CheckBoxContainer"
+                name: "ModeEncounter"
+                position: [230.000000, 0.000000]
+                components:
+                    UIInputEventComponent:
+                        onTouchUpInside: "GAMEPLAY_CHECKBOX_PRESSED"
+                        onTouchUpInsideData: "eArenaGameplayType.domination"
+                children:
+                -   path: "CheckBoxContainer/CheckBox"
+                    components:
+                        UIInputEventComponent:
+                            onTouchUpInside: "GAMEPLAY_CHECKBOX_PRESSED"
+                            onTouchUpInsideData: "eArenaGameplayType.domination"
+                    bindings:
+                    - ["enabled", "gameplay.availibleTypes[eArenaGameplayType.domination].value"]
+                    - ["selected", "gameplay.gameplayTypes[eArenaGameplayType.domination].value"]
+                    children: []
+                -   path: "Control/Title"
+                    components:
+                        UITextComponent:
+                            text: "ratingBattles/gameplayType/dominationTitle"
+                            fitting: "FITTING_REDUCE"
+                -   path: "Control/Description"
+                    position: [0.000000, 23.000000]
+                    components:
+                        UITextComponent:
+                            text: "ratingBattles/vehicleType/any"
+                            fitting: "FITTING_REDUCE"
+            -   prototype: "CheckBoxContainer/CheckBoxContainer"
+                name: "ModeSupremacy"
+                children:
+                -   path: "CheckBoxContainer/CheckBox"
+                    components:
+                        UIInputEventComponent:
+                            onTouchUpInside: "GAMEPLAY_CHECKBOX_PRESSED"
+                            onTouchUpInsideData: "eArenaGameplayType.supremacy"
+                    bindings:
+                    - ["enabled", "gameplay.availibleTypes[eArenaGameplayType.supremacy].value"]
+                    - ["selected", "gameplay.gameplayTypes[eArenaGameplayType.supremacy].value"]
+                    children: []
+                -   path: "Control/Title"
+                    components:
+                        UITextComponent:
+                            text: "ratingBattles/gameplayType/supremacyTitle"
+                            fitting: "FITTING_REDUCE"
+                -   path: "Control/Description"
+                    position: [0.000000, 23.000000]
+                    size: [180.000000, 23.000000]
+                    components:
+                        UITextComponent:
+                            text: "ratingBattles/gameplayType/supremacyDescription"
+                            fitting: "FITTING_REDUCE"
+        -   class: "UIControl"
+            name: "DescriptionContainer"
+            input: false
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 30.000000
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 4.000000
+                    dynamicSpacing: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            bindings:
+            - ["visible", "not gameplayTypeSelectorVisible"]
+            children:
+            -   class: "UIControl"
+                name: "Title"
+                input: false
+                classes: "header3 color=text-color-white"
+                components:
+                    UITextComponent:
+                        colorInheritType: "COLOR_IGNORE_PARENT"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Fonts.yaml"
+                bindings:
+                - ["UITextComponent.text", "levelRestrictions"]
+            -   class: "UIControl"
+                name: "Description"
+                input: false
+                classes: "text2 color=text-color-blue"
+                components:
+                    UITextComponent:
+                        colorInheritType: "COLOR_IGNORE_PARENT"
+                        multiline: "MULTILINE_ENABLED"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 780.000000
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Fonts.yaml"
+                bindings:
+                - ["UITextComponent.text", "localize(session.gameModesAccountModel.mode.gameModeOptions.description)"]
