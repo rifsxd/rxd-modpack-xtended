@@ -35,7 +35,7 @@ ECHO 3 - Compile For MOBILE - Lesta - ASTC
 ECHO 4 - Compile For MOBILE-EMBED - ASTC
 ECHO 5 - Compile For All ( PC - DX11 ) , ( MOBILE - ASTC ) , ( MOBILE - Lesta - ASTC ) And ( MOBILE-EMBED - ASTC )
 ECHO w - Include Wwise Bank Files To Source
-ECHO v - Verbose Source Code Commits
+ECHO v - Verbose Source Code Commits ( Quick Tip - Press 'Q' to exit logs! )
 ECHO e - EXIT
 ECHO.
 SET /P "M=Type 1, 2, 3, 4, 5, w, v or e then press ENTER: "
@@ -235,7 +235,7 @@ GOTO MENU
 
 ECHO.
 
-type verbose.md
+git log >nul 2>&1 && ( git log ) || ( echo You need Git installed for this command to work! )
 
 ECHO.
 

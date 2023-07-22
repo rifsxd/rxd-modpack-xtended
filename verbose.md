@@ -1,3 +1,9 @@
+commit d8bfbea5f91bcab14c9284b17b60f54c151e8179
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 23 04:05:17 2023 +0600
+
+    Update verbose.md
+
 commit 5cf40bfdfa208f4f357a7c3c1bbf12663aa5a7ab
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Sun Jul 23 03:28:09 2023 +0600
