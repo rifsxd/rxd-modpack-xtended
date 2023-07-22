@@ -9,7 +9,7 @@ Prototypes:
     size: [1024.000000, 768.000000]
     components:
         Background:
-            sprite: "~res:/Gfx/Lobby/backgrounds/gamemode-selection/bg_game-mode_typeselection"
+            sprite: "~res:/Gfx/Lobby/backgrounds/gamemode-selection/bg_game-mode_typeselection_blur"
         Anchor:
             leftAnchorEnabled: true
             rightAnchorEnabled: true
