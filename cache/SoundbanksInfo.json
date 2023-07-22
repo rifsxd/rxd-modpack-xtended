@@ -17597,7 +17597,7 @@
    {
     "Id": "1361097730",
     "Language": "SFX",
-    "Hash": "4112835212",
+    "Hash": "2136199121",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\hangar_normal",
     "ShortName": "hangar_normal",
     "Path": "hangar_normal.bnk",
@@ -17609,28 +17609,16 @@
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
-        "Id": "888005467",
+        "Id": "497638682",
         "Language": "SFX",
-        "ShortName": "Escape from Tarkov 12.10  OST - Rules of Engagement.wav",
-        "Path": "SFX\\Escape from Tarkov 12.10  OST - Rules of Engagement_3F75BDB9.wem"
-       },
-       {
-        "Id": "961109940",
-        "Language": "SFX",
-        "ShortName": "Escape From Tarkov - The Blood We Spill.wav",
-        "Path": "SFX\\Escape From Tarkov - The Blood We Spill_3F75BDB9.wem"
+        "ShortName": "Andrey Kulik - Hangar Music (2017).wav",
+        "Path": "SFX\\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem"
        },
        {
         "Id": "984756495",
         "Language": "SFX",
         "ShortName": "Andrey Kulik - Battle Pass (World Of Tanks OST).wav",
         "Path": "SFX\\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem"
-       },
-       {
-        "Id": "1027871928",
-        "Language": "SFX",
-        "ShortName": "Geneburn - Denial.wav",
-        "Path": "SFX\\Geneburn - Denial_3F75BDB9.wem"
        }
       ]
      },

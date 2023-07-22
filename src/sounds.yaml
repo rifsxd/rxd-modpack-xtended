@@ -56,7 +56,7 @@ music_play:
     aftershot_draw: "Music_aftershot_draw"
     aftershot_defeat: "Music_aftershot_defeat"
     aftershot_bought_module: "Music_aftershot_bought_module"
-    music_hangar: "play_music_hng_main"
+    music_hangar: "play_music_hng_main_null"
 music_stop:
     group_music: "stop_group_music"
     group_music_aftershot: "stop_group_music_aftershot"

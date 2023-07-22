@@ -10348,28 +10348,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1361097730" Language="SFX" Hash="4112835212">
+		<SoundBank Id="1361097730" Language="SFX" Hash="2136199121">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\hangar_normal</ObjectPath>
 			<ShortName>hangar_normal</ShortName>
 			<Path>hangar_normal.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3497710985" Name="hangar_ambient_hangar_blitz_v1_premium" ObjectPath="\Events\RxD\Hangar\hangar_ambient_hangar_blitz_v1_premium" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="888005467" Language="SFX">
-							<ShortName>Escape from Tarkov 12.10  OST - Rules of Engagement.wav</ShortName>
-							<Path>SFX\Escape from Tarkov 12.10  OST - Rules of Engagement_3F75BDB9.wem</Path>
-						</File>
-						<File Id="961109940" Language="SFX">
-							<ShortName>Escape From Tarkov - The Blood We Spill.wav</ShortName>
-							<Path>SFX\Escape From Tarkov - The Blood We Spill_3F75BDB9.wem</Path>
+						<File Id="497638682" Language="SFX">
+							<ShortName>Andrey Kulik - Hangar Music (2017).wav</ShortName>
+							<Path>SFX\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="984756495" Language="SFX">
 							<ShortName>Andrey Kulik - Battle Pass (World Of Tanks OST).wav</ShortName>
 							<Path>SFX\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem</Path>
-						</File>
-						<File Id="1027871928" Language="SFX">
-							<ShortName>Geneburn - Denial.wav</ShortName>
-							<Path>SFX\Geneburn - Denial_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
