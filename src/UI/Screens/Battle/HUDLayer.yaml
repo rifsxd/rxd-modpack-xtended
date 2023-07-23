@@ -985,6 +985,16 @@ Prototypes:
                         horizontalPolicy: "PercentOfChildrenSum"
                         verticalPolicy: "PercentOfMaxChild"
     -   class: "UIControl"
+        name: "SpeedometerBg"
+        components:
+            Background:
+                sprite: '~res:/Gfx/UI/BattleScreenHUD/rxd_SpeedometerBG'
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -92.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 26.000000
+    -   class: "UIControl"
         name: "Speedometer"
         pivot: [0.000000, 1.000000]
         input: false
@@ -992,23 +1002,23 @@ Prototypes:
             Background: {}
             Anchor:
                 leftAnchorEnabled: true
-                leftAnchor: -70.000000
+                leftAnchor: -108.000000
                 bottomAnchorEnabled: true
-                bottomAnchor: 4.000000
+                bottomAnchor: 61.000000
             LinearLayout:
                 orientation: "TopDown"
             SizePolicy:
                 horizontalPolicy: "FixedSize"
                 horizontalValue: 100.000000
                 verticalPolicy: "FixedSize"
-                verticalValue: 21.000000
+                verticalValue: 20.000000
             UIAnchorSafeAreaComponent:
                 leftSafeInset: "REVERSE"
                 bottomSafeInset: "REVERSE"
         children:
         -   class: "UIStaticText"
             name: "SpeedValueControl"
-            classes: "header5 not-localize"
+            classes: "header5"
             components:
                 UITextComponent:
                     text: "no_speed!"

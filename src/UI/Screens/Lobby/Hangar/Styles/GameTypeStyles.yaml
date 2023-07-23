@@ -24,11 +24,11 @@ StyleSheets:
 -   selector: ".game-type"
     properties:
         sizePolicy-horizontalValue:
-            value: 210.000000
+            value: 260.000000
             transitionTime: 0.150000
             transitionFunction: "LINEAR"
         sizePolicy-verticalValue:
-            value: 280.000000
+            value: 220.000000
             transitionTime: 0.150000
             transitionFunction: "LINEAR"
 -   selector: ".game-type:selected"
