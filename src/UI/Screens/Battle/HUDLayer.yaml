@@ -1004,7 +1004,7 @@ Prototypes:
             Background: {}
             Anchor:
                 leftAnchorEnabled: true
-                leftAnchor: -108.000000
+                leftAnchor: -110.000000
                 bottomAnchorEnabled: true
                 bottomAnchor: 15.000000
             LinearLayout:
