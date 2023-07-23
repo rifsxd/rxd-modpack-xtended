@@ -994,6 +994,8 @@ Prototypes:
                 leftAnchor: -92.000000
                 vCenterAnchorEnabled: true
                 vCenterAnchor: 26.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -22.000000
     -   class: "UIControl"
         name: "Speedometer"
         pivot: [0.000000, 1.000000]
@@ -1004,7 +1006,7 @@ Prototypes:
                 leftAnchorEnabled: true
                 leftAnchor: -108.000000
                 bottomAnchorEnabled: true
-                bottomAnchor: 61.000000
+                bottomAnchor: 15.000000
             LinearLayout:
                 orientation: "TopDown"
             SizePolicy:
