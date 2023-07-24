@@ -1,5 +1,7 @@
 @echo off
 
+color 0c
+
 REM Sets Variable & And Pull Info From File.
 
 REM Commenting Unused Code setlocal EnableExtensions EnableDelayedExpansion
@@ -7,8 +9,15 @@ REM Commenting Unused Code setlocal EnableExtensions EnableDelayedExpansion
 set /p version=<version.md
 set /p verbose=<verbose.md
 set versioning=version.md
+set /p vbuild=<build.md
+set build=build.md
+
 set modv=xtendedmodversion.txt
-set build=buildtime.txt
+set buildtxt=xtendedbuild.txt
+set /p version=<version.txt
+
+set /a sum=%vbuild%+1
+
 
 TITLE XTENDED - COMPILER %version%
 
@@ -33,19 +42,19 @@ ECHO 1 - Compile For PC - DX11
 ECHO 2 - Compile For MOBILE - ASTC
 ECHO 3 - Compile For MOBILE - Lesta - ASTC
 ECHO 4 - Compile For MOBILE-EMBED - ASTC
-ECHO 5 - Compile For All ( PC - DX11 ) , ( MOBILE - ASTC ) , ( MOBILE - Lesta - ASTC ) And ( MOBILE-EMBED - ASTC )
+ECHO a - Compile For All ( PC - DX11 ) , ( MOBILE - ASTC ) , ( MOBILE - Lesta - ASTC ) And ( MOBILE-EMBED - ASTC )
 ECHO w - Include Wwise Bank Files To Source
 ECHO v - Verbose Source Code Commits ( Quick Tip - Press 'Q' to exit logs! )
 ECHO e - EXIT
 ECHO.
-SET /P "M=Type 1, 2, 3, 4, 5, w, v or e then press ENTER: "
+SET /P "M=Type 1, 2, 3, 4, a, w, v or e then press ENTER: "
 ECHO.
 IF "%M%" EQU "" GOTO ERROR
 IF "%M%" EQU "1" GOTO DX11
 IF "%M%" EQU "2" GOTO ASTC
 IF "%M%" EQU "3" GOTO ASTC-LESTA
 IF "%M%" EQU "4" GOTO EMBED
-IF "%M%" EQU "5" GOTO ALL
+IF "%M%" EQU "a" GOTO ALL
 IF "%M%" EQU "w" GOTO WWISE
 IF "%M%" EQU "v" GOTO VER
 IF "%M%" EQU "e" GOTO EOF
@@ -62,6 +71,14 @@ ECHO.
 GOTO MENU
 
 :DX11
+
+
+(
+echo %sum%
+echo.
+echo %version%
+powershell date
+) > %build%
 
 ECHO ------------------------------------------
 
@@ -121,17 +138,22 @@ ECHO Finished Packaging Process For DX11!
 ECHO --------------------X----------------------
 ECHO.
 
-powershell date > ./%build%
-
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/pc/data/%modv%
+type .\%build% > ./pack/pc/data/%modv%
 
 GOTO MENU
 
 :ASTC
+
+(
+echo %sum%
+echo.
+echo %version%
+powershell date
+) > %build%
 
 ECHO ------------------------------------------
 
@@ -221,13 +243,12 @@ ECHO Finished Packaging Process For ASTC!
 ECHO --------------------X----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile/data/%modv%
+type .\%build% > ./pack/mobile/data/%modv%
 
 GOTO MENU
 
@@ -258,6 +279,13 @@ ECHO.
 GOTO MENU
 
 :ALL
+
+(
+echo %sum%
+echo.
+echo %version%
+powershell date
+) > %build%
 
 ECHO ------------------------------------------
 
@@ -317,13 +345,12 @@ ECHO Finished Packaging Process For DX11!
 ECHO --------------------+----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../..
 
-type .\%versioning% > ./pack/pc/data/%modv%
+type .\%build% > ./pack/pc/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -411,13 +438,12 @@ ECHO Finished Packaging Process For ASTC!
 ECHO --------------------+----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile/data/%modv%
+type .\%build% > ./pack/mobile/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -506,13 +532,11 @@ ECHO Finished Packaging Process For ASTC - Lesta!
 ECHO --------------------+----------------------
 ECHO.
 
-powershell date > ./%build%
-
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile-lesta/data/%modv%
+type .\%build% > ./pack/mobile-lesta/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -582,13 +606,12 @@ ECHO Finished Packaging Process For ASTC-EMBED!
 ECHO --------------------+----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile-embed/data/%modv%
+type .\%build% > ./pack/mobile-embed/data/%modv%
 
 ECHO.
 ECHO --------------------X----------------------
@@ -602,6 +625,13 @@ GOTO MENU
 
 :EMBED
 
+(
+echo %sum%
+echo.
+echo %version%
+powershell date
+) > %build%
+
 ECHO ------------------------------------------
 
 REM Does Cleaning Of Old Cache For MOBILE-EMBED.
@@ -670,17 +700,23 @@ ECHO Finished Packaging Process For ASTC-EMBED!
 ECHO --------------------+----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile-embed/data/%modv%
+type .\%build% > ./pack/mobile-embed/data/%modv%
 
 GOTO MENU
 
 :ASTC-LESTA
+
+(
+echo %sum%
+echo.
+echo %version%
+powershell date
+) > %build%
 
 ECHO ------------------------------------------
 
@@ -769,12 +805,11 @@ ECHO Finished Packaging Process For ASTC - Lesta!
 ECHO --------------------X----------------------
 ECHO.
 
-powershell date > ./%build%
 
 REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%versioning% > ./pack/mobile-lesta/data/%modv%
+type .\%build% > ./pack/mobile-lesta/data/%modv%
 
 GOTO MENU
