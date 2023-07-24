@@ -1,5 +1,5 @@
 1
-rxd_Mini@2x.packed.webp
-792 792
+rxd_Radar@2x.packed.webp
+1000 1000
 1
-4 4 792 792 0 396 0 frame0
+0 0 1000 1000 0 500 0 frame0

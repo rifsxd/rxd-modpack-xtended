@@ -1,5 +1,5 @@
 1
-Damage_Marker_New@2x.packed.webp
+rxd_DamageMarker@2x.packed.webp
 220 260
 1
 20 1300 220 260 0 -4 0 frame0

@@ -1,0 +1,6 @@
+1
+rxd_InfoPanel@2x.packed.webp
+352 38
+2
+0 0 352 38 0 0 0 frame0
+0 0 0 0 0 0 0 frame1
