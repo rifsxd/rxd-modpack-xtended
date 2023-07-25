@@ -46,7 +46,7 @@ Prototypes:
         name: "UISightCursor"
         size: [800.000000, 600.000000]
         input: false
-        classes: "sight ammo-type=atgm state=over aim-version=aim1"
+        classes: "sight ammo-type=atgm state=over aim-version=aim2"
         components:
             UIAnimationComponent:
                 animations: "SIGHT_CURSOR_SWITCH_AMMO_ANIM,~res:/UI/Screens/Battle/CursorFadeInOutAnimation.animation"
