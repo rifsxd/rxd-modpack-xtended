@@ -19350,7 +19350,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3888261067" Language="SFX" Hash="177526455">
+		<SoundBank Id="3888261067" Language="SFX" Hash="3068852722">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_battle_basic</ObjectPath>
 			<ShortName>ui_battle_basic</ShortName>
 			<Path>ui_battle_basic.bnk</Path>
