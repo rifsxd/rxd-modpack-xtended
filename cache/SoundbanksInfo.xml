@@ -19350,7 +19350,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3888261067" Language="SFX" Hash="3068852722">
+		<SoundBank Id="3888261067" Language="SFX" Hash="27370425">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_battle_basic</ObjectPath>
 			<ShortName>ui_battle_basic</ShortName>
 			<Path>ui_battle_basic.bnk</Path>
@@ -19475,8 +19475,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1567669108" Name="GUI_notifications_FX_sight_convergence" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_sight_convergence" DurationType="OneShot" DurationMin="0.953333" DurationMax="0.953333">
+				<Event Id="1567669108" Name="GUI_notifications_FX_sight_convergence" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_sight_convergence" DurationType="OneShot" DurationMin="0.947979" DurationMax="0.953333">
 					<IncludedMemoryFiles>
+						<File Id="343869278" Language="SFX">
+							<ShortName>821527579.wav</ShortName>
+							<Path>SFX\821527579_3F75BDB9.wem</Path>
+						</File>
 						<File Id="567306097" Language="SFX">
 							<ShortName>764402563.wav</ShortName>
 							<Path>SFX\764402563_3F75BDB9.wem</Path>
@@ -19487,19 +19491,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1065571373" Name="GUI_notifications_FX_snipermode_off" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_snipermode_off" DurationType="OneShot" DurationMin="1.205986" DurationMax="1.205986">
+				<Event Id="1065571373" Name="GUI_notifications_FX_snipermode_off" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_snipermode_off" DurationType="OneShot" DurationMin="1.170437" DurationMax="1.170437">
 					<IncludedMemoryFiles>
-						<File Id="491701178" Language="SFX">
-							<ShortName>491701178.wav</ShortName>
-							<Path>SFX\491701178_3F75BDB9.wem</Path>
+						<File Id="585642304" Language="SFX">
+							<ShortName>Hatch Open.wav</ShortName>
+							<Path>SFX\Hatch Open_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1000076641" Name="GUI_notifications_FX_snipermode_on" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_snipermode_on" DurationType="OneShot" DurationMin="0.976689" DurationMax="0.976689">
+				<Event Id="1000076641" Name="GUI_notifications_FX_snipermode_on" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_snipermode_on" DurationType="OneShot" DurationMin="1.427542" DurationMax="1.427542">
 					<IncludedMemoryFiles>
-						<File Id="831973645" Language="SFX">
-							<ShortName>831973645.wav</ShortName>
-							<Path>SFX\831973645_3F75BDB9.wem</Path>
+						<File Id="162788964" Language="SFX">
+							<ShortName>Hatch Close.wav</ShortName>
+							<Path>SFX\Hatch Close_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -19515,19 +19519,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="118322016" Name="GUI_notifications_FX_zoom_in" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_zoom_in" DurationType="OneShot" DurationMin="0.976689" DurationMax="0.976689">
+				<Event Id="118322016" Name="GUI_notifications_FX_zoom_in" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_zoom_in" DurationType="OneShot" DurationMin="0.548526" DurationMax="0.548526">
 					<IncludedMemoryFiles>
-						<File Id="831973645" Language="SFX">
-							<ShortName>831973645.wav</ShortName>
-							<Path>SFX\831973645_3F75BDB9.wem</Path>
+						<File Id="698144816" Language="SFX">
+							<ShortName>909829854.wav</ShortName>
+							<Path>SFX\909829854_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2167482407" Name="GUI_notifications_FX_zoom_out" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_zoom_out" DurationType="OneShot" DurationMin="1.205986" DurationMax="1.205986">
+				<Event Id="2167482407" Name="GUI_notifications_FX_zoom_out" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_zoom_out" DurationType="OneShot" DurationMin="0.458549" DurationMax="0.458549">
 					<IncludedMemoryFiles>
-						<File Id="491701178" Language="SFX">
-							<ShortName>491701178.wav</ShortName>
-							<Path>SFX\491701178_3F75BDB9.wem</Path>
+						<File Id="209878469" Language="SFX">
+							<ShortName>790003751.wav</ShortName>
+							<Path>SFX\790003751_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
