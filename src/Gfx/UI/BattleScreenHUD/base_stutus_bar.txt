@@ -1,0 +1,6 @@
+1
+rxd_InfoPanel.packed.webp
+176 19
+2
+0 0 176 19 0 0 0 frame0
+0 0 0 0 0 0 0 frame1

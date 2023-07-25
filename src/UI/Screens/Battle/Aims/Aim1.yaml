@@ -1,5 +1,5 @@
 Header:
-    version: 142
+    version: 135
 ImportedPackages:
 - "~res:/UI/Screens/Battle/Shell.yaml"
 - "~res:/UI/Screens/Battle/UGN.yaml"
@@ -60,28 +60,21 @@ Prototypes:
         children:
         -   class: "UIControl"
             name: "arcadeCursor"
-            position: [33.000000, 0.000000]
-            size: [233.000000, 300.000000]
+            size: [800.000000, 600.000000]
             visible: true
             input: false
             classes: "arcade-sight"
             components:
                 Background:
-                    perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
-                Anchor:
-                    hCenterAnchorEnabled: true
-                    vCenterAnchorEnabled: true
-                LinearLayout:
-                    dynamicSpacing: true
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                 SizePolicy:
-                    horizontalPolicy: "PercentOfContent"
-                    verticalPolicy: "PercentOfContent"
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
         -   class: "UIControl"
             name: "rotateControl"
             size: [800.000000, 600.000000]
             pivot: [0.500000, 0.500000]
             input: false
-            classes: "rotate-part"
             components:
                 Anchor:
                     enabled: true
@@ -96,9 +89,11 @@ Prototypes:
                 size: [220.000000, 60.000000]
                 visible: false
                 input: false
-                classes: "snipe-sight"
+                classes: "snipe-sight camera-aim"
                 components:
-                    Background: {}
+                    Background:
+                        frame: 0
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
@@ -191,7 +186,7 @@ Prototypes:
                             frame: 6
             -   prototype: "UGN/UgnUvn"
                 name: "UvnTop"
-                position: [0.000000, 200.000000]
+                position: [150.000000, 200.000000]
                 pivot: [0.500000, 1.000000]
                 components:
                     Background:
@@ -220,14 +215,10 @@ Prototypes:
                 components:
                     Anchor:
                         hCenterAnchorEnabled: true
+                        hCenterAnchor: 27.000000
                         vCenterAnchorEnabled: true
                     LinearLayout:
-                        padding: "8;0"
                         spacing: 3.000000
-                    SizePolicy:
-                        horizontalPolicy: "FixedSize"
-                        horizontalValue: 84.000000
-                        verticalPolicy: "PercentOfMaxChild"
                 children:
                 -   class: "UIControl"
                     name: "atgm-bg"
@@ -238,11 +229,11 @@ Prototypes:
                             spriteModification: ["FLIP_HORIZONTAL"]
                         Anchor:
                             leftAnchorEnabled: true
-                            vCenterAnchorEnabled: true
+                            leftAnchor: 30.000000
                         IgnoreLayout: {}
                         SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
                         StyleSheet:
                             styles: "~res:/UI/Screens/Battle/Aims/AimBackground.style.yaml"
                 -   class: "UIStaticText"
@@ -251,33 +242,36 @@ Prototypes:
                     components:
                         Anchor:
                             topAnchorEnabled: true
-                            topAnchor: 12.000000
+                            topAnchor: 62.00000
                         UITextComponent:
                             text: "350"
                             colorInheritType: "COLOR_IGNORE_PARENT"
                             shadowOffset: [0.000000, -1.000000]
-                            align: ["RIGHT", "VCENTER"]
+                            align: ["CENTER", "VCENTER"]
                         SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 40.000000
+                            verticalPolicy: "PercentOfParent"
                         StyleSheet:
                             inheritsStylesFromParent: true
                             styles: "~res:/UI/Screens3/OldFont.style.yaml"
                 -   class: "UIStaticText"
                     name: "m"
+                    visible: false
                     classes: "t-old-cursor-font"
                     components:
                         Anchor:
                             topAnchorEnabled: true
-                            topAnchor: 12.000000
+                            topAnchor: 8.00000
                         UITextComponent:
                             text: "#common:Shortening/Meter"
                             colorInheritType: "COLOR_IGNORE_PARENT"
                             shadowOffset: [0.000000, -1.000000]
                             align: ["LEFT", "VCENTER"]
                         SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 40.000000
+                            verticalPolicy: "PercentOfParent"
                         StyleSheet:
                             inheritsStylesFromParent: true
                             styles: "~res:/UI/Screens3/OldFont.style.yaml"
@@ -289,6 +283,8 @@ Prototypes:
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
+                    LinearLayout:
+                        orientation: "TopDown"
                     SizePolicy:
                         horizontalPolicy: "PercentOfMaxChild"
                         verticalPolicy: "PercentOfFirstChild"
@@ -303,9 +299,6 @@ Prototypes:
                         Anchor:
                             hCenterAnchorEnabled: true
                             vCenterAnchorEnabled: true
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfMaxChild"
-                            verticalPolicy: "PercentOfMaxChild"
                     children:
                     -   class: "UIControl"
                         name: "atgm-bg"
@@ -315,29 +308,30 @@ Prototypes:
                             Background: {}
                             Anchor:
                                 rightAnchorEnabled: true
-                                rightAnchor: -7.000000
-                                vCenterAnchorEnabled: true
-                            IgnoreLayout: {}
+                                rightAnchor: 5.000000
                             SizePolicy:
-                                horizontalPolicy: "PercentOfContent"
-                                verticalPolicy: "PercentOfContent"
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
                             StyleSheet:
                                 styles: "~res:/UI/Screens/Battle/Aims/AimBackground.style.yaml"
                     -   class: "UIStaticText"
                         name: "reloadTime"
+                        position: [25.000000, 0.000000]
                         classes: "t-old-cursor-font"
                         components:
-                            Anchor:
-                                topAnchorEnabled: true
-                                topAnchor: 12.000000
                             UITextComponent:
                                 text: "12.0"
                                 shadowOffset: [0.000000, -1.000000]
                                 align: ["RIGHT", "VCENTER"]
+                            Anchor:
+                                topAnchorEnabled: true
+                                topAnchor: 8.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 65.000000
                             SizePolicy:
                                 horizontalPolicy: "FixedSize"
                                 horizontalValue: 40.000000
-                                verticalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
                             StyleSheet:
                                 inheritsStylesFromParent: true
                                 styles: "~res:/UI/Screens3/OldFont.style.yaml"
@@ -349,9 +343,7 @@ Prototypes:
                             sprite: "~res:/Gfx/Battle/HUD/aim/atgm/icon-fuel"
                         Anchor:
                             rightAnchorEnabled: true
-                            rightAnchor: -4.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: -20.000000
+                            rightAnchor: 12.000000
                         SizePolicy:
                             horizontalPolicy: "PercentOfContent"
                             verticalPolicy: "PercentOfContent"
@@ -404,15 +396,13 @@ Prototypes:
         name: "GunAim"
         position: [150.000000, 150.000000]
         size: [23.000000, 19.000000]
-        pivot: [0.500000, 0.500000]
+        pivot: [0.500000, 0.000000]
         input: false
         components:
             Background:
-                sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_gun-marker"
-                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
-            SizePolicy:
-                horizontalPolicy: "PercentOfContent"
-                verticalPolicy: "PercentOfContent"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_gun-marker"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                
     -   class: "UIControl"
         name: "GunAimServer"
         position: [150.000000, 150.000000]
@@ -427,3 +417,4 @@ Prototypes:
             SizePolicy:
                 horizontalPolicy: "PercentOfContent"
                 verticalPolicy: "PercentOfContent"
+    

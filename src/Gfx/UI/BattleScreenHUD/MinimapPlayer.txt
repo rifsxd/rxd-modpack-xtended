@@ -1,5 +1,5 @@
 1
-RXD.packed.webp
-49 49
+rxd_Player.packed.webp
+51 51
 1
-1670 70 49 49 0 0 0 frame0
+0 0 51 51 0 0 0 frame0

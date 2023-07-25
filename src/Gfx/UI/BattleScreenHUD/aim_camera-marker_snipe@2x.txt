@@ -1,5 +1,6 @@
 1
-rxd_sniper@2x.packed.webp
-2048 2048
-1
-0 0 2048 2048 0 0 0 frame0
+rxd_sight2@2x.packed.webp
+1998 1998
+2
+1 1 1998 1998 0 0 0 frame0
+1 1 1998 1998 0 0 0 frame1

@@ -5,6 +5,11 @@
   "BasePlatform": "Windows",
   "Plugins": [
    {
+    "Name": "Wwise Matrix Reverb",
+    "ID": "7536643",
+    "DLL": "AkMatrixReverb"
+   },
+   {
     "Name": "System",
     "ID": "11403271",
     "DLL": "DefaultSink"

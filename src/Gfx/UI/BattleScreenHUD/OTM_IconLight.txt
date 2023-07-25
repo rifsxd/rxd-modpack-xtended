@@ -1,5 +1,5 @@
 1
-OTM_CountingTank.packed.webp
+rxd_TankTypes.packed.webp
 40 40
 1
-81 100 40 40 0 0 0 frame0
+80 0 40 40 0 0 0 frame0

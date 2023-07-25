@@ -1,3 +1,129 @@
+commit d8bfbea5f91bcab14c9284b17b60f54c151e8179
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 23 04:05:17 2023 +0600
+
+    Update verbose.md
+
+commit 5cf40bfdfa208f4f357a7c3c1bbf12663aa5a7ab
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 23 03:28:09 2023 +0600
+
+    new reworked battle loading screens
+
+commit 4ed9619f18830abc85d77a060e6ea2b4dd99f6ce
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 22 23:36:51 2023 +0600
+
+    hangar music reworked
+
+commit a50d67f6bce3192484e6672fb6d9fde77670e912
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 22 20:58:50 2023 +0600
+
+    added blur bg for battletypeinfo
+
+commit 060132767831a3f0a6b0374c3a46d1e7498280c2
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 22 20:42:36 2023 +0600
+
+    Update BattleTypeInfoPage.yaml
+
+commit 330ad6b391a90a532ebf2603b175123358af1eb5
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 22 20:40:38 2023 +0600
+
+    new UI changes to gameselection menu
+
+commit 455083010d10d63c328410dcd2db55ee98d14321
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sat Jul 22 05:18:37 2023 +0600
+
+    exit screen added
+
+commit 9102f698fe6984b23d24bf6717fa8abcbf3e5f36
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 23:24:10 2023 +0600
+
+    crew custom event configured
+
+commit 5b40aecad3fc58442131371d78d12b362e40cdea
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 23:12:22 2023 +0600
+
+    Update sounds.yaml
+
+commit cea90dc725a1bddc5efc658b68a5b3a915a40051
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 23:10:58 2023 +0600
+
+    Update build.bat
+
+commit 4f0ee91f41efa52b1558d9664b07d9a19b73de04
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 23:09:08 2023 +0600
+
+    Create voiceover_crew.bnk
+
+commit dc8a38ccfb427d2ec2e40d00b92b4b96069c9b13
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 22:56:00 2023 +0600
+
+    test final commit ( probably :> )
+
+commit 29b7191ea90b3a575bdbfeaa9ed0ef434f564f6e
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 20:30:35 2023 +0600
+
+    hangar reworked
+
+commit 1bedf950892afd2d39e7011ffd4847b3563e8cbc
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 08:26:46 2023 +0600
+
+    tweaked atgm event
+
+commit fd8b7f2813a8c9fbf65b216cf08f95f3259fd840
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 08:11:58 2023 +0600
+
+    wwise banks cache --> src
+
+commit 4b267c84dd5c82998e075ac2e840a9c5dfb9ab31
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Fri Jul 21 07:58:30 2023 +0600
+
+    new ui changes
+
+commit be1f12e328893457fdc1c2d64a095f37db599416
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Thu Jul 20 22:23:07 2023 +0600
+
+    cache update
+
+commit 4c74912cddeb5b9bb241ca86a0edf4c7a68cbb89
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Thu Jul 20 02:21:27 2023 +0600
+
+    added better sights v2 varient - added atgm for weapons
+
+commit 2fb689846d70b0d04c69ba64c37adacfe1917cea
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 16 19:17:59 2023 +0600
+
+    Update version.md
+
+commit 5613efa8c9a03eec5b9d7648f9e08c7eaf9b6108
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Sun Jul 16 19:09:52 2023 +0600
+
+    version 2.4.0 test branch
+
+commit 8e0ee090b84fa3fdb4fe2c5e8574552927503244
+Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
+Date:   Thu Jul 13 04:05:29 2023 +0600
+
+    Update verbose.md
+
 commit 16940c1d9a683bae1f3e04f8d68204fd9bb56669
 Author: Rifat Ibn Azad <33044977+RifsxD@users.noreply.github.com>
 Date:   Thu Jul 13 01:51:36 2023 +0600
