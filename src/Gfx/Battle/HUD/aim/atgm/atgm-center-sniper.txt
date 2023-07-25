@@ -1,5 +1,5 @@
 1
-rxd_ATGM.packed.webp
+rxd_ATGM_S.packed.webp
 850 850
 1
 1 852 850 850 0 0 0 frame0

@@ -62,9 +62,12 @@ StyleSheets:
         bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center"
 -   selectors:
     - ".sight.atgm ? .snipe-sight .camera-aim"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-sniper"
+-   selectors:
     - ".sight.default-aim.atgm ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center"
+        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-sniper"
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.default-aim .arcade-sight"
