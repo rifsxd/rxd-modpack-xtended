@@ -46,7 +46,7 @@ Prototypes:
         name: "UISightCursor"
         size: [800.000000, 600.000000]
         input: false
-        classes: "sight ammo-type=atgm state=over aim-version=aim1"
+        classes: "sight ammo-type=shell state=over aim-version=aim1"
         components:
             UIAnimationComponent:
                 animations: "SIGHT_CURSOR_SWITCH_AMMO_ANIM,~res:/UI/Screens/Battle/CursorFadeInOutAnimation.animation"
@@ -97,6 +97,65 @@ Prototypes:
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 232.000000
+                        verticalPolicy: "PercentOfMaxChild"
+                children:
+                -   class: "UIControl"
+                    name: "Decoration"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "decoration"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    children:
+                    -   class: "UIControl"
+                        name: "DecorateTop"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Anchor:
+                                leftAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "DecorateBottom"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
+                                spriteModification: ["FLIP_VERTICAL"]
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Anchor:
+                                leftAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Camera"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "camera-aim"
+                    components:
+                        Background:
+                            perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
             -   prototype: "UGN/UgnUvn"
                 name: "UgnLeft"
                 position: [48.000000, 0.000000]

@@ -46,7 +46,7 @@ Prototypes:
         name: "UISightCursor"
         size: [800.000000, 600.000000]
         input: false
-        classes: "sight ammo-type=atgm state=over aim-version=aim2"
+        classes: "sight ammo-type=shell state=over aim-version=aim2"
         components:
             UIAnimationComponent:
                 animations: "SIGHT_CURSOR_SWITCH_AMMO_ANIM,~res:/UI/Screens/Battle/CursorFadeInOutAnimation.animation"
@@ -60,6 +60,7 @@ Prototypes:
         children:
         -   class: "UIControl"
             name: "arcadeCursor"
+                                           
             size: [800.000000, 600.000000]
             visible: true
             input: false
@@ -67,6 +68,11 @@ Prototypes:
             components:
                 Background:
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                       
+                                              
+                                              
+                             
+                                        
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
                     verticalPolicy: "PercentOfParent"
@@ -75,6 +81,7 @@ Prototypes:
             size: [800.000000, 600.000000]
             pivot: [0.500000, 0.500000]
             input: false
+                                  
             components:
                 Anchor:
                     enabled: true
@@ -97,6 +104,65 @@ Prototypes:
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 232.000000
+                        verticalPolicy: "PercentOfMaxChild"
+                children:
+                -   class: "UIControl"
+                    name: "Decoration"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "decoration"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    children:
+                    -   class: "UIControl"
+                        name: "DecorateTop"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Anchor:
+                                leftAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "DecorateBottom"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
+                                spriteModification: ["FLIP_VERTICAL"]
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Anchor:
+                                leftAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Camera"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "camera-aim"
+                    components:
+                        Background:
+                            perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
             -   prototype: "UGN/UgnUvn"
                 name: "UgnLeft"
                 position: [48.000000, 0.000000]
@@ -159,7 +225,12 @@ Prototypes:
                         hCenterAnchor: 27.000000
                         vCenterAnchorEnabled: true
                     LinearLayout:
+                                      
                         spacing: 3.000000
+                               
+                                                     
+                                                  
+                                                           
                 children:
                 -   class: "UIControl"
                     name: "atgm-bg"
@@ -240,6 +311,9 @@ Prototypes:
                         Anchor:
                             hCenterAnchorEnabled: true
                             vCenterAnchorEnabled: true
+                                   
+                                                                 
+                                                               
                     children:
                     -   class: "UIControl"
                         name: "atgm-bg"
@@ -250,6 +324,8 @@ Prototypes:
                             Anchor:
                                 rightAnchorEnabled: true
                                 rightAnchor: 5.000000
+                                                          
+                                            
                             SizePolicy:
                                 horizontalPolicy: "PercentOfParent"
                                 verticalPolicy: "PercentOfParent"
@@ -260,6 +336,9 @@ Prototypes:
                         position: [25.000000, 0.000000]
                         classes: "t-old-cursor-font"
                         components:
+                                   
+                                                      
+                                                    
                             UITextComponent:
                                 text: "12.0"
                                 shadowOffset: [0.000000, -1.000000]
@@ -285,6 +364,8 @@ Prototypes:
                         Anchor:
                             rightAnchorEnabled: true
                             rightAnchor: 12.000000
+                                                     
+                                                    
                         SizePolicy:
                             horizontalPolicy: "PercentOfContent"
                             verticalPolicy: "PercentOfContent"
@@ -344,6 +425,8 @@ Prototypes:
                 sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_gun-marker"
                 perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                 
+                                                    
+                                                  
     -   class: "UIControl"
         name: "GunAimServer"
         position: [150.000000, 150.000000]
