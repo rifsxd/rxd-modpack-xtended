@@ -128,9 +128,7 @@ Prototypes:
                         name: "DecorateTop"
                         input: false
                         components:
-                            Background:
-                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
-                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Background: []
                             Anchor:
                                 leftAnchorEnabled: true
                             SizePolicy:
@@ -140,10 +138,7 @@ Prototypes:
                         name: "DecorateBottom"
                         input: false
                         components:
-                            Background:
-                                sprite: "~res:/Gfx/UI/BattleScreenHUD/bg_aim-decoration"
-                                spriteModification: ["FLIP_VERTICAL"]
-                                perPixelAccuracy: "PER_PIXEL_ACCURACY_FORCED"
+                            Background: []
                             Anchor:
                                 leftAnchorEnabled: true
                             SizePolicy:
@@ -254,7 +249,7 @@ Prototypes:
                     components:
                         Anchor:
                             topAnchorEnabled: true
-                            topAnchor: 62.00000
+                            topAnchor: 108.00000
                         UITextComponent:
                             text: "350"
                             colorInheritType: "COLOR_IGNORE_PARENT"
@@ -345,9 +340,9 @@ Prototypes:
                                 align: ["RIGHT", "VCENTER"]
                             Anchor:
                                 topAnchorEnabled: true
-                                topAnchor: 8.000000
+                                topAnchor: 40.000000
                                 rightAnchorEnabled: true
-                                rightAnchor: 65.000000
+                                rightAnchor: 50.000000
                             SizePolicy:
                                 horizontalPolicy: "FixedSize"
                                 horizontalValue: 40.000000
