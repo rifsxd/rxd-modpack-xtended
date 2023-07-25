@@ -189,8 +189,6 @@ ECHO.
 
 del /S "*.dds"
 
-del /S "*.pvr"
-
 
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
@@ -222,6 +220,8 @@ rd /s /q "WwiseSound/sv"
 ECHO.
 ECHO Cleaned Embed Specific Configs!
 ECHO.
+
+xcopy /s /y "..\..\..\src\3d\*.yaml" "3d\"
 
 timeout 2
 
@@ -386,8 +386,6 @@ ECHO.
 
 del /S "*.dds"
 
-del /S "*.pvr"
-
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
 ECHO.
@@ -417,6 +415,8 @@ rd /s /q "WwiseSound/sv"
 ECHO.
 ECHO Cleaned Embed Specific Configs!
 ECHO.
+
+xcopy /s /y "..\..\..\src\3d\*.yaml" "3d\"
 
 timeout 2
 
@@ -479,8 +479,6 @@ ECHO.
 
 del /S "*.dds"
 
-del /S "*.pvr"
-
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
 ECHO.
@@ -511,6 +509,8 @@ rd /s /q "WwiseSound/sv"
 ECHO.
 ECHO Cleaned Embed Specific Configs!
 ECHO.
+
+xcopy /s /y "..\..\..\src\3d\*.yaml" "3d\"
 
 timeout 2
 
@@ -784,6 +784,8 @@ rd /s /q "WwiseSound/sv"
 ECHO.
 ECHO Cleaned Embed Specific Configs!
 ECHO.
+
+xcopy /s /y "..\..\..\src\3d\*.yaml" "3d\"
 
 timeout 2
 
