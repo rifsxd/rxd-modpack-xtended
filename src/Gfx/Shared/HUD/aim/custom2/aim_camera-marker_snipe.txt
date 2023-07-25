@@ -1,0 +1,6 @@
+1
+rxd_sight2.packed.webp
+998 998
+2
+1 1 998 998 0 0 0 frame0
+1 1 998 998 0 0 0 frame1

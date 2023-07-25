@@ -77,14 +77,22 @@ StyleSheets:
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.aim1 .arcade-sight"
-    - ".sight.shell.aim1 ? .snipe-sight .camera-aim"
     properties:
         bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_camera-marker"
 -   selectors:
+    - ".sight.shell.aim1 ? .snipe-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_camera-marker_snipe"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
     - ".sight.shell.aim2 .arcade-sight"
-    - ".sight.shell.aim2 ? .snipe-sight .camera-aim"
     properties:
         bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom2/aim_camera-marker"
+-   selectors:
+    - ".sight.shell.aim2 ? .snipe-sight"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom2/aim_camera-marker_snipe"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.aimed .arcade-sight"
     - ".sight.shell.aimed ? .snipe-sight"
