@@ -2,4 +2,4 @@
 rxd_ribbons_blue.packed.webp
 600 50
 1
-250 0 600 50 0 0 0 
+0 100 600 50 0 0 0 frame0
