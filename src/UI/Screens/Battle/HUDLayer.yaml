@@ -985,23 +985,12 @@ Prototypes:
                         horizontalPolicy: "PercentOfChildrenSum"
                         verticalPolicy: "PercentOfMaxChild"
     -   class: "UIControl"
-        name: "SpeedometerBg"
-        components:
-            Background:
-                sprite: '~res:/Gfx/UI/BattleScreenHUD/rxd_SpeedometerBG'
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: -92.000000
-                vCenterAnchorEnabled: true
-                vCenterAnchor: 26.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: -22.000000
-    -   class: "UIControl"
         name: "Speedometer"
         pivot: [0.000000, 1.000000]
         input: false
         components:
-            Background: {}
+            Background: 
+                sprite: '~res:/Gfx/UI/BattleScreenHUD/rxd_SpeedometerBG'
             Anchor:
                 leftAnchorEnabled: true
                 leftAnchor: -110.000000
