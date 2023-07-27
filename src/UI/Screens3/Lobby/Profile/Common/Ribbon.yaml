@@ -123,8 +123,7 @@ Prototypes:
                 input: false
                 classes: "ribbon-strip"
                 components:
-                    Background: 
-                        sprite: "~res:/Gfx/Shared/ribbons/BaseProtection"
+                    Background: []
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
