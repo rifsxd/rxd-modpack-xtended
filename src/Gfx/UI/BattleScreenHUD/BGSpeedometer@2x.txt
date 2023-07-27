@@ -1,5 +1,5 @@
 1
-RXD.packed.webp
+RXD@2x.packed.webp
 34 64
 1
 2800 20 34 64 0 24 0 frame0

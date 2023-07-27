@@ -1,5 +1,5 @@
 1
-RXD.packed@2x.webp
+RXD@2x.packed.webp
 102 102
 1
 3562 460 102 102 0 0 0 
