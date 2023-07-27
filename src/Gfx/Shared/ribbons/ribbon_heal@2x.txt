@@ -1,5 +1,5 @@
 1
-rxd_ribbons@2x.packed.webp
-50 50
+rxd_ribbons_blue@2x.packed.webp
+1200 100
 1
-250 0 50 50 0 0 0 
+250 0 1200 100 0 0 0 
