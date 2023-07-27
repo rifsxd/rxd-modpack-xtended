@@ -1,5 +1,5 @@
 1
-texture0@2x.packed.webp
-128 128
+rxd_Ribbons@2x.packed.webp
+360 136
 1
-512 155 90 92 21 17 0 frame0
+1800 0 360 136 0 0 0 frame0

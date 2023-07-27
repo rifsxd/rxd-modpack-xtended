@@ -1,5 +1,0 @@
-1
-rxd_ribbons_green.packed.webp
-600 50
-1
-0 450 600 50 0 0 0 frame0
