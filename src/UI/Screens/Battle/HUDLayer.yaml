@@ -990,7 +990,7 @@ Prototypes:
         input: false
         components:
             Background: 
-                sprite: '~res:/Gfx/UI/BattleScreenHUD/rxd_SpeedometerBG'
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_SpeedometerBG"
             Anchor:
                 leftAnchorEnabled: true
                 leftAnchor: -110.000000
@@ -2017,7 +2017,7 @@ Prototypes:
         classes: "hide-replay"
         components:
             Background:
-                sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_fps_bg"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_fps_bg.psd"
             Anchor:
                 rightAnchorEnabled: true
                 topAnchorEnabled: true
@@ -2047,7 +2047,7 @@ Prototypes:
         classes: "hide-replay"
         components:
             Background:
-                sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_ping_bg"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_ping_bg.psd"
             Anchor:
                 leftAnchorEnabled: true
                 topAnchorEnabled: true

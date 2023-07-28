@@ -130,7 +130,7 @@ Prototypes:
     input: false
     components:
         Background:
-            sprite: "~res:/Gfx/UI/BattleScreenHUD/minimap"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_minimap.psd"
             frame: 0
         Anchor:
             leftAnchorEnabled: true
