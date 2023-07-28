@@ -8,7 +8,7 @@ ImportedPackages:
 - "~res:/UI/Screens/Battle/Fonts.yaml"
 StyleSheets:     
 -   selectors:
-    - ".black-tankss"
+    - ".black-tanks"
     properties:
         bg-drawType: "DRAW_FILL"
         bg-color: [0.000000, 0.000000, 0.000000, 0.000000]
@@ -221,7 +221,7 @@ Prototypes:
                 verticalPolicy: "PercentOfParent"
     -   class: "UIControl"
         name: "tank-icon"
-        classes: "black-tankss"
+        classes: "black-tanks"
         input: false
         components:
             LinearLayout:
