@@ -1,0 +1,5 @@
+1
+INT_OPT_DEV.packed.webp
+48 48
+1
+77 1 36 36 6 6 0 frame0

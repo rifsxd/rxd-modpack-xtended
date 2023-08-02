@@ -1,0 +1,5 @@
+1
+INT_OPT_DEV@2x.packed.webp
+96 96
+1
+230 2 72 72 12 12 0 frame0
