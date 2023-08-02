@@ -124,7 +124,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -229,7 +229,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -331,7 +331,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -424,7 +424,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -518,7 +518,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -582,7 +582,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -592,7 +592,7 @@ ECHO.
 ECHO Decoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe decode ./ --replace --force
+..\..\..\bin\dvplgo.exe dcp
 
 ECHO.
 ECHO Decoded To LZ4 Compression - DVPL!
@@ -676,7 +676,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
@@ -686,7 +686,7 @@ ECHO.
 ECHO Decoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe decode ./ --replace --force
+..\..\..\bin\dvplgo.exe dcp
 
 ECHO.
 ECHO Decoded To LZ4 Compression - DVPL!
@@ -793,7 +793,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplc.exe encode ./ --replace --force
+..\..\..\bin\dvplgo.exe cp
 
 ECHO.
 ECHO Encoded To LZ4 Compression - DVPL!
