@@ -23,7 +23,7 @@
         input: false,
         components:
           {
-            Background: { sprite: "~res:/Gfx/UI/RXDLoadingPanel/vzvods" },
+            Background: { sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_vzvods" },
             IgnoreLayout: {},
             SizePolicy:
               {
@@ -76,7 +76,7 @@
             Background:
               {
                 drawType: DRAW_STRETCH_BOTH,
-                sprite: "~res:/Gfx/UI/RXDLoadingPanel/table-cell-bg.psd",
+                sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_table-cell-bg.psd",
               },
             LinearLayout: { padding: 4.000000 },
             SizePolicy:
@@ -347,7 +347,7 @@
             Background:
               {
                 drawType: DRAW_STRETCH_BOTH,
-                sprite: "~res:/Gfx/UI/RXDLoadingPanel/table-cell-bg.psd",
+                sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_table-cell-bg.psd",
               },
             SizePolicy:
               {
@@ -495,7 +495,7 @@
                       {
                         Background:
                           {
-                            sprite: "~res:/Gfx/UI/RXDLoadingPanel/LoadingTable",
+                            sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_TeamTable",
                           },
                         SizePolicy: { horizontalPolicy: PercentOfParent },
                       },
@@ -832,7 +832,7 @@
                                     Background:
                                       {
                                         drawType: DRAW_STRETCH_BOTH,
-                                        sprite: "~res:/Gfx/UI/RXDLoadingPanel/gradient-separator.psd",
+                                        sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_gradient-separator.psd",
                                         spriteModification: [FLIP_HORIZONTAL],
                                       },
                                     Anchor:
@@ -859,7 +859,7 @@
                                     Background:
                                       {
                                         drawType: DRAW_STRETCH_BOTH,
-                                        sprite: "~res:/Gfx/UI/RXDLoadingPanel/gradient-separator.psd",
+                                        sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_gradient-separator.psd",
                                       },
                                     Anchor:
                                       {
@@ -999,7 +999,7 @@
                                                       Background:
                                                         {
                                                           drawType: DRAW_ALIGNED,
-                                                          sprite: "~res:/Gfx/UI/RXDLoadingPanel/rating-bg.psd",
+                                                          sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_rating-bg.psd",
                                                           spriteModification:
                                                             [FLIP_HORIZONTAL],
                                                         },
@@ -1061,7 +1061,7 @@
                                                       Background:
                                                         {
                                                           drawType: DRAW_ALIGNED,
-                                                          sprite: "~res:/Gfx/UI/RXDLoadingPanel/rating-bg.psd",
+                                                          sprite: "~res:/Gfx/UI/RXDLoadingPanel/rxd_rating-bg.psd",
                                                         },
                                                       SizePolicy:
                                                         {
