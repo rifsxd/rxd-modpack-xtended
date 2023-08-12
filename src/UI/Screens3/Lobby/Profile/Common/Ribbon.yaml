@@ -185,15 +185,14 @@ Prototypes:
                         styles: "~res:/UI/Screens3/Lobby/Profile/Common/Ribbon.style.yaml"
             -   class: "UIControl"
                 name: "Icon"
+                angle: -60.000000
+                position: [-25.000000, 100.000000]
                 input: false
                 classes: "ribbon-icon"
                 components:
                     Background:
                         colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                         perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-                    Anchor:
-                        hCenterAnchorEnabled: true
-                        vCenterAnchorEnabled: true
                     SizePolicy:
                         horizontalPolicy: "PercentOfContent"
                         verticalPolicy: "PercentOfContent"

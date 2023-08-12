@@ -1,0 +1,191 @@
+Header:
+    version: 144
+Prototypes:
+-   class: "UIControl"
+    name: "EULAConfirmation"
+    size: [960.000000, 640.000000]
+    input: false
+    components:
+        UIAnimationComponent:
+            animations: "FALSE_CONFIRMATION,~res:/UI/Screens3/PreLogin/EULAConfirmationShake.animation"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        UIDataParamsComponent:
+            params:
+            - ["bool", "isEULAConfirmed", "false", "true"]
+            events:
+            - "EULA_PRESSED"
+            - "PRIVACY_PRESSED"
+            - "EULA_CONFIRMATION_CHECKED"
+            - "CONFIRM_EULA"
+    children:
+    -   class: "UIControl"
+        name: "CompleteButton"
+        input: false
+        classes: "black-70-bg"
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+                verticalValue: 90.000000
+            StyleSheet:
+                styles: "~res:/UI/Screens3/Color.style.yaml"
+    -   class: "UIControl"
+        name: "Content"
+        size: [960.000000, 184.000000]
+        position: [0.000000, 100.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfChildrenSum"
+        children:
+        -   class: "UIControl"
+            name: "InfoContent"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                LinearLayout:
+                    padding: "24"
+                    spacing: 24.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 780.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 96.000000
+            children:
+            -   class: "UIControl"
+                name: "Background"
+                input: false
+                classes: "grey-shark-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_FILL"
+                    UIRoundedCornersComponent:
+                        radius: "16"
+                    IgnoreLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "CheckBox"
+                input: true
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 48.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 48.000000
+                    UIChildComponent0:
+                        prototypePath: "~res:/UI/Screens3/Common/CheckBox.yaml"
+                        args:
+                            "validatedWithError": "false"
+                            "showValidate": "true"
+                            "isEnabled": "true"
+                            "isActive": "isEULAConfirmed"
+                            "bgStyle": "\"white-wild-sand-15-bg\""
+                            "size": "eCheckBoxSize.BIG"
+                        eventActions:
+                        - ["CHECK_PRESSED", "EULA_CONFIRMATION_CHECKED", ""]
+                    UIIdentifierComponent:
+                        id: "eula_checkbox"
+            -   class: "UIControl"
+                name: "TextWrapper"
+                input: false
+                components:
+                    LinearLayout:
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "Text"
+                    input: false
+                    components:
+                        RichContent:
+                            text: "#eula:confirmation"
+                            baseClasses: "t-body regular white-wild-sand-text"
+                        RichContentAliases0:
+                            aliases:
+                            - ["link-license", "<object name=\"LinkLicense\" path=\"~res:/UI/Screens3/PreLogin/LinkLicense.yaml\" prototype=\"Link\" />"]
+                            - ["link-privacy", "<object name=\"LinkPrivacy\" path=\"~res:/UI/Screens3/PreLogin/LinkPrivacy.yaml\" prototype=\"Link\" />"]
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -2.000000
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 443.000000
+                            verticalPolicy: "PercentOfChildrenSum"
+                        FlowLayout:
+                            hSpacing: 5.000000
+                            useRtl: true
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "CompleteButton"
+                input: false
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfMaxChild"
+                    UIChildComponent0:
+                        prototypePath: "~res:/UI/Screens3/Lobby/Common/Button.yaml"
+                        args:
+                            "caption": "\"#common:DialogButton/Approve\""
+                            "sound": "eButtonSound.OK"
+                            "enabled": "isEULAConfirmed"
+                        eventActions:
+                        - ["ON_CLICK_BUTTON", "CONFIRM_EULA", ""]
+                    UIIdentifierComponent:
+                        id: "eula_confirm_button"
+                children:
+                -   class: "UIControl"
+                    name: "DisabledInput"
+                    size: [32.000000, 32.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        UIInputEventComponent:
+                            onTouchUpInside: "FALSE_CONFIRMATION"
+                    bindings:
+                    - ["input", "not isEULAConfirmed"]
+        -   class: "UIControl"
+            name: "Spacer"
+            position: [0.000000, 196.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 48.000000
+        -   class: "UIControl"
+            name: "DinamicSpacer"
+            position: [0.000000, 196.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "Formula"
+                    verticalFormula: "when (screenHeight > 640 and screenHeight < 1023) -> 16, screenHeight*0.06"

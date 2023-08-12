@@ -1,0 +1,697 @@
+Header:
+    version: 153
+ImportedPackages:
+- "~res:/UI/Screens3/Lobby/Common/Button.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "EntryScreen"
+    size: [960.000000, 640.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        UILayoutEventComponent:
+            visibilityMarginsEvent: "KEYBOARD_EVENT"
+            visibilityMarginsEventData: "_visibilityMargins.bottom"
+        UIShortcutEventComponent:
+            shortcuts: "ENTER_SHORTCUT,Enter;BACK_SHORTCUT,Back;BACK_SHORTCUT,Escape"
+        UIDataParamsComponent:
+            params:
+            - ["PreLoginData", "preLoginData", "null", "{ \"showServerSelection\" = true; }"]
+            events:
+            - "FIELD_CLICKED"
+            - "EDITING_STARTED"
+            - "EXTERNAL_LOGIN_PRESSED"
+            - "NEW_ACCOUNT_PRESSED"
+            - "BACK_PRESSED"
+            - "USER_NAME_CHANGED"
+            - "PASSWORD_CHANGED"
+            - "LOGIN_PRESSED"
+            - "REGION_SELECTION_PRESSED"
+        UIDataLocalVarsComponent:
+            data:
+            - ["bool", "IsServerSelectionVisible", "preLoginData.showServerSelection"]
+            - ["float", "keyboardHeight", "0.000000"]
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens3/PreLogin/Entry.actions"
+    children:
+    -   class: "UIControl"
+        name: "FadesWrapper"
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "BackButtonFade"
+            input: false
+            classes: "black-25-bg"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/Lobby/backgrounds/bg_radial-gradient_quarter"
+                Anchor:
+                    leftAnchorEnabled: true
+                    topAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 480.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 480.000000
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+        -   class: "UIControl"
+            name: "TopFade"
+            input: false
+            classes: "black-25-bg"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+                    spriteModification: ["FLIP_VERTICAL"]
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalValue: 50.000000
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+        -   class: "UIControl"
+            name: "BottomFade"
+            input: false
+            classes: "black-70-bg"
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalValue: 50.000000
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+    -   class: "UIControl"
+        name: "Spacer"
+        position: [0.000000, 196.000000]
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 2.000000
+    -   class: "UIScrollView"
+        name: "Scroll"
+        classes: "notch-tightly-bottom-inset"
+        autoUpdate: true
+        centerContent: true
+        components:
+            ClipContent:
+                enabled: false
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "Formula"
+                verticalFormula: "parent - keyboardHeight"
+            UIAnchorSafeAreaComponent: {}
+            StyleSheet:
+                styles: "~res:/UI/Screens3/SafeArea.style.yaml"
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            position: [0.000000, 120.000000]
+            scrollDirection: "kVertical"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: "Forms"
+                input: false
+                position: [50.000000, 0.000000]
+                components:
+                    Anchor:
+                        LeftAnchorEnabled: true
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 24.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIControl"
+                    name: "SocialButtonsContainer"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    components:
+                        UITextComponent:
+                            text: "Login/LogInScreen/Header"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        LinearLayout:
+                            orientation: "TopDown"
+                            spacing: 16.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    bindings:
+                    - ["visible", "not preLoginData.socialNetworks.Empty()"]
+                    children:
+                    -   class: "UIControl"
+                        name: "Header"
+                        position: [116.000000, 0.000000]
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "t-headline bold white-wild-sand-text"
+                        components:
+                            UITextComponent:
+                                text: "Login/LogInScreen/Header"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Font.style.yaml"
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        position: [0.000000, 196.000000]
+                        input: false
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 2.000000
+                    -   class: "UIControl"
+                        name: "SocialButtons"
+                        position: [112.000000, 59.000000]
+                        size: [32.000000, 32.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            LinearLayout:
+                                spacing: 24.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                            UIRepeatComponent:
+                                control: "~res:/UI/Screens3/PreLogin/SocialButton.yaml"
+                                dataContainer: "preLoginData.socialNetworks"
+                                args:
+                                    "descr": "_item"
+                                eventActions:
+                                - ["ON_CLICK_BUTTON", "EXTERNAL_LOGIN_PRESSED", "_event"]
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        position: [0.000000, 196.000000]
+                        input: false
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 2.000000
+                    -   class: "UIControl"
+                        name: "DividerOr"
+                        position: [0.000000, 64.000000]
+                        size: [32.000000, 16.000000]
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfMaxChild"
+                            UIChildComponent0:
+                                prototypePath: "~res:/UI/Screens3/Lobby/Profile/Common/HorizontalDividerWithCaption.yaml"
+                                args:
+                                    "text": "localize(\"Login/LogInScreen/Divider\")"
+                -   class: "UIControl"
+                    name: "WGHeader"
+                    position: [116.000000, 0.000000]
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "t-headline bold white-wild-sand-text"
+                    components:
+                        UITextComponent:
+                            text: "Login/LogInScreen/LoginWithWGN"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Font.style.yaml"
+                    bindings:
+                    - ["visible", "preLoginData.socialNetworks.Empty()"]
+                -   class: "UIControl"
+                    name: "InputContainer"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            spacing: 16.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                        UIIdentifierComponent:
+                            id: "input_container"
+                    children:
+                    -   class: "UIControl"
+                        name: "Email"
+                        position: [0.000000, 176.000000]
+                        size: [32.000000, 32.000000]
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 364.000000
+                                verticalPolicy: "PercentOfMaxChild"
+                            UIAttachLayoutMasterComponent:
+                                attachId: "LOGIN"
+                            UIChildComponent0:
+                                prototypePath: "~res:/UI/Screens3/Common/TextField.yaml"
+                                args:
+                                    "maxLength": "50"
+                                    "leftIconImage": "\"~res:/Gfx/Lobby/icons/icon_search_s\""
+                                    "bgStyle": "\"black-50-bg\""
+                                    "placeholderTextColor": "\"white-wild-sand-50-text\""
+                                    "textStyle": "\"t-subtitle regular\""
+                                    "text": "preLoginData.credentials.login"
+                                    "placeholderText": "localize(\"Login/LogInScreen/EmailForm/Placeholder\")"
+                                    "validatedWithError": "preLoginData.credentials.loginValidationState == eCredentialValidationState.Invalid"
+                                    "showValidate": "preLoginData.credentials.loginValidationState != eCredentialValidationState.None"
+                                    "filterRegExp": "\"^[a-zA-Z0-9@\\._-]+$\""
+                                    "canCleaned": "true"
+                                    "isEnabled": "true"
+                                    "textFieldType": "eTextFieldType.Text"
+                                    "keyboardType": "eKeyboardType.KEYBOARD_TYPE_EMAIL_ADDRESS"
+                                eventActions:
+                                - ["FIELD_CLICKED", "FIELD_CLICKED", "eLoginFieldId.Login"]
+                                - ["EDITING_STARTED", "EDITING_STARTED", "eLoginFieldId.Login"]
+                                - ["TEXT_CHANGED", "MAIL_CHANGED", "_event"]
+                            UIIdentifierComponent:
+                                id: "login_text_field"
+                    -   class: "UIControl"
+                        name: "Password"
+                        position: [0.000000, 176.000000]
+                        size: [32.000000, 32.000000]
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 364.000000
+                                verticalPolicy: "PercentOfMaxChild"
+                            UIAttachLayoutMasterComponent:
+                                attachId: "PASSWORD"
+                            UIChildComponent0:
+                                prototypePath: "~res:/UI/Screens3/Common/TextField.yaml"
+                                args:
+                                    "isLastEdit": "true"
+                                    "maxLength": "100"
+                                    "isPassword": "true"
+                                    "leftIconImage": "\"~res:/Gfx/Lobby/icons/icon_search_s\""
+                                    "bgStyle": "\"black-50-bg\""
+                                    "placeholderTextColor": "\"white-wild-sand-50-text\""
+                                    "textStyle": "\"t-subtitle regular\""
+                                    "text": "preLoginData.credentials.password"
+                                    "placeholderText": "localize(\"Login/LogInScreen/Password/Placeholder\")"
+                                    "validatedWithError": "preLoginData.credentials.passwordValidationState == eCredentialValidationState.Invalid"
+                                    "showValidate": "preLoginData.credentials.passwordValidationState != eCredentialValidationState.None"
+                                    "filterRegExp": "preLoginData.loginPasswordRegexp"
+                                    "canCleaned": "true"
+                                    "isEnabled": "true"
+                                    "textFieldType": "eTextFieldType.Password"
+                                    "keyboardType": "eKeyboardType.KEYBOARD_TYPE_EMAIL_ADDRESS"
+                                eventActions:
+                                - ["FIELD_CLICKED", "FIELD_CLICKED", "eLoginFieldId.Password"]
+                                - ["EDITING_STARTED", "EDITING_STARTED", "eLoginFieldId.Password"]
+                                - ["TEXT_CHANGED", "PASSWORD_CHANGED", "_event"]
+                            UIIdentifierComponent:
+                                id: "login_password_field"
+                    -   prototype: "Button/Button"
+                        name: "LoginButton"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 364.000000
+                            UIDataParamsComponent:
+                                args:
+                                    "type": "eButtonType.POSITIVE"
+                                    "size": "eButtonSize.NORMAL"
+                                    "caption": "\"Login/LogInScreen/AcceptButton\""
+                                eventActions:
+                                - ["ON_CLICK_BUTTON", "LOGIN_PRESSED", ""]
+                            UIIdentifierComponent:
+                                id: "login_button"
+                    -   class: "UIControl"
+                        name: "DemoAccountLoginController"
+                        enabled: true
+                        input: false
+                        components:
+                            Anchor:
+                                enabled: true
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfFirstChild"
+                                verticalPolicy: "PercentOfFirstChild"
+                        bindings:
+                        - ["visible", "preLoginData.showDemoAccountButton"]
+                        children:
+                        -   prototype: "Button/Button"
+                            name: "DemoAccountLoginButton"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                SizePolicy:
+                                    horizontalPolicy: "FixedSize"
+                                    horizontalValue: 364.000000
+                                UIDataParamsComponent:
+                                    args:
+                                        "type": "eButtonType.ALTERNATIVE"
+                                        "size": "eButtonSize.NORMAL"
+                                        "caption": "localize(\"#entry:button/demoLogin\", { \"demo_player_name\" = preLoginData.demoNickname; })"
+                                    eventActions:
+                                    - ["ON_CLICK_BUTTON", "DEMO_ACCOUNT_LOGIN_PRESSED", ""]
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 0.000000
+                    -   class: "UIControl"
+                        name: "OptionalButtons"
+                        position: [6.000000, 398.000000]
+                        size: [151.000000, 112.000000]
+                        input: false
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                            LinearLayout:
+                                spacing: 16.000000
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 364.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 48.000000
+                        children:
+                        -   prototype: "Button/Button"
+                            name: "ResetPassword"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                UIDataParamsComponent:
+                                    args:
+                                        "isExternalLink": "true"
+                                        "caption": "\"Login/LogInScreen/ResetPassword\""
+                                        "type": "eButtonType.OPTIONAL_LIGHT"
+                                        "size": "eButtonSize.NORMAL"
+                                    eventActions:
+                                    - ["ON_CLICK_BUTTON", "RESET_PASSWORD_PRESSED", ""]
+                        -   prototype: "Button/Button"
+                            name: "NewAccount"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                UIDataParamsComponent:
+                                    args:
+                                        "caption": "\"Login/LogInScreen/NewAccount\""
+                                        "type": "eButtonType.OPTIONAL_LIGHT"
+                                        "size": "eButtonSize.NORMAL"
+                                    eventActions:
+                                    - ["ON_CLICK_BUTTON", "NEW_ACCOUNT_PRESSED", ""]
+            -   class: "UIControl"
+                name: "ErrorPopup"
+                size: [32.000000, 32.000000]
+                input: false
+                components:
+                    IgnoreLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    UIChildComponent0:
+                        condition: "preLoginData.loginFieldsErrors.fieldId != eLoginFieldId.None"
+                        prototypePath: "~res:/UI/Screens3/Common/PopupMenu.yaml"
+                        args:
+                            "defaultTextHMax": "200"
+                            "text": "preLoginData.loginFieldsErrors.errorMessage"
+                            "slaveAlign": "ePositionAlign.Right"
+                            "masterId": "when preLoginData.loginFieldsErrors.fieldId == eLoginFieldId.Login -> \"LOGIN\", preLoginData.loginFieldsErrors.fieldId == eLoginFieldId.Password -> \"PASSWORD\", \"\""
+                            "title": "\"\""
+            -   class: "UIControl"
+                name: "Spacer"
+                input: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "Formula"
+                        verticalFormula: "when (screenHeight < 1023) -> screenHeight*0.12, 0"
+    -   class: "UIControl"
+        name: "BackButton"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 16.000000
+                topAnchorEnabled: true
+                topAnchor: 16.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+            UIChildComponent0:
+                prototypePath: "~res:/UI/Screens3/Lobby/Common/IconButton.yaml"
+                args:
+                    "isBgVisible": "true"
+                    "image": "\"~res:/Gfx/Lobby/icons/icon_arrow-rounded\""
+                eventActions:
+                - ["ON_CLICK_BUTTON", "BACK_PRESSED", ""]
+    -   class: "UIControl"
+        name: "BottomContainer"
+        position: [300.000000, 560.000000]
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            UIAttachLayoutMasterComponent:
+                attachId: "ENTRY_BOTTOM_CONTAINER"
+        children:
+        -   class: "UIControl"
+            name: "SelectServer"
+            position: [0.000000, 0.000000]
+            size: [32.000000, 48.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                LinearLayout:
+                    spacing: 4.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+            bindings:
+            - ["visible", "IsServerSelectionVisible"]
+            children:
+            -   class: "UIControl"
+                name: "Text"
+                size: [32.000000, 32.000000]
+                input: false
+                classes: "t-body regular white-wild-sand-50-text"
+                components:
+                    UITextComponent:
+                        text: "Login/SelectServerCaption"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+            -   class: "UIControl"
+                name: "ServerLink"
+                position: [94.000000, 0.000000]
+                input: false
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfMaxChild"
+                    UIChildComponent0:
+                        prototypePath: "~res:/UI/Screens3/Lobby/Common/RichTextLink.yaml"
+                        args:
+                            "soundStyle": "\"button-open-sound\""
+                            "baseFontSize": "\"t-body\""
+                            "baseFontStyle": "\"bold\""
+                            "key": "localize(preLoginData.currentRegion.name)"
+                            "isExternalLink": "false"
+                        eventActions:
+                        - ["LINK_PRESSED", "REGION_SELECTION_PRESSED", ""]
+                    UIIdentifierComponent:
+                        id: "change_region_button"
+        -   class: "UIControl"
+            name: "Spacer"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 8.000000
+        -   class: "UIControl"
+            name: "LastLoginContainer"
+            input: false
+            components:
+                Anchor:
+                    leftAnchorEnabled: false
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 16.000000
+                LinearLayout:
+                    spacing: 4.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+            bindings:
+            - ["visible", "not empty(preLoginData.lastLogin.name)"]
+            children:
+            -   class: "UIControl"
+                name: "Label"
+                input: false
+                classes: "t-caption regular white-wild-sand-50-text"
+                components:
+                    UITextComponent:
+                        text: "Login/LogInScreen/LastLogin"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+            -   class: "UIControl"
+                name: "LastLogin"
+                position: [118.000000, 0.000000]
+                input: false
+                classes: "t-caption regular white-wild-sand-50-text"
+                components:
+                    UITextComponent: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+                bindings:
+                - ["UITextComponent.text", "preLoginData.lastLogin.name"]
+            -   class: "UIControl"
+                name: "Bullet"
+                position: [163.000000, 8.000000]
+                size: [32.000000, 32.000000]
+                input: false
+                classes: "white-wild-sand-50-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+                        sprite: "~res:/Gfx/Lobby/backgrounds/bg_r2"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 1.000000
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 2.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 2.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "LastDate"
+                input: false
+                classes: "t-caption regular white-wild-sand-50-text"
+                components:
+                    UITextComponent: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+                bindings:
+                - ["UITextComponent.text", "preLoginData.lastLogin.date"]
+            -   class: "UIControl"
+                name: "Bullet"
+                position: [163.000000, 8.000000]
+                size: [32.000000, 32.000000]
+                input: false
+                classes: "white-wild-sand-50-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+                        sprite: "~res:/Gfx/Lobby/backgrounds/bg_r2"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 2.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 2.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "LastServer"
+                input: false
+                classes: "t-caption regular white-wild-sand-50-text"
+                components:
+                    UITextComponent: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+                bindings:
+                - ["UITextComponent.text", "preLoginData.lastLogin.region"]
+        -   class: "UIControl"
+            name: "Spacer"
+            position: [0.000000, 196.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "Formula"
+                    verticalFormula: "when (screenHeight > 640 and screenHeight < 1023) -> 16, screenHeight*0.06"

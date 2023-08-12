@@ -1,0 +1,278 @@
+Header:
+    version: 153
+ImportedPackages:
+- "~res:/UI/Screens3/Lobby/Common/Button.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "NewGameScreen"
+    size: [960.000000, 640.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        UIVirtualActionEventComponent0:
+            virtualKeyAction: "Escape"
+            keyDownEvent: "EXIT_SHORTCUT"
+            shouldBeFocused: false
+        UIDataParamsComponent:
+            params:
+            - ["AppDataModel", "app", "null", "{ }"]
+            - ["PreLoginData", "preLoginData", "null", "{ \"showServerSelection\" = true; }"]
+            events:
+            - "EXIT_PRESSED"
+            - "SELECT_SERVER_DOWN"
+            - "REGION_SELECTION_PRESSED"
+            - "NEW_GAME_PRESSED"
+            - "LOGIN_PRESSED"
+        UIDataLocalBindingsComponent:
+            data:
+            - ["bool", "IsServerSelectionVisible", "preLoginData.showServerSelection"]
+            - ["string", "loginButtonText", "when app.constants.nsb -> \"Login/NewGame/LoginWGButton\", \"Login/NewGame/LoginButton\""]
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens3/PreLogin/NewGame.actions"
+    children:
+    -   class: "UIControl"
+        name: "Fade"
+        position: [0.000000, 320.000000]
+        size: [32.000000, 32.000000]
+        input: false
+        classes: "black-70-bg"
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+                verticalValue: 50.000000
+            StyleSheet:
+                styles: "~res:/UI/Screens3/Color.style.yaml"
+    -   class: "UIControl"
+        name: "Content"
+        position: [50.000000, 500.000000]
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 16.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+        children:
+        -   class: "UIControl"
+            name: "NewGameButtonContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfFirstChild"
+            bindings:
+            - ["visible", "not app.constants.nsb and not app.constants.wgc"]
+            children:
+            -   prototype: "Button/Button"
+                name: "AcceptButton"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 364.000000
+                    UIDataParamsComponent:
+                        args:
+                            "sound": "eButtonSound.OPEN"
+                            "type": "eButtonType.POSITIVE"
+                            "caption": "\"Login/NewGame/GameButton\""
+                        eventActions:
+                        - ["ON_CLICK_BUTTON", "NEW_GAME_PRESSED", ""]
+                    UIIdentifierComponent:
+                        id: "login_demo_button"
+        -   class: "UIControl"
+            name: "NintendoButtonContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfFirstChild"
+            bindings:
+            - ["visible", "app.constants.nsb"]
+            children:
+            -   prototype: "Button/Button"
+                name: "AcceptButton"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 364.000000
+                    UIDataParamsComponent:
+                        args:
+                            "sound": "eButtonSound.OPEN"
+                            "type": "eButtonType.NEGATIVE"
+                            "caption": "\"Login/NewGame/NintendoButton\""
+                        eventActions:
+                        - ["ON_CLICK_BUTTON", "NEW_GAME_PRESSED", ""]
+        -   class: "UIControl"
+            name: "WgcLoginButtonContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfFirstChild"
+            bindings:
+            - ["visible", "app.constants.wgc"]
+            children:
+            -   prototype: "Button/Button"
+                name: "AcceptButton"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 364.000000
+                    UIDataParamsComponent:
+                        args:
+                            "sound": "eButtonSound.OPEN"
+                            "type": "eButtonType.POSITIVE"
+                            "caption": "\"Login/NewGame/GameButton\""
+                        eventActions:
+                        - ["ON_CLICK_BUTTON", "LOGIN_PRESSED", ""]
+        -   class: "UIControl"
+            name: "LoginAndDividerContainer"
+            input: false
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 16.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            bindings:
+            - ["visible", "not app.constants.wgc"]
+            children:
+            -   class: "UIControl"
+                name: "DividerOr"
+                position: [0.000000, 80.000000]
+                size: [32.000000, 16.000000]
+                input: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfMaxChild"
+                    UIChildComponent0:
+                        prototypePath: "~res:/UI/Screens3/Lobby/Profile/Common/HorizontalDividerWithCaption.yaml"
+                        args:
+                            "text": "localize(\"Login/DividerCaption\")"
+            -   prototype: "Button/Button"
+                name: "OptionButton"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 364.000000
+                    UIDataParamsComponent:
+                        args:
+                            "sound": "eButtonSound.OPEN"
+                            "caption": "loginButtonText"
+                            "type": "eButtonType.OPTIONAL_LIGHT"
+                        eventActions:
+                        - ["ON_CLICK_BUTTON", "LOGIN_PRESSED", ""]
+                    UIIdentifierComponent:
+                        id: "login_with_pass_button"
+        -   class: "UIControl"
+            name: "Spacer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 8.000000
+        -   class: "UIControl"
+            name: "SelectServer"
+            position: [0.000000, 160.000000]
+            size: [32.000000, 48.000000]
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                LinearLayout:
+                    spacing: 4.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+            bindings:
+            - ["visible", "IsServerSelectionVisible"]
+            children:
+            -   class: "UIControl"
+                name: "Text"
+                size: [32.000000, 32.000000]
+                input: false
+                classes: "t-body regular white-wild-sand-50-text"
+                components:
+                    UITextComponent:
+                        text: "Login/SelectServerCaption"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml"
+            -   class: "UIControl"
+                name: "ServerLink"
+                input: false
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfMaxChild"
+                    UIChildComponent0:
+                        prototypePath: "~res:/UI/Screens3/Lobby/Common/RichTextLink.yaml"
+                        args:
+                            "soundStyle": "\"button-open-sound\""
+                            "baseFontSize": "\"t-body\""
+                            "baseFontStyle": "\"bold\""
+                            "key": "localize(preLoginData.currentRegion.name)"
+                            "isExternalLink": "false"
+                        eventActions:
+                        - ["LINK_PRESSED", "REGION_SELECTION_PRESSED", ""]
+                    UIIdentifierComponent:
+                        id: "change_region_button"
+        -   class: "UIControl"
+            name: "SpacerForRuby"
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 20.000000
+            bindings:
+            - ["visible", "not IsServerSelectionVisible"]
+        -   class: "UIControl"
+            name: "Spacer"
+            position: [0.000000, 196.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "Formula"
+                    verticalFormula: "when (screenHeight < 1023) -> 16, screenHeight*0.06"
+                UIInputEventComponent:
+                    onTouchDown: "BOTTOM_SPACER_DOWN"
+                    onTouchDownData: ""
