@@ -10343,25 +10343,25 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3112005086">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1661809150">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1361097730" Language="SFX" Hash="2136199121">
+		<SoundBank Id="1361097730" Language="SFX" Hash="2848094297">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\hangar_normal</ObjectPath>
 			<ShortName>hangar_normal</ShortName>
 			<Path>hangar_normal.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3497710985" Name="hangar_ambient_hangar_blitz_v1_premium" ObjectPath="\Events\RxD\Hangar\hangar_ambient_hangar_blitz_v1_premium" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="159880353" Language="SFX">
+							<ShortName>World of Tanks - Official Soundtrack_ Matchmaker (Extended).wav</ShortName>
+							<Path>SFX\World of Tanks - Official Soundtrack_ Matchmaker (Extended)_3F75BDB9.wem</Path>
+						</File>
 						<File Id="497638682" Language="SFX">
 							<ShortName>Andrey Kulik - Hangar Music (2017).wav</ShortName>
 							<Path>SFX\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem</Path>
-						</File>
-						<File Id="984756495" Language="SFX">
-							<ShortName>Andrey Kulik - Battle Pass (World Of Tanks OST).wav</ShortName>
-							<Path>SFX\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

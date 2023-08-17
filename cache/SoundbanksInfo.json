@@ -17589,7 +17589,7 @@
    {
     "Id": "1355168291",
     "Language": "SFX",
-    "Hash": "3112005086",
+    "Hash": "1661809150",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk"
@@ -17597,7 +17597,7 @@
    {
     "Id": "1361097730",
     "Language": "SFX",
-    "Hash": "2136199121",
+    "Hash": "2848094297",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\hangar_normal",
     "ShortName": "hangar_normal",
     "Path": "hangar_normal.bnk",
@@ -17609,16 +17609,16 @@
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
+        "Id": "159880353",
+        "Language": "SFX",
+        "ShortName": "World of Tanks - Official Soundtrack_ Matchmaker (Extended).wav",
+        "Path": "SFX\\World of Tanks - Official Soundtrack_ Matchmaker (Extended)_3F75BDB9.wem"
+       },
+       {
         "Id": "497638682",
         "Language": "SFX",
         "ShortName": "Andrey Kulik - Hangar Music (2017).wav",
         "Path": "SFX\\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem"
-       },
-       {
-        "Id": "984756495",
-        "Language": "SFX",
-        "ShortName": "Andrey Kulik - Battle Pass (World Of Tanks OST).wav",
-        "Path": "SFX\\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem"
        }
       ]
      },
