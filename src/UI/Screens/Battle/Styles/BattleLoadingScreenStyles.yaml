@@ -30,14 +30,14 @@
         selectors: ["#map-logo"],
         properties:
           {
-            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/icon_game-mode_random_colored",
+            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/rxd_icon_game-mode_random_colored",
           },
       },
       {
         selectors: [".rating * #map-logo"],
         properties:
           {
-            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/icon_game-mode_rating_colored",
+            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/rxd_icon_game-mode_rating_colored",
           },
       },
       {
@@ -54,7 +54,7 @@
           ],
         properties:
           {
-            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/icon_game-mode_realistic_colored",
+            texture-spritePath: "~res:/Gfx/UI/RXDLoadingPanel/GameModes/rxd_icon_game-mode_realistic_colored",
           },
       },
       { selectors: ["#battle-type-basic"], properties: { visible: true } },
