@@ -57,6 +57,8 @@ Prototypes:
         size: [32.000000, 32.000000]
         input: false
         components:
+            Anchor:
+                vCenterAnchorEnabled: true       
             LinearLayout:
                 orientation: "TopDown"
                 spacing: 16.000000

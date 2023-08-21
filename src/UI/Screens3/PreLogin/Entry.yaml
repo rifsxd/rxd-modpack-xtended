@@ -147,7 +147,7 @@ Prototypes:
                 position: [50.000000, 0.000000]
                 components:
                     Anchor:
-                        LeftAnchorEnabled: true
+                        vCenterAnchorEnabled: true
                     LinearLayout:
                         orientation: "TopDown"
                         spacing: 24.000000
