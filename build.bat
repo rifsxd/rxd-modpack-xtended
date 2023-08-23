@@ -115,7 +115,7 @@ ECHO.
 ECHO Selecting GPU Specific Textures - DX11!
 ECHO.
 
-del /S "*.pvr"
+del /S "*astc.pvr"
 
 ECHO.
 ECHO Selected GPU Specific Textures - DX11!
@@ -192,7 +192,7 @@ ECHO.
 ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
+del /S "*dx11.dds"
 
 
 ECHO.
@@ -326,7 +326,7 @@ ECHO.
 ECHO Selecting GPU Specific Textures - DX11!
 ECHO.
 
-del /S "*.pvr"
+del /S "*astc.pvr"
 
 ECHO.
 ECHO Selected GPU Specific Textures - DX11!
@@ -393,7 +393,7 @@ ECHO.
 ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
+del /S "*dx11.dds"
 
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
@@ -488,7 +488,7 @@ ECHO.
 ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
+del /S "*dx11.dds"
 
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
@@ -583,7 +583,7 @@ ECHO.
 ECHO Selecting GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
+del /S "*dx11.dds"
 
 ECHO.
 ECHO Selected GPU Specific Textures - ASTC!
@@ -681,7 +681,7 @@ ECHO.
 ECHO Selecting GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
+del /S "*dx11.dds"
 
 ECHO.
 ECHO Selected GPU Specific Textures - ASTC!
@@ -771,9 +771,7 @@ ECHO.
 ECHO Clearing Unused GPU Specific Textures - ASTC!
 ECHO.
 
-del /S "*.dds"
-
-del /S "*.pvr"
+del /S "*dx11.dds"
 
 ECHO.
 ECHO Cleared Unused GPU Specific Textures - ASTC!
