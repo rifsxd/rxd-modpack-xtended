@@ -237,7 +237,7 @@ Prototypes:
                     components:
                         Anchor:
                             topAnchorEnabled: true
-                            topAnchor: 108.00000
+                            topAnchor: 106.00000
                         UITextComponent:
                             text: "350"
                             colorInheritType: "COLOR_IGNORE_PARENT"
@@ -320,9 +320,9 @@ Prototypes:
                                 align: ["RIGHT", "VCENTER"]
                             Anchor:
                                 topAnchorEnabled: true
-                                topAnchor: 40.000000
+                                topAnchor: 6.000000
                                 rightAnchorEnabled: true
-                                rightAnchor: 50.000000
+                                rightAnchor: 130.000000
                             SizePolicy:
                                 horizontalPolicy: "FixedSize"
                                 horizontalValue: 40.000000

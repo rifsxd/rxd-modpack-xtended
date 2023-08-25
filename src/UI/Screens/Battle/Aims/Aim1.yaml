@@ -320,9 +320,9 @@ Prototypes:
                                 align: ["RIGHT", "VCENTER"]
                             Anchor:
                                 topAnchorEnabled: true
-                                topAnchor: 50.000000
+                                topAnchor: 10.000000
                                 rightAnchorEnabled: true
-                                rightAnchor: 65.000000
+                                rightAnchor: 145.000000
                             SizePolicy:
                                 horizontalPolicy: "FixedSize"
                                 horizontalValue: 40.000000
