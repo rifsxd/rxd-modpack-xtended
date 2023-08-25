@@ -17597,7 +17597,7 @@
    {
     "Id": "1361097730",
     "Language": "SFX",
-    "Hash": "672830498",
+    "Hash": "2366340132",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\hangar_normal",
     "ShortName": "hangar_normal",
     "Path": "hangar_normal.bnk",
@@ -18010,11 +18010,25 @@
    {
     "Id": "1598298728",
     "Language": "SFX",
-    "Hash": "93487310",
+    "Hash": "3225496595",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\music_menu",
     "ShortName": "music_menu",
     "Path": "music_menu.bnk",
     "IncludedEvents": [
+     {
+      "Id": "2409362937",
+      "Name": "Battle_Pass_Music",
+      "ObjectPath": "\\Events\\RxD\\Music_Menu\\Battle_Pass_Music",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "984756495",
+        "Language": "SFX",
+        "ShortName": "Andrey Kulik - Battle Pass (World Of Tanks OST).wav",
+        "Path": "SFX\\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem"
+       }
+      ]
+     },
      {
       "Id": "3096131283",
       "Name": "Battle_Queue_Music",
@@ -18026,6 +18040,20 @@
         "Language": "SFX",
         "ShortName": "World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav",
         "Path": "SFX\\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1072176524",
+      "Name": "Tech_Tree_Music",
+      "ObjectPath": "\\Events\\RxD\\Music_Menu\\Tech_Tree_Music",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "178280347",
+        "Language": "SFX",
+        "ShortName": "World_of_Tanks_Official_Soundtrack_Tech_Tree(Extended).wav",
+        "Path": "SFX\\World_of_Tanks_Official_Soundtrack_Tech_Tree(Extended)_3F75BDB9.wem"
        }
       ]
      }

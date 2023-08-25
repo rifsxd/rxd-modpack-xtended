@@ -1,0 +1,118 @@
+action EnsureSelectedCellVisibility
+{
+  if (not isNull(selectedVehicle))
+  {
+    ScrollToEnsureControlOnScreen("**/PlayerTanks/" + selectedCellName, xPolicy=eScrollToControlPolicy.kCenter);
+	StopSound(sound="Battle_Pass_Music");
+	StopSound(sound="Battle_Queue_Music");
+	StopSound(sound="Tech_Tree_Music");
+	
+  }
+}
+
+action SCROLL_PANEL_TO_START
+{
+    ScrollToEnsureControlOnScreen("**/OfferedTank");
+}
+
+action SHOW_FILTER(bool requestedShow, float animationTime)
+{
+  if (requestedShow)
+  {
+    Event("FILTER_SHOWN", arg1=true);
+    if (animationTime > 0.0)
+    {
+      PlaySound(sound="GUI/buttons/filter_open");
+    }
+    parallel
+    {
+      {
+        Opacity("./TanksFound", 1.0, time=animationTime, interpolation=EASE_OUT);
+      }
+      {
+        Size(".", height=424.0, time=animationTime, interpolation=EASE_OUT);
+      }
+      {
+        DirectEvent("SWITCH_ICON", "**/ButtonContainer/FilterSwitchButton", true, animationTime);
+      }
+    }
+    Event("FILTER_ANIMATION_FINISHED");
+  }
+  else
+  {
+    if (animationTime > 0.0)
+    {
+      PlaySound(sound="GUI/buttons/filter_close");
+    }
+    parallel
+    {
+      {
+        Opacity("./TanksFound", 0.0, time=animationTime, interpolation=EASE_OUT);
+      }
+      {
+        Size(".", height=120.0, time=animationTime, interpolation=EASE_OUT);
+      }
+      {
+        DirectEvent("SWITCH_ICON", "**/ButtonContainer/FilterSwitchButton", false, animationTime);
+      }
+    }
+    Event("FILTER_SHOWN", arg1=false);
+    Event("FILTER_ANIMATION_FINISHED");
+  }
+}
+
+action ScrollContentPositionChanged(float positionX, float contentWidth, float scrollWidth)
+{
+    Opacity("**/ScrollableArea/LeftFade", when positionX < 0.0 -> min(abs(positionX) / 168.0, 1.0), 0.0);
+    Opacity("**/ScrollableArea/RightFade", min(max(contentWidth - scrollWidth + positionX, 0.0) / 168.0, 1.0));
+
+    if (positionX < 0.0 and ((previousOffset - positionX) < 0.0 or abs(previousOffset - positionX) >= 176.0))
+    {
+      PlaySound("GUI/buttons/carousel");
+      Event("UPDATE_OFFSET", arg1=(int(positionX) / 176) * 176);
+    }
+}
+
+action SELECT_NEXT_TANK
+{
+  if((currentIndex + 1) < Size(tanks))
+  {
+      PlaySound(sound="GUI/buttons/choose");
+      ChangeData(currentIndex, (currentIndex + 1));
+      DirectEvent("ON_TANK_PRESS", "**/Carousel/TanksList/ScrollableArea/scrollContainerControl/PlayerTanks/" + (format("TankCell:%(tNation):%(tName)", { "tNation" = str(tanks[currentIndex].info.nation, eNation, "autotests"); "tName" = tanks[currentIndex].info.technicalName; })));
+  }
+  else
+  {
+    if(hasOfferedTank)
+    {
+      PlaySound(sound="GUI/buttons/choose");
+      ChangeData(currentIndex, (currentIndex - 1));
+      DirectEvent("TANK_PRESSED", "**/Carousel/TanksList/ScrollableArea/scrollContainerControl/OfferedTank/OferredTankCell");
+    }
+    else
+    {
+      PlaySound(sound="GUI/buttons/choose");
+      ChangeData(currentIndex, 0);
+      DirectEvent("ON_TANK_PRESS", "**/Carousel/TanksList/ScrollableArea/scrollContainerControl/PlayerTanks/" + (format("TankCell:%(tNation):%(tName)", { "tNation" = str(tanks[currentIndex].info.nation, eNation, "autotests"); "tName" = tanks[currentIndex].info.technicalName; })));
+    }
+  }
+}
+
+action SELECT_PREVIOUS_TANK
+{
+  if((currentIndex - 1) >= 0)
+  {
+      PlaySound(sound="GUI/buttons/choose");
+      ChangeData(currentIndex, (currentIndex - 1));
+      DirectEvent("ON_TANK_PRESS", "**/Carousel/TanksList/ScrollableArea/scrollContainerControl/PlayerTanks/" + (format("TankCell:%(tNation):%(tName)", { "tNation" = str(tanks[currentIndex].info.nation, eNation, "autotests"); "tName" = tanks[currentIndex].info.technicalName; })));
+  }
+  else
+  {
+    if(((currentIndex - 1) == -1) and hasOfferedTank)
+    {
+      PlaySound(sound="GUI/buttons/choose");
+      ChangeData(currentIndex, (currentIndex - 1));
+      DirectEvent("TANK_PRESSED", "**/Carousel/TanksList/ScrollableArea/scrollContainerControl/OfferedTank/OferredTankCell");
+    }
+  }
+}

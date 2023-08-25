@@ -10348,7 +10348,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1361097730" Language="SFX" Hash="672830498">
+		<SoundBank Id="1361097730" Language="SFX" Hash="2366340132">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\hangar_normal</ObjectPath>
 			<ShortName>hangar_normal</ShortName>
 			<Path>hangar_normal.bnk</Path>
@@ -10561,16 +10561,32 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1598298728" Language="SFX" Hash="93487310">
+		<SoundBank Id="1598298728" Language="SFX" Hash="3225496595">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\music_menu</ObjectPath>
 			<ShortName>music_menu</ShortName>
 			<Path>music_menu.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2409362937" Name="Battle_Pass_Music" ObjectPath="\Events\RxD\Music_Menu\Battle_Pass_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="984756495" Language="SFX">
+							<ShortName>Andrey Kulik - Battle Pass (World Of Tanks OST).wav</ShortName>
+							<Path>SFX\Andrey Kulik - Battle Pass (World Of Tanks OST)_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3096131283" Name="Battle_Queue_Music" ObjectPath="\Events\RxD\Music_Menu\Battle_Queue_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="983387256" Language="SFX">
 							<ShortName>World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav</ShortName>
 							<Path>SFX\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1072176524" Name="Tech_Tree_Music" ObjectPath="\Events\RxD\Music_Menu\Tech_Tree_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="178280347" Language="SFX">
+							<ShortName>World_of_Tanks_Official_Soundtrack_Tech_Tree(Extended).wav</ShortName>
+							<Path>SFX\World_of_Tanks_Official_Soundtrack_Tech_Tree(Extended)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
