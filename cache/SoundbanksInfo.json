@@ -17597,7 +17597,7 @@
    {
     "Id": "1361097730",
     "Language": "SFX",
-    "Hash": "4103613897",
+    "Hash": "672830498",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\hangar_normal",
     "ShortName": "hangar_normal",
     "Path": "hangar_normal.bnk",
@@ -17613,12 +17613,6 @@
         "Language": "SFX",
         "ShortName": "Andrey Kulik - Hangar Music (2017).wav",
         "Path": "SFX\\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem"
-       },
-       {
-        "Id": "983387256",
-        "Language": "SFX",
-        "ShortName": "World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav",
-        "Path": "SFX\\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem"
        }
       ]
      },
@@ -18010,6 +18004,37 @@
       "Id": "1419538075",
       "Name": "RTPC_ext_settings_volume_master_fx",
       "ObjectPath": "\\Game Parameters\\RxD\\RTPC_ext_settings_volume_master_fx"
+     }
+    ]
+   },
+   {
+    "Id": "1598298728",
+    "Language": "SFX",
+    "Hash": "93487310",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\music_menu",
+    "ShortName": "music_menu",
+    "Path": "music_menu.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3096131283",
+      "Name": "Battle_Queue_Music",
+      "ObjectPath": "\\Events\\RxD\\Music_Menu\\Battle_Queue_Music",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "983387256",
+        "Language": "SFX",
+        "ShortName": "World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav",
+        "Path": "SFX\\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "244438798",
+      "Name": "RTPC_ext_settings_volume_master_music",
+      "ObjectPath": "\\Game Parameters\\RxD\\RTPC_ext_settings_volume_master_music"
      }
     ]
    },
@@ -34056,7 +34081,7 @@
    {
     "Id": "4223252685",
     "Language": "SFX",
-    "Hash": "3111906204",
+    "Hash": "848019568",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\ui_chat_quick_commands",
     "ShortName": "ui_chat_quick_commands",
     "Path": "ui_chat_quick_commands.bnk",
@@ -34418,12 +34443,6 @@
       "DurationMax": "0.797788",
       "IncludedMemoryFiles": [
        {
-        "Id": "3779714",
-        "Language": "SFX",
-        "ShortName": "3779714.wav",
-        "Path": "SFX\\3779714_3F75BDB9.wem"
-       },
-       {
         "Id": "210445875",
         "Language": "SFX",
         "ShortName": "210445875.wav",
@@ -34460,6 +34479,12 @@
         "Path": "SFX\\657047326_3F75BDB9.wem"
        },
        {
+        "Id": "819986504",
+        "Language": "SFX",
+        "ShortName": "255963714.wav",
+        "Path": "SFX\\255963714_3F75BDB9.wem"
+       },
+       {
         "Id": "952309053",
         "Language": "SFX",
         "ShortName": "952309053.wav",
@@ -34475,12 +34500,6 @@
       "DurationMin": "0.776743",
       "DurationMax": "0.797788",
       "IncludedMemoryFiles": [
-       {
-        "Id": "3779714",
-        "Language": "SFX",
-        "ShortName": "3779714.wav",
-        "Path": "SFX\\3779714_3F75BDB9.wem"
-       },
        {
         "Id": "210445875",
         "Language": "SFX",
@@ -34510,6 +34529,12 @@
         "Language": "SFX",
         "ShortName": "595252917.wav",
         "Path": "SFX\\595252917_3F75BDB9.wem"
+       },
+       {
+        "Id": "627493886",
+        "Language": "SFX",
+        "ShortName": "578989487.wav",
+        "Path": "SFX\\578989487_3F75BDB9.wem"
        },
        {
         "Id": "657047326",
@@ -34628,6 +34653,12 @@
         "Path": "SFX\\595252917_3F75BDB9.wem"
        },
        {
+        "Id": "627493886",
+        "Language": "SFX",
+        "ShortName": "578989487.wav",
+        "Path": "SFX\\578989487_3F75BDB9.wem"
+       },
+       {
         "Id": "657047326",
         "Language": "SFX",
         "ShortName": "657047326.wav",
@@ -34638,12 +34669,6 @@
         "Language": "SFX",
         "ShortName": "952309053.wav",
         "Path": "SFX\\952309053_3F75BDB9.wem"
-       },
-       {
-        "Id": "983746086",
-        "Language": "SFX",
-        "ShortName": "983746086.wav",
-        "Path": "SFX\\983746086_3F75BDB9.wem"
        }
       ]
      },
@@ -34652,8 +34677,8 @@
       "Name": "GUI_notifications_FX_quick_commands_help_me",
       "ObjectPath": "\\Events\\RxD\\GUI\\GUI_notifications_FX_quick_commands_help_me",
       "DurationType": "OneShot",
-      "DurationMin": "0.896221",
-      "DurationMax": "0.896221",
+      "DurationMin": "0.776743",
+      "DurationMax": "0.797788",
       "IncludedMemoryFiles": [
        {
         "Id": "210445875",
@@ -34692,16 +34717,16 @@
         "Path": "SFX\\657047326_3F75BDB9.wem"
        },
        {
+        "Id": "819986504",
+        "Language": "SFX",
+        "ShortName": "255963714.wav",
+        "Path": "SFX\\255963714_3F75BDB9.wem"
+       },
+       {
         "Id": "952309053",
         "Language": "SFX",
         "ShortName": "952309053.wav",
         "Path": "SFX\\952309053_3F75BDB9.wem"
-       },
-       {
-        "Id": "983746086",
-        "Language": "SFX",
-        "ShortName": "983746086.wav",
-        "Path": "SFX\\983746086_3F75BDB9.wem"
        }
       ]
      },
@@ -34808,10 +34833,10 @@
         "Path": "SFX\\657047326_3F75BDB9.wem"
        },
        {
-        "Id": "768365406",
+        "Id": "740079008",
         "Language": "SFX",
-        "ShortName": "768365406.wav",
-        "Path": "SFX\\768365406_3F75BDB9.wem"
+        "ShortName": "426257817.wav",
+        "Path": "SFX\\426257817_3F75BDB9.wem"
        },
        {
         "Id": "952309053",
@@ -34826,8 +34851,8 @@
       "Name": "GUI_notifications_FX_quick_commands_reloading",
       "ObjectPath": "\\Events\\RxD\\GUI\\GUI_notifications_FX_quick_commands_reloading",
       "DurationType": "OneShot",
-      "DurationMin": "0.896221",
-      "DurationMax": "0.896221",
+      "DurationMin": "0.776743",
+      "DurationMax": "0.797788",
       "IncludedMemoryFiles": [
        {
         "Id": "210445875",
@@ -34860,6 +34885,12 @@
         "Path": "SFX\\595252917_3F75BDB9.wem"
        },
        {
+        "Id": "627493886",
+        "Language": "SFX",
+        "ShortName": "578989487.wav",
+        "Path": "SFX\\578989487_3F75BDB9.wem"
+       },
+       {
         "Id": "657047326",
         "Language": "SFX",
         "ShortName": "657047326.wav",
@@ -34870,12 +34901,6 @@
         "Language": "SFX",
         "ShortName": "952309053.wav",
         "Path": "SFX\\952309053_3F75BDB9.wem"
-       },
-       {
-        "Id": "983746086",
-        "Language": "SFX",
-        "ShortName": "983746086.wav",
-        "Path": "SFX\\983746086_3F75BDB9.wem"
        }
       ]
      },

@@ -10348,7 +10348,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1361097730" Language="SFX" Hash="4103613897">
+		<SoundBank Id="1361097730" Language="SFX" Hash="672830498">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\hangar_normal</ObjectPath>
 			<ShortName>hangar_normal</ShortName>
 			<Path>hangar_normal.bnk</Path>
@@ -10358,10 +10358,6 @@
 						<File Id="497638682" Language="SFX">
 							<ShortName>Andrey Kulik - Hangar Music (2017).wav</ShortName>
 							<Path>SFX\Andrey Kulik - Hangar Music (2017)_3F75BDB9.wem</Path>
-						</File>
-						<File Id="983387256" Language="SFX">
-							<ShortName>World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav</ShortName>
-							<Path>SFX\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -10563,6 +10559,24 @@
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1598298728" Language="SFX" Hash="93487310">
+			<ObjectPath>\SoundBanks\Default Work Unit\ui\music_menu</ObjectPath>
+			<ShortName>music_menu</ShortName>
+			<Path>music_menu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3096131283" Name="Battle_Queue_Music" ObjectPath="\Events\RxD\Music_Menu\Battle_Queue_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="983387256" Language="SFX">
+							<ShortName>World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav</ShortName>
+							<Path>SFX\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="244438798" Name="RTPC_ext_settings_volume_master_music" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_music"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1609140572" Language="SFX" Hash="1890361984">
@@ -20513,7 +20527,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4223252685" Language="SFX" Hash="3111906204">
+		<SoundBank Id="4223252685" Language="SFX" Hash="848019568">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_chat_quick_commands</ObjectPath>
 			<ShortName>ui_chat_quick_commands</ShortName>
 			<Path>ui_chat_quick_commands.bnk</Path>
@@ -20736,10 +20750,6 @@
 				</Event>
 				<Event Id="2370917688" Name="GUI_notifications_FX_quick_commands_attack" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_attack" DurationType="OneShot" DurationMin="0.776743" DurationMax="0.797788">
 					<IncludedMemoryFiles>
-						<File Id="3779714" Language="SFX">
-							<ShortName>3779714.wav</ShortName>
-							<Path>SFX\3779714_3F75BDB9.wem</Path>
-						</File>
 						<File Id="210445875" Language="SFX">
 							<ShortName>210445875.wav</ShortName>
 							<Path>SFX\210445875_3F75BDB9.wem</Path>
@@ -20764,6 +20774,10 @@
 							<ShortName>657047326.wav</ShortName>
 							<Path>SFX\657047326_3F75BDB9.wem</Path>
 						</File>
+						<File Id="819986504" Language="SFX">
+							<ShortName>255963714.wav</ShortName>
+							<Path>SFX\255963714_3F75BDB9.wem</Path>
+						</File>
 						<File Id="952309053" Language="SFX">
 							<ShortName>952309053.wav</ShortName>
 							<Path>SFX\952309053_3F75BDB9.wem</Path>
@@ -20772,10 +20786,6 @@
 				</Event>
 				<Event Id="1291724008" Name="GUI_notifications_FX_quick_commands_attack_target" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_attack_target" DurationType="OneShot" DurationMin="0.776743" DurationMax="0.797788">
 					<IncludedMemoryFiles>
-						<File Id="3779714" Language="SFX">
-							<ShortName>3779714.wav</ShortName>
-							<Path>SFX\3779714_3F75BDB9.wem</Path>
-						</File>
 						<File Id="210445875" Language="SFX">
 							<ShortName>210445875.wav</ShortName>
 							<Path>SFX\210445875_3F75BDB9.wem</Path>
@@ -20795,6 +20805,10 @@
 						<File Id="595252917" Language="SFX">
 							<ShortName>595252917.wav</ShortName>
 							<Path>SFX\595252917_3F75BDB9.wem</Path>
+						</File>
+						<File Id="627493886" Language="SFX">
+							<ShortName>578989487.wav</ShortName>
+							<Path>SFX\578989487_3F75BDB9.wem</Path>
 						</File>
 						<File Id="657047326" Language="SFX">
 							<ShortName>657047326.wav</ShortName>
@@ -20868,6 +20882,10 @@
 							<ShortName>595252917.wav</ShortName>
 							<Path>SFX\595252917_3F75BDB9.wem</Path>
 						</File>
+						<File Id="627493886" Language="SFX">
+							<ShortName>578989487.wav</ShortName>
+							<Path>SFX\578989487_3F75BDB9.wem</Path>
+						</File>
 						<File Id="657047326" Language="SFX">
 							<ShortName>657047326.wav</ShortName>
 							<Path>SFX\657047326_3F75BDB9.wem</Path>
@@ -20876,13 +20894,9 @@
 							<ShortName>952309053.wav</ShortName>
 							<Path>SFX\952309053_3F75BDB9.wem</Path>
 						</File>
-						<File Id="983746086" Language="SFX">
-							<ShortName>983746086.wav</ShortName>
-							<Path>SFX\983746086_3F75BDB9.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3104355010" Name="GUI_notifications_FX_quick_commands_help_me" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_help_me" DurationType="OneShot" DurationMin="0.896221" DurationMax="0.896221">
+				<Event Id="3104355010" Name="GUI_notifications_FX_quick_commands_help_me" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_help_me" DurationType="OneShot" DurationMin="0.776743" DurationMax="0.797788">
 					<IncludedMemoryFiles>
 						<File Id="210445875" Language="SFX">
 							<ShortName>210445875.wav</ShortName>
@@ -20908,13 +20922,13 @@
 							<ShortName>657047326.wav</ShortName>
 							<Path>SFX\657047326_3F75BDB9.wem</Path>
 						</File>
+						<File Id="819986504" Language="SFX">
+							<ShortName>255963714.wav</ShortName>
+							<Path>SFX\255963714_3F75BDB9.wem</Path>
+						</File>
 						<File Id="952309053" Language="SFX">
 							<ShortName>952309053.wav</ShortName>
 							<Path>SFX\952309053_3F75BDB9.wem</Path>
-						</File>
-						<File Id="983746086" Language="SFX">
-							<ShortName>983746086.wav</ShortName>
-							<Path>SFX\983746086_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -20980,9 +20994,9 @@
 							<ShortName>657047326.wav</ShortName>
 							<Path>SFX\657047326_3F75BDB9.wem</Path>
 						</File>
-						<File Id="768365406" Language="SFX">
-							<ShortName>768365406.wav</ShortName>
-							<Path>SFX\768365406_3F75BDB9.wem</Path>
+						<File Id="740079008" Language="SFX">
+							<ShortName>426257817.wav</ShortName>
+							<Path>SFX\426257817_3F75BDB9.wem</Path>
 						</File>
 						<File Id="952309053" Language="SFX">
 							<ShortName>952309053.wav</ShortName>
@@ -20990,7 +21004,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2060927125" Name="GUI_notifications_FX_quick_commands_reloading" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_reloading" DurationType="OneShot" DurationMin="0.896221" DurationMax="0.896221">
+				<Event Id="2060927125" Name="GUI_notifications_FX_quick_commands_reloading" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_quick_commands_reloading" DurationType="OneShot" DurationMin="0.776743" DurationMax="0.797788">
 					<IncludedMemoryFiles>
 						<File Id="210445875" Language="SFX">
 							<ShortName>210445875.wav</ShortName>
@@ -21012,6 +21026,10 @@
 							<ShortName>595252917.wav</ShortName>
 							<Path>SFX\595252917_3F75BDB9.wem</Path>
 						</File>
+						<File Id="627493886" Language="SFX">
+							<ShortName>578989487.wav</ShortName>
+							<Path>SFX\578989487_3F75BDB9.wem</Path>
+						</File>
 						<File Id="657047326" Language="SFX">
 							<ShortName>657047326.wav</ShortName>
 							<Path>SFX\657047326_3F75BDB9.wem</Path>
@@ -21019,10 +21037,6 @@
 						<File Id="952309053" Language="SFX">
 							<ShortName>952309053.wav</ShortName>
 							<Path>SFX\952309053_3F75BDB9.wem</Path>
-						</File>
-						<File Id="983746086" Language="SFX">
-							<ShortName>983746086.wav</ShortName>
-							<Path>SFX\983746086_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

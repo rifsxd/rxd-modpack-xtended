@@ -74,7 +74,7 @@
         selectors:
           [".sight-cursor.atgm #rotateControl * #reloadTimeContainer #bg"],
         properties:
-          { bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/bg-text" },
+          { bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/bg-text" },
       },
       {
         selectors: [".sight-cursor.shell #rotateControl #distanceContainer"],
@@ -88,7 +88,7 @@
       {
         selectors: [".sight-cursor.atgm #rotateControl #distanceContainer #bg"],
         properties:
-          { bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/bg-text" },
+          { bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/bg-text" },
       },
       {
         selectors: [".sight-cursor #arcadeCursor"],
@@ -102,14 +102,14 @@
         selectors: [".sight-cursor.atgm #arcadeCursor"],
         properties:
           {
-            bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/atgm-center",
+            bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center",
           },
       },
       {
         selectors: [".sight-cursor.atgm #rotateControl #sightCursorZoom"],
         properties:
           {
-            bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/atgm-center",
+            bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center",
             bg-color: [1.000000, 1.000000, 1.000000, 0.666667],
           },
       },
@@ -130,14 +130,14 @@
         selectors: [".sight-cursor.atgm.aimed #arcadeCursor"],
         properties:
           {
-            bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/atgm-center-green",
+            bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center-green",
           },
       },
       {
         selectors: [".sight-cursor.atgm.aimed #rotateControl #sightCursorZoom"],
         properties:
           {
-            bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom3/atgm/atgm-center-green",
+            bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center-green",
           },
       },
       {

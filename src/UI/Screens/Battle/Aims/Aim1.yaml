@@ -395,7 +395,7 @@ Prototypes:
         input: false
         components:
             Background:
-                sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_gun-marker"
+                sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim1/aim_gun-marker"
                 perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                 
     -   class: "UIControl"

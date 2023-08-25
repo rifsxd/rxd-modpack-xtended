@@ -1,0 +1,59 @@
+action BATTLE()
+{
+    if(isEnabled and not forceDisabled)
+    {
+        PlaySound(sound="GUI/buttons/play");
+    }
+	if(isPrebattleTraining and isGeneralPackLoaded)
+	{
+		Event("ON_MY_TRAINING_ROOM");
+	}
+	else
+	{
+	   Event("BATTLE_BUTTON_PRESSED", arg1=isEnabled);
+	   PlaySound(sound="Battle_Queue_Music");
+	}
+}
+
+action AnimateMultiplierResetButton(bool newState)
+{
+    if (adResetAllowed)
+    {
+        parallel
+        {
+            ChangeProperty("**/AdvertisingXpReset", "Anchor", "rightAnchor", 0, time=0.3);
+            Scale("**/AdvertisingXpReset", x=0.1, y=0.1, time=0.3);
+            Opacity("**/AdvertisingXpReset", 0.0, time=0.3);
+			StopSound(sound="Battle_Queue_Music");
+        }
+    }
+    else
+    {
+        ChangeProperty("**/AdvertisingXpReset", "Anchor", "rightAnchor", 0);
+        Scale("**/AdvertisingXpReset", x=0.1, y=0.1);
+        Opacity("**/AdvertisingXpReset", 0.0);
+		StopSound(sound="Battle_Queue_Music");
+    }
+
+    ChangeData(adResetAllowed, newState);
+    if (adResetAllowed)
+    {
+        parallel
+        {
+            sequence
+            {
+                ChangeProperty("**/AdvertisingXpReset", "Anchor", "rightAnchor", -55, time=0.3, interpolation=EASE_IN);
+                ChangeProperty("**/AdvertisingXpReset", "Anchor", "rightAnchor", -46, time=0.3, interpolation=EASE_OUT);
+            }
+            Scale("**/AdvertisingXpReset", x=1.0, y=1.0, time=0.5, interpolation=EASE_IN);
+            Opacity("**/AdvertisingXpReset", opacity=1.0, time=0.5, interpolation=EASE_IN);
+			StopSound(sound="Battle_Queue_Music");
+        }
+    }
+}
+
+action ON_TANK_SELECTION_CHANGED()
+{
+    Event("AnimateMultiplierResetButton", arg1=(multiplierAdAvailable and not tankXpMultiplierActive));
+	StopSound(sound="Battle_Queue_Music");
+}

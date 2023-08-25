@@ -59,42 +59,42 @@ StyleSheets:
 -   selectors:
     - ".sight.atgm .arcade-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center"
 -   selectors:
     - ".sight.atgm ? .snipe-sight .camera-aim"
     properties:
-        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-sniper"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center-sniper"
 -   selectors:
     - ".sight.default-aim.atgm ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-sniper"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center-sniper"
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.default-aim .arcade-sight"
     properties:
-        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_camera-marker"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim0/aim_camera-marker"
 -   selectors:
     - ".sight.shell.default-aim ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/aim_camera-marker_snipe"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim0/aim_camera-marker_snipe"
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.aim1 .arcade-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_camera-marker"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim1/aim_camera-marker"
 -   selectors:
     - ".sight.shell.aim1 ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom1/aim_camera-marker_snipe"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim1/aim_camera-marker_snipe"
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.aim2 .arcade-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom2/aim_camera-marker"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim2/aim_camera-marker"
 -   selectors:
     - ".sight.shell.aim2 ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Shared/HUD/aim/custom2/aim_camera-marker_snipe"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim2/aim_camera-marker_snipe"
         bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selectors:
     - ".sight.shell.aimed .arcade-sight"
@@ -108,7 +108,7 @@ StyleSheets:
     - ".sight.atgm.aimed ? .snipe-sight .camera-aim"
     - ".sight.default-aim.atgm.aimed ? .snipe-sight"
     properties:
-        bg-sprite: "~res:/Gfx/Battle/HUD/aim/atgm/atgm-center-green"
+        bg-sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/atgm-center-green"
 -   selectors:
     - ".sight.atgm * #fuelIcon"
     properties:

@@ -1,0 +1,6 @@
+1
+rxd_sight2@2x.packed.webp
+1998 1998
+2
+1 1 1998 1998 0 0 0 frame0
+1 1 1998 1998 0 0 0 frame1
