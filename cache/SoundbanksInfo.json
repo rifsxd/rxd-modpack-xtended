@@ -18010,7 +18010,7 @@
    {
     "Id": "1598298728",
     "Language": "SFX",
-    "Hash": "3225496595",
+    "Hash": "1686334643",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\music_menu",
     "ShortName": "music_menu",
     "Path": "music_menu.bnk",
@@ -18035,6 +18035,12 @@
       "ObjectPath": "\\Events\\RxD\\Music_Menu\\Battle_Queue_Music",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
+       {
+        "Id": "181082273",
+        "Language": "SFX",
+        "ShortName": "World_of_Tanks_Soundtrack_Onslaught_In-Queue_Version(Extended).wav",
+        "Path": "SFX\\World_of_Tanks_Soundtrack_Onslaught_In-Queue_Version(Extended)_3F75BDB9.wem"
+       },
        {
         "Id": "983387256",
         "Language": "SFX",

@@ -10561,7 +10561,7 @@
 				<GameParameter Id="1419538075" Name="RTPC_ext_settings_volume_master_fx" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_fx"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1598298728" Language="SFX" Hash="3225496595">
+		<SoundBank Id="1598298728" Language="SFX" Hash="1686334643">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\music_menu</ObjectPath>
 			<ShortName>music_menu</ShortName>
 			<Path>music_menu.bnk</Path>
@@ -10576,6 +10576,10 @@
 				</Event>
 				<Event Id="3096131283" Name="Battle_Queue_Music" ObjectPath="\Events\RxD\Music_Menu\Battle_Queue_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="181082273" Language="SFX">
+							<ShortName>World_of_Tanks_Soundtrack_Onslaught_In-Queue_Version(Extended).wav</ShortName>
+							<Path>SFX\World_of_Tanks_Soundtrack_Onslaught_In-Queue_Version(Extended)_3F75BDB9.wem</Path>
+						</File>
 						<File Id="983387256" Language="SFX">
 							<ShortName>World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended).wav</ShortName>
 							<Path>SFX\World_of_Tanks-Official_Soundtrack_Matchmaker_(Extended)_3F75BDB9.wem</Path>
