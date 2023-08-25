@@ -1,6 +1,6 @@
 1
 rxd_mark.packed.webp
-28 28
+72 72
 2
-1 1 28 28 0 0 0 frame0
-31 1 28 28 0 0 0 frame1
+28 0 72 72 0 -10 0 frame0
+156 0 72 72 0 -10 0 frame1

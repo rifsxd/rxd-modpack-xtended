@@ -397,7 +397,6 @@ Prototypes:
             Background:
                 sprite: "~res:/Gfx/Battle/HUD/rxdaim/aim1/aim_gun-marker"
                 perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-                
     -   class: "UIControl"
         name: "GunAimServer"
         position: [150.000000, 150.000000]
