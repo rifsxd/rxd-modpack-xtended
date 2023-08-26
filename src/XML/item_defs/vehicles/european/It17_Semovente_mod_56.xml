@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander>radioman</commander>
+    <gunner/>
+    <driver/>
+    <loader/>
+  </crew>
+  <speedLimits>
+    <forward>36</forward>
+    <backward>12</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.146</moving>
+    <still>0.195</still>
+    <firePenalty>0.293</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <optDevicePreset>drumGunVehiclePreset</optDevicePreset>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <enrichmentBoost>1.6462</enrichmentBoost>
+  <subnation>italy</subnation>
+  <turretBlowEnabled>true</turretBlowEnabled>
+  <effects>
+    <destruction>smallDestruction</destruction>
+    <explosion>smallExplosion</explosion>
+    <flaming>smallFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <blitz>
+      <armorScale/>
+      <pushNormalsScale/>
+      <averageThickness>
+        <turret_01>119.183830</turret_01>
+      </averageThickness>
+      <blitzPartName>hull</blitzPartName>
+      <bbox>
+        <min>-1.678589 -3.448360 0.490411</min>
+        <max>1.669180 3.230220 1.529587</max>
+      </bbox>
+      <points>
+        <normal>0.000037 0.000071 0.000007</normal>
+      </points>
+    </blitz>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.0 1.506700 1.450900</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>210</armor_1>
+      <armor_2>117</armor_2>
+      <armor_3>75</armor_3>
+      <armor_4>42</armor_4>
+      <armor_5>22</armor_5>
+      <armor_6>24</armor_6>
+      <armor_7>74</armor_7>
+      <armor_8>10</armor_8>
+      <armor_9>130</armor_9>
+      <armor_11>83</armor_11>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>17145</weight>
+    <maxHealth>960</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>240</maxHealth>
+      <maxRegenHealth>160</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis1_It17_Semovente_mod_56>
+      <unlocks>
+        <chassis>
+          Chassis2_It17_Semovente_mod_56
+				
+          <cost>8400</cost>
+        </chassis>
+      </unlocks>
+      <userString>#european_vehicles:Chassis1_It17_Semovente_mod_56</userString>
+      <shortUserString>#european_vehicles:Chassis1_It17_Semovente_mod_56_short</shortUserString>
+      <description>#european_vehicles:Chassis1_It17_Semovente_mod_56_descr</description>
+      <tags/>
+      <level>7</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>smallTankDust</dust>
+        <mud>smallTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.40131 2.00054</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>7000</weight>
+      <maxLoad>56000</maxLoad>
+      <terrainResistance>1.2 1.6 2</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>false</rotationIsAroundCenter>
+      <rotationSpeed>20</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.21</vehicleMovement>
+        <vehicleRotation>0.21</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>240</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis1_It17_Semovente_mod_56>
+    <Chassis2_It17_Semovente_mod_56>
+      <userString>#european_vehicles:Chassis2_It17_Semovente_mod_56</userString>
+      <shortUserString>#european_vehicles:Chassis2_It17_Semovente_mod_56_short</shortUserString>
+      <description>#european_vehicles:Chassis2_It17_Semovente_mod_56_descr</description>
+      <tags/>
+      <level>7</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>smallTankDust</dust>
+        <mud>smallTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.40131 2.00054</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>7000</weight>
+      <maxLoad>58000</maxLoad>
+      <terrainResistance>1 1.5 1.9</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>false</rotationIsAroundCenter>
+      <rotationSpeed>23</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.19</vehicleMovement>
+        <vehicleRotation>0.19</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>240</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis2_It17_Semovente_mod_56>
+  </chassis>
+  <turrets0>
+    <Turret_1_It17_Semovente_mod_56>
+      <unlocks>
+        <turret>
+          Turret_2_It17_Semovente_mod_56
+				
+          <cost>9700</cost>
+        </turret>
+      </unlocks>
+      <userString>#european_vehicles:Turret_1_It17_Semovente_mod_56</userString>
+      <description>#european_vehicles:Turret_1_It17_Semovente_mod_56_descr</description>
+      <tags/>
+      <level>7</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-45 45</yawLimits>
+      <gunPosition>0.000000 0.283332 1.399652</gunPosition>
+      <armor>
+        <armor_1>235</armor_1>
+        <armor_2>190</armor_2>
+        <armor_3>110</armor_3>
+        <armor_4>42</armor_4>
+        <armor_5>64</armor_5>
+        <armor_6>130</armor_6>
+        <armor_7>130</armor_7>
+        <armor_8>20</armor_8>
+        <armor_9>60</armor_9>
+        <armor_10>90</armor_10>
+        <armor_16>80</armor_16>
+      </armor>
+      <primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
+      <weight>6000</weight>
+      <maxHealth>240</maxHealth>
+      <rotationSpeed>16</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>230</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Cannone_Da_90-53M>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <unlocks>
+            <gun>
+              _90mm_Cannone_Da_90-60
+						
+              <cost>18000</cost>
+            </gun>
+          </unlocks>
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              258
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              120
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>0</gun>
+          </armor>
+          <shotDispersionRadius>0.4</shotDispersionRadius>
+          <aimingTime>2.6</aimingTime>
+          <reloadTime>45</reloadTime>
+          <pumpGunMode>true</pumpGunMode>
+          <pumpGunReloadTimes>28 9 8</pumpGunReloadTimes>
+          <shotDispersionFactors>
+            <turretRotation>0.15</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <turretYawLimits>-45 45</turretYawLimits>
+          <clip>
+            <count>3</count>
+            <rate>17</rate>
+          </clip>
+          <shots>
+            <_90mm_APCBC_T14E>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_APCBC_T14E>
+            <_90mm_HVAP_T17E>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_T17E>
+            <_90mm_HE_T15HE>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_T15HE>
+          </shots>
+        </_90mm_Cannone_Da_90-53M>
+        <_90mm_Cannone_Da_90-60>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <vehicle>
+              It18_Semovente_mod_64
+						
+              <cost>118000</cost>
+            </vehicle>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Gun_02.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Gun_02.model</undamaged>
+            <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_02.model</destroyed>
+            <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_02.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              258
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              120
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>0</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>2.45</aimingTime>
+          <reloadTime>42</reloadTime>
+          <pumpGunMode>true</pumpGunMode>
+          <pumpGunReloadTimes>26 9 7</pumpGunReloadTimes>
+          <shotDispersionFactors>
+            <turretRotation>0.13</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <turretYawLimits>-45 45</turretYawLimits>
+          <clip>
+            <count>3</count>
+            <rate>20</rate>
+          </clip>
+          <shots>
+            <_90mm_APCBC_T14EM>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_APCBC_T14EM>
+            <_90mm_HVAP_T17EM>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_T17EM>
+            <_90mm_HE_T15HEM>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_T15HEM>
+          </shots>
+        </_90mm_Cannone_Da_90-60>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_1_It17_Semovente_mod_56>
+    <Turret_2_It17_Semovente_mod_56>
+      <userString>#european_vehicles:Turret_2_It17_Semovente_mod_56</userString>
+      <description>#european_vehicles:Turret_2_It17_Semovente_mod_56_descr</description>
+      <tags/>
+      <level>7</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Turret_02.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Turret_02.model</undamaged>
+        <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Turret_02.model</destroyed>
+        <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Turret_02.model</exploded>
+      </models>
+      <yawLimits>-45 45</yawLimits>
+      <gunPosition>0.000000 0.283332 1.399652</gunPosition>
+      <armor>
+        <armor_1>250</armor_1>
+        <armor_2>170</armor_2>
+        <armor_3>120</armor_3>
+        <armor_4>42</armor_4>
+        <armor_5>104</armor_5>
+        <armor_6>32</armor_6>
+        <armor_7>55</armor_7>
+        <armor_8>55</armor_8>
+        <armor_9>104</armor_9>
+        <armor_10>
+          20
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_10>
+        <armor_11>80</armor_11>
+        <armor_12>
+          90
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_12>
+        <armor_16>30</armor_16>
+      </armor>
+      <unlocks>
+        <gun>
+          _105mm_Cannone_Da_105-56
+				
+          <cost>27000</cost>
+        </gun>
+      </unlocks>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>6000</weight>
+      <maxHealth>240</maxHealth>
+      <rotationSpeed>17</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>230</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Cannone_Da_90-53M>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Gun_04.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Gun_04.model</undamaged>
+            <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_04.model</destroyed>
+            <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_04.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              265
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>0</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>2.4</aimingTime>
+          <reloadTime>40</reloadTime>
+          <pumpGunMode>true</pumpGunMode>
+          <pumpGunReloadTimes>26 8 6</pumpGunReloadTimes>
+          <shotDispersionFactors>
+            <turretRotation>0.14</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <turretYawLimits>-45 45</turretYawLimits>
+          <clip>
+            <count>3</count>
+            <rate>17</rate>
+          </clip>
+          <shots>
+            <_90mm_APCBC_T14E>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_APCBC_T14E>
+            <_90mm_HVAP_T17E>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_T17E>
+            <_90mm_HE_T15HE>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_T15HE>
+          </shots>
+        </_90mm_Cannone_Da_90-53M>
+        <_90mm_Cannone_Da_90-60>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Gun_05.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Gun_05.model</undamaged>
+            <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_05.model</destroyed>
+            <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_05.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              265
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>0</gun>
+          </armor>
+          <shotDispersionRadius>0.38</shotDispersionRadius>
+          <aimingTime>2.3</aimingTime>
+          <reloadTime>35</reloadTime>
+          <pumpGunMode>true</pumpGunMode>
+          <pumpGunReloadTimes>24 6 5</pumpGunReloadTimes>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <turretYawLimits>-45 45</turretYawLimits>
+          <clip>
+            <count>3</count>
+            <rate>20</rate>
+          </clip>
+          <shots>
+            <_90mm_APCBC_T14EM>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_APCBC_T14EM>
+            <_90mm_HVAP_T17EM>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_T17EM>
+            <_90mm_HE_T15HEM>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_T15HEM>
+          </shots>
+        </_90mm_Cannone_Da_90-60>
+        <_105mm_Cannone_Da_105-56>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>50</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/It17_Semovente_mod_56/collision/Gun_06.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/It17_Semovente_mod_56/normal/lod0/Gun_06.model</undamaged>
+            <destroyed>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_06.model</destroyed>
+            <exploded>vehicles/european/It17_Semovente_mod_56/crash/lod0/Gun_06.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              265
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>0</gun>
+          </armor>
+          <shotDispersionRadius>0.4</shotDispersionRadius>
+          <aimingTime>2.65</aimingTime>
+          <reloadTime>9.5</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.14</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <turretYawLimits>-45 45</turretYawLimits>
+          <shots>
+            <_105mm_APCBC_T14EF>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_APCBC_T14EF>
+            <_105mm_HVAP_T17EF>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_HVAP_T17EF>
+            <_105mm_HE_T15HEF>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_HE_T15HEF>
+          </shots>
+        </_105mm_Cannone_Da_105-56>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_2_It17_Semovente_mod_56>
+  </turrets0>
+  <engines>
+    <Continental_AOI_1490>
+      shared
+		
+      <unlocks>
+        <engine>
+          Continental_AOI_1490M
+				
+          <cost>9000</cost>
+        </engine>
+      </unlocks>
+    </Continental_AOI_1490>
+    <Continental_AOI_1490M>shared</Continental_AOI_1490M>
+  </engines>
+  <fuelTanks>
+    <Average>shared</Average>
+  </fuelTanks>
+  <radios>
+    <SEM_70>shared</SEM_70>
+  </radios>
+</root>

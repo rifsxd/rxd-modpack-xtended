@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <radioman/>
+    <loader/>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>40</forward>
+    <backward>15</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.11</moving>
+    <still>0.16</still>
+    <firePenalty>0.293</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <enrichmentBoost>0.0</enrichmentBoost>
+  <turretBlowEnabled>true</turretBlowEnabled>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>mediumFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.000000 1.604490 0.554646</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>139</armor_1>
+      <armor_2>47</armor_2>
+      <armor_3>70</armor_3>
+      <armor_4>47</armor_4>
+      <armor_5>20</armor_5>
+      <armor_6>20</armor_6>
+      <armor_7>
+        20
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_7>
+      <armor_8>15</armor_8>
+      <armor_9>70</armor_9>
+      <armor_10>10</armor_10>
+      <armor_11>172</armor_11>
+      <armor_12>
+        10
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_12>
+      <armor_13>157</armor_13>
+      <armor_14>90</armor_14>
+      <armor_15>50</armor_15>
+      <armor_16>40</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>41520</weight>
+    <maxHealth>1040</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>220</maxHealth>
+      <maxRegenHealth>150</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_1_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Chassis_1_Oth37_T26_E4_SuperPershing_S1</userString>
+      <shortUserString>#other_vehicles:Chassis_1_Oth37_T26_E4_SuperPershing_S1_short</shortUserString>
+      <description>#other_vehicles:Chassis_1_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.397 1.88998</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>10550</weight>
+      <maxLoad>67520</maxLoad>
+      <terrainResistance>1.3 1.5 2</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>40</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.2</vehicleMovement>
+        <vehicleRotation>0.2</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>220</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_1_Oth37_T26_E4_SuperPershing_S1>
+    <Chassis_2_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Chassis_2_Oth37_T26_E4_SuperPershing_S1</userString>
+      <shortUserString>#other_vehicles:Chassis_2_Oth37_T26_E4_SuperPershing_S1_short</shortUserString>
+      <description>#other_vehicles:Chassis_2_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <gun>
+          _90mm_Gun_T15E1S3
+				
+          <cost>prx_season_1:1820</cost>
+        </gun>
+      </unlocks>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.397 1.88998</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>10550</weight>
+      <maxLoad>67520</maxLoad>
+      <terrainResistance>1.2 1.4 1.9</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>40</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.2</vehicleMovement>
+        <vehicleRotation>0.2</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>220</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_2_Oth37_T26_E4_SuperPershing_S1>
+    <Chassis_3_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Chassis_3_Oth37_T26_E4_SuperPershing_S1</userString>
+      <shortUserString>#other_vehicles:Chassis_3_Oth37_T26_E4_SuperPershing_S1_short</shortUserString>
+      <description>#other_vehicles:Chassis_3_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <turret>
+          Turret_4_Oth37_T26_E4_SuperPershing_S1
+				
+          <cost>prx_season_1:2200</cost>
+        </turret>
+      </unlocks>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.397 1.88998</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>10550</weight>
+      <maxLoad>67520</maxLoad>
+      <terrainResistance>1.1 1.35 1.85</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>40</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.2</vehicleMovement>
+        <vehicleRotation>0.2</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>220</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_3_Oth37_T26_E4_SuperPershing_S1>
+    <Chassis_4_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Chassis_4_Oth37_T26_E4_SuperPershing_S1</userString>
+      <shortUserString>#other_vehicles:Chassis_4_Oth37_T26_E4_SuperPershing_S1_short</shortUserString>
+      <description>#other_vehicles:Chassis_4_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <gun>
+          _105mm_Gun_T15E1S2
+				
+          <cost>prx_season_1:2490</cost>
+        </gun>
+      </unlocks>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.397 1.88998</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>10550</weight>
+      <maxLoad>67520</maxLoad>
+      <terrainResistance>1 1.3 1.8</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>40</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.2</vehicleMovement>
+        <vehicleRotation>0.2</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>220</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_4_Oth37_T26_E4_SuperPershing_S1>
+  </chassis>
+  <turrets0>
+    <Turret_1_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Turret_1_Oth37_T26_E4_SuperPershing_S1</userString>
+      <description>#other_vehicles:Turret_1_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>-0.061398 0.420767 0.928096</gunPosition>
+      <armor>
+        <armor_1>156</armor_1>
+        <armor_2>110</armor_2>
+        <armor_3>67</armor_3>
+        <armor_4>42</armor_4>
+        <armor_5>35</armor_5>
+        <armor_6>40</armor_6>
+        <armor_7>77</armor_7>
+        <armor_8>40</armor_8>
+        <armor_9>132</armor_9>
+        <armor_10>
+          10
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_10>
+        <armor_16>70</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>10050</weight>
+      <maxHealth>260</maxHealth>
+      <rotationSpeed>20</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Gun_T15E1S1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <gun>
+              _90mm_Gun_T15E1S2
+						
+              <cost>prx_season_1:1430</cost>
+            </gun>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.435</shotDispersionRadius>
+          <aimingTime>2.3</aimingTime>
+          <reloadTime>10.8</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S1>
+            <_90mm_HVAP_M304S1>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S1>
+            <_90mm_HE_M71S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S1>
+          </shots>
+        </_90mm_Gun_T15E1S1>
+        <_90mm_Gun_T15E1S2>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <turret>
+              Turret_2_Oth37_T26_E4_SuperPershing_S1
+						
+              <cost>prx_season_1:1520</cost>
+            </turret>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.43</shotDispersionRadius>
+          <aimingTime>2.2</aimingTime>
+          <reloadTime>10.6</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S2>
+            <_90mm_HVAP_M304S2>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S2>
+            <_90mm_HE_M71S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S2>
+          </shots>
+        </_90mm_Gun_T15E1S2>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_1_Oth37_T26_E4_SuperPershing_S1>
+    <Turret_2_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Turret_2_Oth37_T26_E4_SuperPershing_S1</userString>
+      <description>#other_vehicles:Turret_2_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <engine>
+          Ford_GAF_V8S2
+				
+          <cost>prx_season_1:1620</cost>
+        </engine>
+      </unlocks>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>-0.061398 0.420767 0.928096</gunPosition>
+      <armor>
+        <armor_1>156</armor_1>
+        <armor_2>110</armor_2>
+        <armor_3>67</armor_3>
+        <armor_4>42</armor_4>
+        <armor_5>35</armor_5>
+        <armor_6>40</armor_6>
+        <armor_7>77</armor_7>
+        <armor_8>40</armor_8>
+        <armor_9>132</armor_9>
+        <armor_10>
+          10
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_10>
+        <armor_16>70</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>10050</weight>
+      <maxHealth>310</maxHealth>
+      <rotationSpeed>38</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Gun_T15E1S1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.425</shotDispersionRadius>
+          <aimingTime>2.2</aimingTime>
+          <reloadTime>10.5</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S1>
+            <_90mm_HVAP_M304S1>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S1>
+            <_90mm_HE_M71S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S1>
+          </shots>
+        </_90mm_Gun_T15E1S1>
+        <_90mm_Gun_T15E1S2>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.42</shotDispersionRadius>
+          <aimingTime>2.1</aimingTime>
+          <reloadTime>10.2</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S2>
+            <_90mm_HVAP_M304S2>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S2>
+            <_90mm_HE_M71S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S2>
+          </shots>
+        </_90mm_Gun_T15E1S2>
+        <_90mm_Gun_T15E1S3>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <turret>
+              Turret_3_Oth37_T26_E4_SuperPershing_S1
+						
+              <cost>prx_season_1:1910</cost>
+            </turret>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.405</shotDispersionRadius>
+          <aimingTime>1.9</aimingTime>
+          <reloadTime>9.9</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S3>
+            <_90mm_HVAP_M304S3>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S3>
+            <_90mm_HE_M71S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S3>
+          </shots>
+        </_90mm_Gun_T15E1S3>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_2_Oth37_T26_E4_SuperPershing_S1>
+    <Turret_3_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Turret_3_Oth37_T26_E4_SuperPershing_S1</userString>
+      <description>#other_vehicles:Turret_3_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <engine>
+          Ford_GAF_V8S3
+				
+          <cost>prx_season_1:2010</cost>
+        </engine>
+      </unlocks>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>-0.061398 0.420767 0.928096</gunPosition>
+      <armor>
+        <armor_1>156</armor_1>
+        <armor_2>110</armor_2>
+        <armor_3>67</armor_3>
+        <armor_4>42</armor_4>
+        <armor_5>35</armor_5>
+        <armor_6>40</armor_6>
+        <armor_7>77</armor_7>
+        <armor_8>40</armor_8>
+        <armor_9>132</armor_9>
+        <armor_10>
+          10
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_10>
+        <armor_16>70</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>10050</weight>
+      <maxHealth>360</maxHealth>
+      <rotationSpeed>38</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Gun_T15E1S1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.41</shotDispersionRadius>
+          <aimingTime>2</aimingTime>
+          <reloadTime>10</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S1>
+            <_90mm_HVAP_M304S1>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S1>
+            <_90mm_HE_M71S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S1>
+          </shots>
+        </_90mm_Gun_T15E1S1>
+        <_90mm_Gun_T15E1S2>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.4</shotDispersionRadius>
+          <aimingTime>1.9</aimingTime>
+          <reloadTime>9.8</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S2>
+            <_90mm_HVAP_M304S2>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S2>
+            <_90mm_HE_M71S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S2>
+          </shots>
+        </_90mm_Gun_T15E1S2>
+        <_90mm_Gun_T15E1S3>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>1.8</aimingTime>
+          <reloadTime>9.5</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S3>
+            <_90mm_HVAP_M304S3>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S3>
+            <_90mm_HE_M71S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S3>
+          </shots>
+        </_90mm_Gun_T15E1S3>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_3_Oth37_T26_E4_SuperPershing_S1>
+    <Turret_4_Oth37_T26_E4_SuperPershing_S1>
+      <userString>#other_vehicles:Turret_4_Oth37_T26_E4_SuperPershing_S1</userString>
+      <description>#other_vehicles:Turret_4_Oth37_T26_E4_SuperPershing_S1_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <engine>
+          Ford_GAF_V8S4
+				
+          <cost>prx_season_1:2300</cost>
+        </engine>
+      </unlocks>
+      <hitTester>
+        <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Turret_02.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Turret_02.model</undamaged>
+        <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_02.model</destroyed>
+        <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Turret_02.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>-0.061398 0.420767 0.928096</gunPosition>
+      <armor>
+        <armor_1>165</armor_1>
+        <armor_2>124</armor_2>
+        <armor_3>70</armor_3>
+        <armor_4>50</armor_4>
+        <armor_5>20</armor_5>
+        <armor_6>50</armor_6>
+        <armor_7>84</armor_7>
+        <armor_8>30</armor_8>
+        <armor_9>116</armor_9>
+        <armor_10>90</armor_10>
+        <armor_11>
+          10
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_11>
+        <armor_13>
+          15
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_13>
+        <armor_16>20</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>10050</weight>
+      <maxHealth>410</maxHealth>
+      <rotationSpeed>26</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_90mm_Gun_T15E1S1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_03.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_03.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              130
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <armor_7>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_7>
+            <armor_8>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_8>
+            <armor_10>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_10>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.4</shotDispersionRadius>
+          <aimingTime>1.9</aimingTime>
+          <reloadTime>9.7</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S1>
+            <_90mm_HVAP_M304S1>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S1>
+            <_90mm_HE_M71S1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S1>
+          </shots>
+        </_90mm_Gun_T15E1S1>
+        <_90mm_Gun_T15E1S2>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_03.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_03.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              130
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <armor_7>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_7>
+            <armor_8>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_8>
+            <armor_10>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_10>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>1.8</aimingTime>
+          <reloadTime>9.5</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S2>
+            <_90mm_HVAP_M304S2>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S2>
+            <_90mm_HE_M71S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S2>
+          </shots>
+        </_90mm_Gun_T15E1S2>
+        <_90mm_Gun_T15E1S3>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_03.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_03.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_03.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              130
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <armor_7>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_7>
+            <armor_8>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_8>
+            <armor_10>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_10>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.38</shotDispersionRadius>
+          <aimingTime>1.75</aimingTime>
+          <reloadTime>9.3</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_90mm_AP_M77S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_AP_M77S3>
+            <_90mm_HVAP_M304S3>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_90mm_HVAP_M304S3>
+            <_90mm_HE_M71S3>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_90mm_HE_M71S3>
+          </shots>
+        </_90mm_Gun_T15E1S3>
+        <_105mm_Gun_T15E1S2>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>50</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/other/Oth37_T26_E4_SuperPershing_S1/collision/Gun_04.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/other/Oth37_T26_E4_SuperPershing_S1/normal/lod0/Gun_04.model</undamaged>
+            <destroyed>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_04.model</destroyed>
+            <exploded>vehicles/other/Oth37_T26_E4_SuperPershing_S1/crash/lod0/Gun_04.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              130
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <armor_7>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_7>
+            <armor_10>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_10>
+            <gun>20</gun>
+          </armor>
+          <shotDispersionRadius>0.38</shotDispersionRadius>
+          <aimingTime>1.7</aimingTime>
+          <reloadTime>10.2</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 3 35</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_AP_M77S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_AP_M77S2>
+            <_105mm_HVAP_M304S2>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_HVAP_M304S2>
+            <_105mm_HE_M71S2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_HE_M71S2>
+          </shots>
+        </_105mm_Gun_T15E1S2>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_4_Oth37_T26_E4_SuperPershing_S1>
+  </turrets0>
+  <engines>
+    <Ford_GAF_V8S1>shared</Ford_GAF_V8S1>
+    <Ford_GAF_V8S2>
+      shared
+		
+      <unlocks>
+        <chassis>
+          Chassis_2_Oth37_T26_E4_SuperPershing_S1
+				
+          <cost>prx_season_1:1720</cost>
+        </chassis>
+      </unlocks>
+    </Ford_GAF_V8S2>
+    <Ford_GAF_V8S3>
+      shared
+		
+      <unlocks>
+        <chassis>
+          Chassis_3_Oth37_T26_E4_SuperPershing_S1
+				
+          <cost>prx_season_1:2100</cost>
+        </chassis>
+      </unlocks>
+    </Ford_GAF_V8S3>
+    <Ford_GAF_V8S4>
+      shared
+		
+      <unlocks>
+        <chassis>
+          Chassis_4_Oth37_T26_E4_SuperPershing_S1
+				
+          <cost>prx_season_1:2400</cost>
+        </chassis>
+      </unlocks>
+    </Ford_GAF_V8S4>
+  </engines>
+  <fuelTanks>
+    <Average>shared</Average>
+  </fuelTanks>
+  <radios>
+    <SCR_528A1S1>shared</SCR_528A1S1>
+  </radios>
+</root>

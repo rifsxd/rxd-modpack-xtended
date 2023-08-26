@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <radioman/>
+    <loader/>
+    <loader/>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>35</forward>
+    <backward>12</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.079</moving>
+    <still>0.137</still>
+    <firePenalty>0.176</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <enrichmentBoost>0.0000</enrichmentBoost>
+  <turretBlowEnabled>true</turretBlowEnabled>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>largeFlaming</flaming>
+    <collision/>
+  </effects>
+  <camouflage>
+    <priceFactor>1.4</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask>vehicles/german/S01_Frankentank/S01_Frankentank_CM.dds</exclusionMask>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.86</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <models>
+      <undamaged>vehicles/german/S01_Frankentank/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/german/S01_Frankentank/normal/lod0/Hull.model</destroyed>
+      <exploded>vehicles/german/S01_Frankentank/normal/lod0/Hull.model</exploded>
+    </models>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.22 36.00 0.36 1.00 0.04 0.26</pitchParams>
+      <rollParams>1.00 0.22 36.00 0.36 1.00 0.04 0.26</rollParams>
+      <sensitivityToImpulse>0.22</sensitivityToImpulse>
+    </swinging>
+    <exhaust>
+      <pixie>particles/Tank/engine_exit_gass.xml</pixie>
+      <nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
+      <rates>6.0 12.0 30.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.000000 1.771100 0.504100</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/german/S01_Frankentank/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>200</armor_1>
+      <armor_2>80</armor_2>
+      <armor_3>100</armor_3>
+      <armor_4>80</armor_4>
+      <armor_5>100</armor_5>
+      <armor_6>40</armor_6>
+      <armor_7>25</armor_7>
+      <armor_8>25</armor_8>
+      <armor_9>20</armor_9>
+      <armor_10>200</armor_10>
+      <armor_11>0</armor_11>
+      <armor_12>200</armor_12>
+      <armor_13>25</armor_13>
+      <armor_14>200</armor_14>
+      <armor_16>200</armor_16>
+      <driver>
+        0
+				
+			
+        <chanceToHitByProjectile>0</chanceToHitByProjectile>
+        <chanceToHitByExplosion>0</chanceToHitByExplosion>
+      </driver>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>30100</weight>
+    <maxHealth>1280</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>200</maxHealth>
+      <maxRegenHealth>135</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>-0.311338 0.690644 2.54877</rayStart>
+        <rayEnd>-0.311338 0.65041 2.31216</rayEnd>
+        <rayUp>0.000000 1 0.000000</rayUp>
+        <size>0.24</size>
+        <hideIfDamaged>false</hideIfDamaged>
+      </clan>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_Frankentank>
+      <userString>#germany_vehicles:Chassis_Frankentank</userString>
+      <shortUserString>#germany_vehicles:Chassis_Frankentank_short</shortUserString>
+      <description>#germany_vehicles:Chassis_Frankentank_descr</description>
+      <tags/>
+      <level>6</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/german/S01_Frankentank/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/german/S01_Frankentank/normal/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/german/S01_Frankentank/normal/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist>FAR</lodDist>
+        <bufferPrefs>mediumTank</bufferPrefs>
+        <textureSet>germany_01</textureSet>
+        <size>0.44 0.66</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.44981</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R1</name>
+          <radius>0.451438</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.44981</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L1</name>
+          <radius>0.451438</radius>
+        </wheel>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.368516</radius>
+          <startIndex>0</startIndex>
+          <count>6</count>
+        </group>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.368516</radius>
+          <startIndex>0</startIndex>
+          <count>6</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_L1</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound>/vehicles/tanks/treads/treads_3</sound>
+      <hullPosition>0.000000 0.000000 -0.000000</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/german/S01_Frankentank/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>25</leftTrack>
+        <rightTrack>25</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.34123 1.95358</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>18000</weight>
+      <maxLoad>95200</maxLoad>
+      <terrainResistance>1.2 1.5 1.92</terrainResistance>
+      <brakeForce>46500</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>18</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.23</vehicleMovement>
+        <vehicleRotation>0.23</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>170</maxHealth>
+      <maxRegenHealth>130</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_Frankentank>
+  </chassis>
+  <turrets0>
+    <Turret_Frankentank>
+      <userString>#germany_vehicles:Turret_1_Frankentank</userString>
+      <shortUserString>#germany_vehicles:Turret_1_Frankentank_short</shortUserString>
+      <description>#germany_vehicles:Turret_1_Frankentank_descr</description>
+      <tags/>
+      <level>6</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/german/S01_Frankentank/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/german/S01_Frankentank/normal/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/german/S01_Frankentank/normal/lod0/Turret_01.model</exploded>
+      </models>
+      <hitTester>
+        <collisionModel>vehicles/german/S01_Frankentank/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>-0.013202 0.635519 1.5255</gunPosition>
+      <armor>
+        <armor_1>150</armor_1>
+        <armor_2>95</armor_2>
+        <armor_3>120</armor_3>
+        <armor_4>80</armor_4>
+        <armor_5>80</armor_5>
+        <armor_6>25</armor_6>
+        <armor_7>15</armor_7>
+        <armor_8>25</armor_8>
+        <armor_9>30</armor_9>
+        <armor_10>95</armor_10>
+        <armor_11>150</armor_11>
+        <armor_12>100</armor_12>
+        <armor_16>80</armor_16>
+        <commander>
+          0
+					
+				
+          <chanceToHitByProjectile>0</chanceToHitByProjectile>
+          <chanceToHitByExplosion>0</chanceToHitByExplosion>
+        </commander>
+        <gunner_1>
+          0
+					
+				
+          <chanceToHitByProjectile>0</chanceToHitByProjectile>
+          <chanceToHitByExplosion>0</chanceToHitByExplosion>
+        </gunner_1>
+        <loader_1>
+          0
+					
+				
+          <chanceToHitByProjectile>0</chanceToHitByProjectile>
+          <chanceToHitByExplosion>0</chanceToHitByExplosion>
+        </loader_1>
+        <loader_2>
+          0
+					
+				
+          <chanceToHitByProjectile>0</chanceToHitByProjectile>
+          <chanceToHitByExplosion>0</chanceToHitByExplosion>
+        </loader_2>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>15000</weight>
+      <maxHealth>320</maxHealth>
+      <rotationSpeed>26</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>140</maxHealth>
+        <maxRegenHealth>70</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>230</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>90</maxHealth>
+        <maxRegenHealth>45</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_105mm_Gun_T5E1_Franken>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <unlocks>
+            <gun>
+              _130mm_B-13-S2_Franken
+						
+              <cost>0</cost>
+            </gun>
+          </unlocks>
+          <maxAmmo>63</maxAmmo>
+          <reloadTime>12.3</reloadTime>
+          <pitchLimits>-15 8</pitchLimits>
+          <shotDispersionFactors>
+            <turretRotation>0.16</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <models>
+            <undamaged>vehicles/german/S01_Frankentank/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/german/S01_Frankentank/normal/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/german/S01_Frankentank/normal/lod0/Gun_01.model</exploded>
+          </models>
+          <hitTester>
+            <collisionModel>vehicles/german/S01_Frankentank/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <armor>
+            <armor_1>
+              279
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              101
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>45</gun>
+          </armor>
+          <shotDispersionRadius>0.42</shotDispersionRadius>
+          <aimingTime>2.5</aimingTime>
+          <invisibilityFactorAtShot>0.209</invisibilityFactorAtShot>
+          <fitsRatingBattle>true</fitsRatingBattle>
+          <shots>
+            <_105mm_AP_T32>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_AP_T32>
+            <_105mm_APCR_T29E3>
+              <shell>
+                shared
+							
+                <price>
+                  9
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_APCR_T29E3>
+            <_105mm_HE_M11>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_HE_M11>
+          </shots>
+        </_105mm_Gun_T5E1_Franken>
+        <_130mm_B-13-S2_Franken>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>30</maxAmmo>
+          <pitchLimits>-15 6</pitchLimits>
+          <models>
+            <undamaged>vehicles/german/S01_Frankentank/normal/lod0/Gun_02.model</undamaged>
+            <destroyed>vehicles/german/S01_Frankentank/normal/lod0/Gun_02.model</destroyed>
+            <exploded>vehicles/german/S01_Frankentank/normal/lod0/Gun_02.model</exploded>
+          </models>
+          <hitTester>
+            <collisionModel>vehicles/german/S01_Frankentank/collision/Gun_02.model</collisionModel>
+          </hitTester>
+          <armor>
+            <armor_1>
+              130
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              50
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              20
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <gun>60</gun>
+          </armor>
+          <shotDispersionRadius>0.45</shotDispersionRadius>
+          <reloadTime>20</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.2</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <aimingTime>2.9</aimingTime>
+          <invisibilityFactorAtShot>0.23</invisibilityFactorAtShot>
+          <shots>
+            <_130mm_PB-46>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_130mm_PB-46>
+            <_130mm_PB-46A>
+              <shell>
+                shared
+							
+                <price>
+                  9
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_130mm_PB-46A>
+            <_130mm_OF-46>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_130mm_OF-46>
+          </shots>
+        </_130mm_B-13-S2_Franken>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.12877 0.406835 0.980333</rayStart>
+          <rayEnd>-0.751237 0.404896 0.848198</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.28</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <player>
+          <rayStart>1.12877 0.406835 0.980333</rayStart>
+          <rayEnd>0.751237 0.404896 0.848198</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.28</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.28026 0.434644 -0.0455891</rayStart>
+          <rayEnd>-1.04045 0.434644 -0.035905</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.78</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+        <inscription>
+          <rayStart>1.28026 0.434644 -0.0455891</rayStart>
+          <rayEnd>1.04045 0.434644 -0.035905</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.78</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+    </Turret_Frankentank>
+  </turrets0>
+  <engines>
+    <Frankengine>shared</Frankengine>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <FuG7>shared</FuG7>
+  </radios>
+</root>

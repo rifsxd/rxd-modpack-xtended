@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <driver/>
+    <gunner/>
+    <radioman/>
+    <loader/>
+    <loader/>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>34</forward>
+    <backward>12</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.145</moving>
+    <still>0.242</still>
+    <firePenalty>0.363</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <enrichmentBoost>0</enrichmentBoost>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>mediumFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>britain_color</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/british/GB92_FV217/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/british/GB92_FV217/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/british/GB92_FV217/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.0 1.758110 2.026009</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/british/GB92_FV217/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>215</armor_1>
+      <armor_2>172</armor_2>
+      <armor_3>152</armor_3>
+      <armor_4>38</armor_4>
+      <armor_5>65</armor_5>
+      <armor_6>20</armor_6>
+      <armor_7>185</armor_7>
+      <armor_8>51</armor_8>
+      <armor_9>
+        6
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_9>
+      <armor_10>356</armor_10>
+      <armor_11>17</armor_11>
+      <armor_12>50.8</armor_12>
+      <armor_13>280</armor_13>
+      <armor_14>152</armor_14>
+      <armor_15>197</armor_15>
+      <armor_16>127</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>48433</weight>
+    <maxHealth>1600</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>260</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <fakeTurrets>
+      <lobby>0</lobby>
+      <battle>0</battle>
+    </fakeTurrets>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_GB92_FV217>
+      <userString>#uk_vehicles:Chassis_GB92_FV217</userString>
+      <shortUserString>#uk_vehicles:Chassis_GB92_FV217_short</shortUserString>
+      <description>#uk_vehicles:Chassis_GB92_FV217_descr</description>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/british/GB92_FV217/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/british/GB92_FV217/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/british/GB92_FV217/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/british/GB92_FV217/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>25</leftTrack>
+        <rightTrack>25</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.273 1.92453</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>12000</weight>
+      <maxLoad>70000</maxLoad>
+      <terrainResistance>1.3 1.5 2.1</terrainResistance>
+      <brakeForce>65000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>32</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.26</vehicleMovement>
+        <vehicleRotation>0.26</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>250</maxHealth>
+      <maxRegenHealth>190</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_GB92_FV217>
+  </chassis>
+  <turrets0>
+    <Turret_1_GB92_FV217>
+      <userString>#uk_vehicles:Turret_1_GB92_FV217</userString>
+      <description>#uk_vehicles:Turret_1_GB92_FV217_descr</description>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/british/GB92_FV217/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/british/GB92_FV217/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/british/GB92_FV217/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/british/GB92_FV217/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-10 10</yawLimits>
+      <gunPosition>0.0 0.0 -0.012500</gunPosition>
+      <armor>
+        <armor_1>50</armor_1>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>100</weight>
+      <maxHealth>400</maxHealth>
+      <rotationSpeed>16</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>170</maxHealth>
+        <maxRegenHealth>85</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>120</maxHealth>
+        <maxRegenHealth>60</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_123mm_OQF_Mk_1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/british/GB92_FV217/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/british/GB92_FV217/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/british/GB92_FV217/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/british/GB92_FV217/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              305
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <gun>40</gun>
+          </armor>
+          <shotDispersionRadius>0.35</shotDispersionRadius>
+          <reloadTime>8.5</reloadTime>
+          <aimingTime>1.9</aimingTime>
+          <invisibilityFactorAtShot>0.19</invisibilityFactorAtShot>
+          <shotDispersionFactors>
+            <turretRotation>0.08</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <pitchLimits>-20 10</pitchLimits>
+          <shots>
+            <_123mm_AP_Mk_1_2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_123mm_AP_Mk_1_2>
+            <_123mm_APDS_Mk_2_2>
+              <shell>
+                shared
+							
+                <price>
+                  12
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_123mm_APDS_Mk_2_2>
+            <_123mm_HESH_Mk_1_2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_123mm_HESH_Mk_1_2>
+          </shots>
+        </_123mm_OQF_Mk_1>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_1_GB92_FV217>
+  </turrets0>
+  <engines>
+    <Rolls_Royse_Meteor_M120_A>shared</Rolls_Royse_Meteor_M120_A>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <C45>shared</C45>
+  </radios>
+</root>

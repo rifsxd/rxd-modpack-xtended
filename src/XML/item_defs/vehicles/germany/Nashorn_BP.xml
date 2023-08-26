@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <radioman/>
+    <loader/>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>50</forward>
+    <backward>16</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.139</moving>
+    <still>0.237</still>
+    <firePenalty>0.293</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <optDevicePreset>HEprotectionPreset</optDevicePreset>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <enrichmentBoost>0.0</enrichmentBoost>
+  <effects>
+    <destruction>largeDestruction</destruction>
+    <explosion>largeExplosion</explosion>
+    <flaming>largeFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/german/Nashorn_BP/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/german/Nashorn_BP/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/german/Nashorn_BP/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.000357 1.768535 -0.194429</turret>
+    </turretPositions>
+    <fakeTurrets>
+      <lobby>0</lobby>
+      <battle>0</battle>
+    </fakeTurrets>
+    <hitTester>
+      <collisionModel>vehicles/german/Nashorn_BP/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>15</armor_1>
+      <armor_2>30</armor_2>
+      <armor_3>20</armor_3>
+      <armor_4>20</armor_4>
+      <armor_5>25</armor_5>
+      <armor_6>15</armor_6>
+      <armor_7>10</armor_7>
+      <armor_9>10</armor_9>
+      <armor_10>20</armor_10>
+      <armor_11>15</armor_11>
+      <armor_12>15</armor_12>
+      <armor_13>10</armor_13>
+      <armor_14>10</armor_14>
+      <armor_15>10</armor_15>
+      <armor_16>10</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_11 armor_14</primaryArmor>
+    <weight>10510</weight>
+    <maxHealth>800</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>150</maxHealth>
+      <maxRegenHealth>100</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_1_Nashorn_BP>
+      <userString>#germany_vehicles:Chassis_1_Nashorn_BP</userString>
+      <shortUserString>#germany_vehicles:Chassis_1_Nashorn_BP_short</shortUserString>
+      <description>#germany_vehicles:Chassis_1_Nashorn_BP_descr</description>
+      <tags/>
+      <level>6</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/german/Nashorn_BP/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/german/Nashorn_BP/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/german/Nashorn_BP/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>largeTankDust</dust>
+        <mud>largeTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/german/Nashorn_BP/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.24194 1.79771</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>5780</weight>
+      <maxLoad>34267</maxLoad>
+      <terrainResistance>1 1.18 1.6</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>32</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.13</vehicleMovement>
+        <vehicleRotation>0.13</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>120</maxHealth>
+      <maxRegenHealth>60</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_1_Nashorn_BP>
+  </chassis>
+  <turrets0>
+    <Turret_1_Nashorn_BP>
+      <userString>#germany_vehicles:Turret_1_Nashorn_BP</userString>
+      <description>#germany_vehicles:Turret_1_Nashorn_BP_descr</description>
+      <tags/>
+      <level>6</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/german/Nashorn_BP/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/german/Nashorn_BP/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/german/Nashorn_BP/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/german/Nashorn_BP/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <gunPosition>-0.000457 0.599365 -0.079771</gunPosition>
+      <armor>
+        <armor_1>15</armor_1>
+        <armor_5>10</armor_5>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>3873</weight>
+      <maxHealth>200</maxHealth>
+      <rotationSpeed>27</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>80</maxHealth>
+        <maxRegenHealth>40</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_88mm_PaK_43_L71BP>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>40</maxAmmo>
+          <pitchLimits>-20 8</pitchLimits>
+          <pitchLimits>-20 5</pitchLimits>
+          <hitTester>
+            <collisionModel>vehicles/german/Nashorn_BP/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/german/Nashorn_BP/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/german/Nashorn_BP/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/german/Nashorn_BP/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              15
+						
+              <vehicleDamageFactor>1</vehicleDamageFactor>
+            </armor_1>
+            <gun>20</gun>
+            <gunBreech>0</gunBreech>
+          </armor>
+          <shotDispersionRadius>0.32</shotDispersionRadius>
+          <aimingTime>2.1</aimingTime>
+          <reloadTime>6</reloadTime>
+          <turretYawLimits>-15 15</turretYawLimits>
+          <shotDispersionFactors>
+            <turretRotation>0.09</turretRotation>
+            <afterShot>3</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.325</invisibilityFactorAtShot>
+          <shots>
+            <_88mm_Pzgr39_43BP>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_88mm_Pzgr39_43BP>
+            <_88mm_Pzgr.40_43BP>
+              <shell>
+                shared
+							
+                <price>
+                  8
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_88mm_Pzgr.40_43BP>
+            <_88mm_Sprg.43BP>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_88mm_Sprg.43BP>
+          </shots>
+        </_88mm_PaK_43_L71BP>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+      <yawLimits>-15 15</yawLimits>
+    </Turret_1_Nashorn_BP>
+  </turrets0>
+  <engines>
+    <Maybach_HL_120_TRM_RBP>shared</Maybach_HL_120_TRM_RBP>
+  </engines>
+  <fuelTanks>
+    <Heavy>shared</Heavy>
+  </fuelTanks>
+  <radios>
+    <FuG_FBP>shared</FuG_FBP>
+  </radios>
+</root>

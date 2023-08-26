@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander>radioman</commander>
+    <gunner/>
+    <driver/>
+    <loader/>
+  </crew>
+  <speedLimits>
+    <forward>37</forward>
+    <backward>13</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.038</moving>
+    <still>0.075</still>
+    <firePenalty>0.293</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <enrichmentBoost>1.5745</enrichmentBoost>
+  <subnation>czech</subnation>
+  <turretBlowEnabled>true</turretBlowEnabled>
+  <effects>
+    <destruction>largeDestruction</destruction>
+    <explosion>largeExplosion</explosion>
+    <flaming>largeFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.0 1.696200 0.610800</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>135</armor_1>
+      <armor_2>70</armor_2>
+      <armor_3>68</armor_3>
+      <armor_4>55</armor_4>
+      <armor_5>30</armor_5>
+      <armor_6>70</armor_6>
+      <armor_7>30</armor_7>
+      <armor_8>30</armor_8>
+      <armor_10>30</armor_10>
+      <armor_11>
+        5
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_11>
+      <armor_12>
+        10
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_12>
+      <armor_16>125</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>31400</weight>
+    <maxHealth>1360</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>240</maxHealth>
+      <maxRegenHealth>160</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_1_Cz18_TNH_105_1000>
+      <unlocks>
+        <chassis>
+          Chassis_2_Cz18_TNH_105_1000
+				
+          <cost>14500</cost>
+        </chassis>
+      </unlocks>
+      <userString>#european_vehicles:Chassis_1_Cz18_TNH_105_1000</userString>
+      <shortUserString>#european_vehicles:Chassis_1_Cz18_TNH_105_1000_short</shortUserString>
+      <description>#european_vehicles:Chassis_1_Cz18_TNH_105_1000_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>largeTankDust</dust>
+        <mud>largeTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.38433 2.2875</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>14500</weight>
+      <maxLoad>74040</maxLoad>
+      <terrainResistance>1 1.3 1.8</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>23</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.21</vehicleMovement>
+        <vehicleRotation>0.21</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>250</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_1_Cz18_TNH_105_1000>
+    <Chassis_2_Cz18_TNH_105_1000>
+      <userString>#european_vehicles:Chassis_1_Cz18_TNH_105_1000</userString>
+      <shortUserString>#european_vehicles:Chassis_1_Cz18_TNH_105_1000_short</shortUserString>
+      <description>#european_vehicles:Chassis_1_Cz18_TNH_105_1000_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>largeTankDust</dust>
+        <mud>largeTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.38433 2.2875</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>14500</weight>
+      <maxLoad>74040</maxLoad>
+      <terrainResistance>1 1.3 1.8</terrainResistance>
+      <brakeForce>38000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>26</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.19</vehicleMovement>
+        <vehicleRotation>0.19</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>250</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_2_Cz18_TNH_105_1000>
+  </chassis>
+  <turrets0>
+    <Turret_1_Cz18_TNH_105_1000>
+      <userString>#european_vehicles:Turret_1_Cz18_TNH_105_1000</userString>
+      <description>#european_vehicles:Turret_1_Cz18_TNH_105_1000_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>0.0 0.325900 1.002200</gunPosition>
+      <armor>
+        <armor_1>207</armor_1>
+        <armor_2>
+          30
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_2>
+        <armor_3>90</armor_3>
+        <armor_4>50</armor_4>
+        <armor_5>30</armor_5>
+        <armor_6>48</armor_6>
+        <armor_7>170</armor_7>
+        <armor_8>154</armor_8>
+        <armor_9>84</armor_9>
+        <armor_10>20</armor_10>
+        <armor_13>207</armor_13>
+        <armor_14>84</armor_14>
+        <armor_16>140</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>9500</weight>
+      <maxHealth>340</maxHealth>
+      <rotationSpeed>23</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>160</maxHealth>
+        <maxRegenHealth>80</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>110</maxHealth>
+        <maxRegenHealth>55</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_105mm_VZ_38N>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <gun>
+              _105mm_VZ_38NA
+						
+              <cost>21000</cost>
+            </gun>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_11>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_11>
+            <gun>100</gun>
+          </armor>
+          <shotDispersionRadius>0.4</shotDispersionRadius>
+          <aimingTime>2.15</aimingTime>
+          <reloadTime>10.2</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.23</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 4 30</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_VZ_39N_OPGF>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_VZ_39N_OPGF>
+            <_105mm_VZ_42N_OPGK>
+              <shell>
+                shared
+							
+                <price>
+                  10
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_VZ_42N_OPGK>
+            <_105mm_Narazovy_38N>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_Narazovy_38N>
+          </shots>
+        </_105mm_VZ_38N>
+        <_105mm_VZ_38NA>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <unlocks>
+            <turret>
+              Turret_2_Cz18_TNH_105_1000
+						
+              <cost>23000</cost>
+            </turret>
+          </unlocks>
+          <hitTester>
+            <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Gun_02.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Gun_02.model</undamaged>
+            <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_02.model</destroyed>
+            <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_02.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_11>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_11>
+            <gun>100</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>2.1</aimingTime>
+          <reloadTime>9.4</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.22</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 4 30</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_VZ_39N_OPGA>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_VZ_39N_OPGA>
+            <_105mm_VZ_42N_OPGA>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_VZ_42N_OPGA>
+            <_105mm_Narazovy_38NA>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_Narazovy_38NA>
+          </shots>
+        </_105mm_VZ_38NA>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_1_Cz18_TNH_105_1000>
+    <Turret_2_Cz18_TNH_105_1000>
+      <userString>#european_vehicles:Turret_2_Cz18_TNH_105_1000</userString>
+      <description>#european_vehicles:Turret_2_Cz18_TNH_105_1000_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <unlocks>
+        <gun>
+          _105mm_VZ_40NM
+				
+          <cost>29000</cost>
+        </gun>
+      </unlocks>
+      <hitTester>
+        <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Turret_02.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Turret_02.model</undamaged>
+        <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Turret_02.model</destroyed>
+        <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Turret_02.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>0.0 0.352900 1.071900</gunPosition>
+      <armor>
+        <armor_1>236</armor_1>
+        <armor_2>
+          45
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_2>
+        <armor_3>100</armor_3>
+        <armor_4>55</armor_4>
+        <armor_5>48</armor_5>
+        <armor_6>194</armor_6>
+        <armor_7>202</armor_7>
+        <armor_8>187</armor_8>
+        <armor_9>105</armor_9>
+        <armor_10>34</armor_10>
+        <armor_13>236</armor_13>
+        <armor_14>157</armor_14>
+        <armor_16>147</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>9500</weight>
+      <maxHealth>440</maxHealth>
+      <rotationSpeed>23</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>160</maxHealth>
+        <maxRegenHealth>80</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>250</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>110</maxHealth>
+        <maxRegenHealth>55</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_105mm_VZ_38N>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Gun_04.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Gun_04.model</undamaged>
+            <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_04.model</destroyed>
+            <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_04.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_11>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_11>
+            <gun>100</gun>
+          </armor>
+          <shotDispersionRadius>0.39</shotDispersionRadius>
+          <aimingTime>2</aimingTime>
+          <reloadTime>9.7</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 4 30</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_VZ_39N_OPGF>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_VZ_39N_OPGF>
+            <_105mm_VZ_42N_OPGK>
+              <shell>
+                shared
+							
+                <price>
+                  10
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_VZ_42N_OPGK>
+            <_105mm_Narazovy_38N>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_Narazovy_38N>
+          </shots>
+        </_105mm_VZ_38N>
+        <_105mm_VZ_38NA>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Gun_05.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Gun_05.model</undamaged>
+            <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_05.model</destroyed>
+            <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_05.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_11>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_11>
+            <gun>100</gun>
+          </armor>
+          <shotDispersionRadius>0.38</shotDispersionRadius>
+          <aimingTime>1.95</aimingTime>
+          <reloadTime>9.3</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.205</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 4 30</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_VZ_39N_OPGA>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_VZ_39N_OPGA>
+            <_105mm_VZ_42N_OPGA>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_VZ_42N_OPGA>
+            <_105mm_Narazovy_38NA>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_Narazovy_38NA>
+          </shots>
+        </_105mm_VZ_38NA>
+        <_105mm_VZ_40NM>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>60</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/european/Cz18_TNH_105_1000/collision/Gun_06.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/european/Cz18_TNH_105_1000/normal/lod0/Gun_06.model</undamaged>
+            <destroyed>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_06.model</destroyed>
+            <exploded>vehicles/european/Cz18_TNH_105_1000/crash/lod0/Gun_06.model</exploded>
+          </models>
+          <unlocks>
+            <vehicle>
+              Cz16_TNH_T_vz51
+						
+              <cost>162000</cost>
+            </vehicle>
+          </unlocks>
+          <armor>
+            <armor_1>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_11>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_11>
+            <gun>100</gun>
+          </armor>
+          <shotDispersionRadius>0.37</shotDispersionRadius>
+          <aimingTime>2.2</aimingTime>
+          <reloadTime>9.2</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 7</pitchLimits>
+          <extraPitchLimits>
+            <back>-20 4 30</back>
+          </extraPitchLimits>
+          <shots>
+            <_105mm_VZ_39N_OPGM>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_VZ_39N_OPGM>
+            <_105mm_VZ_42N_OPGM>
+              <shell>
+                shared
+							
+                <price>
+                  7
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_VZ_42N_OPGM>
+            <_105mm_Narazovy_38M>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_Narazovy_38M>
+          </shots>
+        </_105mm_VZ_40NM>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_2_Cz18_TNH_105_1000>
+  </turrets0>
+  <engines>
+    <CKD_AXK_PROTO>
+      shared
+		
+      <unlocks>
+        <engine>
+          Skoda_V16_AHK2
+				
+          <cost>15900</cost>
+        </engine>
+      </unlocks>
+    </CKD_AXK_PROTO>
+    <Skoda_V16_AHK2>shared</Skoda_V16_AHK2>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <RM31T>shared</RM31T>
+  </radios>
+</root>

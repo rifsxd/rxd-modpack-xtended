@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <loader>radioman</loader>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>50</forward>
+    <backward>20</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.121</moving>
+    <still>0.152</still>
+    <firePenalty>0.213</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <enrichmentBoost>0.0000</enrichmentBoost>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>largeFlaming</flaming>
+    <collision/>
+    <damagedStateGroup/>
+  </effects>
+  <camouflage>
+    <priceFactor>2.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask>vehicles/american/A92_M60/M60_CM.dds</exclusionMask>
+  </camouflage>
+  <emblems>
+    <default>usa_star</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.92</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <models>
+      <undamaged>vehicles/american/A92_M60/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/american/A92_M60/normal/lod0/Hull.model</destroyed>
+      <exploded>vehicles/american/A92_M60/normal/lod0/Hull.model</exploded>
+    </models>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.26 38.00 0.34 1.00 0.04 0.27</pitchParams>
+      <rollParams>1.00 0.26 38.00 0.34 1.00 0.04 0.27</rollParams>
+      <sensitivityToImpulse>0.3</sensitivityToImpulse>
+    </swinging>
+    <exhaust>
+      <pixie>particles/Tank/engine_exit_diesel.xml</pixie>
+      <nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.000000 0.501 0.583625</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/american/A92_M60/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>120.8</armor_1>
+      <armor_2>89.3</armor_2>
+      <armor_3>89.3</armor_3>
+      <armor_4>26.7</armor_4>
+      <armor_5>110.3</armor_5>
+      <armor_6>150.2</armor_6>
+      <armor_7>89.4</armor_7>
+      <armor_8>42.7</armor_8>
+      <armor_9>77.4</armor_9>
+      <armor_10>37.6</armor_10>
+      <armor_11>77.4</armor_11>
+      <armor_12>20.1</armor_12>
+      <armor_13>32.1</armor_13>
+      <armor_14>13.4</armor_14>
+      <armor_15>0</armor_15>
+      <armor_16>42.7</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_2 armor_4</primaryArmor>
+    <weight>24593</weight>
+    <maxHealth>1520</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>260</maxHealth>
+      <maxRegenHealth>180</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.0124516 0.261698 3.18794</rayStart>
+        <rayEnd>0.0124517 -0.101665 3.02072</rayEnd>
+        <rayUp>0.000000 0.000000 -1</rayUp>
+        <size>0.32</size>
+        <hideIfDamaged>false</hideIfDamaged>
+      </clan>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_M60>
+      <userString>#usa_vehicles:Chassis_M60</userString>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <notInShop>true</notInShop>
+      <models>
+        <undamaged>vehicles/american/A92_M60/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/american/A92_M60/normal/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/american/A92_M60/normal/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist>FAR</lodDist>
+        <decalGroup>trace</decalGroup>
+        <decalTexture>trace</decalTexture>
+        <size>0.5 0.72</size>
+        <bufferPrefs>largeTank</bufferPrefs>
+        <textureSet>usa_01</textureSet>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.356553</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L4</name>
+          <radius>0.354522</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.356553</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R4</name>
+          <radius>0.354522</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>WD_L</template>
+          <radius>0.181472</radius>
+          <startIndex>1</startIndex>
+          <count>3</count>
+        </group>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.356553</radius>
+          <startIndex>0</startIndex>
+          <count>6</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>WD_R</template>
+          <radius>0.181472</radius>
+          <startIndex>1</startIndex>
+          <count>3</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.356553</radius>
+          <startIndex>0</startIndex>
+          <count>6</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_L4</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>largeTankDust</dust>
+        <mud>largeTankMud</mud>
+      </effects>
+      <sound>/vehicles/tanks/treads/treads_2</sound>
+      <hullPosition>0.000000 1.235 0.000000</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/american/A92_M60/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>20</leftTrack>
+        <rightTrack>20</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.45781 2.05668</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>8000</weight>
+      <maxLoad>49500</maxLoad>
+      <terrainResistance>0.7 0.8 1.2</terrainResistance>
+      <brakeForce>46500</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>50</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.1</vehicleMovement>
+        <vehicleRotation>0.1</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>250</maxHealth>
+      <maxRegenHealth>190</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_M60>
+  </chassis>
+  <turrets0>
+    <Turret_1_M60>
+      <userString>#usa_vehicles:Turret_1_M60</userString>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <notInShop>true</notInShop>
+      <models>
+        <undamaged>vehicles/american/A92_M60/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/american/A92_M60/normal/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/american/A92_M60/normal/lod0/Turret_01.model</exploded>
+      </models>
+      <hitTester>
+        <collisionModel>vehicles/american/A92_M60/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <gunPosition>0.000000 0.4183 0.9085</gunPosition>
+      <armor>
+        <armor_1>194.3</armor_1>
+        <armor_2>186.7</armor_2>
+        <armor_3>80</armor_3>
+        <armor_4>53.4</armor_4>
+        <armor_5>120.1</armor_5>
+        <armor_6>24.8</armor_6>
+        <armor_7>53.4</armor_7>
+        <armor_8>80</armor_8>
+        <armor_9>53.4</armor_9>
+        <armor_10>120.1</armor_10>
+        <armor_11>80</armor_11>
+        <armor_12>
+          26.7
+				
+          <vehicleDamageFactor>0.0</vehicleDamageFactor>
+        </armor_12>
+        <armor_13>24.8</armor_13>
+        <armor_14>0</armor_14>
+        <armor_15>80</armor_15>
+        <armor_16>120.1</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>8400</weight>
+      <maxHealth>380</maxHealth>
+      <rotationSpeed>42</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>170</maxHealth>
+        <maxRegenHealth>85</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>270</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>120</maxHealth>
+        <maxRegenHealth>60</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.28434 0.38846 0.445142</rayStart>
+          <rayEnd>-0.929567 0.250436 0.322337</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.32</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </player>
+        <player>
+          <rayStart>1.28434 0.38846 0.445142</rayStart>
+          <rayEnd>0.929567 0.250436 0.322337</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.32</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.37466 0.379177 -0.427652</rayStart>
+          <rayEnd>-1.00642 0.223897 -0.444458</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.92</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </inscription>
+        <inscription>
+          <rayStart>1.37466 0.379177 -0.427652</rayStart>
+          <rayEnd>1.00642 0.223897 -0.444458</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.92</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <guns>
+        <_105mm_Gun_M68_1>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>57</maxAmmo>
+          <pitchLimits>-20 10</pitchLimits>
+          <models>
+            <undamaged>vehicles/american/A92_M60/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/american/A92_M60/normal/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/american/A92_M60/normal/lod0/Gun_01.model</exploded>
+          </models>
+          <hitTester>
+            <collisionModel>vehicles/american/A92_M60/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <armor>
+            <armor_1>
+              186.7
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              186.7
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              186.7
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              186.7
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <gun>45</gun>
+          </armor>
+          <extraPitchLimits>
+            <back>-19 1 30</back>
+          </extraPitchLimits>
+          <shotDispersionRadius>0.35</shotDispersionRadius>
+          <reloadTime>7.1</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.1</turretRotation>
+            <afterShot>3.5</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <aimingTime>1.8</aimingTime>
+          <invisibilityFactorAtShot>0.209</invisibilityFactorAtShot>
+          <turretYawLimits>-180 180</turretYawLimits>
+          <emblemSlots/>
+          <shots>
+            <_105mm_AP_M68M1>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_AP_M68M1>
+            <_105mm_HEAT-T_T384E4>
+              <shell>
+                shared
+							
+                <price>
+                  9
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_105mm_HEAT-T_T384E4>
+            <_105mm_HE_M68M2>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_105mm_HE_M68M2>
+          </shots>
+        </_105mm_Gun_M68_1>
+      </guns>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+      <yawLimits>-180 180</yawLimits>
+    </Turret_1_M60>
+  </turrets0>
+  <engines>
+    <Continental_AVDS-1790-2>shared</Continental_AVDS-1790-2>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <AN-VRC-12>shared</AN-VRC-12>
+  </radios>
+  <turretBlowEnabled>true</turretBlowEnabled>
+</root>

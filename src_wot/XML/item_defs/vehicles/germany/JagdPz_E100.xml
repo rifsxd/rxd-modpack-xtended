@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <radioman/>
+    <loader/>
+    <loader/>
+  </crew>
+  <speedLimits>
+    <forward>30</forward>
+    <backward>12</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.032</moving>
+    <still>0.05</still>
+    <firePenalty>0.08</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <enrichmentBoost>1.6667</enrichmentBoost>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>mediumFlaming</flaming>
+    <collision/>
+  </effects>
+  <camouflage>
+    <priceFactor>2.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask>vehicles/german/G72_JagdPz_E100/JagdPz_E100_CM.dds</exclusionMask>
+  </camouflage>
+  <emblems>
+    <default>germany_cross</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.89</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <models>
+      <undamaged>vehicles/german/G72_JagdPz_E100/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/german/G72_JagdPz_E100/normal/lod0/Hull.model</destroyed>
+      <exploded>vehicles/german/G72_JagdPz_E100/normal/lod0/Hull.model</exploded>
+    </models>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.18 36.00 0.34 1.00 0.04 0.26</pitchParams>
+      <rollParams>1.00 0.18 36.00 0.34 1.00 0.04 0.26</rollParams>
+      <sensitivityToImpulse>0.08</sensitivityToImpulse>
+    </swinging>
+    <exhaust>
+      <pixie>particles/Tank/engine_exit_gass.xml</pixie>
+      <nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.000000 2.375343 0.317467</turret>
+    </turretPositions>
+    <fakeTurrets>
+      <lobby>0</lobby>
+      <battle>0</battle>
+    </fakeTurrets>
+    <hitTester>
+      <collisionModel>vehicles/german/G72_JagdPz_E100/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>200</armor_1>
+      <armor_2>150</armor_2>
+      <armor_3>120</armor_3>
+      <armor_4>150</armor_4>
+      <armor_5>65</armor_5>
+      <armor_6>150</armor_6>
+      <armor_7>160</armor_7>
+      <armor_8>20</armor_8>
+      <armor_9>270</armor_9>
+      <armor_10>80</armor_10>
+      <armor_11>40</armor_11>
+      <armor_12>300</armor_12>
+      <armor_13>
+        120
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_13>
+      <armor_14>160</armor_14>
+      <armor_15>
+        60
+			
+        <vehicleDamageFactor>0.0</vehicleDamageFactor>
+      </armor_15>
+      <armor_16>30</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>95000</weight>
+    <maxHealth>1720</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>280</maxHealth>
+      <maxRegenHealth>190</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>1.20768 0.753439 3.22665</rayStart>
+        <rayEnd>1.20768 0.37804 3.08853</rayEnd>
+        <rayUp>0.000000 0.000000 -1</rayUp>
+        <size>0.32</size>
+        <hideIfDamaged>false</hideIfDamaged>
+      </clan>
+      <player>
+        <rayStart>-1.3473 1.83182 -3.67236</rayStart>
+        <rayEnd>-0.973803 1.68864 -3.6724</rayEnd>
+        <rayUp>0.000000 1 0.000000</rayUp>
+        <size>0.32</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </player>
+      <player>
+        <rayStart>1.3473 1.83182 -3.67236</rayStart>
+        <rayEnd>0.973803 1.68864 -3.6724</rayEnd>
+        <rayUp>0.000000 1 0.000000</rayUp>
+        <size>0.32</size>
+        <hideIfDamaged>false</hideIfDamaged>
+      </player>
+      <inscription>
+        <rayStart>-0.937465 0.679255 3.40457</rayStart>
+        <rayEnd>-0.937465 0.323984 3.22075</rayEnd>
+        <rayUp>0.000000 0.000000 -1</rayUp>
+        <size>0.8</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+      <inscription>
+        <rayStart>2.32738 0.184401 1.78067</rayStart>
+        <rayEnd>1.94866 0.0556452 1.78067</rayEnd>
+        <rayUp>0.000000 1 0.000000</rayUp>
+        <size>0.8</size>
+        <hideIfDamaged>false</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_JagdPz_E100>
+      <userString>#germany_vehicles:Chassis_JagdPz_E100</userString>
+      <description>#germany_vehicles:Chassis_JagdPz_E100_descr</description>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/german/G72_JagdPz_E100/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/german/G72_JagdPz_E100/normal/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/german/G72_JagdPz_E100/normal/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist>FAR</lodDist>
+        <bufferPrefs>largeTank</bufferPrefs>
+        <textureSet>germany_02</textureSet>
+        <size>0.48 1.04</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+        <textureScale>-0.500000</textureScale>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.497857</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R1</name>
+          <radius>0.343465</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R0</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R1</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R2</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R3</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R4</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R5</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R6</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>W_R7</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.497857</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L1</name>
+          <radius>0.343465</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L0</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L1</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L2</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L3</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L4</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L5</name>
+          <radius>0.478405</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L6</name>
+          <radius>0.482089</radius>
+        </wheel>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>W_L7</name>
+          <radius>0.478405</radius>
+        </wheel>
+      </wheels>
+      <drivingWheels>WD_L0 WD_L1</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>largeTankDust</dust>
+        <mud>largeTankMud</mud>
+      </effects>
+      <sound>/vehicles/tanks/treads/treads_0</sound>
+      <hullPosition>0.000000 0.000000 0.000000</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/german/G72_JagdPz_E100/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>40</leftTrack>
+        <rightTrack>40</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.52529 2.41245</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>30000</weight>
+      <maxLoad>150000</maxLoad>
+      <terrainResistance>1.1 1.3 1.9</terrainResistance>
+      <brakeForce>50200</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>20</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.23</vehicleMovement>
+        <vehicleRotation>0.23</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>300</maxHealth>
+      <maxRegenHealth>225</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_JagdPz_E100>
+  </chassis>
+  <turrets0>
+    <Turret_1_JagdPz_E100>
+      <userString>#germany_vehicles:JagdTiger_turm</userString>
+      <description>#germany_vehicles:JagdTiger_turm_descr</description>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <notInShop>true</notInShop>
+      <models>
+        <undamaged>vehicles/german/G72_JagdPz_E100/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/german/G72_JagdPz_E100/normal/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/german/G72_JagdPz_E100/normal/lod0/Turret_01.model</exploded>
+      </models>
+      <hitTester>
+        <collisionModel>vehicles/german/G72_JagdPz_E100/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <yawLimits>-12 12</yawLimits>
+      <gunPosition>0.000000 -0.000043 -0.211695</gunPosition>
+      <armor>
+        <armor_1>18</armor_1>
+        <armor_2>16</armor_2>
+        <armor_3>16</armor_3>
+        <armor_4>16</armor_4>
+        <armor_5>16</armor_5>
+        <armor_6>16</armor_6>
+        <armor_7>8</armor_7>
+        <armor_8>0</armor_8>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>50</weight>
+      <maxHealth>430</maxHealth>
+      <rotationSpeed>26</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>100</maxHealth>
+        <maxRegenHealth>50</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>245</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>120</maxHealth>
+        <maxRegenHealth>60</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_170mm_PaK_K72>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>24</maxAmmo>
+          <models>
+            <undamaged>vehicles/german/G72_JagdPz_E100/normal/lod0/Gun_04.model</undamaged>
+            <destroyed>vehicles/german/G72_JagdPz_E100/normal/lod0/Gun_04.model</destroyed>
+            <exploded>vehicles/german/G72_JagdPz_E100/normal/lod0/Gun_04.model</exploded>
+          </models>
+          <hitTester>
+            <collisionModel>vehicles/german/G72_JagdPz_E100/collision/Gun_04.model</collisionModel>
+          </hitTester>
+          <armor>
+            <armor_1>
+              250
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              150
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              200
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              0
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <gun>70</gun>
+          </armor>
+          <shotDispersionRadius>0.38</shotDispersionRadius>
+          <reloadTime>17.7688152682751</reloadTime>
+          <aimingTime>2.3</aimingTime>
+          <shotDispersionFactors>
+            <turretRotation>0.12</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.18</invisibilityFactorAtShot>
+          <turretYawLimits>-12 12</turretYawLimits>
+          <shots>
+            <_170mm_PaK_K72_PzGr43>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_170mm_PaK_K72_PzGr43>
+            <_170mm_PaK_K72_PzGr45>
+              <shell>
+                shared
+							
+                <price>
+                  14
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_170mm_PaK_K72_PzGr45>
+            <_170mm_PaK_K72_SprgG_ausf_46>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_170mm_PaK_K72_SprgG_ausf_46>
+          </shots>
+        </_170mm_PaK_K72>
+      </guns>
+      <emblemSlots/>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+    </Turret_1_JagdPz_E100>
+  </turrets0>
+  <engines>
+    <Maybach_HL_234P60>shared</Maybach_HL_234P60>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <_10WSc>shared</_10WSc>
+  </radios>
+</root>

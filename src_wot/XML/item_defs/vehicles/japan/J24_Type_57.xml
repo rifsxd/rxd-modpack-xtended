@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <crew>
+    <commander/>
+    <gunner/>
+    <driver/>
+    <radioman/>
+    <loader/>
+  </crew>
+  <isUnlocked>true</isUnlocked>
+  <speedLimits>
+    <forward>39</forward>
+    <backward>15</backward>
+  </speedLimits>
+  <invisibility>
+    <moving>0.036</moving>
+    <still>0.072</still>
+    <firePenalty>0.108</firePenalty>
+  </invisibility>
+  <repairCost>0</repairCost>
+  <crewXpFactor>1.0</crewXpFactor>
+  <consumableSlots>3</consumableSlots>
+  <provisionSlots>3</provisionSlots>
+  <optDevicePreset>defaultPreset</optDevicePreset>
+  <enrichmentBoost>0</enrichmentBoost>
+  <turretBlowEnabled>true</turretBlowEnabled>
+  <effects>
+    <destruction>mediumDestruction</destruction>
+    <explosion>mediumExplosion</explosion>
+    <flaming>mediumFlaming</flaming>
+    <collision/>
+    <damagedStateGroup>small</damagedStateGroup>
+  </effects>
+  <camouflage>
+    <priceFactor>1.0</priceFactor>
+    <tiling>1 1 0 0</tiling>
+    <exclusionMask/>
+  </camouflage>
+  <emblems>
+    <default>japanese_sun</default>
+    <lodDist>MEDIUM</lodDist>
+    <alpha>0.1</alpha>
+  </emblems>
+  <horns>
+    <priceFactor>1</priceFactor>
+    <distanceFactor>1</distanceFactor>
+    <volumeFactor>1</volumeFactor>
+  </horns>
+  <hull>
+    <swinging>
+      <lodDist>FAR</lodDist>
+      <pitchParams>0.28 34.00 0.42 1.00 0.05 0.30</pitchParams>
+      <rollParams>1.00 0.28 34.00 0.42 1.00 0.05 0.30</rollParams>
+      <sensitivityToImpulse>0.59</sensitivityToImpulse>
+    </swinging>
+    <models>
+      <undamaged>vehicles/japan/J24_Type_57/normal/lod0/Hull.model</undamaged>
+      <destroyed>vehicles/japan/J24_Type_57/crash/lod0/Hull.model</destroyed>
+      <exploded>vehicles/japan/J24_Type_57/crash/lod0/Hull.model</exploded>
+    </models>
+    <exhaust>
+      <pixie/>
+      <nodes/>
+      <rates>5.0 10.0 25.0</rates>
+    </exhaust>
+    <turretPositions>
+      <turret>0.0 1.495490 0.000037</turret>
+    </turretPositions>
+    <hitTester>
+      <collisionModel>vehicles/japan/J24_Type_57/collision/Hull.model</collisionModel>
+    </hitTester>
+    <armor>
+      <armor_1>124</armor_1>
+      <armor_2>109</armor_2>
+      <armor_3>79</armor_3>
+      <armor_4>40</armor_4>
+      <armor_5>45</armor_5>
+      <armor_6>75</armor_6>
+      <armor_7>90</armor_7>
+      <armor_8>10</armor_8>
+      <armor_9>50</armor_9>
+      <armor_10>45</armor_10>
+      <armor_11>90</armor_11>
+      <armor_12>80</armor_12>
+      <armor_13>150</armor_13>
+      <armor_14>10</armor_14>
+      <armor_15>200</armor_15>
+      <armor_16>90</armor_16>
+    </armor>
+    <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+    <weight>17145</weight>
+    <maxHealth>1440</maxHealth>
+    <ammoBayHealth>
+      <maxHealth>240</maxHealth>
+      <maxRegenHealth>160</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </ammoBayHealth>
+    <emblemSlots>
+      <clan>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </clan>
+      <inscription>
+        <rayStart>0.1 0.1 1.0</rayStart>
+        <rayEnd>0.1 0.1 1.0</rayEnd>
+        <rayUp>0.0 1.0 0.0</rayUp>
+        <size>0.1</size>
+        <hideIfDamaged>true</hideIfDamaged>
+      </inscription>
+    </emblemSlots>
+  </hull>
+  <chassis>
+    <Chassis_Type_57>
+      <userString>#japan_vehicles:Chassis_Type_57</userString>
+      <shortUserString>#japan_vehicles:Chassis_Type_57_short</shortUserString>
+      <description>#japan_vehicles:Chassis_Type_57_descr</description>
+      <tags/>
+      <level>9</level>
+      <price>0</price>
+      <models>
+        <undamaged>vehicles/japan/J24_Type_57/normal/lod0/Chassis.model</undamaged>
+        <destroyed>vehicles/japan/J24_Type_57/crash/lod0/Chassis.model</destroyed>
+        <exploded>vehicles/japan/J24_Type_57/crash/lod0/Chassis.model</exploded>
+      </models>
+      <traces>
+        <lodDist/>
+        <bufferPrefs/>
+        <textureSet/>
+        <size>0.1 0.1</size>
+      </traces>
+      <tracks>
+        <lodDist>MEDIUM</lodDist>
+        <leftMaterial>track_mat_L_skinned</leftMaterial>
+        <rightMaterial>track_mat_R_skinned</rightMaterial>
+      </tracks>
+      <wheels>
+        <lodDist>MEDIUM</lodDist>
+        <wheel>
+          <isLeft>true</isLeft>
+          <name>WD_L0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <wheel>
+          <isLeft>false</isLeft>
+          <name>WD_R0</name>
+          <radius>0.1</radius>
+        </wheel>
+        <group>
+          <isLeft>true</isLeft>
+          <template>W_L</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+        <group>
+          <isLeft>false</isLeft>
+          <template>W_R</template>
+          <radius>0.1</radius>
+          <startIndex>0</startIndex>
+          <count>1</count>
+        </group>
+      </wheels>
+      <drivingWheels>WD_L0 WD_R0</drivingWheels>
+      <effects>
+        <lodDist>MEDIUM</lodDist>
+        <dust>mediumTankDust</dust>
+        <mud>mediumTankMud</mud>
+      </effects>
+      <sound/>
+      <hullPosition>0.0 0.0 0.0</hullPosition>
+      <hitTester>
+        <collisionModel>vehicles/japan/J24_Type_57/collision/Chassis.model</collisionModel>
+      </hitTester>
+      <armor>
+        <leftTrack>40</leftTrack>
+        <rightTrack>40</rightTrack>
+      </armor>
+      <topRightCarryingPoint>1.35032 2.14624</topRightCarryingPoint>
+      <maxClimbAngle>25</maxClimbAngle>
+      <navmeshGirth>6.0</navmeshGirth>
+      <weight>22350</weight>
+      <maxLoad>96000</maxLoad>
+      <terrainResistance>1.1 1.2 1.7</terrainResistance>
+      <brakeForce>80000</brakeForce>
+      <rotationIsAroundCenter>true</rotationIsAroundCenter>
+      <rotationSpeed>24</rotationSpeed>
+      <shotDispersionFactors>
+        <vehicleMovement>0.18</vehicleMovement>
+        <vehicleRotation>0.18</vehicleRotation>
+      </shotDispersionFactors>
+      <bulkHealthFactor>3.0</bulkHealthFactor>
+      <maxHealth>250</maxHealth>
+      <maxRegenHealth>190</maxRegenHealth>
+      <repairCost>0</repairCost>
+    </Chassis_Type_57>
+  </chassis>
+  <turrets0>
+    <Turret_1_Type_57>
+      <userString>#japan_vehicles:Turret_1_Type_57</userString>
+      <description>#japan_vehicles:Turret_1_Type_57_descr</description>
+      <tags/>
+      <level>9</level>
+      <price>0</price>
+      <hitTester>
+        <collisionModel>vehicles/japan/J24_Type_57/collision/Turret_01.model</collisionModel>
+      </hitTester>
+      <models>
+        <undamaged>vehicles/japan/J24_Type_57/normal/lod0/Turret_01.model</undamaged>
+        <destroyed>vehicles/japan/J24_Type_57/crash/lod0/Turret_01.model</destroyed>
+        <exploded>vehicles/japan/J24_Type_57/crash/lod0/Turret_01.model</exploded>
+      </models>
+      <yawLimits>-180 180</yawLimits>
+      <gunPosition>0.0 0.433910 1.388063</gunPosition>
+      <armor>
+        <armor_1>190</armor_1>
+        <armor_2>128</armor_2>
+        <armor_3>97</armor_3>
+        <armor_4>50</armor_4>
+        <armor_5>60</armor_5>
+        <armor_6>45</armor_6>
+        <armor_7>90</armor_7>
+        <armor_8>10</armor_8>
+        <armor_9>120</armor_9>
+        <armor_10>80</armor_10>
+        <armor_11>60</armor_11>
+        <armor_12>50</armor_12>
+        <armor_13>120</armor_13>
+        <armor_14>40</armor_14>
+        <armor_15>60</armor_15>
+        <armor_16>60</armor_16>
+      </armor>
+      <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+      <weight>16520</weight>
+      <maxHealth>360</maxHealth>
+      <rotationSpeed>18</rotationSpeed>
+      <turretRotatorHealth>
+        <maxHealth>160</maxHealth>
+        <maxRegenHealth>80</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </turretRotatorHealth>
+      <circularVisionRadius>240</circularVisionRadius>
+      <surveyingDeviceHealth>
+        <maxHealth>110</maxHealth>
+        <maxRegenHealth>55</maxRegenHealth>
+        <repairCost>0</repairCost>
+      </surveyingDeviceHealth>
+      <guns>
+        <_127mm_Gun_Type57_L50>
+          shared
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+          <maxAmmo>52</maxAmmo>
+          <hitTester>
+            <collisionModel>vehicles/japan/J24_Type_57/collision/Gun_01.model</collisionModel>
+          </hitTester>
+          <models>
+            <undamaged>vehicles/japan/J24_Type_57/normal/lod0/Gun_01.model</undamaged>
+            <destroyed>vehicles/japan/J24_Type_57/crash/lod0/Gun_01.model</destroyed>
+            <exploded>vehicles/japan/J24_Type_57/crash/lod0/Gun_01.model</exploded>
+          </models>
+          <armor>
+            <armor_1>
+              220
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_1>
+            <armor_2>
+              180
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_2>
+            <armor_3>
+              100
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_3>
+            <armor_4>
+              10
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_4>
+            <armor_5>
+              80
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_5>
+            <armor_6>
+              60
+						
+              <vehicleDamageFactor>0.0</vehicleDamageFactor>
+            </armor_6>
+            <gun>10</gun>
+          </armor>
+          <shotDispersionRadius>0.42</shotDispersionRadius>
+          <aimingTime>3.3</aimingTime>
+          <reloadTime>16</reloadTime>
+          <shotDispersionFactors>
+            <turretRotation>0.15</turretRotation>
+            <afterShot>4</afterShot>
+            <whileGunDamaged>2.0</whileGunDamaged>
+          </shotDispersionFactors>
+          <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+          <pitchLimits>-20 9</pitchLimits>
+          <shots>
+            <_127mm_AP_type89>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_127mm_AP_type89>
+            <_127mm_AP_type98>
+              <shell>
+                shared
+							
+                <price>
+                  10
+								
+                  <gold/>
+                </price>
+              </shell>
+            </_127mm_AP_type98>
+            <_127mm_HE_type89>
+              <shell>
+                shared
+							
+                <price>0</price>
+              </shell>
+            </_127mm_HE_type89>
+          </shots>
+        </_127mm_Gun_Type57_L50>
+      </guns>
+      <emblemSlots>
+        <player>
+          <rayStart>-1.14052 0.501314 -1.84861</rayStart>
+          <rayEnd>-0.947969 0.447255 -1.84803</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.8</size>
+          <hideIfDamaged>false</hideIfDamaged>
+        </player>
+        <inscription>
+          <rayStart>-1.11845 0.493689 -1.01991</rayStart>
+          <rayEnd>-0.930106 0.426732 -1.02643</rayEnd>
+          <rayUp>0.000000 1 0.000000</rayUp>
+          <size>0.1</size>
+          <hideIfDamaged>true</hideIfDamaged>
+        </inscription>
+      </emblemSlots>
+      <showEmblemsOnGun>false</showEmblemsOnGun>
+      <physicsShape>0.941 -0.118 1.000 0.000 0.426 0.294 0.000 0.493 0.265 0.588 0.228 0.500 0.132 0.779 0.000</physicsShape>
+    </Turret_1_Type_57>
+  </turrets0>
+  <engines>
+    <Mitsubishi_12ZF>shared</Mitsubishi_12ZF>
+  </engines>
+  <fuelTanks>
+    <Large>shared</Large>
+  </fuelTanks>
+  <radios>
+    <_Type67>shared</_Type67>
+  </radios>
+</root>

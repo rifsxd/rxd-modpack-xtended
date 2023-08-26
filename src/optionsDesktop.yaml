@@ -150,18 +150,18 @@
                 {
                   keyedArchive:
                     {
-                      max: { float: 75.0000 },
+                      max: { float: 70.0000 },
                       min: { float: 0.0000 },
-                      value: { float: 15.0000 },
+                      value: { float: 10.0000 },
                     },
                 },
               2) Sniper:
                 {
                   keyedArchive:
                     {
-                      max: { float: 75.0000 },
+                      max: { float: 80.0000 },
                       min: { float: 0.0000 },
-                      value: { float: 15.0000 },
+                      value: { float: 20.0000 },
                     },
                 },
             },
