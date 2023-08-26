@@ -6,7 +6,6 @@ action EnsureSelectedCellVisibility
 	StopSound(sound="Battle_Pass_Music");
 	StopSound(sound="Battle_Queue_Music");
 	StopSound(sound="Tech_Tree_Music");
-	
   }
 }
 

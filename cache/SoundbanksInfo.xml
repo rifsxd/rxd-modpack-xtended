@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="121235285" Language="SFX" Hash="562074569">
+		<SoundBank Id="121235285" Language="SFX" Hash="2048667578">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_japan</ObjectPath>
 			<ShortName>music_maps_japan</ShortName>
 			<Path>music_maps_japan.bnk</Path>
@@ -45,7 +45,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="446961960" Language="SFX" Hash="3507707797">
+		<SoundBank Id="446961960" Language="SFX" Hash="408799360">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_america_lakville</ObjectPath>
 			<ShortName>music_maps_america_lakville</ShortName>
 			<Path>music_maps_america_lakville.bnk</Path>
@@ -570,7 +570,7 @@
 				<GameParameter Id="3753593413" Name="hover" ObjectPath="\Game Parameters\RxD\hover"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1069707800" Language="SFX" Hash="258033647">
+		<SoundBank Id="1069707800" Language="SFX" Hash="2345149783">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_himmelsdorf</ObjectPath>
 			<ShortName>music_maps_europe_himmelsdorf</ShortName>
 			<Path>music_maps_europe_himmelsdorf.bnk</Path>
@@ -10553,7 +10553,7 @@
 				<GameParameter Id="244438798" Name="RTPC_ext_settings_volume_master_music" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_music"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1609140572" Language="SFX" Hash="1890361984">
+		<SoundBank Id="1609140572" Language="SFX" Hash="1292858775">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_ruinberg</ObjectPath>
 			<ShortName>music_maps_europe_ruinberg</ShortName>
 			<Path>music_maps_europe_ruinberg.bnk</Path>
@@ -10587,7 +10587,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1642149657" Language="SFX" Hash="3513126858">
+		<SoundBank Id="1642149657" Language="SFX" Hash="2004968461">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_battle</ObjectPath>
 			<ShortName>music_maps_battle</ShortName>
 			<Path>music_maps_battle.bnk</Path>
@@ -12593,7 +12593,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2021218106" Language="SFX" Hash="3146117284">
+		<SoundBank Id="2021218106" Language="SFX" Hash="1260663060">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_desert_sand_river</ObjectPath>
 			<ShortName>music_maps_desert_sand_river</ShortName>
 			<Path>music_maps_desert_sand_river.bnk</Path>
@@ -12627,7 +12627,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2526625828" Language="SFX" Hash="2750264314">
+		<SoundBank Id="2526625828" Language="SFX" Hash="2280337326">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_chinese</ObjectPath>
 			<ShortName>music_maps_chinese</ShortName>
 			<Path>music_maps_chinese.bnk</Path>
@@ -12661,7 +12661,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3112195339" Language="SFX" Hash="2321764577">
+		<SoundBank Id="3112195339" Language="SFX" Hash="2233972664">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_russian_prokhorovka</ObjectPath>
 			<ShortName>music_maps_russian_prokhorovka</ShortName>
 			<Path>music_maps_russian_prokhorovka.bnk</Path>
@@ -12695,7 +12695,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3144885743" Language="SFX" Hash="3564707856">
+		<SoundBank Id="3144885743" Language="SFX" Hash="491124698">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_russian_malinovka</ObjectPath>
 			<ShortName>music_maps_russian_malinovka</ShortName>
 			<Path>music_maps_russian_malinovka.bnk</Path>
@@ -18836,7 +18836,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3457466987" Language="SFX" Hash="2435904818">
+		<SoundBank Id="3457466987" Language="SFX" Hash="2184708771">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_desert_airfield</ObjectPath>
 			<ShortName>music_maps_desert_airfield</ShortName>
 			<Path>music_maps_desert_airfield.bnk</Path>
@@ -18870,7 +18870,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3742831600" Language="SFX" Hash="2497271648">
+		<SoundBank Id="3742831600" Language="SFX" Hash="1658588935">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_mannerheim</ObjectPath>
 			<ShortName>music_maps_europe_mannerheim</ShortName>
 			<Path>music_maps_europe_mannerheim.bnk</Path>
@@ -20782,7 +20782,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3937048291" Language="SFX" Hash="122808131">
+		<SoundBank Id="3937048291" Language="SFX" Hash="4201384199">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_america_overlord</ObjectPath>
 			<ShortName>music_maps_america_overlord</ShortName>
 			<Path>music_maps_america_overlord.bnk</Path>
