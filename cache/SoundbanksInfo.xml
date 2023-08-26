@@ -10693,7 +10693,7 @@
 				<GameParameter Id="244438798" Name="RTPC_ext_settings_volume_master_music" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_music"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1747019890" Language="SFX" Hash="3702039115">
+		<SoundBank Id="1747019890" Language="SFX" Hash="2661493442">
 			<ObjectPath>\SoundBanks\Default Work Unit\battle\weapon_tracers</ObjectPath>
 			<ShortName>weapon_tracers</ShortName>
 			<Path>weapon_tracers.bnk</Path>
