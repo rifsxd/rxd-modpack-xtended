@@ -215,6 +215,8 @@ del /S "Init.bnk"
 
 rd /s /q "UI"
 
+del /S "*.xml"
+
 
 ECHO.
 ECHO Cleaned Embed Specific Configs!
@@ -409,6 +411,8 @@ del /S "Init.bnk"
 
 rd /s /q "UI"
 
+del /S "*.xml"
+
 
 ECHO.
 ECHO Cleaned Embed Specific Configs!
@@ -498,6 +502,8 @@ del /S "*.json"
 del /S "Init.bnk"
 
 rd /s /q "UI"
+
+del /S "*.xml"
 
 
 ECHO.
@@ -775,6 +781,8 @@ del /S "*.json"
 del /S "Init.bnk"
 
 rd /s /q "UI"
+
+del /S "*.xml"
 
 
 ECHO.
