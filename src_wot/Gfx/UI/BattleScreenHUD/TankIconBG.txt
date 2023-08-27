@@ -1,0 +1,9 @@
+1
+rxd_TankIconBG.packed.webp
+391 21
+5
+27 46 391 21 0 0 0 frame0
+27 93 391 21 0 0 0 frame1
+27 140 391 21 0 0 0 frame2
+27 187 391 21 0 0 0 frame3
+27 234 391 21 0 0 0 frame4

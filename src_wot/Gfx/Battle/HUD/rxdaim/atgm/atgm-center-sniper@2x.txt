@@ -1,0 +1,6 @@
+1
+rxd_ATGM_S@2x.packed.webp
+1700 1700
+1
+2 1704 1700 1700 0 0 0 frame0
+

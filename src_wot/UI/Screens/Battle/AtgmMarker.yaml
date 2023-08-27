@@ -1,0 +1,32 @@
+Header:
+    version: "85"
+Prototypes:
+-   class: "UIControl"
+    name: "Marker"
+    pivot: [0.500000, 0.400000]
+    input: false
+    components:
+        UIAnimationComponent:
+            animations: "START_ATGM_MARKER_EXPLOSION_ANIMATION,~res:/UI/Screens/Battle/AtgmMarkerExplosionAnimation.animation"
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 46.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 34.000000
+        UIEventBindingComponent: {}
+    children:
+    -   class: "UIControl"
+        name: "MarkerContent"
+        pivot: [0.500000, 0.400000]
+        input: false
+        components:
+            UIOpacityComponent: {}
+            UITextureComponent:
+                spritePath: "~res:/Gfx/Battle/HUD/rxdaim/atgm/aim_rocket_marker"
+                drawType: "DRAW_SCALE_TO_RECT"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"

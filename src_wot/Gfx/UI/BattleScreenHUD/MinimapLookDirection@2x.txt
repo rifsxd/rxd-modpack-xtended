@@ -1,0 +1,5 @@
+1
+rxd_Radar@2x.packed.webp
+1000 1000
+1
+0 0 1000 1000 0 500 0 frame0

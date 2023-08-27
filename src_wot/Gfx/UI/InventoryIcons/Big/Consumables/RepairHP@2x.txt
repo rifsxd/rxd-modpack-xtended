@@ -1,0 +1,5 @@
+1
+rxd_consumables@2x.packed.webp
+180 180
+1
+898 0 146 138 16 24 0 frame0

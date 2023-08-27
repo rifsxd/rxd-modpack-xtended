@@ -1,0 +1,5 @@
+1
+StatusEffectIcons@2x.packed.webp
+92 92
+1
+259 88 80 80 6 6 0 frame0

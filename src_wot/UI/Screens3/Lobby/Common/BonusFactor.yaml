@@ -1,0 +1,257 @@
+Header:
+    version: 144
+Prototypes:
+-   class: "UIControl"
+    name: "BonusFactor"
+    input: false
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "FixedSize"
+        UIDataParamsComponent:
+            params:
+            - ["eBonusFactorSize", "size", "eBonusFactorSize.kSmall", "eBonusFactorSize.kNormal"]
+            - ["int", "factor", "3", "3"]
+            - ["eBonusFactor", "type", "eBonusFactor.kXP", "eBonusFactor.kMultipleXP"]
+            - ["bool", "visible", "true", "true"]
+        UIDataLocalBindingsComponent:
+            data:
+            - ["string", "textStyle", "\"t-caption\""]
+            - ["string", "spritePartPath", "when size == eBonusFactorSize.kSmall -> \"~res:/Gfx/RxDUtils/null\", \"~res:/Gfx/RxDUtils/null\""]
+            #- ["string", "bgStyle", "when type == eBonusFactor.kMultipleXP -> \"orange-tango-bg\", \"red-tamarillo-bg\""]
+        UIIdentifierComponent:
+            id: "bonus_factor"
+        StyleSheet:
+            styles: "~res:/UI/Screens3/Lobby/Common/BonusFactor.style.yaml"
+    bindings:
+    - ["visible", "visible and factor > 0"]
+    - ["classes", "when type == eBonusFactor.kMultipleXP -> \"multiple-factor\", \"basic-factor\""]
+    - ["SizePolicy.verticalValue", "when size == eBonusFactorSize.kSmall -> 20, 24"]
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfParent"
+        bindings:
+        - ["visible", "type != eBonusFactor.kCertificateXP"]
+        children:
+        -   class: "UIControl"
+            name: "Left"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfParent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+            bindings:
+            - ["classes", "bgStyle"]
+            - ["Background.sprite", "spritePartPath"]
+        -   class: "UIControl"
+            name: "Right"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    spriteModification: ["FLIP_HORIZONTAL", "FLIP_VERTICAL"]
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfParent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+            bindings:
+            - ["classes", "bgStyle"]
+        -   class: "UIControl"
+            name: "Center"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfParent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Color.style.yaml"
+            bindings:
+            - ["classes", "bgStyle"]
+            - ["Background.sprite", "when size == eBonusFactorSize.kSmall -> \"~res:/Gfx/Lobby/backgrounds/bg_xN-bonus-m\", \"~res:/Gfx/Lobby/backgrounds/bg_xN-bonus-s\""]
+            children:
+            -   class: "UIControl"
+                name: "ContentHolder"
+                input: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "Formula"
+                        horizontalFormula: "firstChild-2"
+                        verticalPolicy: "FixedSize"
+                    UIChildComponent0:
+                        childType: "kControl"
+                        control: "Content"
+                bindings:
+                - ["SizePolicy.verticalValue", "when size == eBonusFactorSize.kSmall -> 20, 24"]
+    -   class: "UIControl"
+        name: "CertificateHolder"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "Formula"
+                horizontalFormula: "firstChild-4"
+                verticalPolicy: "Formula"
+                verticalFormula: "maxChild-4"
+        bindings:
+        - ["visible", "type == eBonusFactor.kCertificateXP"]
+        children:
+        -   class: "UIControl"
+            name: "CertificateBg"
+            position: [-1.000000, -4.000000]
+            input: false
+            components:
+                Background: {}
+                Anchor:
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                UIIdentifierComponent:
+                    id: "xn_certificate"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Lobby/Common/BonusFactor.style.yaml"
+            bindings:
+            - ["Background.sprite", "when size == eBonusFactorSize.kNormal -> \"~res:/Gfx/Lobby/backgrounds/bg_xN-bonus-m\", \"~res:/Gfx/Lobby/backgrounds/bg_xN-bonus-s\""]
+        -   class: "UIParticles"
+            name: "SmallGlare"
+            scale: [0.870000, 0.830000]
+            pivot: [0.500000, 0.500000]
+            input: false
+            effectPath: "~res:/3d/FX/UI/x5_fx/x5_fx.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -2.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+            bindings:
+            - ["visible", "size == eBonusFactorSize.kSmall"]
+        -   class: "UIParticles"
+            name: "NormalGlare"
+            pivot: [0.500000, 0.500000]
+            input: false
+            effectPath: "~res:/3d/FX/UI/x5_fx/x5_fx.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -2.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+            bindings:
+            - ["visible", "size == eBonusFactorSize.kNormal"]
+        -   class: "UIControl"
+            name: "ContentHolder"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "FixedSize"
+                UIChildComponent0:
+                    childType: "kControl"
+                    control: "Content"
+            bindings:
+            - ["SizePolicy.verticalValue", "when size == eBonusFactorSize.kSmall -> 20, 24"]
+Slots:
+-   class: "UIControl"
+    name: "Content"
+    position: [0.000000, 0.000000]
+    size: [16.000000, 16.000000]
+    input: false
+    classes: "content-area"
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        LinearLayout:
+            padding: "-2; 0"
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        StyleSheet:
+            styles: "~res:/UI/Screens3/Lobby/Common/BonusFactor.style.yaml"
+    children:
+    -   class: "UIControl"
+        name: "Multiplier"
+        position: [-2.000000, 0.000000]
+        input: false
+        classes: "t-caption bold color=white-wild-sand-text not-localize"
+        components:
+            UITextComponent: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                styles: "~res:/UI/Screens3/Font.style.yaml"
+        bindings:
+        - ["visible", "type == eBonusFactor.kMultipleXP"]
+        - ["UITextComponent.text", "str1000Separated(factor)"]
+    -   class: "UIControl"
+        name: "Icon"
+        input: false
+        components:
+            UITextureComponent:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+            Anchor:
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 16.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 16.000000
+        bindings:
+        - ["visible", "type != eBonusFactor.kPlain"]
+        - ["UITextureComponent.spritePath", "when type == eBonusFactor.kCredits -> \"~res:/Gfx/Lobby/currency/currency_silver_s\", \"~res:/Gfx/Lobby/currency/currency_battle-xp_s\""]
+    -   class: "UIControl"
+        name: "Factor"
+        input: false
+        components:
+            UITextComponent:
+                shadowOffset: [0.500000, 0.500000]
+                shadowColor: [1.000000, 0.500000, 0.000000, 1.000000]
+            Anchor:
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                styles: "~res:/UI/Screens3/Font.style.yaml"
+        bindings:
+        - ["visible", "type != eBonusFactor.kMultipleXP"]
+        - ["classes", "\"bold white-wild-sand-text not-localize \" + textStyle"]
+        - ["UITextComponent.text", "\"×\" + str(factor)"]

@@ -1,0 +1,6 @@
+1
+rxd_Damage_Marker@2x.packed.webp
+500 840
+2
+1100 0 500 840 0 0 0 frame0
+1600 0 500 840 0 0 0 frame0

@@ -1,0 +1,12 @@
+1
+rxd_TankTypes.packed.webp
+18 20
+8
+54 70 18 20 0 0 0 frame0
+54 70 18 20 0 0 0 frame1
+36 70 18 20 0 0 0 frame2
+36 70 18 20 0 0 0 frame3
+36 70 18 20 0 0 0 frame4
+18 70 18 20 0 0 0 frame5
+36 70 18 20 0 0 0 frame6
+0 70 18 20 0 0 0 frame7

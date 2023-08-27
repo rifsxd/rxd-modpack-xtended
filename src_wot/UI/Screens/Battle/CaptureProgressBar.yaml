@@ -1,0 +1,89 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".allies #Outline #Container #Bar"
+    properties:
+        bg-color: [0.500000, 0.970000, 0.200000, 0.500000]
+-   selector: ".enemies #Outline #Container #Bar"
+    properties:
+        bg-color: [0.800000, 0.250000, 0.250000, 0.500000]
+-   selector: ".allies.observer #Outline #Container #Bar"
+    properties:
+        bg-color: [1.000000, 0.109804, 0.278431, 0.500000]
+-   selector: ".enemies.observer #Outline #Container #Bar"
+    properties:
+        bg-color: [0.145098, 0.415686, 0.976471, 0.500000]
+-   selector: ".supremacy #PercentValue"
+    properties:
+        visible: true
+-   selector: ".locked #Label, .locked #PercentValue"
+    properties:
+        visible: true
+Controls:
+-   class: "UIControl"
+    name: "CaptureProgressBar"
+    # A pivot+scale hack for vertical shift & affecting only one file
+    pivot: [0.500000, 88.000000]
+    scale: [1.025000, 1.025000]
+    noInput: true
+    components:
+        SizePolicy:
+            verticalPolicy: "FixedSize"
+            verticalValue: 28.000000
+    children:
+    -   class: "UIControl"
+        name: "Outline"
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.200000]
+        children:
+        -   class: "UIControl"
+            name: "Container"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Bar"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "Label"
+        classes: "text2"
+        textalign: ["HCENTER", "VCENTER"]
+        text: "BASE_CAPTURE"
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+    -   class: "UIStaticText"
+        name: "PercentValue"
+        classes: "text2"
+        text: "100"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 12.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                leftAnchorEnabled: true
+                leftAnchor: 380.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfParent"

@@ -1,0 +1,5 @@
+1
+rxd_BG_load@2x.packed.webp
+3840 2160
+1
+0 0 3840 2160 4 398 0 frame0

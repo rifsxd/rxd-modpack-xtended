@@ -1,0 +1,7 @@
+1
+rxd_minimapbase@2x.packed.webp
+40 64
+3
+18 244 46 66 2 0 0 frame0
+72 242 46 66 0 0 0 frame1
+124 242 46 66 0 0 0 frame2

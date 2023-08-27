@@ -1,0 +1,5 @@
+1
+rxd_Ribbons.packed.webp
+180 68
+1
+540 68 180 68 0 0 0 frame0

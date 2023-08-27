@@ -1,0 +1,346 @@
+{
+  Header: { version: 155 },
+  ImportedPackages:
+    ["~res:/UI/Screens/Fonts.yaml", "~res:/UI/Styles/BattleRibbons.yaml"],
+  StyleSheets:
+    [
+      {
+        selectors: [.modified-font-7],
+        properties:
+          {
+            text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf",
+            text-fontSize: 17.000000,
+          },
+      },
+      {
+        selectors: ["#New.ribbon.common"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#Current.ribbon.common"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.common #RibbonBack"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors:
+          [".ribbon.common #EffectLeft", ".ribbon.common #EffectRight"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#New.ribbon.rare"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#Current.ribbon.rare"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.rare #RibbonBack"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.rare #EffectLeft", ".ribbon.rare #EffectRight"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#New.ribbon.epic"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#Current.ribbon.epic"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.epic #RibbonBack"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.epic #EffectLeft", ".ribbon.epic #EffectRight"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#New.ribbon.legendary"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: ["#Current.ribbon.legendary"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors: [".ribbon.legendary #RibbonBack"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors:
+          [".ribbon.legendary #EffectLeft", ".ribbon.legendary #EffectRight"],
+        properties: { visible: false, bg-frame: 0 },
+      },
+      {
+        selectors:
+          [".ribbon.disable-fx #EffectLeft", ".ribbon.disable-fx #EffectRight"],
+        properties: { visible: false },
+      },
+    ],
+  Prototypes:
+    [
+      {
+        class: UIControl,
+        name: Ribbon,
+        pivot: [0.500000, 0.500000],
+        input: false,
+        classes: ribbon,
+        components:
+          {
+            Background: {},
+            SizePolicy:
+              {
+                horizontalPolicy: PercentOfMaxChild,
+                verticalPolicy: PercentOfChildrenSum,
+              },
+            StyleSheet: { styles: "~res:/UI/Screens/Common/BattleRibbon.yaml" },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: EffectLeft,
+              position: [0.000000, 0.000000],
+              visible: false,
+              components:
+                {
+                  Background: { drawType: DRAW_SCALE_TO_RECT },
+                  IgnoreLayout: {},
+                  SizePolicy:
+                    {
+                      horizontalPolicy: FixedSize,
+                      horizontalValue: 300.000000,
+                      verticalPolicy: FixedSize,
+                      verticalValue: 23.000000,
+                    },
+                },
+            },
+            {
+              class: UIControl,
+              name: EffectRight,
+              position: [0.000000, 17.000000],
+              visible: true,
+              components:
+                {
+                  Background: { drawType: DRAW_SCALE_TO_RECT },
+                  IgnoreLayout: {},
+                  SizePolicy:
+                    {
+                      horizontalPolicy: FixedSize,
+                      horizontalValue: 35.000000,
+                      verticalPolicy: FixedSize,
+                      verticalValue: 0.000000,
+                    },
+                },
+            },
+            {
+              class: UIControl,
+              name: RibbonBack,
+              input: false,
+              visible: true,
+              components:
+                {
+                  Background: {},
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfContent,
+                      horizontalValue: 0.000000,
+                      verticalPolicy: PercentOfMaxChild,
+                      verticalValue: 0.000000,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: AnimationLayer,
+                    visible: false,
+                    components:
+                      {
+                        Anchor:
+                          {
+                            hCenterAnchorEnabled: true,
+                            vCenterAnchorEnabled: true,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfFirstChild,
+                            verticalPolicy: PercentOfFirstChild,
+                          },
+                      },
+                    children:
+                      [
+                        {
+                          class: UIControl,
+                          name: New,
+                          position: [48.500000, 15.000000],
+                          visible: true,
+                          pivot: [0.500000, 0.500000],
+                          classes: ribbon,
+                          components:
+                            {
+                              Background:
+                                {
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_ENABLED,
+                                },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                        {
+                          class: UIControl,
+                          name: Current,
+                          position: [48.500000, 15.000000],
+                          visible: false,
+                          pivot: [0.500000, 0.500000],
+                          classes: ribbon,
+                          components:
+                            {
+                              Background:
+                                {
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_ENABLED,
+                                },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                  {
+                    class: UIControl,
+                    name: Embelishment,
+                    input: false,
+                    visible: false,
+                    components:
+                      {
+                        Background: {},
+                        Anchor:
+                          {
+                            hCenterAnchorEnabled: true,
+                            vCenterAnchorEnabled: true,
+                            vCenterAnchor: -4.000000,
+                          },
+                      },
+                  },
+                  {
+                    class: UIControl,
+                    name: Icon,
+                    input: false,
+                    components:
+                      {
+                        Background: {},
+                        Anchor:
+                          {
+                            hCenterAnchorEnabled: true,
+                            hCenterAnchor: 90.000000,
+                            vCenterAnchorEnabled: true,
+                            vCenterAnchor: 52.000000,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                      },
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: Info,
+              size: [200.000000, 16.000000],
+              input: false,
+              components:
+                {
+                  Anchor:
+                    {
+                      hCenterAnchorEnabled: true,
+                      hCenterAnchor: -59.000000,
+                      vCenterAnchorEnabled: true,
+                      vCenterAnchor: 52.000000,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: Name,
+                    size: [200.000000, 16.000000],
+                    input: false,
+                    classes: modified-font-7,
+                    components:
+                      {
+                        UITextComponent:
+                          {
+                            colorInheritType: COLOR_MULTIPLY_ALPHA_ONLY,
+                            color: [1.000000, 0.960000, 0.920000, 1.000000],
+                            shadowColor:
+                              [0.230000, 0.230000, 0.230000, 0.900000],
+                            shadowOffset: [1.200000, 1.200000],
+                            align: [LEFT, VCENTER],
+                          },
+                        UIShadowComponent:
+                          {
+                            blurType: Gauss,
+                            color: [0.000000, 0.000000, 0.000000, 1.000000],
+                            indent: 10,
+                            canBeDelayed: true,
+                          },
+                        Anchor:
+                          {
+                            hCenterAnchorEnabled: true,
+                            hCenterAnchor: 78.100000,
+                            vCenterAnchorEnabled: true,
+                            vCenterAnchor: -8.000000,
+                          },
+                      },
+                  },
+                  {
+                    class: UIControl,
+                    name: Counter,
+                    size: [34.000000, 16.000000],
+                    input: false,
+                    classes: header5,
+                    components:
+                      {
+                        UITextComponent:
+                          {
+                            colorInheritType: COLOR_MULTIPLY_ALPHA_ONLY,
+                            color: [1.000000, 0.960000, 0.920000, 1.000000],
+                            shadowOffset: [1.130000, 1.130000],
+                            align: [LEFT, VCENTER],
+                          },
+                        UIShadowComponent:
+                          {
+                            blurType: Gauss,
+                            color: [0.000000, 0.000000, 0.000000, 1.000000],
+                            indent: 10,
+                            canBeDelayed: true,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfParent,
+                            verticalPolicy: PercentOfParent,
+                            verticalValue: 0.000000,
+                          },
+                      },
+                  },
+                ],
+            },
+          ],
+      },
+    ],
+}

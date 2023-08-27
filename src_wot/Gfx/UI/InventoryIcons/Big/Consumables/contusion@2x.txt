@@ -1,0 +1,5 @@
+1
+rxd_consumables@2x.packed.webp
+180 180
+1
+746 142 142 114 20 32 0 frame0

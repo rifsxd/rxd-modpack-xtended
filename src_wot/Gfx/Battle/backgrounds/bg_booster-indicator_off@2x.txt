@@ -1,0 +1,5 @@
+1
+RXD_BOOSTER@2x.packed.webp
+108 54
+1
+36 0 108 54 0 0 0 

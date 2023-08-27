@@ -1,0 +1,481 @@
+Header:
+    version: 141
+ImportedPackages:
+- "~res:/UI/Screens3/Common/HorizontalScrollBar.yaml"
+- "~res:/UI/Screens3/Common/VerticalScrollBar.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "TanksTechTree"
+    size: [1033.000000, 771.000000]
+    input: false
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/Lobby/backgrounds/tech-tree/bg_tech-tree"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        LinearLayout:
+            orientation: "BottomUp"
+        UILayoutEventComponent:
+            sizeChangedEvent: "ON_SIZE_CHANGE"
+        ModalInput: {}
+        UIVirtualActionEventComponent0:
+            virtualKeyAction: "Options"
+            keyDownEvent: "GO_TO_SHOP"
+        UIVirtualActionEventComponent1:
+            virtualKeyAction: "Escape"
+            keyDownEvent: "BACK_SHORTCUT"
+        UIShortcutEventComponent:
+            shortcuts: "BACK_SHORTCUT,Escape;BACK_SHORTCUT,Back"
+        UIDataParamsComponent:
+            params:
+            - ["AppDataModel", "app", "null", "{ }"]
+            - ["AccountDataModel", "account", "null", "{ }"]
+            - ["TechTree", "model", "null", "{ \"nation\" = eNation.UK; }"]
+            - ["LobbyDataModel", "lobby", "null", "{ }"]
+            - ["SessionDataModel", "session", "null", "{ }"]
+            events:
+            - "MOVE_SELECTED_NATION"
+            - "TANK_FOCUSED(int descr)"
+            - "ON_INFO"
+            - "ON_NATION_CLICK"
+            - "BACK_EVENT"
+        UIDataLocalBindingsComponent:
+            data:
+            - ["map<eNintendoSwitchControls,string>", "nintendoNavigationLabels", "{ eNintendoSwitchControls.B = \"Switch/HubridPanel/Lobby/Back\"; eNintendoSwitchControls.VArrows = \"Switch/HubridPanel/TanksTree/ChoiceNation\"; }"]
+            - ["int", "levelToSelect", "when not isNull(session.playerTanks.currentTank) -> session.playerTanks.currentTank.info.level, 1"]
+            - ["vector<int>", "levels", "[ 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; ]"]
+            - ["int", "rowHeight", "96"]
+            - ["int", "columnWidth", "216"]
+            - ["TechTreeCells", "cells", "model.cellsByNations[model.nation]"]
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens3/Lobby/TanksTechTree/TanksTechTree.actions"
+    bindings:
+    - ["visible", "model.visible"]
+    children:
+    -   class: "UIControl"
+        name: "NavigationPanel"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfFirstChild"
+            UIChildComponent0:
+                condition: "isGamepad and not account.tutorialData.isTutorialActive"
+                prototypePath: "~res:/UI/Screens3/Common/NintendoSwitch/NavigationPanel/NavigationPanel.yaml"
+                args:
+                    "content": "NavigationPanel"
+            UIChildComponent1:
+                condition: "account.tutorialData.isTutorialActive and isGamepad"
+                prototypePath: "~res:/UI/Screens3/Common/NintendoSwitch/NavigationPanel/NavigationPanel.yaml"
+                args:
+                    "content": "TutorialNavigationPanel"
+    -   class: "UIControl"
+        name: "ContentWrapper"
+        position: [0.000000, 48.000000]
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            LinearLayout:
+                orientation: "LeftToRight"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "NationsContainer"
+            input: false
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    dynamicPadding: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfParent"
+                UIChildComponent0:
+                    childType: "kPrototype"
+                    prototypePath: "~res:/UI/Screens3/Lobby/TanksTechTree/Sidebar/SidebarTanksTree.yaml"
+                    args:
+                        "selectedNation": "model.nation"
+                        "nations": "model.nations"
+                        "account": "account"
+                        "app": "app"
+                        "session": "session"
+                        "lobby": "lobby"
+                        "contentPath": "\"~res:/UI/Screens3/Lobby/Common/Sidebar/SidebarTanksTreeMenu.yaml\""
+                    eventActions:
+                    - ["ON_NATION", "ON_NATION", "_event"]
+        -   class: "UIControl"
+            name: "Content"
+            position: [88.000000, 0.000000]
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                ClipContent: {}
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIScrollView"
+                name: "UIScrollView"
+                input: false
+                autoUpdate: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIScrollViewContainer"
+                    name: "scrollContainerControl"
+                    position: [0.000000, -18.000000]
+                    refreshStylesOnInteract: false
+                    components:
+                        Anchor: {}
+                        SizePolicy:
+                            horizontalPolicy: "Formula"
+                            horizontalFormula: "when safeAreaInsets.right == 0 -> childrenSum, safeAreaInsets.right + (childrenSum - 20)"
+                            verticalPolicy: "Formula"
+                            verticalFormula: "when parent == 0 -> firstChild, max(parent, firstChild)"
+                        UILayoutEventComponent:
+                            positionChangedEvent: "ON_SCROLL"
+                            positionChangedEventData: "_position"
+                            sizeChangedEvent: "ON_SCROLL"
+                            sizeChangedEventData: "_position"
+                    children:
+                    -   class: "UIControl"
+                        name: "TreeContent"
+                        size: [32.000000, 32.000000]
+                        input: false
+                        components:
+                            Anchor:
+                                topAnchorEnabled: true
+                            LinearLayout: {}
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                verticalPolicy: "FixedSize"
+                            UIAttachLayoutMasterComponent:
+                                attachId: "TREE_CONTENT"
+                            UIChildAnimatedSwitchingComponent:
+                                cacheEnabled: true
+                            UIChildComponent0:
+                                childType: "kRepeat"
+                                prototypePath: "~res:/UI/Screens3/Lobby/TanksTechTree/NationTanksTechTree.yaml"
+                                data: "model.cellsByNations"
+                                key: "model.nation"
+                                args:
+                                    "account": "account"
+                                    "model": "model.cellsByNations[_key]"
+                                    "columnWidth": "columnWidth"
+                                    "rowHeight": "rowHeight"
+                                    "levels": "levels"
+                                eventActions:
+                                - ["TANK_FOCUSED", "TANK_FOCUSED", "_event.descr"]
+                                - ["ON_CELL_TOUCH", "ON_CELL_TOUCH", "_event.tankDescriptor"]
+                                - ["ON_LOADING_COMPLETE", "TANKS_TREE_LOADED", ""]
+                            UIIdentifierComponent:
+                                id: "tanks_container"
+                        bindings:
+                        - ["SizePolicy.horizontalValue", "columnWidth * cells.columnsCount"]
+                        - ["SizePolicy.verticalValue", "rowHeight * cells.rowsCount"]
+                    -   class: "UIControl"
+                        name: "HiddenBottomLeft"
+                        input: false
+                        components:
+                            Anchor:
+                                bottomAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "HiddenTopRight"
+                        input: false
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "HiddenBottomRight"
+                        input: false
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Shadows"
+                    position: [0.000000, 0.000000]
+                    size: [945.000000, 699.000000]
+                    visible: false
+                    input: false
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "ShadowRight"
+                        position: [913.000000, 0.000000]
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "black-25-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_horizontal_0-100"
+                            UIOpacityComponent: {}
+                            Anchor:
+                                rightAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 32.000000
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+                    -   class: "UIControl"
+                        name: "ShadowLeft"
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "black-25-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_horizontal_0-100"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                            UIOpacityComponent: {}
+                            Anchor:
+                                leftAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 32.000000
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+                    -   class: "UIControl"
+                        name: "ShadowBottom"
+                        position: [0.000000, 667.000000]
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "black-25-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+                            UIOpacityComponent: {}
+                            Anchor:
+                                bottomAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 32.000000
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+                    -   class: "UIControl"
+                        name: "ShadowTop"
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "black-25-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_vertical_0-100"
+                                spriteModification: ["FLIP_VERTICAL"]
+                            UIOpacityComponent: {}
+                            Anchor:
+                                topAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 32.000000
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   prototype: "HorizontalScrollBar/HorizontalScrollBar"
+                    name: "HorizontalScrollBar"
+                    components:
+                        Anchor:
+                            leftAnchor: 4.000000
+                            rightAnchor: 4.000000
+                        ScrollBarDelegate:
+                            delegate: ".."
+                -   prototype: "VerticalScrollBar/VerticalScrollBar"
+                    name: "VerticalScrollBar"
+                    components:
+                        Anchor:
+                            topAnchor: 4.000000
+                            bottomAnchor: 4.000000
+                        UIAnchorSafeAreaComponent:
+                            rightSafeInset: "INSET"
+                            rightInsetCorrection: -16.000000
+                        ScrollBarDelegate:
+                            delegate: ".."
+            -   class: "UIControl"
+                name: "Levels"
+                input: false
+                classes: "black-15-bg"
+                components:
+                    Background: {}
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "ShadowLeft"
+                    size: [32.000000, 32.000000]
+                    visible: false
+                    input: false
+                    classes: "black-25-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_horizontal_0-100"
+                            spriteModification: ["FLIP_HORIZONTAL"]
+                        UIOpacityComponent: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 24.000000
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "ShadowRight"
+                    position: [921.000000, 0.000000]
+                    size: [32.000000, 32.000000]
+                    visible: false
+                    input: false
+                    classes: "black-25-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/Lobby/backgrounds/bg_gradient_horizontal_0-100"
+                        UIOpacityComponent: {}
+                        Anchor:
+                            rightAnchorEnabled: true
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 24.000000
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "Levels"
+                    input: false
+                    components:
+                        LinearLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                        UIAttachLayoutSlaveComponent:
+                            attachId: "TREE_CONTENT"
+                            masterAlign: "BottomLeft"
+                            slaveAlign: "TopLeft"
+                            y: false
+                        UIRepeatComponent:
+                            control: "~res:/UI/Screens3/Lobby/TanksTechTree/LevelCell.yaml"
+                            dataContainer: "levels"
+                            args:
+                                "level": "_item"
+                -   class: "UIControl"
+                    name: "SafeAreaSpacer"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    components:
+                        Background: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "Formula"
+                            verticalFormula: "when safeAreaInsets.bottom == 0 -> 0, 21"
+        -   class: "UIControl"
+            name: "Refresh"
+            position: [0.000000, 691.000000]
+            size: [88.000000, 32.000000]
+            input: true
+            classes: "simple-button t-body bold grey-shark-50-bg"
+            components:
+                Background: {}
+                UIOpacityComponent: {}
+                UITextComponent:
+                    text: "Refresh"
+                Anchor:
+                    bottomAnchorEnabled: true
+                IgnoreLayout: {}
+                UIInputEventComponent:
+                    onTouchUpInside: "REFRESH"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/DevMenu/SimpleButton.style.yaml"
+            bindings:
+            - ["visible", "app.constants.developerUI and app.constants.desktop"]
+    -   class: "UIControl"
+        name: "Header"
+        input: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfFirstChild"
+            UIChildComponent0:
+                prototypePath: "~res:/UI/Screens3/Lobby/Common/Headers/InventoryHeader.yaml"
+                args:
+                    "session": "session"
+                    "lobby": "lobby"
+                    "title": "localize(\"techTree/Header\")"
+                    "subtitle": "str(model.nation, eNation, \"autotests\")"
+                    "isGeneralPackLoaded": "app.sDlc.isGeneralPackLoaded"
+                    "isTutorialActive": "account.tutorialData.isTutorialActive"
+                    "firstLessonCompleted": "account.tutorialData.currentLesson > eTutorialLesson.kTurretUnlock"
+                    "currentScreen": "eCurrentScreen.kTechTree"
+                    "showBackButton": "true"
+                    "isBackButtonInitiallyClickable": "false"
+                    "isFullScreen": "true"
+                eventActions:
+                - ["GO_TO_SHOP", "GO_TO_SHOP", ""]
+                - ["PREMIUM_INFO_EVENT", "PREMIUM_INFO_EVENT", ""]
+                - ["BACK_EVENT", "BACK_EVENT", ""]
+                - ["SHOP_BUTTON", "SHOP_BUTTON", "_event.requiredResource"]
+Slots:
+-   class: "UIControl"
+    name: "NavigationPanel"
+    size: [768.000000, 40.000000]
+    input: false
+    components:
+        LinearLayout:
+            spacing: 24.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+    children:
+    -   class: "UIControl"
+        name: "Labels"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            LinearLayout:
+                spacing: 24.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            UIRepeatComponent:
+                control: "~res:/UI/Screens3/Common/NintendoSwitch/NavigationPanel/IconWithLabel.yaml"
+                dataContainer: "nintendoNavigationLabels"
+                args:
+                    "text": "_item"
+                    "icon": "_key"
+-   class: "UIControl"
+    name: "TutorialNavigationPanel"
+    size: [768.000000, 40.000000]
+    input: false
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfMaxChild"
+        UIChildComponent0:
+            prototypePath: "~res:/UI/Screens3/Lobby/Common/TutorialNavigationPanel.yaml"
+            args:
+                "currentHiglightControl": "account.tutorialData.currentHighlightControl"

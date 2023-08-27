@@ -1,0 +1,6 @@
+1
+AmmoType@2x.packed.webp
+160 160
+1
+486 2 160 160 0 0 0 frame0
+

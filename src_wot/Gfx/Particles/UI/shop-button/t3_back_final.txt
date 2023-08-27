@@ -1,0 +1,5 @@
+1
+shop-button.packed.webp
+64 96
+1
+0 0 55 75 5 0 0 frame0

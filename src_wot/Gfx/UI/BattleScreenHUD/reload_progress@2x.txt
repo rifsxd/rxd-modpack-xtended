@@ -1,0 +1,5 @@
+1
+rxd_load@2x.packed.webp
+44 8
+1
+0 0 44 8 0 0 0 frame0

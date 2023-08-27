@@ -1,0 +1,6 @@
+1
+rxd_loading.packed.webp
+40 40
+2
+2 1 32 32 3 4 0 frame0
+38 30 28 33 6 2 0 frame1

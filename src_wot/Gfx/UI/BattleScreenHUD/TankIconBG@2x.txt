@@ -1,0 +1,9 @@
+1
+rxd_TankIconBG@2x.packed.webp
+782 42
+5
+54 92 782 42 0 0 0 frame0
+54 186 782 42 0 0 0 frame1
+54 280 782 42 0 0 0 frame2
+54 374 782 42 0 0 0 frame3
+54 468 782 42 0 0 0 frame4

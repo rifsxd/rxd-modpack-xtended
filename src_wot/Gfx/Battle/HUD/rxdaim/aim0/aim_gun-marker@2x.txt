@@ -1,0 +1,6 @@
+1
+rxd_mark@2x.packed.webp
+144 144
+2
+56 0 144 144 0 -20 0 frame0
+312 0 144 144 0 -20 0 frame1

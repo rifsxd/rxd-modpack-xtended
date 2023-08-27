@@ -1,0 +1,5 @@
+1
+hc_premium_l@2x.packed.webp
+298 298
+1
+0 0 298 298 0 0 0 frame0

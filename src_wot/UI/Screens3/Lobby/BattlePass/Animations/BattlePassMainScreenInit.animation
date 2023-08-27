@@ -1,0 +1,15 @@
+animation Init
+{
+	if (showDepositsPopup)
+	{
+		Event("SHOW_DEPOSITS_POPUP");
+	}
+	if (notAllDepositsTaken and lastLevelRewardTaken and toDays(session.serverTime) - toDays(serializationInfo.lastTimeTakeDepositsPopupDisplayed) != int64(0L))
+	{
+		Event("SHOW_TAKE_DEPOSITS_POPUP");
+	}
+
+	Event("ANIMATE_PROGRESS");
+	Event("SHOW_DEPOSITS_PROGRESS");
+	PlaySound(sound="Battle_Pass_Music");
+}

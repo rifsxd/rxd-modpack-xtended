@@ -1,0 +1,85 @@
+Header:
+    version: "53"
+StyleSheets:
+-   selector: ".game-type.active"
+    properties:
+        sizePolicy-horizontalValue:
+            value: 260.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+        sizePolicy-verticalValue:
+            value: 220.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type.active:selected"
+    properties:
+        sizePolicy-horizontalValue:
+            value: 250.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+        sizePolicy-verticalValue:
+            value: 330.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type"
+    properties:
+        sizePolicy-horizontalValue:
+            value: 260.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+        sizePolicy-verticalValue:
+            value: 220.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type:selected"
+    properties:
+        sizePolicy-horizontalValue:
+            value: 250.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+        sizePolicy-verticalValue:
+            value: 330.000000
+            transitionTime: 0.100000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type.active #RedText, .game-type.active:selected #RedText"
+    properties:
+        visible: false
+-   selector: ".game-type #RedText, .game-type:selected #RedText"
+    properties:
+        visible: true
+-   selector: ".game-type.active:selected * #FX, .game-type.active:selected * #OutsideFx"
+    properties:
+        visible: true
+-   selector: ".game-type * #FX, .game-type:selected * #FX, .game-type.active * #FX, .game-type * #OutsideFx, .game-type:selected * #OutsideFx, .game-type.active * #OutsideFx"
+    properties:
+        visible: false
+-   selector: ".game-type.badge_new #BadgeNew"
+    properties:
+        visible: true
+-   selector: ".game-type #BadgeNew, .game-type:selected #BadgeNew, .game-type.active:selected #BadgeNew"
+    properties:
+        visible: false
+-   selector: ".game-type:selected #BgFx #SelectedLarge"
+    properties:
+        sizePolicy-verticalValue:
+            value: 8.000000
+            transitionTime: 0.100000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type #BgFx #SelectedLarge"
+    properties:
+        sizePolicy-verticalValue:
+            value: 0.000000
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type:selected #BgFx #SelectedSmall, .game-type:selected #BgFx #SelectedLarge"
+    properties:
+        bg-color:
+            value: [1.000000, 0.635294, 0.000000, 1.000000]
+            transitionTime: 0.100000
+            transitionFunction: "LINEAR"
+-   selector: ".game-type #BgFx #SelectedSmall, .game-type #BgFx #SelectedLarge"
+    properties:
+        bg-color:
+            value: [1.000000, 0.635294, 0.000000, 0.000000]
+            transitionTime: 0.100000
+            transitionFunction: "LINEAR"

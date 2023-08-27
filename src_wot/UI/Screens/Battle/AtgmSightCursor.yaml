@@ -1,0 +1,126 @@
+Header:
+    version: "110"
+Controls:
+-   class: "UIControl"
+    name: "AtgmSightCursor"
+    input: false
+    classes: "atgm-cursor ammo-type=shell state=loading"
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 110.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 110.000000
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/Styles/AtgmSightCursor.style.yaml"
+    children:
+    -   class: "UIControl"
+        name: "ReloadBarContainer"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "ReloadBarProgress"
+            size: [174.000000, 109.000000]
+            input: false
+            components:
+                Background:
+                    sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/aim-circle"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                UIClipPolygon: {}
+                RadialProgressComponent:
+                    progress: 0.500000
+                    startAngle: -72.000000
+                    endAngle: 72.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "ReloadBarBase"
+            size: [174.000000, 109.000000]
+            input: false
+            components:
+                Background:
+                    sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/aim-circle"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                UIClipPolygon: {}
+                RadialProgressComponent:
+                    progress: 0.500000
+                    startAngle: 72.000000
+                    endAngle: -72.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "FuelBarContainer"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 110.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 110.000000
+        children:
+        -   class: "UIControl"
+            name: "FuelBarBase"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Background:
+                    sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/aim-circle"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                UIClipPolygon: {}
+                RadialProgressComponent:
+                    progress: 0.200000
+                    startAngle: 252.000000
+                    endAngle: 108.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 110.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 110.000000
+        -   class: "UIControl"
+            name: "UsedFuelBar"
+            size: [174.000000, 109.000000]
+            input: false
+            classes: "used-fuel-bg"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/Battle/HUD/rxdaim/atgm/aim-circle"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                UIClipPolygon: {}
+                RadialProgressComponent:
+                    progress: 0.800000
+                    startAngle: 108.000000
+                    endAngle: 252.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/Styles/AtgmSightCursor.style.yaml"

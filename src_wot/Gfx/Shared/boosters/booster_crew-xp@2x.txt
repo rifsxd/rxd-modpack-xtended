@@ -1,0 +1,5 @@
+1
+rxd_Boosters@2x.packed.webp
+240 240
+1
+480 0 240 240 0 0 0 

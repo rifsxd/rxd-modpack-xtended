@@ -1,0 +1,1243 @@
+{
+  Header: { version: 153 },
+  ImportedPackages:
+    [
+      "~res:/UI/Screens/Battle/Fonts.yaml",
+      "~res:/UI/Screens/Battle/GunStatus.yaml",
+      "~res:/UI/Screens/Battle/DamageInfo/DamageInfoMarker.yaml",
+      "~res:/UI/Screens/Fonts.yaml",
+    ],
+  StyleSheets:
+    [
+      {
+        selectors: [".damage-enemy #Bg"],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/damage_background_green" },
+      },
+      {
+        selectors: [".damage-ally #Bg"],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/damage_background_red" },
+      },
+      {
+        selectors: [".damage-squad #Bg"],
+        properties:
+          {
+            bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/damage_background_orange",
+          },
+      },
+      {
+        selectors: [".damage-observer-team1 #Bg"],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/damage_background_pink" },
+      },
+      {
+        selectors: [".damage-observer-team2 #Bg"],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/damage_background_blue" },
+      },
+      {
+        selectors:
+          [
+            ".marker-vehicle-type-enabled #ClassIconShadow",
+            ".marker-vehicle-type-disabled #GunNHealthContainer #HealthVertOffset",
+          ],
+        properties: { visible: true },
+      },
+      {
+        selectors:
+          [
+            ".marker-vehicle-type-enabled #GunNHealthContainer #HealthVertOffset",
+            ".marker-vehicle-type-disabled #ClassIconShadow",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [
+            ".marker-no-vehicle-icon #VehicleIconAndLevelContainer #VehicleIconContainer #VehicleIcon",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [
+            ".marker-no-level-icon #VehicleIconAndLevelContainer #LevelIconContainer #LevelIcon",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [
+            ".marker-no-vehicle-icon .marker-no-level-icon #VehicleIconAndLevelContainer",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [
+            ".marker-no-health #GunNHealthContainer #HealthContainer #HealthRay",
+            ".marker-no-health #GunNHealthContainer #HealthContainer #HealthBar",
+            ".marker-no-health #GunNHealthContainer #HealthContainer #HealthValue",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors: [".marker-no-health #GunNHealthContainer #HealthContainer"],
+        properties: { sizePolicy-verticalValue: 0.000000 },
+      },
+      {
+        selectors: [".marker-no-player-name #PlayerNameShadow"],
+        properties: { visible: false },
+      },
+      {
+        selectors: [".marker-no-vehicle-name #VehicleNameShadow"],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [".marker-no-reload-status #GunNHealthContainer #GunStatusBattle"],
+        properties: { visible: false },
+      },
+      {
+        selectors:
+          [
+            ".marker-no-teammate-six-sense #GunNHealthContainer #HealthContainer #SixSense",
+          ],
+        properties: { visible: false },
+      },
+      {
+        selectors: [".ar #PlayerName"],
+        properties: { sizePolicy-verticalMin: 22.000000 },
+      },
+      {
+        selectors: [.healthBarSize],
+        properties:
+          {
+            sizePolicy-horizontalValue: 70.000000,
+            sizePolicy-verticalValue: 14.000000,
+          },
+      },
+      {
+        selectors: [.healthBarSize.Increased],
+        properties:
+          {
+            sizePolicy-horizontalValue: 105.000000,
+            sizePolicy-verticalValue: 21.000000,
+          },
+      },
+      {
+        selectors: [.healthBarSize.Phone],
+        properties:
+          {
+            sizePolicy-horizontalValue: 100.000000,
+            sizePolicy-verticalValue: 21.000000,
+          },
+      },
+      {
+        selectors: [.health-color-bar],
+        properties: { bg-color: [0.999999, 0.749999, 0.001000, 1.000000] },
+      },
+      {
+        selectors: [.healthBarSize.Phone.Increased],
+        properties:
+          {
+            sizePolicy-horizontalValue: 150.000000,
+            sizePolicy-verticalValue: 31.000000,
+          },
+      },
+      {
+        selectors: [.tank-class-light],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconLight.psd" },
+      },
+      {
+        selectors: [.tank-class-medium],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconMedium.psd" },
+      },
+      {
+        selectors: [.tank-class-heavy],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconHeavy.psd" },
+      },
+      {
+        selectors: [.tank-class-spg],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconSPG.psd" },
+      },
+      {
+        selectors: [.tank-class-atspg],
+        properties:
+          { bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconAtSPG.psd" },
+      },
+    ],
+  Prototypes:
+    [
+      {
+        class: UIControl,
+        name: VehicleUIObjectDamageProto,
+        input: false,
+        classes: damage-tag=damage-observer-team2 badge-tag=critical-damage,
+        components:
+          {
+            SizePolicy:
+              {
+                horizontalPolicy: PercentOfMaxChild,
+                verticalPolicy: PercentOfMaxChild,
+              },
+            StyleSheet:
+              {
+                inheritsStylesFromParent: false,
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker.yaml",
+              },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: Bg,
+              size: [83.000000, 24.000000],
+              input: false,
+              components:
+                {
+                  Background: {},
+                  LinearLayout: { spacing: 1.000000 },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfContent,
+                      verticalPolicy: PercentOfContent,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: spacer,
+                    size: [14.000000, 2.000000],
+                  },
+                  {
+                    class: UIControl,
+                    name: Text,
+                    size: [34.000000, 27.000000],
+                    input: false,
+                    classes: fs-19 regular align-left t-caps,
+                    components:
+                      {
+                        UIShadowComponent:
+                          {
+                            blurType: Gauss,
+                            color: [1.000000, 0.500000, 0.000000, 1.000000],
+                            indent: 10,
+                            canBeDelayed: true,
+                          },
+                        UITextComponent:
+                          {
+                            color: [1.000000, 0.500000, 0.000000, 1.000000],
+                            shadowOffset: [0.900000, 0.900000],
+                            shadowColor: [1.000000, 0.500000, 0.000000, 1.000000],
+                            align: [LEFT, VCENTER],
+                          },
+                        Anchor:
+                          {
+                            topAnchorEnabled: true,
+                            topAnchor: -3.000000,
+                            bottomAnchorEnabled: true,
+                          },
+                        SizePolicy: { horizontalPolicy: PercentOfContent },
+                      },
+                  },
+                  {
+                    class: UIControl,
+                    name: CritBadge,
+                    size: [10.000000, 24.000000],
+                    pivot: [0.500000, 0.500000],
+                    input: false,
+                    components:
+                      {
+                        Background: {},
+                        Anchor:
+                          {
+                            rightAnchorEnabled: true,
+                            vCenterAnchorEnabled: true,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                        StyleSheet:
+                          {
+                            styles: "~res:/UI/Screens/Battle/Styles/CritBadgeStyles.yaml",
+                          },
+                      },
+                  },
+                ],
+            },
+          ],
+      },
+      {
+        class: UIControl,
+        name: SquadDamageView,
+        input: false,
+        components:
+          {
+            Anchor: { hCenterAnchorEnabled: true, vCenterAnchorEnabled: true },
+            SizePolicy:
+              {
+                horizontalPolicy: PercentOfMaxChild,
+                verticalPolicy: PercentOfChildrenSum,
+              },
+            UIActionComponent:
+              { actionsPath: "~res:/UI/Screens/Battle/SquadDamage.actions" },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: ControlToInsert,
+              position: [34.000000, 46.000000],
+              pivot: [0.500000, 0.500000],
+              input: false,
+              components:
+                {
+                  UIOpacityComponent: {},
+                  Anchor:
+                    { hCenterAnchorEnabled: true, vCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      verticalPolicy: PercentOfMaxChild,
+                    },
+                },
+              children:
+                [
+                  {
+                    prototype: VehicleUIObjectDamageProto,
+                    name: VehicleUIObjectDamageProto,
+                    components:
+                      { SizePolicy: { verticalPolicy: PercentOfChildrenSum } },
+                    children:
+                      [
+                        {
+                          path: Bg,
+                          components:
+                            { Anchor: { vCenterAnchorEnabled: true } },
+                          children: [],
+                        },
+                        {
+                          class: UIControl,
+                          name: AdditionalDamageIcon,
+                          size: [32.000000, 32.000000],
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  sprite: "~res:/Gfx/Battle/HUD/aim/bg_frame",
+                                  color:
+                                    [1.000000, 0.235294, 0.235294, 1.000000],
+                                },
+                              Anchor:
+                                {
+                                  leftAnchorEnabled: true,
+                                  leftAnchor: -4.000000,
+                                  topAnchorEnabled: true,
+                                  topAnchor: 5.000000,
+                                },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: FixedSize,
+                                  verticalValue: 5.000000,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                ],
+            },
+          ],
+      },
+      {
+        class: UIControl,
+        name: DamagePoint,
+        input: false,
+        components:
+          {
+            Anchor: { rightAnchorEnabled: true, rightAnchor: -5.000000 },
+            IgnoreLayout: {},
+            SizePolicy: { verticalPolicy: PercentOfMaxChild },
+            StyleSheet:
+              {
+                inheritsStylesFromParent: false,
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker.yaml",
+              },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: DamageInfo,
+              size: [189.000000, 49.000000],
+              input: false,
+              components:
+                {
+                  LinearLayout: { orientation: TopDown, spacing: 8.000000 },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      verticalPolicy: PercentOfChildrenSum,
+                    },
+                },
+              children:
+                [
+                  {
+                    prototype: DamageInfoMarker/DamageInfoMarker,
+                    name: DetailedDamageResult,
+                  },
+                  {
+                    class: UIControl,
+                    name: DamageContainer,
+                    size: [83.000000, 49.000000],
+                    input: false,
+                    components:
+                      {
+                        LinearLayout:
+                          { orientation: LeftToRight, spacing: 1.000000 },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfChildrenSum,
+                            verticalPolicy: PercentOfFirstChild,
+                          },
+                      },
+                    children:
+                      [
+                        {
+                          class: UIControl,
+                          name: DamageMarkers,
+                          position: [0.000000, 0.000000],
+                          size: [83.000000, 70.000000],
+                          input: false,
+                          components:
+                            {
+                              LinearLayout:
+                                { orientation: TopDown, spacing: 1.000000 },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfMaxChild,
+                                  horizontalMin: 66.000000,
+                                  verticalPolicy: PercentOfChildrenSum,
+                                  verticalMin: 20.000000,
+                                },
+                            },
+                          children:
+                            [
+                              {
+                                prototype: VehicleUIObjectDamageProto,
+                                name: PrimaryDamagePoints,
+                              },
+                              {
+                                prototype: SquadDamageView,
+                                name: SquadDamageView,
+                              },
+                              {
+                                prototype: VehicleUIObjectDamageProto,
+                                name: HealPoints,
+                                position: [0.000000, 50.000000],
+                                classes: damage-tag=damage-enemy,
+                                children:
+                                  [
+                                    {
+                                      path: Bg/Text,
+                                      components:
+                                        { UITextComponent: { text: +1099 } },
+                                    },
+                                    { path: Bg/CritBadge, visible: false },
+                                  ],
+                              },
+                            ],
+                        },
+                        {
+                          class: UIControl,
+                          name: FlameIcon,
+                          size: [52.000000, 50.000000],
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconFire.psd",
+                                },
+                              Anchor: { vCenterAnchorEnabled: true },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                        {
+                          class: UIControl,
+                          name: AmmoBangIcon,
+                          size: [52.000000, 50.000000],
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconAmmo.psd",
+                                },
+                              Anchor: { vCenterAnchorEnabled: true },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                ],
+            },
+          ],
+      },
+      {
+        class: UIControl,
+        name: DamagePointTournament,
+        input: false,
+        components:
+          {
+            Anchor: { rightAnchorEnabled: true, rightAnchor: -5.000000 },
+            LinearLayout: { orientation: LeftToRight, spacing: 1.000000 },
+            IgnoreLayout: {},
+            SizePolicy: { verticalPolicy: PercentOfMaxChild },
+            StyleSheet:
+              {
+                inheritsStylesFromParent: false,
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker.yaml",
+              },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: DamageMarkers,
+              position: [0.000000, 0.000000],
+              size: [83.000000, 70.000000],
+              input: false,
+              components:
+                {
+                  LinearLayout: { orientation: TopDown, spacing: 1.000000 },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      horizontalMin: 66.000000,
+                      verticalPolicy: PercentOfChildrenSum,
+                      verticalMin: 20.000000,
+                    },
+                },
+              children:
+                [
+                  {
+                    prototype: VehicleUIObjectDamageProto,
+                    name: PrimaryDamagePoints,
+                  },
+                  { prototype: SquadDamageView, name: SquadDamageView },
+                  {
+                    prototype: VehicleUIObjectDamageProto,
+                    name: HealPoints,
+                    position: [0.000000, 50.000000],
+                    classes: damage-tag=damage-enemy,
+                    children:
+                      [
+                        {
+                          path: Bg/Text,
+                          components: { UITextComponent: { text: +1099 } },
+                        },
+                        { path: Bg/CritBadge, visible: false },
+                      ],
+                  },
+                ],
+            },
+          ],
+      },
+      {
+        class: UIControl,
+        name: VehicleUIObjectMarker,
+        pivot: [0.500000, 1.000000],
+        input: false,
+        components:
+          {
+            LinearLayout:
+              { enabled: true, orientation: BottomUp, spacing: 1.000000 },
+            SizePolicy:
+              {
+                horizontalPolicy: FixedSize,
+                verticalPolicy: PercentOfChildrenSum,
+              },
+            StyleSheet:
+              {
+                inheritsStylesFromParent: false,
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker.yaml",
+              },
+          },
+        children:
+          [
+            {
+              class: UIControl,
+              name: ClassIconShadow,
+              input: false,
+              components:
+                {
+                  Background:
+                    {
+                      sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconShadow.psd",
+                    },
+                  Anchor: { hCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      verticalPolicy: PercentOfMaxChild,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: ClassIcon,
+                    size: [16.000000, 22.000000],
+                    input: false,
+                    classes: tank-class=tank-class-light,
+                    components:
+                      {
+                        Background: {},
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                      },
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: GunNHealthContainer,
+              size: [32.000000, 32.000000],
+              components:
+                {
+                  Anchor: { hCenterAnchorEnabled: true },
+                  LinearLayout: { orientation: BottomUp },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfLastChild,
+                      verticalPolicy: PercentOfChildrenSum,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: HealthVertOffset,
+                    size: [3.000000, 3.000000],
+                    input: false,
+                  },
+                  {
+                    prototype: GunStatus/GunStatus,
+                    name: GunStatusBattle,
+                    size: [70.000000, 3.000000],
+                    pivot: [0.500000, 0.000000],
+                    classes: style=regular-style animated-reload,
+                    components:
+                      {
+                        Anchor:
+                          { leftAnchorEnabled: true, rightAnchorEnabled: true },
+                        StyleSheet:
+                          {
+                            styles: "~res:/UI/Screens/Battle/GunStatus.yaml;~res:/UI/Screens/Battle/VehicleUIObjectMarker.yaml",
+                          },
+                      },
+                    children:
+                      [
+                        {
+                          path: ShellBack,
+                          position: [1.000000, 0.000000],
+                          components:
+                            {
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: Formula,
+                                  horizontalFormula: parent-2,
+                                  verticalPolicy: FixedSize,
+                                  verticalValue: 2.000000,
+                                },
+                            },
+                          children: [],
+                        },
+                        {
+                          path: ShellBack/ShellItem,
+                          classes: shell lock-enabled,
+                          children: [],
+                        },
+                      ],
+                  },
+                  {
+                    class: UIControl,
+                    name: HealthContainer,
+                    input: false,
+                    classes: healthBarSize,
+                    components:
+                      {
+                        Background:
+                          {
+                            drawType: DRAW_SCALE_TO_RECT,
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_HealthBar.psd",
+                            perPixelAccuracy: PER_PIXEL_ACCURACY_FORCED,
+                          },
+                        Anchor: { hCenterAnchorEnabled: true },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: FixedSize,
+                            verticalPolicy: FixedSize,
+                          },
+                      },
+                    children:
+                      [
+                        {
+                          class: UIControl,
+                          name: StatusContainer,
+                          position: [-52.000000, -15.000000],
+                          size: [52.000000, 42.000000],
+                          input: false,
+                          components:
+                            {
+                              Anchor:
+                                {
+                                  leftAnchorEnabled: true,
+                                  leftAnchor: -52.000000,
+                                  vCenterAnchorEnabled: true,
+                                  vCenterAnchor: -1.000000,
+                                },
+                              LinearLayout: { orientation: RightToLeft },
+                              SizePolicy: {},
+                            },
+                          children:
+                            [
+                              {
+                                class: UIControl,
+                                name: SixSense,
+                                size: [21.000000, 42.000000],
+                                pivot: [0.500000, 0.500000],
+                                input: false,
+                                components:
+                                  {
+                                    Background:
+                                      {
+                                        sprite: "~res:/Gfx/UI/BattleScreenHUD/SixSense_little.psd",
+                                        perPixelAccuracy: PER_PIXEL_ACCURACY_ENABLED,
+                                      },
+                                    Anchor:
+                                      {
+                                        leftAnchorEnabled: false,
+                                        hCenterAnchorEnabled: true,
+                                        vCenterAnchorEnabled: true,
+                                        vCenterAnchor: 0.500000,
+                                      },
+                                    SizePolicy:
+                                      {
+                                        horizontalPolicy: Ignore,
+                                        verticalPolicy: PercentOfParent,
+                                      },
+                                  },
+                              },
+                              {
+                                class: UIControl,
+                                name: SpotEye,
+                                size: [21.000000, 42.000000],
+                                pivot: [0.500000, 0.500000],
+                                input: false,
+                                components:
+                                  {
+                                    Background:
+                                      {
+                                        sprite: "~res:/Gfx/UI/BattleScreenHUD/SixSense_little.psd",
+                                        frame: 3,
+                                        perPixelAccuracy: PER_PIXEL_ACCURACY_ENABLED,
+                                      },
+                                    Anchor:
+                                      {
+                                        leftAnchorEnabled: false,
+                                        hCenterAnchorEnabled: true,
+                                        vCenterAnchorEnabled: true,
+                                        vCenterAnchor: 0.500000,
+                                      },
+                                    SizePolicy:
+                                      {
+                                        horizontalPolicy: Ignore,
+                                        verticalPolicy: PercentOfParent,
+                                      },
+                                  },
+                              },
+                              {
+                                class: UIControl,
+                                name: HealerIconContainer,
+                                size: [32.000000, 42.000000],
+                                visible: true,
+                                input: false,
+                                components:
+                                  {
+                                    UIAnimationComponent:
+                                      {
+                                        animations: "ShowHealer,~res:/UI/Screens/Battle/HealerIconAnimation.animation",
+                                      },
+                                    UIOpacityComponent: { opacity: 1.000000 },
+                                    Anchor:
+                                      {
+                                        leftAnchorEnabled: false,
+                                        hCenterAnchorEnabled: true,
+                                        vCenterAnchorEnabled: true,
+                                        vCenterAnchor: -10.000000,
+                                      },
+                                    LinearLayout: { orientation: BottomUp },
+                                    SizePolicy:
+                                      {
+                                        horizontalPolicy: Ignore,
+                                        verticalPolicy: PercentOfParent,
+                                      },
+                                  },
+                                children:
+                                  [
+                                    {
+                                      class: UIControl,
+                                      name: HealPlus,
+                                      input: false,
+                                      components:
+                                        {
+                                          Background:
+                                            {
+                                              drawType: DRAW_SCALE_PROPORTIONAL,
+                                              sprite: "~res:/Gfx/Battle/icons/2020-halloween/icon_plus",
+                                            },
+                                          SizePolicy:
+                                            {
+                                              horizontalPolicy: PercentOfParent,
+                                              verticalPolicy: Formula,
+                                              verticalFormula: parent/2,
+                                            },
+                                        },
+                                    },
+                                    {
+                                      class: UIControl,
+                                      name: HealUp,
+                                      input: false,
+                                      components:
+                                        {
+                                          Background:
+                                            {
+                                              drawType: DRAW_SCALE_PROPORTIONAL,
+                                              sprite: "~res:/Gfx/Battle/icons/2020-halloween/icon_up",
+                                            },
+                                          Anchor:
+                                            {
+                                              hCenterAnchorEnabled: true,
+                                              vCenterAnchorEnabled: true,
+                                            },
+                                          SizePolicy:
+                                            {
+                                              horizontalPolicy: PercentOfParent,
+                                              verticalPolicy: Formula,
+                                              verticalFormula: parent/2,
+                                            },
+                                        },
+                                    },
+                                  ],
+                              },
+                            ],
+                        },
+                        {
+                          class: UIControl,
+                          name: HealthRay,
+                          input: false,
+                          classes: health-color-bar,
+                          components:
+                            {
+                              Background:
+                                {
+                                  drawType: DRAW_SCALE_TO_RECT,
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_HealthBar.psd",
+                                  frame: 2,
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_FORCED,
+                                },
+                              ClipContent: {},
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfParent,
+                                  horizontalValue: 50.000000,
+                                  horizontalMin: 2.000000,
+                                  verticalPolicy: PercentOfParent,
+                                },
+                            },
+                        },
+                        {
+                          class: UIControl,
+                          name: HealingHealthRay,
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  drawType: DRAW_SCALE_TO_RECT,
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_HealthBar.psd",
+                                  frame: 3,
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_FORCED,
+                                },
+                              ClipContent: {},
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfParent,
+                                  horizontalValue: 50.000000,
+                                  horizontalMin: 2.000000,
+                                  verticalPolicy: PercentOfParent,
+                                },
+                            },
+                        },
+                        {
+                          class: UIControl,
+                          name: HealthBar,
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  drawType: DRAW_SCALE_TO_RECT,
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_HealthBar.psd",
+                                  frame: 1,
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_FORCED,
+                                },
+                              ClipContent: {},
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfParent,
+                                  horizontalValue: 50.000000,
+                                  horizontalMin: 2.000000,
+                                  verticalPolicy: PercentOfParent,
+                                },
+                            },
+                        },
+                        {
+                          class: UIControl,
+                          name: HealthValue,
+                          size: [66.000000, 14.000000],
+                          input: false,
+                          classes: text-marker-health-points,
+                          components:
+                            {
+                              UITextComponent:
+                                {
+                                  text: 333/333,
+                                  perPixelAccuracyType: PER_PIXEL_ACCURACY_DISABLED,
+                                },
+                              Anchor:
+                                {
+                                  vCenterAnchorEnabled: true,
+                                  vCenterAnchor: -1.000000,
+                                },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfParent,
+                                  verticalPolicy: PercentOfParent,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: DamagePointAnchor,
+              size: [100.000000, 1.000000],
+              input: false,
+              components:
+                {
+                  Anchor: { leftAnchorEnabled: true, rightAnchorEnabled: true },
+                },
+              children:
+                [
+                  {
+                    prototype: DamagePoint,
+                    name: DamagePoint,
+                    components:
+                      {
+                        Anchor:
+                          {
+                            enabled: true,
+                            rightAnchorEnabled: true,
+                            rightAnchor: -15.000000,
+                          },
+                      },
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: DebugStrings,
+              size: [32.000000, 32.000000],
+              visible: false,
+              classes: text-marker-nickname,
+              components:
+                {
+                  UITextComponent: { text: "", multiline: MULTILINE_ENABLED },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfContent,
+                      verticalPolicy: PercentOfContent,
+                    },
+                },
+            },
+            {
+              class: UIControl,
+              name: PlayerNameShadow,
+              size: [15.000000, 18.700001],
+              pivot: [0.500000, 0.500000],
+              input: false,
+              components:
+                {
+                  LinearLayout: { padding: 5.700000 },
+                  Anchor: { hCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      horizontalValue: 100.000000,
+                      verticalPolicy: PercentOfMaxChild,
+                      verticalValue: 125.000000,
+                    },
+                  Background:
+                    {
+                      drawType: DRAW_SCALE_TO_RECT,
+                      sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_NameShadow.psd",
+                      color: [1.000000, 1.000000, 1.000000, 1.000000],
+                      leftRightStretchCap: 5.900000,
+                      topBottomStretchCap: 11.000000,
+                    },
+                  UITextComponent:
+                    {
+                      colorInheritType: COLOR_IGNORE_PARENT,
+                      shadowOffset: [0.900000, 0.900000],
+                      shadowColor: [0.000000, 0.000000, 0.000000, 0.900000],
+                      align: [RIGHT, VCENTER],
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: PlayerName,
+                    size: [21.000000, 17.000000],
+                    input: false,
+                    classes: text-marker-nickname,
+                    components:
+                      {
+                        UITextComponent:
+                          {
+                            text: hgjh,
+                            textMargins:
+                              [0.000000, 0.000000, 0.000000, 2.000000],
+                            shadowOffset: [0.900000, 0.900000],
+                            shadowColor:
+                              [0.000000, 0.000000, 0.000000, 0.900000],
+                            perPixelAccuracyType: PER_PIXEL_ACCURACY_ENABLED,
+                            fitting: FITTING_ENLARGE,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                      },
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: VehicleNameShadow,
+              size: [15.000000, 15.000001],
+              pivot: [0.500000, 0.500000],
+              input: false,
+              components:
+                {
+                  LinearLayout: { padding: 6.000000 },
+                  Anchor: { hCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      horizontalValue: 100.000000,
+                      verticalPolicy: PercentOfMaxChild,
+                      verticalValue: 125.000000,
+                    },
+                  Background:
+                    {
+                      drawType: DRAW_SCALE_TO_RECT,
+                      sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_NameShadow.psd",
+                      color: [1.000000, 1.000000, 1.000000, 1.000000],
+                      colorInherit: COLOR_MULTIPLY_ON_PARENT,
+                      leftRightStretchCap: 6.000000,
+                      topBottomStretchCap: 10.000000,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: VehicleName,
+                    size: [21.000000, 17.000000],
+                    input: false,
+                    classes: text-marker-nickname,
+                    components:
+                      {
+                        UITextComponent:
+                          {
+                            text: hgjh,
+                            textMargins:
+                              [0.000000, 0.000000, 0.000000, 2.000000],
+                            shadowOffset: [0.900000, 0.900000],
+                            shadowColor:
+                              [0.000000, 0.000000, 0.000000, 0.900000],
+                            perPixelAccuracyType: PER_PIXEL_ACCURACY_DISABLED,
+                            fitting: FITTING_ENLARGE,
+                          },
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                      },
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: VehicleIconAndLevelContainer,
+              size: [76.000000, 24.000000],
+              input: false,
+              components:
+                {
+                  Anchor: { hCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      verticalPolicy: PercentOfMaxChild,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: VehicleIconContainer,
+                    size: [32.000000, 32.000000],
+                    input: false,
+                    components:
+                      {
+                        LinearLayout: { orientation: TopDown },
+                        SizePolicy: { verticalPolicy: PercentOfMaxChild },
+                      },
+                    children:
+                      [
+                        {
+                          class: UIControl,
+                          name: VehicleIcon,
+                          size: [76.000000, 24.000000],
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/_default.psd",
+                                  perPixelAccuracy: PER_PIXEL_ACCURACY_FORCED,
+                                  align: [LEFT, BOTTOM],
+                                },
+                              Anchor: { hCenterAnchorEnabled: true },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                  {
+                    class: UIControl,
+                    name: LevelIconContainer,
+                    size: [32.000000, 32.000000],
+                    input: false,
+                    components:
+                      {
+                        Anchor: { bottomAnchorEnabled: true },
+                        LinearLayout: { orientation: TopDown },
+                        SizePolicy: { verticalPolicy: PercentOfMaxChild },
+                      },
+                    children:
+                      [
+                        {
+                          class: UIControl,
+                          name: LevelIcon,
+                          size: [17.000000, 12.000000],
+                          input: false,
+                          components:
+                            {
+                              Background:
+                                {
+                                  sprite: "~res:/Gfx/UI/BattleScreenHUD/Levels.psd",
+                                  align: [HCENTER, BOTTOM],
+                                },
+                              Anchor: { hCenterAnchorEnabled: true },
+                              SizePolicy:
+                                {
+                                  horizontalPolicy: PercentOfContent,
+                                  verticalPolicy: PercentOfContent,
+                                },
+                            },
+                        },
+                      ],
+                  },
+                ],
+            },
+            {
+              class: UIControl,
+              name: BossModeRoleContainer,
+              size: [32.000000, 32.000000],
+              input: false,
+              components:
+                {
+                  Anchor: { hCenterAnchorEnabled: true },
+                  SizePolicy:
+                    {
+                      horizontalPolicy: PercentOfMaxChild,
+                      verticalPolicy: PercentOfMaxChild,
+                    },
+                },
+              children:
+                [
+                  {
+                    class: UIControl,
+                    name: BossModeRoleIcon,
+                    size: [32.000000, 32.000000],
+                    input: false,
+                    components:
+                      {
+                        Background: {},
+                        SizePolicy:
+                          {
+                            horizontalPolicy: PercentOfContent,
+                            verticalPolicy: PercentOfContent,
+                          },
+                      },
+                  },
+                ],
+            },
+          ],
+      },
+    ],
+}
