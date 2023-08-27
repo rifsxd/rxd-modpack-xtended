@@ -12,7 +12,7 @@ set versioning=version.md
 set /p vbuild=<build.md
 set build=build.md
 
-set modv=xtendedmodversion.txt
+set modv=xtended_wt_mod_version.txt
 set buildtxt=xtendedbuild.txt
 set /p version=<version.txt
 
@@ -209,17 +209,11 @@ del /S "*.yaml"
 
 del /S "rxd_LBG*.webp"
 
-del /S "music_maps_battle.bnk"
-
 del /S "*.json"
 
 del /S "Init.bnk"
 
 rd /s /q "UI"
-
-rd /s /q "WwiseSound/fury"
-
-rd /s /q "WwiseSound/sv"
 
 
 ECHO.
@@ -409,17 +403,11 @@ del /S "*.yaml"
 
 del /S "rxd_LBG*.webp"
 
-del /S "music_maps_battle.bnk"
-
 del /S "*.json"
 
 del /S "Init.bnk"
 
 rd /s /q "UI"
-
-rd /s /q "WwiseSound/fury"
-
-rd /s /q "WwiseSound/sv"
 
 ECHO.
 ECHO Cleaned Embed Specific Configs!
@@ -504,17 +492,11 @@ del /S "*.yaml"
 
 del /S "rxd_LBG*.webp"
 
-del /S "music_maps_battle.bnk"
-
 del /S "*.json"
 
 del /S "Init.bnk"
 
 rd /s /q "UI"
-
-rd /s /q "WwiseSound/fury"
-
-rd /s /q "WwiseSound/sv"
 
 
 ECHO.
@@ -787,17 +769,11 @@ del /S "*.yaml"
 
 del /S "rxd_LBG*.webp"
 
-del /S "music_maps_battle.bnk"
-
 del /S "*.json"
 
 del /S "Init.bnk"
 
 rd /s /q "UI"
-
-rd /s /q "WwiseSound/fury"
-
-rd /s /q "WwiseSound/sv"
 
 
 ECHO.
