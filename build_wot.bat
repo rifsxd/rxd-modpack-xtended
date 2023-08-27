@@ -147,7 +147,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/pc/data/%modv%
+type .\%build% > ./pack_wot/pc/data/%modv%
 
 GOTO MENU
 
@@ -251,7 +251,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile/data/%modv%
+type .\%build% > ./pack_wot/mobile/data/%modv%
 
 GOTO MENU
 
@@ -355,7 +355,7 @@ REM Does Fallback To Source Path.
 
 cd "../../..
 
-type .\%build% > ./pack/pc/data/%modv%
+type .\%build% > ./pack_wot/pc/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -447,7 +447,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile/data/%modv%
+type .\%build% > ./pack_wot/mobile/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -538,7 +538,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile-lesta/data/%modv%
+type .\%build% > ./pack_wot/mobile-lesta/data/%modv%
 
 ECHO ------------------------------------------
 
@@ -617,7 +617,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile-embed/data/%modv%
+type .\%build% > ./pack_wot/mobile-embed/data/%modv%
 
 ECHO.
 ECHO --------------------X----------------------
@@ -715,7 +715,7 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile-embed/data/%modv%
+type .\%build% > ./pack_wot/mobile-embed/data/%modv%
 
 GOTO MENU
 
@@ -818,6 +818,6 @@ REM Does Fallback To Source Path.
 
 cd "../../.."
 
-type .\%build% > ./pack/mobile-lesta/data/%modv%
+type .\%build% > ./pack_wot/mobile-lesta/data/%modv%
 
 GOTO MENU
