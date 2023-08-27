@@ -1,21 +1,64 @@
+# Voice codes:
+    # "ru_wt" - Russian Male
+    # "de_wt" - German Male
+    # "en_wt" - American Male
+    # "cn_wt" - Chinese Male
+    # "fr_wt" - French Male
+    # "en_gb_wt" - British Male
+    # "ja_wt" - Japanese Male
+    # "cs_wt" - Czech Male
+    # "it_wt" - Italian Male
+    # "pl_wt" - Polish Male
+    # "sv_wt" - Swedish Male
+    # "fury" - Fury Crew Voice
+    # "sab" - Sabaton Crew Voice
+#-----------------------------------------------------------
+# Per-Nation section (or per Tech Tree section)
 nations:
+    # Russian
     ussr: "ru_wt"
+    # Germany
     germany: "de_wt"
+    # USA
     usa: "en_wt"
+    # China
     china: "cn_wt"
+    # France
     france: "fr_wt"
+    # British / UK
     uk: "en_gb_wt"
+    # Japan
     japan: "ja_wt"
-    european: "en_wt"
+    # This one is mainly Blitz Hybrid Nation - the fantasy Tanks
+    other: "sab" 
+    # The mix of European tanks
+    european: "fury"
 subnations:
-    italy: "it_wt"
-    poland: "pl_wt"
-    finland: "fi_wt"
-    czech: "cs_wt"
-    sweden: "sv_wt"
+    # Italy
+    italy: "it_m"
+    # Polish
+    poland: "pl_m"
+    # Finland (not implemented in mod)
+    finland: "fi"
+    # Czech
+    czech: "cs_m"
+    # Sweden
+    sweden: "sv_m"
+    # Australian
+    australia: "en_gb_m"
+    # Canadian
+    canada: "en_m"
 tanks:
+    # Per-Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
+    # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
+#---- GuP >---->
     "japan:Pz_IV_AusfH": "gup"
     "japan:G09_Hetzer_GuP": "gup"
     "japan:PzVI_GuP": "gup"
     "japan:Firefly_GuP": "gup"
     "japan:IS-2_GuP": "gup"
+#---- GuP <----<
+#-----------------------------------------------------------
+#---- Fury >--->
+    "usa:A104_M4A3E8A": "fury"
+#---- Fury <---<

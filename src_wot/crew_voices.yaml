@@ -22,9 +22,9 @@
     # "pl_f" - Polish Female
     # "sv_m" - Swedish Male
     # "sv_f" - Swedish Female
-
+    # "fury" - Fury Crew Voice
     # "sab" - Sabaton Crew Voice
-
+#-----------------------------------------------------------
 # Per-Nation section (or per Tech Tree section)
 nations:
     # Russian
@@ -44,7 +44,7 @@ nations:
     # This one is mainly Blitz Hybrid Nation - the fantasy Tanks
     other: "sab" 
     # The mix of European tanks
-    european: "pl_m" 
+    european: "fury" 
 subnations:
     # Italy
     italy: "it_m"
@@ -63,8 +63,14 @@ subnations:
 tanks:
     # Per-Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
     # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
+#---- GuP >---->
     "japan:Pz_IV_AusfH": "gup"
     "japan:G09_Hetzer_GuP": "gup"
     "japan:PzVI_GuP": "gup"
     "japan:Firefly_GuP": "gup"
     "japan:IS-2_GuP": "gup"
+#---- GuP <----<
+#-----------------------------------------------------------
+#---- Fury >--->
+    "usa:A104_M4A3E8A": "fury"
+#---- Fury <---<
