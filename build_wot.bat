@@ -269,9 +269,9 @@ ECHO.
 ECHO Including Wwise Bank Files To SOURCE!
 ECHO.
 
-del /S "cache\Init.bnk"
+del /S "cache_wot\Init.bnk"
 
-xcopy /s /y  "cache\*.bnk" "src_wot\WwiseSound\"
+xcopy /s /y  "cache_wot\*.bnk" "src_wot\WwiseSound\"
 
 ECHO.
 ECHO Included Wwise Bank Files  To SOURCE!
