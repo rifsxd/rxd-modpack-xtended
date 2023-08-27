@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>F:\Work\git\rxd-modpack-xtended-wwise-proj\</ProjectRoot>
 		<SourceFilesRoot>F:\Work\git\rxd-modpack-xtended-wwise-proj\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\Work\git\rxd-modpack-xtended\cache\</SoundBanksRoot>
+		<SoundBanksRoot>F:\Work\git\rxd-modpack-xtended\cache_wt\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>F:\Work\git\rxd-modpack-xtended-wwise-proj\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="121235285" Language="SFX" Hash="2048667578">
+		<SoundBank Id="121235285" Language="SFX" Hash="1492665346">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_japan</ObjectPath>
 			<ShortName>music_maps_japan</ShortName>
 			<Path>music_maps_japan.bnk</Path>
@@ -45,7 +45,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="446961960" Language="SFX" Hash="408799360">
+		<SoundBank Id="446961960" Language="SFX" Hash="3713905286">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_america_lakville</ObjectPath>
 			<ShortName>music_maps_america_lakville</ShortName>
 			<Path>music_maps_america_lakville.bnk</Path>
@@ -570,7 +570,7 @@
 				<GameParameter Id="3753593413" Name="hover" ObjectPath="\Game Parameters\RxD\hover"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1069707800" Language="SFX" Hash="2345149783">
+		<SoundBank Id="1069707800" Language="SFX" Hash="3259865731">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_himmelsdorf</ObjectPath>
 			<ShortName>music_maps_europe_himmelsdorf</ShortName>
 			<Path>music_maps_europe_himmelsdorf.bnk</Path>
@@ -10553,7 +10553,7 @@
 				<GameParameter Id="244438798" Name="RTPC_ext_settings_volume_master_music" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_music"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1609140572" Language="SFX" Hash="1292858775">
+		<SoundBank Id="1609140572" Language="SFX" Hash="3094151788">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_ruinberg</ObjectPath>
 			<ShortName>music_maps_europe_ruinberg</ShortName>
 			<Path>music_maps_europe_ruinberg.bnk</Path>
@@ -10693,184 +10693,104 @@
 				<GameParameter Id="244438798" Name="RTPC_ext_settings_volume_master_music" ObjectPath="\Game Parameters\RxD\RTPC_ext_settings_volume_master_music"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1747019890" Language="SFX" Hash="2661493442">
+		<SoundBank Id="1747019890" Language="SFX" Hash="1945307540">
 			<ObjectPath>\SoundBanks\Default Work Unit\battle\weapon_tracers</ObjectPath>
 			<ShortName>weapon_tracers</ShortName>
 			<Path>weapon_tracers.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2691862947" Name="guns_tracers_tracer_hard" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_hard" DurationType="OneShot" DurationMin="0.876009" DurationMax="0.885351">
+				<Event Id="2691862947" Name="guns_tracers_tracer_hard" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_hard" DurationType="OneShot" DurationMin="1.334208" DurationMax="1.63">
 					<IncludedMemoryFiles>
-						<File Id="14646443" Language="SFX">
-							<ShortName>1000623.wav</ShortName>
-							<Path>SFX\1000623_3F75BDB9.wem</Path>
+						<File Id="327224442" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-005.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-005_3F75BDB9.wem</Path>
 						</File>
-						<File Id="106245807" Language="SFX">
-							<ShortName>13770210.wav</ShortName>
-							<Path>SFX\13770210_3F75BDB9.wem</Path>
+						<File Id="636252620" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-002.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-002_3F75BDB9.wem</Path>
 						</File>
-						<File Id="255648540" Language="SFX">
-							<ShortName>271351181.wav</ShortName>
-							<Path>SFX\271351181_3F75BDB9.wem</Path>
+						<File Id="649351033" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-003.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-003_3F75BDB9.wem</Path>
 						</File>
-						<File Id="386383834" Language="SFX">
-							<ShortName>28795537.wav</ShortName>
-							<Path>SFX\28795537_3F75BDB9.wem</Path>
+						<File Id="837604336" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-004.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-004_3F75BDB9.wem</Path>
 						</File>
-						<File Id="420932436" Language="SFX">
-							<ShortName>99833137.wav</ShortName>
-							<Path>SFX\99833137_3F75BDB9.wem</Path>
-						</File>
-						<File Id="544638164" Language="SFX">
-							<ShortName>778191989.wav</ShortName>
-							<Path>SFX\778191989_3F75BDB9.wem</Path>
-						</File>
-						<File Id="649079863" Language="SFX">
-							<ShortName>886156676.wav</ShortName>
-							<Path>SFX\886156676_3F75BDB9.wem</Path>
-						</File>
-						<File Id="652982837" Language="SFX">
-							<ShortName>512441167.wav</ShortName>
-							<Path>SFX\512441167_3F75BDB9.wem</Path>
-						</File>
-						<File Id="868318434" Language="SFX">
-							<ShortName>830954500.wav</ShortName>
-							<Path>SFX\830954500_3F75BDB9.wem</Path>
-						</File>
-						<File Id="913068321" Language="SFX">
-							<ShortName>173748647.wav</ShortName>
-							<Path>SFX\173748647_3F75BDB9.wem</Path>
+						<File Id="1070414854" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-001.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-001_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2138103848" Name="guns_tracers_tracer_light" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_light" DurationType="OneShot" DurationMin="0.876009" DurationMax="0.885351">
+				<Event Id="2138103848" Name="guns_tracers_tracer_light" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_light" DurationType="OneShot" DurationMin="1.334208" DurationMax="1.63">
 					<IncludedMemoryFiles>
-						<File Id="14646443" Language="SFX">
-							<ShortName>1000623.wav</ShortName>
-							<Path>SFX\1000623_3F75BDB9.wem</Path>
+						<File Id="327224442" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-005.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-005_3F75BDB9.wem</Path>
 						</File>
-						<File Id="106245807" Language="SFX">
-							<ShortName>13770210.wav</ShortName>
-							<Path>SFX\13770210_3F75BDB9.wem</Path>
+						<File Id="636252620" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-002.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-002_3F75BDB9.wem</Path>
 						</File>
-						<File Id="255648540" Language="SFX">
-							<ShortName>271351181.wav</ShortName>
-							<Path>SFX\271351181_3F75BDB9.wem</Path>
+						<File Id="649351033" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-003.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-003_3F75BDB9.wem</Path>
 						</File>
-						<File Id="386383834" Language="SFX">
-							<ShortName>28795537.wav</ShortName>
-							<Path>SFX\28795537_3F75BDB9.wem</Path>
+						<File Id="837604336" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-004.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-004_3F75BDB9.wem</Path>
 						</File>
-						<File Id="420932436" Language="SFX">
-							<ShortName>99833137.wav</ShortName>
-							<Path>SFX\99833137_3F75BDB9.wem</Path>
-						</File>
-						<File Id="544638164" Language="SFX">
-							<ShortName>778191989.wav</ShortName>
-							<Path>SFX\778191989_3F75BDB9.wem</Path>
-						</File>
-						<File Id="649079863" Language="SFX">
-							<ShortName>886156676.wav</ShortName>
-							<Path>SFX\886156676_3F75BDB9.wem</Path>
-						</File>
-						<File Id="652982837" Language="SFX">
-							<ShortName>512441167.wav</ShortName>
-							<Path>SFX\512441167_3F75BDB9.wem</Path>
-						</File>
-						<File Id="868318434" Language="SFX">
-							<ShortName>830954500.wav</ShortName>
-							<Path>SFX\830954500_3F75BDB9.wem</Path>
-						</File>
-						<File Id="913068321" Language="SFX">
-							<ShortName>173748647.wav</ShortName>
-							<Path>SFX\173748647_3F75BDB9.wem</Path>
+						<File Id="1070414854" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-001.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-001_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1069259577" Name="guns_tracers_tracer_medium" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_medium" DurationType="OneShot" DurationMin="0.876009" DurationMax="0.885351">
+				<Event Id="1069259577" Name="guns_tracers_tracer_medium" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_medium" DurationType="OneShot" DurationMin="1.334208" DurationMax="1.63">
 					<IncludedMemoryFiles>
-						<File Id="14646443" Language="SFX">
-							<ShortName>1000623.wav</ShortName>
-							<Path>SFX\1000623_3F75BDB9.wem</Path>
+						<File Id="327224442" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-005.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-005_3F75BDB9.wem</Path>
 						</File>
-						<File Id="106245807" Language="SFX">
-							<ShortName>13770210.wav</ShortName>
-							<Path>SFX\13770210_3F75BDB9.wem</Path>
+						<File Id="636252620" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-002.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-002_3F75BDB9.wem</Path>
 						</File>
-						<File Id="255648540" Language="SFX">
-							<ShortName>271351181.wav</ShortName>
-							<Path>SFX\271351181_3F75BDB9.wem</Path>
+						<File Id="649351033" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-003.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-003_3F75BDB9.wem</Path>
 						</File>
-						<File Id="386383834" Language="SFX">
-							<ShortName>28795537.wav</ShortName>
-							<Path>SFX\28795537_3F75BDB9.wem</Path>
+						<File Id="837604336" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-004.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-004_3F75BDB9.wem</Path>
 						</File>
-						<File Id="420932436" Language="SFX">
-							<ShortName>99833137.wav</ShortName>
-							<Path>SFX\99833137_3F75BDB9.wem</Path>
-						</File>
-						<File Id="544638164" Language="SFX">
-							<ShortName>778191989.wav</ShortName>
-							<Path>SFX\778191989_3F75BDB9.wem</Path>
-						</File>
-						<File Id="649079863" Language="SFX">
-							<ShortName>886156676.wav</ShortName>
-							<Path>SFX\886156676_3F75BDB9.wem</Path>
-						</File>
-						<File Id="652982837" Language="SFX">
-							<ShortName>512441167.wav</ShortName>
-							<Path>SFX\512441167_3F75BDB9.wem</Path>
-						</File>
-						<File Id="868318434" Language="SFX">
-							<ShortName>830954500.wav</ShortName>
-							<Path>SFX\830954500_3F75BDB9.wem</Path>
-						</File>
-						<File Id="913068321" Language="SFX">
-							<ShortName>173748647.wav</ShortName>
-							<Path>SFX\173748647_3F75BDB9.wem</Path>
+						<File Id="1070414854" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-001.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-001_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2182468074" Name="guns_tracers_tracer_tow" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_tow" DurationType="OneShot" DurationMin="0.876009" DurationMax="0.885351">
+				<Event Id="2182468074" Name="guns_tracers_tracer_tow" ObjectPath="\Events\RxD\Weapon\guns_tracers_tracer_tow" DurationType="OneShot" DurationMin="1.334208" DurationMax="1.63">
 					<IncludedMemoryFiles>
-						<File Id="14646443" Language="SFX">
-							<ShortName>1000623.wav</ShortName>
-							<Path>SFX\1000623_3F75BDB9.wem</Path>
+						<File Id="327224442" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-005.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-005_3F75BDB9.wem</Path>
 						</File>
-						<File Id="106245807" Language="SFX">
-							<ShortName>13770210.wav</ShortName>
-							<Path>SFX\13770210_3F75BDB9.wem</Path>
+						<File Id="636252620" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-002.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-002_3F75BDB9.wem</Path>
 						</File>
-						<File Id="255648540" Language="SFX">
-							<ShortName>271351181.wav</ShortName>
-							<Path>SFX\271351181_3F75BDB9.wem</Path>
+						<File Id="649351033" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-003.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-003_3F75BDB9.wem</Path>
 						</File>
-						<File Id="386383834" Language="SFX">
-							<ShortName>28795537.wav</ShortName>
-							<Path>SFX\28795537_3F75BDB9.wem</Path>
+						<File Id="837604336" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-004.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-004_3F75BDB9.wem</Path>
 						</File>
-						<File Id="420932436" Language="SFX">
-							<ShortName>99833137.wav</ShortName>
-							<Path>SFX\99833137_3F75BDB9.wem</Path>
-						</File>
-						<File Id="544638164" Language="SFX">
-							<ShortName>778191989.wav</ShortName>
-							<Path>SFX\778191989_3F75BDB9.wem</Path>
-						</File>
-						<File Id="649079863" Language="SFX">
-							<ShortName>886156676.wav</ShortName>
-							<Path>SFX\886156676_3F75BDB9.wem</Path>
-						</File>
-						<File Id="652982837" Language="SFX">
-							<ShortName>512441167.wav</ShortName>
-							<Path>SFX\512441167_3F75BDB9.wem</Path>
-						</File>
-						<File Id="868318434" Language="SFX">
-							<ShortName>830954500.wav</ShortName>
-							<Path>SFX\830954500_3F75BDB9.wem</Path>
-						</File>
-						<File Id="913068321" Language="SFX">
-							<ShortName>173748647.wav</ShortName>
-							<Path>SFX\173748647_3F75BDB9.wem</Path>
+						<File Id="1070414854" Language="SFX">
+							<ShortName>00 - projectile_passby - projectile med bypass whiz-001.wav</ShortName>
+							<Path>SFX\00 - projectile_passby - projectile med bypass whiz-001_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -12593,7 +12513,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2021218106" Language="SFX" Hash="1260663060">
+		<SoundBank Id="2021218106" Language="SFX" Hash="1264318451">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_desert_sand_river</ObjectPath>
 			<ShortName>music_maps_desert_sand_river</ShortName>
 			<Path>music_maps_desert_sand_river.bnk</Path>
@@ -12627,7 +12547,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2526625828" Language="SFX" Hash="2280337326">
+		<SoundBank Id="2526625828" Language="SFX" Hash="3946372662">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_chinese</ObjectPath>
 			<ShortName>music_maps_chinese</ShortName>
 			<Path>music_maps_chinese.bnk</Path>
@@ -12661,7 +12581,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3112195339" Language="SFX" Hash="2233972664">
+		<SoundBank Id="3112195339" Language="SFX" Hash="1678571288">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_russian_prokhorovka</ObjectPath>
 			<ShortName>music_maps_russian_prokhorovka</ShortName>
 			<Path>music_maps_russian_prokhorovka.bnk</Path>
@@ -12695,7 +12615,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3144885743" Language="SFX" Hash="491124698">
+		<SoundBank Id="3144885743" Language="SFX" Hash="1581138528">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_russian_malinovka</ObjectPath>
 			<ShortName>music_maps_russian_malinovka</ShortName>
 			<Path>music_maps_russian_malinovka.bnk</Path>
@@ -18836,7 +18756,7 @@
 				<GameParameter Id="2343691677" Name="RTPC_int_hit_pc_npc_500m" ObjectPath="\Game Parameters\RxD\RTPC_int_hit_pc_npc_500m"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3457466987" Language="SFX" Hash="2184708771">
+		<SoundBank Id="3457466987" Language="SFX" Hash="3035962120">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_desert_airfield</ObjectPath>
 			<ShortName>music_maps_desert_airfield</ShortName>
 			<Path>music_maps_desert_airfield.bnk</Path>
@@ -18870,7 +18790,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3742831600" Language="SFX" Hash="1658588935">
+		<SoundBank Id="3742831600" Language="SFX" Hash="3680564227">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_europe_mannerheim</ObjectPath>
 			<ShortName>music_maps_europe_mannerheim</ShortName>
 			<Path>music_maps_europe_mannerheim.bnk</Path>
@@ -18904,29 +18824,21 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3782024871" Language="SFX" Hash="2351444889">
+		<SoundBank Id="3782024871" Language="SFX" Hash="3555575332">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_battle</ObjectPath>
 			<ShortName>music_battle</ShortName>
 			<Path>music_battle.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2017818255" Name="GUI_notifications_FX_victory_NPC" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_victory_NPC" DurationType="Infinite">
+				<Event Id="2017818255" Name="GUI_notifications_FX_victory_NPC" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_victory_NPC" DurationType="OneShot" DurationMin="5.099501" DurationMax="5.099501">
 					<IncludedMemoryFiles>
-						<File Id="66736759" Language="SFX">
-							<ShortName>66736759.wav</ShortName>
-							<Path>SFX\66736759_3F75BDB9.wem</Path>
-						</File>
 						<File Id="645760681" Language="SFX">
 							<ShortName>danger.wav</ShortName>
 							<Path>SFX\danger_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2138408901" Name="GUI_notifications_FX_victory_PC" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_victory_PC" DurationType="Infinite">
+				<Event Id="2138408901" Name="GUI_notifications_FX_victory_PC" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_victory_PC" DurationType="OneShot" DurationMin="5.099501" DurationMax="5.099501">
 					<IncludedMemoryFiles>
-						<File Id="237207731" Language="SFX">
-							<ShortName>237207731.wav</ShortName>
-							<Path>SFX\237207731_3F75BDB9.wem</Path>
-						</File>
 						<File Id="645760681" Language="SFX">
 							<ShortName>danger.wav</ShortName>
 							<Path>SFX\danger_3F75BDB9.wem</Path>
@@ -19477,7 +19389,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3888261067" Language="SFX" Hash="1193744604">
+		<SoundBank Id="3888261067" Language="SFX" Hash="2074306906">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_battle_basic</ObjectPath>
 			<ShortName>ui_battle_basic</ShortName>
 			<Path>ui_battle_basic.bnk</Path>
@@ -20782,7 +20694,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3937048291" Language="SFX" Hash="4201384199">
+		<SoundBank Id="3937048291" Language="SFX" Hash="4177496171">
 			<ObjectPath>\SoundBanks\Default Work Unit\music\music_maps_america_overlord</ObjectPath>
 			<ShortName>music_maps_america_overlord</ShortName>
 			<Path>music_maps_america_overlord.bnk</Path>
