@@ -260,7 +260,7 @@ StyleSheets:
 -   selectors:
     - ".prebattle #Countdown"
     properties:
-        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/CountdownBeforeBattleGlow.psd"
+    #    bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/CountdownBeforeBattleGlow.psd"
 -   selectors:
     - ".battle #CombatMission"
     - ".battle #Countdown"
@@ -1791,7 +1791,7 @@ Prototypes:
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
-                        vCenterAnchor: -5.000000
+                        vCenterAnchor: -20.000000
                     SizePolicy:
                         horizontalPolicy: "FixedSize"
                         horizontalValue: 50.000000
@@ -2087,7 +2087,7 @@ Prototypes:
                 leftAnchorEnabled: true
                 rightAnchorEnabled: true
                 topAnchorEnabled: true
-                bottomAnchorEnabled: true
+                topAnchor: 300.000000
         children:
         -   class: "UIControl"
             name: "Background"
@@ -2102,7 +2102,7 @@ Prototypes:
                     enabled: true
                     hCenterAnchorEnabled: true
                     vCenterAnchorEnabled: true
-                    vCenterAnchor: -78.000000
+                    vCenterAnchor: -100.000000
         -   class: "UIStaticText"
             name: "CombatMission"
             classes: "header3 mission-text-color"
@@ -2112,7 +2112,7 @@ Prototypes:
                     multiline: "MULTILINE_ENABLED"
                 Anchor:
                     vCenterAnchorEnabled: true
-                    vCenterAnchor: -158.000000
+                    vCenterAnchor: -60.000000
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
                     verticalPolicy: "PercentOfContent"
@@ -2138,7 +2138,7 @@ Prototypes:
                     text: "3"
                 Anchor:
                     vCenterAnchorEnabled: true
-                    vCenterAnchor: -38.000000
+                    vCenterAnchor: -160.000000
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
                     verticalPolicy: "PercentOfContent"

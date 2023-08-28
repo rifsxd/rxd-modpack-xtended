@@ -1,0 +1,456 @@
+Header:
+    version: 152
+StyleSheets:
+-   selectors:
+    - ".postmortem-table.enemy #RibbonContainer"
+    properties:
+        visible: true
+-   selectors:
+    - ".postmortem-table.enemy #TableContainer #PlayerInfoTable #Background-image"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.enemy #RibbonContainer #RibbonContent #Background"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.enemy #RibbonContainer #RightPart"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.enemy #RibbonContainer #LeftPart"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.ally #TableContainer #PlayerInfoTable #Background-image"
+    properties:
+        bg-color: [0.133333, 0.874510, 0.011765, 1.000000]
+-   selectors:
+    - ".postmortem-table.ally #RibbonContainer"
+    properties:
+        visible: false
+-   selectors:
+    - ".postmortem-table.self #TableContainer #PlayerInfoTable #Background-image"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.self #RibbonContainer"
+    properties:
+        visible: true
+-   selectors:
+    - ".postmortem-table.self #RibbonContainer #RibbonContent #Background"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.self #RibbonContainer #RightPart"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postmortem-table.self #RibbonContainer #LeftPart"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postmortem-caption.caption-show"
+    properties:
+        visible: true
+-   selectors:
+    - ".postmortem-caption.caption-hide"
+    properties:
+        visible: false
+-   selectors:
+    - ".postText"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondC.ttf"
+        text-fontSize: 19.000000
+        text-verticalSpacing: 0.000000
+        text-ascendScale: 1.000000
+        text-descendScale: 1.000000
+        text-shadowOffset: [1.000000, 1.000000]
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postText.ar"
+    properties:
+        text-fontPath: "~res:/Fonts/BadiyaLT-Regular.ttf"
+        text-ascendScale: 0.650000
+        text-descendScale: 0.650000
+-   selectors:
+    - ".postText.ja"
+    properties:
+        text-fontPath: "~res:/Fonts/IwaGGoPro-Md.otf"
+-   selectors:
+    - ".postText.ko"
+    properties:
+        text-fontPath: "~res:/Fonts/CoreSans.ttf"
+-   selectors:
+    - ".postText.th"
+    properties:
+        text-fontPath: "~res:/Fonts/SirichanaLT-Regular.ttf"
+        text-fontSize: 22.000000
+-   selectors:
+    - ".postText.vi"
+    properties:
+        text-fontPath: "~res:/Fonts/cinecav_x_ui.ttf"
+        text-fontSize: 17.000000
+-   selectors:
+    - ".postText.zh-Hans"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+-   selectors:
+    - ".postText.zh-Hant"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"
+-   selectors:
+    - ".postHeader"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        text-fontSize: 21.000000
+        text-verticalSpacing: 0.000000
+        text-ascendScale: 1.000000
+        text-descendScale: 1.000000
+        text-shadowOffset: [1.000000, 1.000000]
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".postHeader.ar"
+    properties:
+        text-fontPath: "~res:/Fonts/BadiyaLT-Bold.ttf"
+        text-ascendScale: 0.700000
+        text-descendScale: 0.500000
+-   selectors:
+    - ".postHeader.it"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        text-fontSize: 20.000000
+-   selectors:
+    - ".postHeader.ja"
+    properties:
+        text-fontPath: "~res:/Fonts/IwaGGoPro-Bd.otf"
+        text-fontSize: 20.000000
+-   selectors:
+    - ".postHeader.ko"
+    properties:
+        text-fontPath: "~res:/Fonts/CoreSans.ttf"
+-   selectors:
+    - ".postHeader.pl"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        text-fontSize: 20.000000
+-   selectors:
+    - ".postHeader.th"
+    properties:
+        text-fontPath: "~res:/Fonts/SirichanaLT-Bold.ttf"
+        text-fontSize: 23.000000
+-   selectors:
+    - ".postHeader.vi"
+    properties:
+        text-fontPath: "~res:/Fonts/cinecav_x_ui_bold.ttf"
+        text-fontSize: 19.000000
+-   selectors:
+    - ".postHeader.zh-Hans"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+-   selectors:
+    - ".postHeader.zh-Hant"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"
+-   selectors:
+    - ".intersecting_with_chat_commands:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selectors:
+    - "#CaptureState.neutral_current"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - "#CaptureState.enemy_current"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - "#CaptureState.ally_current"
+    properties:
+        bg-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - "#CaptureState.enemy_progress #Progress"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selectors:
+    - "#CaptureState.ally_progress #Progress"
+    properties:
+        bg-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selectors:
+    - ".hud-scale.Phone"
+    properties:
+        scale: [1.500000, 1.500000]
+        sizePolicy-verticalValue: 150.000000
+-   selectors:
+    - ".hud-scale"
+    properties:
+        scale: [1.000000, 1.000000]
+        sizePolicy-verticalValue: 100.000000
+-   selectors:
+    - ".bg-hud-scale.Phone"
+    properties:
+        sizePolicy-verticalValue: 150.000000
+        sizePolicy-horizontalValue: 150.000000
+-   selectors:
+    - ".bg-hud-scale"
+    properties:
+        sizePolicy-verticalValue: 100.000000
+        sizePolicy-horizontalValue: 100.000000
+-   selectors:
+    - ".damaged-module-scale"
+    properties:
+        sizePolicy-verticalValue: 26.000000
+        sizePolicy-horizontalValue: 38.000000
+-   selectors:
+    - ".damaged-module-scale.Phone"
+    properties:
+        sizePolicy-verticalValue: 39.000000
+        sizePolicy-horizontalValue: 57.000000
+-   selectors:
+    - ".health-size"
+    properties:
+        sizePolicy-verticalValue: 20.000000
+        sizePolicy-horizontalValue: 380.000000
+-   selectors:
+    - ".health-size.Phone"
+    properties:
+        sizePolicy-verticalValue: 20.000000
+        sizePolicy-horizontalValue: 380.000000
+-   selectors:
+    - ".health-font"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        text-fontSize: 13.000000
+        text-verticalSpacing: 0.000000
+        text-ascendScale: 1.000000
+        text-descendScale: 1.000000
+-   selectors:
+    - ".health-font.ar"
+    properties:
+        text-fontPath: "~res:/Fonts/BadiyaLT-Bold.ttf"
+        text-ascendScale: 0.750000
+        text-descendScale: 0.350000
+-   selectors:
+    - ".health-font.ja"
+    properties:
+        text-fontPath: "~res:/Fonts/IwaGGoPro-Bd.otf"
+-   selectors:
+    - ".health-font.ko"
+    properties:
+        text-fontPath: "~res:/Fonts/CoreSans.ttf"
+-   selectors:
+    - ".health-font.th"
+    properties:
+        text-fontPath: "~res:/Fonts/SirichanaLT-Bold.ttf"
+        text-fontSize: 15.000000
+-   selectors:
+    - ".health-font.vi"
+    properties:
+        text-fontPath: "~res:/Fonts/cinecav_x_ui_bold.ttf"
+        text-fontSize: 11.000000
+-   selectors:
+    - ".health-font.zh-Hans"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+-   selectors:
+    - ".health-font.zh-Hant"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"
+-   selectors:
+    - ".health-font.Phone"
+    properties:
+        text-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        text-fontSize: 19.000000
+        text-verticalSpacing: 0.000000
+        text-ascendScale: 1.000000
+        text-descendScale: 1.000000
+-   selectors:
+    - ".health-font.Phone.ar"
+    properties:
+        text-fontPath: "~res:/Fonts/BadiyaLT-Bold.ttf"
+        text-ascendScale: 0.650000
+        text-descendScale: 0.650000
+-   selectors:
+    - ".health-font.Phone.ja"
+    properties:
+        text-fontPath: "~res:/Fonts/IwaGGoPro-Bd.otf"
+-   selectors:
+    - ".health-font.Phone.ko"
+    properties:
+        text-fontPath: "~res:/Fonts/CoreSans.ttf"
+-   selectors:
+    - ".health-font.Phone.th"
+    properties:
+        text-fontPath: "~res:/Fonts/SirichanaLT-Bold.ttf"
+        text-fontSize: 22.000000
+-   selectors:
+    - ".health-font.Phone.vi"
+    properties:
+        text-fontPath: "~res:/Fonts/cinecav_x_ui_bold.ttf"
+        text-fontSize: 17.000000
+-   selectors:
+    - ".health-font.Phone.zh-Hans"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+-   selectors:
+    - ".health-font.Phone.zh-Hant"
+    properties:
+        text-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"
+-   selectors:
+    - ".damaged-module-scaling"
+    properties:
+        sizePolicy-verticalValue: 100.000000
+        sizePolicy-horizontalValue: 100.000000
+-   selectors:
+    - ".damaged-module-scaling.Phone"
+    properties:
+        sizePolicy-verticalValue: 150.000000
+        sizePolicy-horizontalValue: 150.000000
+-   selectors:
+    - ".tutorial-size"
+    properties:
+        sizePolicy-verticalValue: 32.000000
+-   selectors:
+    - ".chat-command-base-a #BaseName"
+    properties:
+        bg-frame: 2
+-   selectors:
+    - ".chat-command-base-b #BaseName"
+    properties:
+        bg-frame: 3
+-   selectors:
+    - ".chat-command-base-c #BaseName"
+    properties:
+        bg-frame: 4
+-   selectors:
+    - ".chat-command-base-d #BaseName"
+    properties:
+        bg-frame: 5
+-   selectors:
+    - ".chat-command-base-e #BaseName"
+    properties:
+        bg-frame: 6
+-   selectors:
+    - ".chat-command-base-f #BaseName"
+    properties:
+        bg-frame: 7
+-   selectors:
+    - ".mission-text-color"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".waiting.rating-battle #Countdown"
+    properties:
+        visible: true
+-   selectors:
+    - ".waiting.rating-battle #CombatMission"
+    properties:
+        visible: false
+-   selectors:
+    - ".waiting.rating-battle #ArenaState"
+    - ".waiting.countdown-rating #Countdown"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".waiting.regular-battle #ArenaState"
+    - ".waiting.countdown-regular #Countdown"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".waiting.regular-battle #Countdown"
+    properties:
+        visible: false
+-   selectors:
+    - ".waiting #CombatMission"
+    - ".waiting #ArenaState"
+    properties:
+        visible: true
+-   selectors:
+    - ".prebattle #CombatMission"
+    - ".prebattle #ArenaState"
+    - ".prebattle #Countdown"
+    properties:
+        visible: true
+-   selectors:
+    - ".prebattle #ArenaState"
+    - ".prebattle #Countdown"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".prebattle #Countdown"
+    properties:
+    #    bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/CountdownBeforeBattleGlow.psd"
+-   selectors:
+    - ".battle #CombatMission"
+    - ".battle #Countdown"
+    properties:
+        visible: false
+-   selectors:
+    - ".battle #ArenaState"
+    - ".battle #Countdown"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".battle #ArenaState"
+    properties:
+        visible: true
+-   selectors:
+    - ".afterbattle #CombatMission"
+    - ".afterbattle #Countdown"
+    properties:
+        visible: false
+-   selectors:
+    - ".afterbattle #ArenaState"
+    properties:
+        visible: true
+-   selectors:
+    - ".afterbattle #ArenaState"
+    - ".afterbattle #Countdown"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".countdown-visible"
+    properties:
+        visible: true
+-   selectors:
+    - ".countdown-invisible"
+    properties:
+        visible: false
+-   selectors:
+    - ".battle-period-counter"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".no-battle-period-counter"
+    properties:
+        text-color: [1.000000, 0.200000, 0.100000, 1.000000]
+-   selectors:
+    - ".roll-button"
+    properties:
+        bg-frame: 0
+-   selectors:
+    - ".roll-button:selected"
+    properties:
+        bg-frame: 1
+-   selectors:
+    - ".hide-replay"
+    properties:
+        visible: true
+-   selectors:
+    - ".hide-replay.ReplayShowing .hide-replay.hide-fps"
+    properties:
+        visible: false
+-   selectors:
+    - ".hide-replay.hide-fps"
+    properties:
+        visible: false
+-   selectors:
+    - ".health-layer-size"
+    properties:
+        sizePolicy-horizontalValue: 376.000000
+        sizePolicy-verticalValue: 16.000000
+-   selectors:
+    - ".health-layer-size.Phone"
+    properties:
+        sizePolicy-horizontalValue: 376.000000
+        sizePolicy-verticalValue: 16.000000

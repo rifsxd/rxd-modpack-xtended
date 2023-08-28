@@ -148,7 +148,7 @@
    {
     "Id": "456382354",
     "Language": "SFX",
-    "Hash": "3142716242",
+    "Hash": "1862840734",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\reload",
     "ShortName": "reload",
     "Path": "reload.bnk",
@@ -158,32 +158,80 @@
       "Name": "GUI_notifications_FX_gun_reloaded",
       "ObjectPath": "\\Events\\RxD\\GUI\\GUI_notifications_FX_gun_reloaded",
       "DurationType": "OneShot",
-      "DurationMin": "2.",
-      "DurationMax": "2.",
+      "DurationMin": "1.812608",
+      "DurationMax": "1.82712",
       "IncludedMemoryFiles": [
        {
-        "Id": "174892779",
+        "Id": "141656309",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-002.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-002_3F75BDB9.wem"
+        "ShortName": "928861881.wav",
+        "Path": "SFX\\928861881_3F75BDB9.wem"
        },
        {
-        "Id": "209514944",
+        "Id": "146642148",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-001.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-001_3F75BDB9.wem"
+        "ShortName": "130326790.wav",
+        "Path": "SFX\\130326790_3F75BDB9.wem"
        },
        {
-        "Id": "608819623",
+        "Id": "202949481",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-004.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-004_3F75BDB9.wem"
+        "ShortName": "271756036.wav",
+        "Path": "SFX\\271756036_3F75BDB9.wem"
        },
        {
-        "Id": "613616145",
+        "Id": "436761172",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-003.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-003_3F75BDB9.wem"
+        "ShortName": "1008973562.wav",
+        "Path": "SFX\\1008973562_3F75BDB9.wem"
+       },
+       {
+        "Id": "549201708",
+        "Language": "SFX",
+        "ShortName": "85899293.wav",
+        "Path": "SFX\\85899293_3F75BDB9.wem"
+       },
+       {
+        "Id": "613018432",
+        "Language": "SFX",
+        "ShortName": "208983851.wav",
+        "Path": "SFX\\208983851_3F75BDB9.wem"
+       },
+       {
+        "Id": "637362264",
+        "Language": "SFX",
+        "ShortName": "566415489.wav",
+        "Path": "SFX\\566415489_3F75BDB9.wem"
+       },
+       {
+        "Id": "756064231",
+        "Language": "SFX",
+        "ShortName": "7931834.wav",
+        "Path": "SFX\\7931834_3F75BDB9.wem"
+       },
+       {
+        "Id": "780404716",
+        "Language": "SFX",
+        "ShortName": "794009165.wav",
+        "Path": "SFX\\794009165_3F75BDB9.wem"
+       },
+       {
+        "Id": "1015270813",
+        "Language": "SFX",
+        "ShortName": "882268945.wav",
+        "Path": "SFX\\882268945_3F75BDB9.wem"
+       },
+       {
+        "Id": "1051279610",
+        "Language": "SFX",
+        "ShortName": "368504057.wav",
+        "Path": "SFX\\368504057_3F75BDB9.wem"
+       },
+       {
+        "Id": "1064611834",
+        "Language": "SFX",
+        "ShortName": "620992765.wav",
+        "Path": "SFX\\620992765_3F75BDB9.wem"
        }
       ]
      }
@@ -17568,7 +17616,7 @@
    {
     "Id": "1501193180",
     "Language": "SFX",
-    "Hash": "277077058",
+    "Hash": "2977039698",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\ui_battle",
     "ShortName": "ui_battle",
     "Path": "ui_battle.bnk",
@@ -17820,32 +17868,80 @@
       "Name": "GUI_notifications_FX_shells_choose",
       "ObjectPath": "\\Events\\RxD\\GUI\\GUI_notifications_FX_shells_choose",
       "DurationType": "OneShot",
-      "DurationMin": "2.",
-      "DurationMax": "2.",
+      "DurationMin": "1.812608",
+      "DurationMax": "1.82712",
       "IncludedMemoryFiles": [
        {
-        "Id": "174892779",
+        "Id": "141656309",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-002.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-002_3F75BDB9.wem"
+        "ShortName": "928861881.wav",
+        "Path": "SFX\\928861881_3F75BDB9.wem"
        },
        {
-        "Id": "209514944",
+        "Id": "146642148",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-001.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-001_3F75BDB9.wem"
+        "ShortName": "130326790.wav",
+        "Path": "SFX\\130326790_3F75BDB9.wem"
        },
        {
-        "Id": "608819623",
+        "Id": "202949481",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-004.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-004_3F75BDB9.wem"
+        "ShortName": "271756036.wav",
+        "Path": "SFX\\271756036_3F75BDB9.wem"
        },
        {
-        "Id": "613616145",
+        "Id": "436761172",
         "Language": "SFX",
-        "ShortName": "00 - cannon_reloading - reloading close-003.wav",
-        "Path": "SFX\\00 - cannon_reloading - reloading close-003_3F75BDB9.wem"
+        "ShortName": "1008973562.wav",
+        "Path": "SFX\\1008973562_3F75BDB9.wem"
+       },
+       {
+        "Id": "549201708",
+        "Language": "SFX",
+        "ShortName": "85899293.wav",
+        "Path": "SFX\\85899293_3F75BDB9.wem"
+       },
+       {
+        "Id": "613018432",
+        "Language": "SFX",
+        "ShortName": "208983851.wav",
+        "Path": "SFX\\208983851_3F75BDB9.wem"
+       },
+       {
+        "Id": "637362264",
+        "Language": "SFX",
+        "ShortName": "566415489.wav",
+        "Path": "SFX\\566415489_3F75BDB9.wem"
+       },
+       {
+        "Id": "756064231",
+        "Language": "SFX",
+        "ShortName": "7931834.wav",
+        "Path": "SFX\\7931834_3F75BDB9.wem"
+       },
+       {
+        "Id": "780404716",
+        "Language": "SFX",
+        "ShortName": "794009165.wav",
+        "Path": "SFX\\794009165_3F75BDB9.wem"
+       },
+       {
+        "Id": "1015270813",
+        "Language": "SFX",
+        "ShortName": "882268945.wav",
+        "Path": "SFX\\882268945_3F75BDB9.wem"
+       },
+       {
+        "Id": "1051279610",
+        "Language": "SFX",
+        "ShortName": "368504057.wav",
+        "Path": "SFX\\368504057_3F75BDB9.wem"
+       },
+       {
+        "Id": "1064611834",
+        "Language": "SFX",
+        "ShortName": "620992765.wav",
+        "Path": "SFX\\620992765_3F75BDB9.wem"
        }
       ]
      },
@@ -32270,7 +32366,7 @@
    {
     "Id": "3888261067",
     "Language": "SFX",
-    "Hash": "2074306906",
+    "Hash": "70404522",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\ui_battle_basic",
     "ShortName": "ui_battle_basic",
     "Path": "ui_battle_basic.bnk",
@@ -32558,12 +32654,6 @@
         "Language": "SFX",
         "ShortName": "1046628922.wav",
         "Path": "SFX\\1046628922_3F75BDB9.wem"
-       },
-       {
-        "Id": "766497570",
-        "Language": "SFX",
-        "ShortName": "500630466.wav",
-        "Path": "SFX\\500630466_3F75BDB9.wem"
        }
       ]
      },

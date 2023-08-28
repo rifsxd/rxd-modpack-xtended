@@ -1,0 +1,76 @@
+# Voice nodes:
+    # "ru_m" - Russian Male
+    # "ru_f" - Russian Female
+    # "de_m" - German Male
+    # "de_f" - German Female
+    # "en_m" - American Male
+    # "en_f" - American Female
+    # "cn_m" - Chinese Male
+    # "cn_f" - Chinese Female
+    # "fr_m" - French Male
+    # "fr_f" - French Female
+    # "en_gb_m" - British Male
+    # "en_gb_f" - British Female
+    # "ja_m" - Japanese Male (new)
+    # "ja_f" - Japanese Female
+    # "ja-dep" - Japanese Male (old)
+    # "cs_m" - Czech Male
+    # "cs_f" - Czech Female
+    # "it_m" - Italian Male
+    # "it_f" - Italian Female
+    # "pl_m" - Polish Male
+    # "pl_f" - Polish Female
+    # "sv_m" - Swedish Male
+    # "sv_f" - Swedish Female
+    # "fury" - Fury Crew Voice
+    # "sab" - Sabaton Crew Voice
+#-----------------------------------------------------------
+# Nation section:
+nations:
+    # Russian
+    ussr: "ru_m"
+    # Germany
+    germany: "de_m"
+    # USA
+    usa: "en_m"
+    # China
+    china: "cn_m"
+    # France
+    france: "fr_m"
+    # British / UK
+    uk: "en_gb_m"
+    # Japan
+    japan: "ja_m"
+    # This one is mainly Blitz Hybrid Nation - the Fantasy Tanks
+    other: "sab" 
+    # The mix of European tanks
+    european: "fury" 
+subnations:
+    # Italy
+    italy: "it_m"
+    # Polish
+    poland: "pl_m"
+    # Finland ( stock & not modded )
+    finland: "fi"
+    # Czech
+    czech: "cs_m"
+    # Sweden
+    sweden: "sv_m"
+    # Australian
+    australia: "en_gb_m"
+    # Canadian
+    canada: "en_m"
+tanks:
+    # Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
+    # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
+#---- GuP >---->
+    "japan:Pz_IV_AusfH": "gup"
+    "japan:G09_Hetzer_GuP": "gup"
+    "japan:PzVI_GuP": "gup"
+    "japan:Firefly_GuP": "gup"
+    "japan:IS-2_GuP": "gup"
+#---- GuP <----<
+#-----------------------------------------------------------
+#---- Fury >--->
+    "usa:A104_M4A3E8A": "fury"
+#---- Fury <---<

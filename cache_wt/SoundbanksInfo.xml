@@ -79,28 +79,60 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="456382354" Language="SFX" Hash="3142716242">
+		<SoundBank Id="456382354" Language="SFX" Hash="1862840734">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\reload</ObjectPath>
 			<ShortName>reload</ShortName>
 			<Path>reload.bnk</Path>
 			<IncludedEvents>
-				<Event Id="491672050" Name="GUI_notifications_FX_gun_reloaded" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_gun_reloaded" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+				<Event Id="491672050" Name="GUI_notifications_FX_gun_reloaded" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_gun_reloaded" DurationType="OneShot" DurationMin="1.812608" DurationMax="1.82712">
 					<IncludedMemoryFiles>
-						<File Id="174892779" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-002.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-002_3F75BDB9.wem</Path>
+						<File Id="141656309" Language="SFX">
+							<ShortName>928861881.wav</ShortName>
+							<Path>SFX\928861881_3F75BDB9.wem</Path>
 						</File>
-						<File Id="209514944" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-001.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-001_3F75BDB9.wem</Path>
+						<File Id="146642148" Language="SFX">
+							<ShortName>130326790.wav</ShortName>
+							<Path>SFX\130326790_3F75BDB9.wem</Path>
 						</File>
-						<File Id="608819623" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-004.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-004_3F75BDB9.wem</Path>
+						<File Id="202949481" Language="SFX">
+							<ShortName>271756036.wav</ShortName>
+							<Path>SFX\271756036_3F75BDB9.wem</Path>
 						</File>
-						<File Id="613616145" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-003.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-003_3F75BDB9.wem</Path>
+						<File Id="436761172" Language="SFX">
+							<ShortName>1008973562.wav</ShortName>
+							<Path>SFX\1008973562_3F75BDB9.wem</Path>
+						</File>
+						<File Id="549201708" Language="SFX">
+							<ShortName>85899293.wav</ShortName>
+							<Path>SFX\85899293_3F75BDB9.wem</Path>
+						</File>
+						<File Id="613018432" Language="SFX">
+							<ShortName>208983851.wav</ShortName>
+							<Path>SFX\208983851_3F75BDB9.wem</Path>
+						</File>
+						<File Id="637362264" Language="SFX">
+							<ShortName>566415489.wav</ShortName>
+							<Path>SFX\566415489_3F75BDB9.wem</Path>
+						</File>
+						<File Id="756064231" Language="SFX">
+							<ShortName>7931834.wav</ShortName>
+							<Path>SFX\7931834_3F75BDB9.wem</Path>
+						</File>
+						<File Id="780404716" Language="SFX">
+							<ShortName>794009165.wav</ShortName>
+							<Path>SFX\794009165_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1015270813" Language="SFX">
+							<ShortName>882268945.wav</ShortName>
+							<Path>SFX\882268945_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1051279610" Language="SFX">
+							<ShortName>368504057.wav</ShortName>
+							<Path>SFX\368504057_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1064611834" Language="SFX">
+							<ShortName>620992765.wav</ShortName>
+							<Path>SFX\620992765_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -10317,7 +10349,7 @@
 				<GameParameter Id="3753593413" Name="hover" ObjectPath="\Game Parameters\RxD\hover"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1501193180" Language="SFX" Hash="277077058">
+		<SoundBank Id="1501193180" Language="SFX" Hash="2977039698">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_battle</ObjectPath>
 			<ShortName>ui_battle</ShortName>
 			<Path>ui_battle.bnk</Path>
@@ -10446,23 +10478,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3841720406" Name="GUI_notifications_FX_shells_choose" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_shells_choose" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+				<Event Id="3841720406" Name="GUI_notifications_FX_shells_choose" ObjectPath="\Events\RxD\GUI\GUI_notifications_FX_shells_choose" DurationType="OneShot" DurationMin="1.812608" DurationMax="1.82712">
 					<IncludedMemoryFiles>
-						<File Id="174892779" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-002.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-002_3F75BDB9.wem</Path>
+						<File Id="141656309" Language="SFX">
+							<ShortName>928861881.wav</ShortName>
+							<Path>SFX\928861881_3F75BDB9.wem</Path>
 						</File>
-						<File Id="209514944" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-001.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-001_3F75BDB9.wem</Path>
+						<File Id="146642148" Language="SFX">
+							<ShortName>130326790.wav</ShortName>
+							<Path>SFX\130326790_3F75BDB9.wem</Path>
 						</File>
-						<File Id="608819623" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-004.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-004_3F75BDB9.wem</Path>
+						<File Id="202949481" Language="SFX">
+							<ShortName>271756036.wav</ShortName>
+							<Path>SFX\271756036_3F75BDB9.wem</Path>
 						</File>
-						<File Id="613616145" Language="SFX">
-							<ShortName>00 - cannon_reloading - reloading close-003.wav</ShortName>
-							<Path>SFX\00 - cannon_reloading - reloading close-003_3F75BDB9.wem</Path>
+						<File Id="436761172" Language="SFX">
+							<ShortName>1008973562.wav</ShortName>
+							<Path>SFX\1008973562_3F75BDB9.wem</Path>
+						</File>
+						<File Id="549201708" Language="SFX">
+							<ShortName>85899293.wav</ShortName>
+							<Path>SFX\85899293_3F75BDB9.wem</Path>
+						</File>
+						<File Id="613018432" Language="SFX">
+							<ShortName>208983851.wav</ShortName>
+							<Path>SFX\208983851_3F75BDB9.wem</Path>
+						</File>
+						<File Id="637362264" Language="SFX">
+							<ShortName>566415489.wav</ShortName>
+							<Path>SFX\566415489_3F75BDB9.wem</Path>
+						</File>
+						<File Id="756064231" Language="SFX">
+							<ShortName>7931834.wav</ShortName>
+							<Path>SFX\7931834_3F75BDB9.wem</Path>
+						</File>
+						<File Id="780404716" Language="SFX">
+							<ShortName>794009165.wav</ShortName>
+							<Path>SFX\794009165_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1015270813" Language="SFX">
+							<ShortName>882268945.wav</ShortName>
+							<Path>SFX\882268945_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1051279610" Language="SFX">
+							<ShortName>368504057.wav</ShortName>
+							<Path>SFX\368504057_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1064611834" Language="SFX">
+							<ShortName>620992765.wav</ShortName>
+							<Path>SFX\620992765_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -19389,7 +19453,7 @@
 				<GameParameter Id="2064811990" Name="RTPC_int_wpn_600m_npc" ObjectPath="\Game Parameters\RxD\RTPC_int_wpn_600m_npc"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3888261067" Language="SFX" Hash="2074306906">
+		<SoundBank Id="3888261067" Language="SFX" Hash="70404522">
 			<ObjectPath>\SoundBanks\Default Work Unit\ui\ui_battle_basic</ObjectPath>
 			<ShortName>ui_battle_basic</ShortName>
 			<Path>ui_battle_basic.bnk</Path>
@@ -19551,10 +19615,6 @@
 						<File Id="65699449" Language="SFX">
 							<ShortName>1046628922.wav</ShortName>
 							<Path>SFX\1046628922_3F75BDB9.wem</Path>
-						</File>
-						<File Id="766497570" Language="SFX">
-							<ShortName>500630466.wav</ShortName>
-							<Path>SFX\500630466_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
