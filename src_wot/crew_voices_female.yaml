@@ -28,38 +28,38 @@
 # Nation section:
 nations:
     # Russian
-    ussr: "ru_m"
+    ussr: "ru_f"
     # Germany
-    germany: "de_m"
+    germany: "de_f"
     # USA
-    usa: "en_m"
+    usa: "en_f"
     # China
-    china: "cn_m"
+    china: "cn_f"
     # France
-    france: "fr_m"
+    france: "fr_f"
     # British / UK
-    uk: "en_gb_m"
+    uk: "en_gb_f"
     # Japan
-    japan: "ja_m"
+    japan: "ja_f"
     # This one is mainly Blitz Hybrid Nation - the Fantasy Tanks
     other: "sab" 
     # The mix of European tanks
     european: "fury" 
 subnations:
     # Italy
-    italy: "it_m"
+    italy: "it_f"
     # Polish
-    poland: "pl_m"
+    poland: "pl_f"
     # Finland ( stock & not modded )
     finland: "fi"
     # Czech
-    czech: "cs_m"
+    czech: "cs_f"
     # Sweden
-    sweden: "sv_m"
+    sweden: "sv_f"
     # Australian
-    australia: "en_gb_m"
+    australia: "en_gb_f"
     # Canadian
-    canada: "en_m"
+    canada: "en_f"
 tanks:
     # Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
     # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
