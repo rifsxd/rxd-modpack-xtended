@@ -17568,7 +17568,7 @@
    {
     "Id": "1501193180",
     "Language": "SFX",
-    "Hash": "288391395",
+    "Hash": "277077058",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ui\\ui_battle",
     "ShortName": "ui_battle",
     "Path": "ui_battle.bnk",
@@ -17578,8 +17578,8 @@
       "Name": "GUI_notifications_FX_adrenalin_off",
       "ObjectPath": "\\Events\\RxD\\GUI\\GUI_notifications_FX_adrenalin_off",
       "DurationType": "OneShot",
-      "DurationMin": "2.795986",
-      "DurationMax": "2.795986",
+      "DurationMin": "5.395987",
+      "DurationMax": "5.395987",
       "IncludedMemoryFiles": [
        {
         "Id": "984707337",
