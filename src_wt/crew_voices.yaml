@@ -35,19 +35,19 @@ nations:
     european: "fury"
 subnations:
     # Italy
-    italy: "it_m"
+    italy: "it_wt"
     # Polish
-    poland: "pl_m"
+    poland: "pl_wt"
     # Finland (not implemented in mod)
     finland: "fi"
     # Czech
-    czech: "cs_m"
+    czech: "cs_wt"
     # Sweden
-    sweden: "sv_m"
+    sweden: "sv_wt"
     # Australian
-    australia: "en_gb_m"
+    australia: "en_gb_wt"
     # Canadian
-    canada: "en_m"
+    canada: "en_wt"
 tanks:
     # Per-Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
     # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
