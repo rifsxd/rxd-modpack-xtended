@@ -609,6 +609,8 @@ Prototypes:
                                 verticalPolicy: "PercentOfContent"
                             StyleSheet:
                                 styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml"
+                        bindings:
+                            - ["UITextComponent.text", "trainingbuttonText"]
         -   class: "UIControl"
             name: "DevContainer"
             input: false
