@@ -62,8 +62,8 @@ Prototypes:
         UIDataLocalVarsComponent:
             data:
             - ["bool", "adResetAllowed", "false"]
-            - ["vector<string>", "battlebuttonStringPool", "[\"BATTLE!\"; \"LET'S ROLL!\"; \"READY FOR BATTLE!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S GO TO WAR!\; \"GO GO GO!\" \"LET'S KILL SOME TANKS!\; \"LET'S BLOW UP SOME TANKS!\]"]
-            - ["vector<string>", "trainingbuttonStringPool", "[\"TRAIN!\"; \"LET'S ROLL!\"; \"READY FOR TRAINING!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S TRAIN!\; \"GO GO GO!\"; \"LET'S KILL SOME TANKS!\; \"LET'S BLOW UP SOME TANKS!\"]"]
+            - ["vector<string>", "battlebuttonStringPool", "[\"BATTLE!\"; \"LET'S ROLL!\"; \"READY FOR BATTLE!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S GO TO WAR!\"; \"GO GO GO!\"; \"LET'S KILL SOME TANKS!\"; \"LET'S BLOW UP SOME TANKS!\"]"]
+            - ["vector<string>", "trainingbuttonStringPool", "[\"TRAIN!\"; \"LET'S ROLL!\"; \"READY FOR TRAINING!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S TRAIN!\"; \"GO GO GO!\"; \"LET'S KILL SOME TANKS!\"; \"LET'S BLOW UP SOME TANKS!\"]"]
         UIDataLocalBindingsComponent:
             data:
             - ["string", "boosterButtonSoundStyle", "\"button-open-sound\""]
@@ -80,6 +80,8 @@ Prototypes:
             - ["bool", "isButtonTypeEnabled", "(not isSquadType or isSquadCreator or not isJoined) and isGeneralPackLoaded and packIsAvailibleForBattle and not isRandomBan"]
             - ["string", "buttonTypeEnabledStyle", "when not isButtonTypeEnabled -> \"disabled \", \"\""]
             - ["string", "buttonTypeStyle", "\"battle-type-button \" + buttonTypeEnabledStyle + \" button-open-sound\""]
+            - ["string", "buttonText", "battlebuttonStringPool[rand(Size(battlebuttonStringPool))]"]
+            - ["string", "trainingbuttonText", "trainingbuttonStringPool[rand(Size(trainingbuttonStringPool))]"]
         UIActionComponent:
             actionsPath: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.actions"
         UIEventOnDataComponent0:
