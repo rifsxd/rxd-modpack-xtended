@@ -1,0 +1,76 @@
+Header:
+    version: "95"
+StyleSheets:
+-   selectors:
+    - ".ability.ability-on * #Notification"
+    properties:
+        input: true
+        bg-sprite: "~res:/Gfx/Battle/backgrounds/bg_booster-indicator_on"
+-   selectors:
+    - ".ability.ability-off * #Notification"
+    properties:
+        input: true
+        bg-sprite: "~res:/Gfx/Battle/backgrounds/bg_booster-indicator_off"
+-   selectors:
+    - ".ability.ability-disabled * #Notification"
+    properties:
+        bg-frame: 0
+        opacity-opacity: 0.600000
+-   selectors:
+    - ".ability.ability-disabled #AbilityButton"
+    properties:
+        input: false
+        opacity-opacity: 0.500000
+-   selectors:
+    - ".ability.ability-disabled * #Notification"
+    properties:
+        opacity-opacity: 0.500000
+-   selectors:
+    - ".ability.ability-disabled * #icon"
+    properties:
+        opacity-opacity: 0.500000
+-   selectors:
+    - ".ability.ability-disabled #HotKey"
+    properties:
+        opacity-opacity: 0.500000
+-   selectors:
+    - ".ability.ability-disabled * #BattlePoints"
+    properties:
+        opacity-opacity: 0.500000
+-   selectors:
+    - ".respawn_icon.alive"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/controls/icon_2019-halloween_live-count"
+-   selectors:
+    - ".respawn_icon.dead"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/HUD/controls/icon_2019-halloween_live-count"
+        bg-color: [0.000000, 0.000000, 0.000000, 0.300000]
+-   selectors:
+    - ".ability.ability-grade-1 * #AbilityName"
+    properties:
+        text-color: [0.580392, 0.635294, 0.686275, 1.000000]
+-   selectors:
+    - ".ability.ability-grade-2 * #AbilityName"
+    properties:
+        text-color: [0.301961, 0.482353, 1.000000, 1.000000]
+-   selectors:
+    - ".ability.ability-grade-3 * #AbilityName"
+    properties:
+        text-color: [0.717647, 0.243137, 0.945098, 1.000000]
+-   selectors:
+    - ".battle-points-counter * #Background"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/backgrounds/bg_gradient_horizontal_0-100"
+-   selectors:
+    - ".respawn-amount * #Background"
+    properties:
+        bg-sprite: "~res:/Gfx/Shared/backgrounds/bg_gradient_horizontal_0-100"
+-   selectors:
+    - ".respawn-time-count"
+    properties:
+        text-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selectors:
+    - ".battle-points-icon"
+    properties:
+        bg-sprite: "~res:/Gfx/Battle/currency/currency_2019-halloween_blood"
