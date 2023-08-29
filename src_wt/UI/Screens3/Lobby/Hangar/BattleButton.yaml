@@ -1,0 +1,1089 @@
+Header:
+    version: 150
+ImportedPackages:
+- "~res:/UI/Screens3/Lobby/Common/BadgeHolder.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "BattleButton"
+    input: false
+    components:
+        UIAnimationComponent:
+            animations: "_INIT,~res:/UI/Screens3/Lobby/Hangar/BattleButtonInitialization.animation"
+        LinearLayout:
+            orientation: "RightToLeft"
+            spacing: 4.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+            verticalPolicy: "PercentOfMaxChild"
+        UIDataParamsComponent:
+            params:
+            - ["bool", "forceDisabled", "false", "false"]
+            - ["eTutorialHighlights", "tutorialHighlight", "eTutorialHighlights.kUnknown", "eTutorialHighlights.kUnknown"]
+            - ["eTutorialLesson", "tutorialLesson", "eTutorialLesson.kUnknown", "eTutorialLesson.kUnknown"]
+            - ["bool", "isDeveloperUI", "false", "true"]
+            - ["bool", "isGeneralPackLoaded", "true", "true"]
+            - ["bool", "isPrebattleTraining", "false", "false"]
+            - ["eBoosterSlotStatus", "boosterSlotStatus", "eBoosterSlotStatus.BOOSTER_INSTALLED", "eBoosterSlotStatus.BOOSTERS_AVAILABLE_IN_STORAGE"]
+            - ["int", "layer", "0", "0"]
+            - ["bool", "tankIsAccept", "true", "true"]
+            - ["bool", "isSquadReady", "true", "true"]
+            - ["bool", "isBadgeVisible", "false", "true"]
+            - ["bool", "isBattleTypeButtonVisible", "false", "true"]
+            - ["bool", "isVehicleFitsForGameMode", "true", "true"]
+            - ["bool", "isRepair", "true", "false"]
+            - ["bool", "isReadyToBattle", "true", "true"]
+            - ["bool", "isJoined", "true", "true"]
+            - ["bool", "packIsAvailibleForBattle", "false", "true"]
+            - ["bool", "availabilityStatus", "true", "true"]
+            - ["string", "battleType", "\"7\"", "\"7\""]
+            - ["bool", "squadTeamMateIsJoined", "false", "false"]
+            - ["bool", "isTournamentType", "true", "false"]
+            - ["bool", "isSquadType", "true", "false"]
+            - ["bool", "isRandomBan", "false", "false"]
+            - ["bool", "squadTeamMateReady", "true", "false"]
+            - ["bool", "boostersButtonIsVisible", "true", "true"]
+            - ["bool", "isSquadCreator", "false", "false"]
+            - ["int", "dailyXPFactor", "0", "4"]
+            - ["int64", "serverTime", "0L", "0L"]
+            - ["int64", "time", "22272L", "22272L"]
+            - ["bool", "showXPFactor", "false", "true"]
+            - ["bool", "pingIndicatorVisible", "false", "true"]
+            - ["bool", "multiplierAdAvailable", "false", "true"]
+            - ["bool", "tankXpMultiplierActive", "true", "true"]
+            events:
+            - "DEV_LOGOUT"
+            - "ON_DEV_BUTTON"
+            - "ON_DEV_INFO_BUTTON"
+            - "ON_BOOSTERS"
+            - "BATTLE_TYPE_PRESSED"
+            - "BATTLE_BUTTON_PRESSED(bool isEnabled)"
+            - "SHOW_HINT_XP_TIMER"
+            - "RESET_MULTIPLIER_WITH_AD"
+        UIDataLocalVarsComponent:
+            data:
+            - ["bool", "adResetAllowed", "false"]
+            - ["vector<string>", "battlebuttonStringPool", "[\"BATTLE!\"; \"LET'S ROLL!\"; \"READY FOR BATTLE!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S GO TO WAR!\; \"GO GO GO!\" \"LET'S KILL SOME TANKS!\; \"LET'S BLOW UP SOME TANKS!\]"]
+            - ["vector<string>", "trainingbuttonStringPool", "[\"TRAIN!\"; \"LET'S ROLL!\"; \"READY FOR TRAINING!\"; \"XTENDED WOT!\"; \"RXD - MODS!\"; \"LET'S TRAIN!\; \"GO GO GO!\"; \"LET'S KILL SOME TANKS!\; \"LET'S BLOW UP SOME TANKS!\"]"]
+        UIDataLocalBindingsComponent:
+            data:
+            - ["string", "boosterButtonSoundStyle", "\"button-open-sound\""]
+            - ["string", "boosterButtonDisabledStyle", "when isGeneralPackLoaded -> \"\", \"disabled\""]
+            - ["string", "boosterButtonStyle", "str(boosterSlotStatus, eBoosterSlotStatus, \"style\")"]
+            - ["string", "battleTypeSprite", "when battleType == \"1\" -> \"~res:/Gfx/Shared/icons/icon_game-mode_random_colored\", battleType == \"7\" -> \"~res:/Gfx/Shared/icons/icon_game-mode_rating_colored\", \"~res:/Gfx/Shared/icons/icon_game-mode_realistic_colored\""]
+            - ["string", "buttonText", "when isRepair and packIsAvailibleForBattle and not isRandomBan -> localize(\"hangar/RepairButton\"), localize(\"hangar/BattleButton\")"]
+            - ["bool", "squadPrebattleButton", "not isSquadType or isSquadCreator or not isJoined"]
+            - ["bool", "squadButtonPlayer", "not (isReadyToBattle and squadTeamMateReady and squadTeamMateIsJoined and isSquadReady) and (isReadyToBattle or squadTeamMateReady or squadTeamMateIsJoined or isSquadReady)"]
+            - ["bool", "squadButtonTeamMate", "isSquadType and isJoined"]
+            - ["bool", "squad", "when isSquadType and isSquadCreator -> squadButtonPlayer, squadButtonTeamMate"]
+            - ["bool", "isEnabled", "availabilityStatus and not isRandomBan and not squad and not isRepair and packIsAvailibleForBattle and isVehicleFitsForGameMode and not isTournamentType and tankIsAccept"]
+            - ["string", "buttonStyle", "when isEnabled -> \"battle-button\", \"battle-button disabled\""]
+            - ["bool", "isButtonTypeEnabled", "(not isSquadType or isSquadCreator or not isJoined) and isGeneralPackLoaded and packIsAvailibleForBattle and not isRandomBan"]
+            - ["string", "buttonTypeEnabledStyle", "when not isButtonTypeEnabled -> \"disabled \", \"\""]
+            - ["string", "buttonTypeStyle", "\"battle-type-button \" + buttonTypeEnabledStyle + \" button-open-sound\""]
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.actions"
+        UIEventOnDataComponent0:
+            watchedDataExpression: "multiplierAdAvailable"
+            eventName: "AnimateMultiplierResetButton"
+            eventData: "multiplierAdAvailable and not tankXpMultiplierActive"
+        UIEventOnDataComponent1:
+            watchedDataExpression: "tankXpMultiplierActive"
+            eventName: "AnimateMultiplierResetButton"
+            eventData: "multiplierAdAvailable and not tankXpMultiplierActive"
+    children:
+    -   class: "UIControl"
+        name: "ButtonWrapper"
+        components:
+            LinearLayout:
+                spacing: 4.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfFirstChild"
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   class: "UIControl"
+            name: "BattleButtonWrapper"
+            input: false
+            components:
+                LinearLayout:
+                    spacing: 4.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+            children:
+            -   class: "UIControl"
+                name: "Shadows"
+                input: false
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: -16.000000
+                    LinearLayout:
+                        enabled: true
+                        padding: "-32"
+                    IgnoreLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                bindings:
+                - ["visible", "not (isPrebattleTraining and isGeneralPackLoaded)"]
+                children:
+                -   class: "UIControl"
+                    name: "Left"
+                    input: false
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/Lobby/controls/buttons/button_battle/button_shadow_battle_left"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Center"
+                    input: false
+                    components:
+                        Background:
+                            drawType: "DRAW_TILED"
+                            sprite: "~res:/Gfx/Lobby/controls/buttons/button_battle/button_shadow_battle_center"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Right"
+                    input: false
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/Lobby/controls/buttons/button_battle/button_shadow_battle_left"
+                            spriteModification: ["FLIP_HORIZONTAL"]
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "BattleWrapper"
+                exclusiveInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 184.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 56.000000
+                    UIAttachLayoutMasterComponent:
+                        attachId: "BATTLE_BUTTON"
+                    UIInputEventComponent:
+                        onTouchUpInside: "BATTLE"
+                    UILayerComponent: {}
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/ButtonSound.style.yaml"
+                bindings:
+                - ["visible", "not (isPrebattleTraining and isGeneralPackLoaded)"]
+                - ["enabled", "not forceDisabled"]
+                - ["classes", "buttonStyle"]
+                - ["UILayerComponent.layer", "when tutorialHighlight == eTutorialHighlights.kBattleButton -> 1, 0"]
+                children:
+                -   class: "UIControl"
+                    name: "Content"
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    classes: "content-area"
+                    components:
+                        UIOpacityComponent: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "ActiveBg"
+                        input: false
+                        classes: "button-active-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/controls/buttons/button_battle/outdated/button_battle_bg"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "DisabledBg"
+                        input: false
+                        classes: "button-disabled-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_TILED_MULTILAYER"
+                                mask: "~res:/Gfx/Lobby/controls/buttons/common/button_mask_r1"
+                                detail: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                gradient: "~res:/Gfx/Lobby/controls/buttons/button_battle/button_gradient_battle"
+                                contour: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Hover"
+                        size: [32.000000, 32.000000]
+                        input: false
+                        classes: "hover red-tamarillo-10-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            UIOpacityComponent: {}
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Text"
+                        input: false
+                        classes: "t-content-h4 bold white-wild-sand-text"
+                        components:
+                            UITextComponent:
+                                fitting: "FITTING_REDUCE"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 12.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 12.000000
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                        bindings:
+                        - ["UITextComponent.text", "buttonText"]
+                -   class: "UIParticles"
+                    name: "battle_top"
+                    position: [92.000000, 55.000000]
+                    size: [32.000000, 32.000000]
+                    scale: [1.000000, 1.000000]
+                    pivot: [0.500000, 0.500000]
+                    angle: 0.000000
+                    input: false
+                    classes: "button-effect"
+                    effectPath: "~res:/3d/FX/UI/battle_top_1.sc2"
+                    autoStart: true
+                    components:
+                        Update:
+                            updateInvisible: false
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                -   class: "UIParticles"
+                    name: "battle_top"
+                    position: [92.000000, 1.000000]
+                    size: [32.000000, 32.000000]
+                    scale: [1.000000, 1.000000]
+                    pivot: [0.500000, 0.500000]
+                    angle: 0.000000
+                    input: false
+                    classes: "button-effect"
+                    effectPath: "~res:/3d/FX/UI/battle_top_1.sc2"
+                    autoStart: true
+                    components:
+                        Update:
+                            updateInvisible: false
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+            -   class: "UIControl"
+                name: "BattleTypeWrapper"
+                selected: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 64.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 56.000000
+                    UIAttachLayoutMasterComponent:
+                        attachId: "CHOOSE_BATTLE_TYPE"
+                    UIInputEventComponent:
+                        onTouchUpInside: "BATTLE_TYPE_PRESSED"
+                    Sound: {}
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/ButtonSound.style.yaml"
+                bindings:
+                - ["visible", "isBattleTypeButtonVisible and not (isPrebattleTraining and isGeneralPackLoaded)"]
+                - ["enabled", "isButtonTypeEnabled"]
+                - ["input", "isBattleTypeButtonVisible and not (isPrebattleTraining and isGeneralPackLoaded)"]
+                - ["classes", "buttonTypeStyle"]
+                children:
+                -   class: "UIControl"
+                    name: "Content"
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    classes: "content-area"
+                    components:
+                        UIOpacityComponent: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "ActiveBg"
+                        input: false
+                        classes: "button-active-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/controls/buttons/button_battle/outdated/button_battle-type_bg"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "DisabledBg"
+                        input: false
+                        classes: "button-disabled-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_TILED_MULTILAYER"
+                                mask: "~res:/Gfx/Lobby/controls/buttons/common/button_mask_r1"
+                                detail: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                gradient: "~res:/Gfx/Lobby/controls/buttons/button_battle/button_gradient_battle-type"
+                                contour: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Hover"
+                        input: false
+                        classes: "hover red-tamarillo-10-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_TILED"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            UIOpacityComponent: {}
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Icon"
+                        input: false
+                        classes: "battle-type-button-icon"
+                        components:
+                            UITextureComponent:
+                                materialPath: "~res:/Materials.custom/2d.Textured.HSV.material"
+                                drawType: "DRAW_SCALE_PROPORTIONAL"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 48.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 48.000000
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                        bindings:
+                        - ["UITextureComponent.spritePath", "battleTypeSprite"]
+                    -   class: "UIControl"
+                        name: "Expand"
+                        input: false
+                        classes: "expand white-wild-sand-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_right-triangle.psd"
+                            UIOpacityComponent: {}
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 3.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 3.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Badge"
+                        input: false
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: -8.000000
+                                topAnchorEnabled: true
+                                topAnchor: -8.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfMaxChild"
+                                verticalPolicy: "PercentOfMaxChild"
+                        bindings:
+                        - ["visible", "isBattleTypeButtonVisible and isBadgeVisible"]
+                        children:
+                        -   prototype: "BadgeHolder/BadgeHolder"
+                            name: "BadgeHolder"
+                            components:
+                                Anchor:
+                                    enabled: false
+                                    rightAnchorEnabled: true
+                                    topAnchorEnabled: true
+                                UIDataParamsComponent:
+                                    args:
+                                        "type": "eBadgeType.String"
+                                        "value": "localize(\"hangar/BattleType/New\")"
+                            bindings:
+                            - ["Anchor.rightAnchor", "when value == \" \" -> 4, -8"]
+                            - ["Anchor.topAnchor", "when value == \" \" -> 4, -8"]
+                -   class: "UIParticles"
+                    name: "battle_top_1"
+                    position: [-6.000000, 55.000000]
+                    size: [32.000000, 32.000000]
+                    scale: [1.000000, 1.000000]
+                    pivot: [0.500000, 0.500000]
+                    angle: 0.000000
+                    input: false
+                    classes: "button-effect"
+                    effectPath: "~res:/3d/FX/UI/battle_top.sc2"
+                    autoStart: true
+                    components:
+                        Update:
+                            updateInvisible: false
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                -   class: "UIParticles"
+                    name: "battle_top_1"
+                    position: [-6.000000, 0.000000]
+                    size: [32.000000, 32.000000]
+                    scale: [1.000000, 1.000000]
+                    pivot: [0.500000, 0.500000]
+                    angle: 0.000000
+                    input: false
+                    classes: "button-effect"
+                    effectPath: "~res:/3d/FX/UI/battle_top.sc2"
+                    autoStart: true
+                    components:
+                        Update:
+                            updateInvisible: false
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+            -   class: "UIControl"
+                name: "TrainingButton"
+                classes: "training-button button-open-sound"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 56.000000
+                    UIInputEventComponent:
+                        onTouchUpInside: "ON_MY_TRAINING_ROOM"
+                    Sound: {}
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/ButtonSound.style.yaml"
+                bindings:
+                - ["visible", "isPrebattleTraining and isGeneralPackLoaded"]
+                - ["input", "isPrebattleTraining and isGeneralPackLoaded"]
+                children:
+                -   class: "UIControl"
+                    name: "Shadows"
+                    input: false
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            topAnchor: -16.000000
+                        LinearLayout:
+                            enabled: true
+                            padding: "-32"
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "Left"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/Lobby/controls/buttons/button_training/button_shadow_training_left"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "Center"
+                        input: false
+                        components:
+                            Background:
+                                drawType: "DRAW_TILED"
+                                sprite: "~res:/Gfx/Lobby/controls/buttons/button_training/button_shadow_training_center"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "Right"
+                        input: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/Lobby/controls/buttons/button_training/button_shadow_training_left"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Content"
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    classes: "content-area"
+                    components:
+                        UIOpacityComponent: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "Formula"
+                            horizontalFormula: "max(252, maxChild + 32)"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "Bg"
+                        input: false
+                        components:
+                            Background:
+                                drawType: "DRAW_TILED_MULTILAYER"
+                                mask: "~res:/Gfx/Lobby/controls/buttons/common/button_mask_r1"
+                                detail: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                gradient: "~res:/Gfx/Lobby/controls/buttons/button_training/button_gradient_training"
+                                contour: "~res:/Gfx/Lobby/controls/buttons/common/button_details_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                    -   class: "UIControl"
+                        name: "Hover"
+                        input: false
+                        classes: "hover white-wild-sand-10-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_r1"
+                                leftRightStretchCap: 1.000000
+                                topBottomStretchCap: 1.000000
+                            UIOpacityComponent: {}
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                    -   class: "UIControl"
+                        name: "Text"
+                        input: false
+                        classes: "t-caption bold color=white-wild-sand-text"
+                        components:
+                            UIOpacityComponent: {}
+                            UITextComponent:
+                                text: "hangar/TrainingRoomButton"
+                                colorInheritType: "COLOR_MULTIPLY_ON_PARENT"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml"
+        -   class: "UIControl"
+            name: "DevContainer"
+            input: false
+            components:
+                LinearLayout:
+                    dynamicPadding: true
+                    spacing: 7.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    horizontalValue: 130.000000
+                    verticalPolicy: "PercentOfParent"
+            bindings:
+            - ["visible", "isDeveloperUI"]
+            children:
+            -   class: "UIControl"
+                name: "DevLogoutButton"
+                input: true
+                classes: "simple-button t-body bold red-tamarillo-50-bg"
+                components:
+                    Background: {}
+                    UIOpacityComponent: {}
+                    UITextComponent:
+                        text: "Exit"
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 56.000000
+                        verticalPolicy: "PercentOfParent"
+                    UIInputEventComponent:
+                        onTouchUpInside: "DEV_LOGOUT"
+                    UILayerComponent: {}
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/DevMenu/SimpleButton.style.yaml"
+                bindings:
+                - ["UILayerComponent.layer", "when tutorialLesson != eTutorialLesson.kUnknown and tutorialLesson < eTutorialLesson.kCongratulations -> 1, 0"]
+            -   class: "UIControl"
+                name: "DevButton"
+                input: true
+                classes: "simple-button t-body bold grey-shark-50-bg"
+                components:
+                    Background: {}
+                    UIOpacityComponent: {}
+                    UITextComponent:
+                        text: "Dev"
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 56.000000
+                        verticalPolicy: "PercentOfParent"
+                    UIAttachLayoutMasterComponent:
+                        attachId: "kHangarSettings"
+                    UIInputEventComponent:
+                        onTouchUpInside: "ON_DEV_BUTTON"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/DevMenu/SimpleButton.style.yaml"
+            -   class: "UIControl"
+                name: "DevInfo"
+                input: true
+                classes: "simple-button t-body bold grey-shark-50-bg"
+                components:
+                    Background: {}
+                    UIOpacityComponent: {}
+                    UITextComponent:
+                        text: "Info"
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 56.000000
+                        verticalPolicy: "PercentOfParent"
+                    UIAttachLayoutMasterComponent:
+                        attachId: "DEV_INFO"
+                    UIInputEventComponent:
+                        onTouchUpInside: "ON_DEV_INFO_BUTTON"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Font.style.yaml;~res:/UI/Screens3/Color.style.yaml;~res:/UI/Screens3/Lobby/Hangar/DevMenu/SimpleButton.style.yaml"
+        -   class: "UIControl"
+            name: "Effects"
+            visible: false
+            input: false
+            components:
+                ClipContent: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                IgnoreLayout: {}
+            children:
+            -   class: "UIParticles"
+                name: "Glow"
+                position: [118.000000, 31.000000]
+                size: [32.000000, 32.000000]
+                pivot: [0.500000, 0.500000]
+                visible: true
+                input: false
+                effectPath: "~res:/3d/FX/UI/battle_glow_new.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "Top"
+                position: [118.000000, 2.000000]
+                size: [32.000000, 32.000000]
+                pivot: [0.500000, 0.500000]
+                input: false
+                effectPath: "~res:/3d/FX/UI/battle_top_new.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "Bottom"
+                position: [118.000000, 63.000000]
+                size: [32.000000, 32.000000]
+                pivot: [0.500000, 0.500000]
+                input: false
+                effectPath: "~res:/3d/FX/UI/battle_top_new.sc2"
+                autoStart: true
+        -   class: "UIControl"
+            name: "X2FactorContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 4.000000
+                    skipInvisible: false
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: "XpFactorWrapper"
+                size: [32.000000, 32.000000]
+                input: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 4.000000
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 8.000000
+                        skipInvisible: false
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                bindings:
+                - ["visible", "showXPFactor"]
+                children:
+                -   class: "UIControl"
+                    name: "XpResetLayoutBarrier"
+                    input: false
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfLastChild"
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 24.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "AdvertisingXpReset"
+                        pivot: [0.500000, 0.500000]
+                        input: false
+                        components:
+                            UIOpacityComponent: {}
+                            Anchor:
+                                rightAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfFirstChild"
+                                verticalPolicy: "PercentOfFirstChild"
+                            UIChildComponent0:
+                                condition: "adResetAllowed"
+                                prototypePath: "~res:/UI/Screens3/Lobby/Advertising/XpMultiplierResetButton.yaml"
+                                eventActions:
+                                - ["RESET_MULTIPLIER", "RESET_MULTIPLIER_WITH_AD", ""]
+                    -   class: "UIControl"
+                        name: "XpBonusResetTimer"
+                        input: false
+                        components:
+                            Anchor:
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfFirstChild"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 24.000000
+                            UIAttachLayoutMasterComponent:
+                                attachId: "XP_TIMER_HINT"
+                            UIChildComponent0:
+                                prototypePath: "~res:/UI/Screens3/Lobby/Hangar/XpBonusResetTimer.yaml"
+                                args:
+                                    "bgVisible": "false"
+                                    "iconVisible": "true"
+                                    "dailyXPFactor": "dailyXPFactor"
+                                    "serverTime": "serverTime"
+                                    "time": "time"
+                                eventActions:
+                                - ["SHOW_HINT_XP_TIMER", "SHOW_HINT_XP_TIMER", ""]
+                        bindings:
+                        - ["visible", "showXPFactor"]
+            -   class: "UIControl"
+                name: "PingWrapper"
+                input: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 4.000000
+                    LinearLayout:
+                        padding: "0; 8"
+                        spacing: 4.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 24.000000
+                bindings:
+                - ["visible", "pingIndicatorVisible"]
+                children:
+                -   class: "UIControl"
+                    name: "Bg"
+                    input: false
+                    classes: "red-tamarillo-bg"
+                    components:
+                        Background: {}
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "white-wild-sand-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_ALIGNED"
+                            sprite: "~res:/Gfx/Lobby/icons/icon_attention_s"
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 24.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 24.000000
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "Label"
+                    input: false
+                    classes: "t-caps bold white-wild-sand-text"
+                    components:
+                        UITextComponent:
+                            text: "hangar/Indicator/UnstableCompound"
+                            perPixelAccuracyType: "PER_PIXEL_ACCURACY_ENABLED"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Font.style.yaml"
+    -   class: "UIControl"
+        name: "BoosterButtonWrapper"
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 64.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 56.000000
+            UIInputEventComponent:
+                onTouchUpInside: "ON_BOOSTERS"
+            Sound: {}
+            StyleSheet:
+                styles: "~res:/UI/Screens3/ButtonSound.style.yaml"
+        bindings:
+        - ["visible", "boostersButtonIsVisible"]
+        - ["input", "boostersButtonIsVisible"]
+        - ["classes", "\"booster-button \" + boosterButtonSoundStyle + \" \" + boosterButtonStyle + \" \" + boosterButtonDisabledStyle"]
+        children:
+        -   class: "UIControl"
+            name: "Content"
+            pivot: [0.500000, 0.500000]
+            input: false
+            classes: "content-area"
+            components:
+                UIOpacityComponent: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+            children:
+            -   class: "UIControl"
+                name: "Bg"
+                input: false
+                components:
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "Bg"
+                    input: false
+                    classes: "grey-shark-70-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/Lobby/backgrounds/bg_r1"
+                            leftRightStretchCap: 1.000000
+                            topBottomStretchCap: 1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                    children:
+                    -   class: "UIControl"
+                        name: "Lock"
+                        input: false
+                        classes: "white-wild-sand-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/icons/icon_lock"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: -2.000000
+                                bottomAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 24.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 24.000000
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+                        bindings:
+                        - ["visible", "not isGeneralPackLoaded"]
+                -   class: "UIControl"
+                    name: "TriangleWrapper"
+                    input: false
+                    components:
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 8.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 15.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "Triangle"
+                        pivot: [0.000000, 1.000000]
+                        angle: 90.000000
+                        input: false
+                        classes: "grey-shark-70-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_triangle_8.psd"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "Hover"
+                size: [32.000000, 32.000000]
+                input: false
+                classes: "hover"
+                components:
+                    UIOpacityComponent: {}
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "Bg"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    classes: "black-15-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/Lobby/backgrounds/bg_r1"
+                            leftRightStretchCap: 1.000000
+                            topBottomStretchCap: 1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "TriangleWrapper"
+                    size: [32.000000, 32.000000]
+                    input: false
+                    components:
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 8.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 15.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "Triangle"
+                        pivot: [0.000000, 1.000000]
+                        angle: 90.000000
+                        input: false
+                        classes: "black-15-bg"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                sprite: "~res:/Gfx/Lobby/backgrounds/bg_triangle_8.psd"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            StyleSheet:
+                                styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "Icon"
+                input: false
+                classes: "white-wild-sand-bg"
+                components:
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/Lobby/icons/icon_booster"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -4.000000
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Color.style.yaml"
+            -   class: "UIControl"
+                name: "Badge"
+                input: false
+                classes: "booster-badge"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: -8.000000
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 24.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 24.000000
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "Bg"
+                    input: false
+                    classes: "green-la-palma-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_SCALE_PROPORTIONAL"
+                            sprite: "~res:/Gfx/Lobby/backgrounds/bg_oval_40.psd"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Color.style.yaml"
+                -   class: "UIControl"
+                    name: "Icon"
+                    input: false
+                    classes: "white-wild-sand-bg"
+                    components:
+                        Background:
+                            drawType: "DRAW_SCALE_PROPORTIONAL"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/Lobby/Hangar/BattleButton.style.yaml;~res:/UI/Screens3/Color.style.yaml"
