@@ -84,14 +84,14 @@
         <vehicleDamageFactor>0.0</vehicleDamageFactor>
       </armor_11>
       <armor_12>240</armor_12>
-      <armor_13>70</armor_13>
+      <armor_13>35</armor_13>
       <armor_14>115</armor_14>
       <armor_15>78</armor_15>
       <armor_16>130</armor_16>
     </armor>
     <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
     <weight>43890</weight>
-    <maxHealth>2080</maxHealth>
+    <maxHealth>2000</maxHealth>
     <ammoBayHealth>
       <maxHealth>210</maxHealth>
       <maxRegenHealth>140</maxRegenHealth>
@@ -217,7 +217,7 @@
       <yawLimits>-180 180</yawLimits>
       <gunPosition>0.000000 0.360689 0.999000</gunPosition>
       <armor>
-        <armor_1>290</armor_1>
+        <armor_1>260</armor_1>
         <armor_2>175</armor_2>
         <armor_3>160</armor_3>
         <armor_4>90</armor_4>
@@ -232,7 +232,7 @@
       </armor>
       <primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
       <weight>11442</weight>
-      <maxHealth>520</maxHealth>
+      <maxHealth>500</maxHealth>
       <rotationSpeed>18</rotationSpeed>
       <turretRotatorHealth>
         <maxHealth>170</maxHealth>

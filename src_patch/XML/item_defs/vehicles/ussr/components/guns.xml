@@ -126,6 +126,7 @@
     <_122mm_M62-T2M1>1041</_122mm_M62-T2M1>
     <_85mm_D5T-85BML>1042</_85mm_D5T-85BML>
     <_130mm_M65_K>1043</_130mm_M65_K>
+    <_100mm_NT-12>1044</_100mm_NT-12>
   </ids>
   <shared>
     <_20mm_TNSH>
@@ -6687,5 +6688,60 @@
         </_130mm_UOF-482K>
       </shots>
     </_130mm_M65_K>
+    <_100mm_NT-12>
+      <userString>#ussr_vehicles:_100mm_NT-12</userString>
+      <shortUserString>#ussr_vehicles:_100mm_NT-12_short</shortUserString>
+      <description>#ussr_vehicles:_100mm_NT-12_descr</description>
+      <tags/>
+      <level>8</level>
+      <price>0</price>
+      <impulse>0.44</impulse>
+      <recoil>
+        <lodDist>MEDIUM</lodDist>
+        <amplitude>0.36</amplitude>
+        <recoilEffect>main</recoilEffect>
+      </recoil>
+      <effects>wpn_shot_main_extra</effects>
+      <turretYawLimits>-180 180</turretYawLimits>
+      <pitchLimits>-20 6</pitchLimits>
+      <rotationSpeed>42</rotationSpeed>
+      <reloadTime>9.2</reloadTime>
+      <maxAmmo>58</maxAmmo>
+      <aimingTime>2.3</aimingTime>
+      <weight>2290</weight>
+      <maxHealth>180</maxHealth>
+      <maxRegenHealth>90</maxRegenHealth>
+      <repairCost>0</repairCost>
+      <invisibilityFactorAtShot>0.225</invisibilityFactorAtShot>
+      <shotDispersionRadius>0.36</shotDispersionRadius>
+      <shotDispersionFactors>
+        <turretRotation>0.08</turretRotation>
+        <afterShot>4</afterShot>
+        <whileGunDamaged>2.0</whileGunDamaged>
+      </shotDispersionFactors>
+      <shots>
+        <_100mm_AP_NT-12>
+          <defaultPortion>0.8</defaultPortion>
+          <speed>950</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>185 162</piercingPower>
+        </_100mm_AP_NT-12>
+        <_100mm_AP_CR_NT-12>
+          <defaultPortion>0</defaultPortion>
+          <speed>1050</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>240 213</piercingPower>
+        </_100mm_AP_CR_NT-12>
+        <_100mm_HE_NT-12>
+          <defaultPortion>0.2</defaultPortion>
+          <speed>880</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>42 42</piercingPower>
+        </_100mm_HE_NT-12>
+      </shots>
+    </_100mm_NT-12>
   </shared>
 </root>

@@ -4321,7 +4321,7 @@
       <reloadTime>11.0</reloadTime>
       <maxAmmo>90</maxAmmo>
       <aimingTime>2.1</aimingTime>
-      <weight>2490</weight>
+      <weight>2400</weight>
       <maxHealth>210</maxHealth>
       <maxRegenHealth>105</maxRegenHealth>
       <repairCost>0</repairCost>
@@ -4345,7 +4345,7 @@
           <speed>950</speed>
           <gravity>9.81</gravity>
           <maxDistance>720</maxDistance>
-          <piercingPower>190 190</piercingPower>
+          <piercingPower>200 200</piercingPower>
         </_120mm_HESH_50>
       </shots>
     </_120mm_QF_GUN>

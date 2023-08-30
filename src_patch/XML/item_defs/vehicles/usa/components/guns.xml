@@ -118,6 +118,7 @@
     <_155mm_AT_Gun_T7M1>1055</_155mm_AT_Gun_T7M1>
     <_90mm_AT_Gun_M3_HC>1056</_90mm_AT_Gun_M3_HC>
     <_90mm_AT_Gun_T15E2K>1057</_90mm_AT_Gun_T15E2K>
+    <_120mm_T123E6M2>1058</_120mm_T123E6M2>
   </ids>
   <shared>
     <_20mm_Hispano_Suiza_Birgikt_gun>
@@ -6118,6 +6119,61 @@
         </_90mm_M71A1M>
       </shots>
     </_90mm_T-114>
+    <_120mm_T123E6M2>
+      <userString>#usa_vehicles:_120mm_T123E6M2</userString>
+      <shortUserString>#usa_vehicles:_120mm_T123E6M2_short</shortUserString>
+      <description>#usa_vehicles:_120mm_T123E6M2_descr</description>
+      <tags/>
+      <level>10</level>
+      <price>0</price>
+      <impulse>0.68</impulse>
+      <recoil>
+        <lodDist>MEDIUM</lodDist>
+        <amplitude>0.24</amplitude>
+        <recoilEffect>large</recoilEffect>
+      </recoil>
+      <effects>wpn_shot_large</effects>
+      <turretYawLimits>-90 90</turretYawLimits>
+      <pitchLimits>-20 10</pitchLimits>
+      <rotationSpeed>40</rotationSpeed>
+      <reloadTime>7.1</reloadTime>
+      <maxAmmo>50</maxAmmo>
+      <aimingTime>1.0</aimingTime>
+      <weight>4400</weight>
+      <maxHealth>230</maxHealth>
+      <maxRegenHealth>115</maxRegenHealth>
+      <repairCost>0</repairCost>
+      <invisibilityFactorAtShot>0.18</invisibilityFactorAtShot>
+      <shotDispersionRadius>0.34</shotDispersionRadius>
+      <shotDispersionFactors>
+        <turretRotation>0.08</turretRotation>
+        <afterShot>4.0</afterShot>
+        <whileGunDamaged>2.0</whileGunDamaged>
+      </shotDispersionFactors>
+      <shots>
+        <_120mm_AP_T_M358XM>
+          <defaultPortion>0.8</defaultPortion>
+          <speed>1000</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>270 270</piercingPower>
+        </_120mm_AP_T_M358XM>
+        <_120mm_HEAT_T_M469XM>
+          <defaultPortion>0</defaultPortion>
+          <speed>1100</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>310 310</piercingPower>
+        </_120mm_HEAT_T_M469XM>
+        <_120mm_HE_ShotXM>
+          <defaultPortion>0.2</defaultPortion>
+          <speed>900</speed>
+          <gravity>9.81</gravity>
+          <maxDistance>720</maxDistance>
+          <piercingPower>65 65</piercingPower>
+        </_120mm_HE_ShotXM>
+      </shots>
+    </_120mm_T123E6M2>
     <_155mm_AT_Gun_T7M1>
       <userString>#usa_vehicles:_155mm_AT_Gun_T7M1</userString>
       <description>#usa_vehicles:_155mm_AT_Gun_T7M1</description>

@@ -190,8 +190,8 @@
       <rotationIsAroundCenter>true</rotationIsAroundCenter>
       <rotationSpeed>47</rotationSpeed>
       <shotDispersionFactors>
-        <vehicleMovement>0.13</vehicleMovement>
-        <vehicleRotation>0.13</vehicleRotation>
+        <vehicleMovement>0.1</vehicleMovement>
+        <vehicleRotation>0.1</vehicleRotation>
       </shotDispersionFactors>
       <bulkHealthFactor>3.0</bulkHealthFactor>
       <maxHealth>250</maxHealth>
@@ -217,22 +217,22 @@
       <yawLimits>-180 180</yawLimits>
       <gunPosition>0.0 0.259588 1.175658</gunPosition>
       <armor>
-        <armor_1>170</armor_1>
-        <armor_2>115</armor_2>
-        <armor_3>100</armor_3>
-        <armor_4>50</armor_4>
-        <armor_5>30</armor_5>
+        <armor_1>120</armor_1>
+        <armor_2>70</armor_2>
+        <armor_3>68</armor_3>
+        <armor_4>40</armor_4>
+        <armor_5>20</armor_5>
         <armor_6>200</armor_6>
         <armor_7>230</armor_7>
         <armor_8>5</armor_8>
-        <armor_9>140</armor_9>
-        <armor_10>50</armor_10>
+        <armor_9>100</armor_9>
+        <armor_10>40</armor_10>
         <armor_11>
           20
 				
           <vehicleDamageFactor>0.0</vehicleDamageFactor>
         </armor_11>
-        <armor_14>140</armor_14>
+        <armor_14>100</armor_14>
         <armor_16>140</armor_16>
       </armor>
       <primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
@@ -298,11 +298,11 @@
             </armor_4>
             <gun>20</gun>
           </armor>
-          <shotDispersionRadius>0.35</shotDispersionRadius>
+          <shotDispersionRadius>0.34</shotDispersionRadius>
           <aimingTime>1.9</aimingTime>
           <reloadTime>7.2</reloadTime>
           <shotDispersionFactors>
-            <turretRotation>0.07</turretRotation>
+            <turretRotation>0.05</turretRotation>
             <afterShot>4</afterShot>
             <whileGunDamaged>2.0</whileGunDamaged>
           </shotDispersionFactors>

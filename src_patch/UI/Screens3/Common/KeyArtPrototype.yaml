@@ -1,0 +1,109 @@
+Header:
+    version: 157
+Prototypes:
+-   class: "UIControl"
+    name: "KeyArt"
+    size: [1024.000000, 768.000000]
+    visible: true
+    input: false
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        UIDataParamsComponent:
+            params:
+            - ["eScreenSizeType", "deviceType", "eScreenSizeType.Medium", "eScreenSizeType.Medium"]
+        UIDataLocalVarsComponent:
+            data:
+            - ["eResourceLoadingStrategy", "spriteResource", "when deviceType == eScreenSizeType.Large -> eResourceLoadingStrategy.PreferMaxResolution, eResourceLoadingStrategy.PreferDesired"]
+    children:
+    -   class: "UIControl"
+        name: "Holder"
+        position: [512.000000, 384.000000]
+        size: [1364.000000, 768.000000]
+        pivot: [0.500000, 0.500000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            ScalePolicy:
+                horizontalFormula: "max(parentSize.X / size.X, parentSize.Y / size.Y)"
+                verticalFormula: "max(parentSize.X / size.X, parentSize.Y / size.Y)"
+        children:
+        -   class: "UIControl"
+            name: "Layer"
+            size: [1024.000000, 768.000000]
+            input: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "1"
+            position: [0.000000, 0.000000]
+            size: [1024.000000, 768.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    frame: 0
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            bindings:
+            - ["Background.spriteResource", "spriteResource"]
+            - ["Background.sprite", "\"~res:/Gfx/UI/RXD_LoginBG/rxd_LBG\""]
+        -   class: "UIControl"
+            name: "2"
+            position: [0.000000, 0.000000]
+            size: [1024.000000, 768.000000]
+            input: false
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    frame: 1
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            bindings:
+            - ["Background.spriteResource", "spriteResource"]
+            - ["Background.sprite", "\"~res:/Gfx/UI/RXD_LoginBG/rxd_LBG\""]
+            children:
+            -   class: "UIParticles"
+                name: "BackgroundParticles"
+                position: [338.000000, 400.000000]
+                size: [30.000000, 66.000000]
+                scale: [1.000000, 1.000000]
+                angle: 180.000000
+                effectPath: "~res:/3d/FX/UI/RXD_LoginFX/dust.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "BackgroundParticles2"
+                position: [638.000000, 400.000000]
+                size: [30.000000, 66.000000]
+                scale: [1.000000, 1.000000]
+                angle: 180.000000
+                effectPath: "~res:/3d/FX/UI/RXD_LoginFX/dust.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "BackgroundParticles3"
+                position: [938.000000, 400.000000]
+                size: [30.000000, 66.000000]
+                scale: [1.000000, 1.000000]
+                angle: 180.000000
+                effectPath: "~res:/3d/FX/UI/RXD_LoginFX/dust.sc2"
+                autoStart: true
+CustomData:
+    Guides:
+        KeyArt:
+            Vertical:
+            - -181.000000
