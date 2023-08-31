@@ -1,65 +1,65 @@
 # Voice nodes:
-    # "ru_m" - Russian Male
-    # "ru_f" - Russian Female
-    # "de_m" - German Male
-    # "de_f" - German Female
-    # "en_m" - American Male
-    # "en_f" - American Female
-    # "cn_m" - Chinese Male
-    # "cn_f" - Chinese Female
-    # "fr_m" - French Male
-    # "fr_f" - French Female
-    # "en_gb_m" - British Male
-    # "en_gb_f" - British Female
-    # "ja_m" - Japanese Male (new)
-    # "ja_f" - Japanese Female
-    # "ja-dep" - Japanese Male (old)
-    # "cs_m" - Czech Male
-    # "cs_f" - Czech Female
-    # "it_m" - Italian Male
-    # "it_f" - Italian Female
-    # "pl_m" - Polish Male
-    # "pl_f" - Polish Female
-    # "sv_m" - Swedish Male
-    # "sv_f" - Swedish Female
+    # "ru" - Russian Male
+    # "ru2" - Russian Female
+    # "de" - German Male
+    # "de2" - German Female
+    # "en" - American Male
+    # "en2" - American Female
+    # "cn" - Chinese Male
+    # "cn2" - Chinese Female
+    # "fr" - French Male
+    # "fr2" - French Female
+    # "en_gb" - British Male
+    # "en_gb2" - British Female
+    # "ja" - Japanese Male (new)
+    # "ja2" - Japanese Female
+    # "ja-old" - Japanese Male (old)
+    # "cs" - Czech Male
+    # "cs2" - Czech Female
+    # "it" - Italian Male
+    # "it2" - Italian Female
+    # "pl" - Polish Male
+    # "pl2" - Polish Female
+    # "sv" - Swedish Male
+    # "sv2" - Swedish Female
     # "fury" - Fury Crew Voice
     # "sab" - Sabaton Crew Voice
 #-----------------------------------------------------------
 # Nation section:
 nations:
     # Russian
-    ussr: "ru_f"
+    ussr: "ru2"
     # Germany
-    germany: "de_f"
+    germany: "de2"
     # USA
-    usa: "en_f"
+    usa: "en2"
     # China
-    china: "cn_f"
+    china: "cn2"
     # France
-    france: "fr_f"
+    france: "fr2"
     # British / UK
-    uk: "en_gb_f"
+    uk: "en_gb2"
     # Japan
-    japan: "ja_f"
+    japan: "ja2"
     # This one is mainly Blitz Hybrid Nation - the Fantasy Tanks
     other: "sab" 
     # The mix of European tanks
     european: "fury" 
 subnations:
     # Italy
-    italy: "it_f"
+    italy: "it2"
     # Polish
-    poland: "pl_f"
+    poland: "pl2"
     # Finland ( stock & not modded )
     finland: "fi"
     # Czech
-    czech: "cs_f"
+    czech: "cs2"
     # Sweden
-    sweden: "sv_f"
+    sweden: "sv2"
     # Australian
-    australia: "en_gb_f"
+    australia: "en_gb2"
     # Canadian
-    canada: "en_f"
+    canada: "en2"
 tanks:
     # Tank section - this part you can specify which tank gets which crew voice - force overrides whatever's set above.
     # Below is special cases - mostly for tanks that are in the European Nation/ Hybrid Nation
@@ -72,5 +72,5 @@ tanks:
 #---- GuP <----<
 #-----------------------------------------------------------
 #---- Fury >--->
-    "usa:A104_M4A3E8A": "fury"
+    "usa:A1044A3E8A": "fury"
 #---- Fury <---<
