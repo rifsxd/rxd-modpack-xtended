@@ -1,5 +1,0 @@
-1
-rxd_InfoPanel.packed.webp
-12 15
-1
-89 70 12 15 0 0 0 frame0

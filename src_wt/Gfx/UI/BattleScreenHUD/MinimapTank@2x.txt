@@ -1,8 +1,0 @@
-1
-OTM_CountingTank@2x.packed.webp
-46 44
-4
-208 72 30 30 10 8 0 frame0
-210 134 28 32 10 6 0 frame1
-176 72 32 36 8 4 0 frame2
-174 116 34 40 8 0 0 frame3

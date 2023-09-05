@@ -1,5 +1,0 @@
-1
-RXD_FireV@2x.packed.webp
-144 144
-1
-0 0 144 144 0 0 0 

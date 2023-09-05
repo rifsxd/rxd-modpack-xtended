@@ -1,5 +1,0 @@
-1
-rxd_Speedometer@2x.packed.webp
-512 288
-1
-0 0 512 288 0 0 0 frame0

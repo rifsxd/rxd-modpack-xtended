@@ -1,5 +1,0 @@
-1
-rxd_Radar.packed.webp
-500 500
-1
-0 0 500 500 0 250 0 frame0

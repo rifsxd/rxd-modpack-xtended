@@ -1,5 +1,0 @@
-1
-rxd_TankTypes.packed.webp
-40 40
-1
-40 0 40 40 0 0 0 frame0

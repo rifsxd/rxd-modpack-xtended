@@ -1,5 +1,0 @@
-1
-rxd_BG_load.packed.webp
-1920 1080
-1
-0 0 1920 1080 2 199 0 frame0

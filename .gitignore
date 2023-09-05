@@ -1,9 +1,7 @@
 *docs
 *pack_patch
-*pack_wt
-*pack_wot
+*pack
 *android-dev-kit
 *rxd*.exe
-*zip*pack_wot.bat
-*zip*pack_wt.bat
+*zip*pack.bat
 *zip*pack_patch.bat

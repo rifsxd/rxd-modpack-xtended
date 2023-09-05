@@ -1,5 +1,0 @@
-1
-rxd_Eq.packed.webp
-48 48
-1
-1 1 48 48 0 0 0 frame0

@@ -1,7 +1,0 @@
-1
-rxd_Spread.packed.webp
-17 22
-3
-53 13 17 32 1 1 0 frame0
-34 13 17 32 1 1 0 frame1
-15 13 17 32 1 1 0 frame2

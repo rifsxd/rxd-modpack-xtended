@@ -1,5 +1,0 @@
-1
-RXD.packed.webp
-112 19
-1
-605 30 112 19 0 0 0 frame0

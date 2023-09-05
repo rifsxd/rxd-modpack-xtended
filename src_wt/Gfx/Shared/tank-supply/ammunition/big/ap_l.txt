@@ -1,5 +1,0 @@
-1
-ap_l.packed.webp
-149 149
-1
-0 0 149 149 0 0 0 frame0

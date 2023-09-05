@@ -1,5 +1,0 @@
-1
-rxd_optional_devices.packed.webp
-48 48
-1
-1 115 36 36 6 6 0 frame0

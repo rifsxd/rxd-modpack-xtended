@@ -1,6 +1,0 @@
-1
-rxd_loading@2x.packed.webp
-80 80
-2
-4 2 64 64 6 8 0 frame0
-76 60 56 66 12 4 0 frame1

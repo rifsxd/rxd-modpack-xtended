@@ -1,5 +1,0 @@
-1
-rxd_Provisions.packed.webp
-90 90
-1
-95 283 90 90 0 0 0 frame0

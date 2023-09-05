@@ -1,5 +1,0 @@
-1
-Spark.packed.webp
-158 158
-1
-0 0 158 158 0 0 0 frame0

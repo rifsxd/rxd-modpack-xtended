@@ -1,5 +1,0 @@
-1
-rxd_icon_game-mode_rating_colored@2x.packed.webp
-272 272
-1
-0 0 272 272 0 0 0 frame0

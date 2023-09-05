@@ -1,5 +1,0 @@
-1
-rxd_consumables.packed.webp
-90 90
-1
-76 0 72 73 9 8 0 frame0

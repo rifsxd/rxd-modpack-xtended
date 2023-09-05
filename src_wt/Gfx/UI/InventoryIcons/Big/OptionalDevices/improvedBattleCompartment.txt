@@ -1,5 +1,0 @@
-1
-rxd_options.packed.webp
-64 64
-1
-54 0 55 47 5 9 0 frame0

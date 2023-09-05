@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="rxd-modpack-xtended-wwise-proj" Platform="Windows" BasePlatform="Windows">
-	<Plugins>
-		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
-		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
-		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
-		<Plugin Name="Wwise Motion" ID="33226759" DLL="AkMotion"/>
-	</Plugins>
-</PluginInfo>

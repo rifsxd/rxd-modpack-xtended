@@ -1,5 +1,0 @@
-1
-rxd_minimap.packed.webp
-163 163
-1
-0 0 163 163 0 0 0 frame0

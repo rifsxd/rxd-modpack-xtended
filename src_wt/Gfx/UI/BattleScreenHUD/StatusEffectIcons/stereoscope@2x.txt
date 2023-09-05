@@ -1,5 +1,0 @@
-1
-StatusEffectIcons@2x.packed.webp
-92 92
-1
-344 174 80 80 6 6 0 frame0

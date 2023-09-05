@@ -1,6 +1,0 @@
-1
-RXD@2x.packed.webp
-84 84
-2
-3050 200 84 84 0 0 0 frame0
-0 0 0 0 0 0 0 frame1

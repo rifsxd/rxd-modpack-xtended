@@ -1,5 +1,0 @@
-1
-texture0.packed.webp
-15 15
-1
-233 0 15 15 0 0 0 

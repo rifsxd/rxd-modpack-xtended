@@ -1,5 +1,0 @@
-1
-rxd_Enemy_Marker.packed.webp
-110 130
-1
-10 650 110 130 0 -2 0 frame0

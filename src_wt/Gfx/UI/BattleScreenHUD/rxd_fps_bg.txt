@@ -1,5 +1,0 @@
-1
-rxd_BG.packed.webp
-90 25
-1
-100 20 90 25 8 35 0 frame0

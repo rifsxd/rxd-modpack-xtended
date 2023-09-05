@@ -1,5 +1,0 @@
-1
-rxd_Ricochet.packed.webp
-400 39
-1
-0 0 400 39 0 0 0 frame0
