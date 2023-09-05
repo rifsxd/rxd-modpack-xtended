@@ -2,4 +2,4 @@
 rxd_BG@2x.packed.webp
 180 50
 1
-0 40 180 50 -64 70 0 frame0
+200 40 180 50 16 70 0 frame0
