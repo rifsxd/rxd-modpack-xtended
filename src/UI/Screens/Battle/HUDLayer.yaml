@@ -1093,7 +1093,7 @@ Prototypes:
             input: false
             components:
                 Background:
-                    sprite: "~res:/Gfx/UI/BattleScreenHUD/DamageMarkerArrow.psd"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_DamageMarkerOrange.psd"
                 Anchor:
                     leftAnchorEnabled: true
                     leftAnchor: 14.000000
@@ -1565,7 +1565,7 @@ Prototypes:
                 -   path: "Bg/Arrow"
                     components:
                         Background:
-                            spriteModification: ["FLIP_VERTICAL"]
+                            sprite: "~res:/Gfx/UI/BattleScreenHUD/OTM_DamageMarkerGray.psd"
         -   class: "UIControl"
             name: "GameModeAdditionalUIContainer"
             input: false

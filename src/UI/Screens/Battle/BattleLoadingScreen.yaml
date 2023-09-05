@@ -375,22 +375,6 @@
           [
             {
               class: UIControl,
-              name: bg,
-              input: false,
-              classes: color-orange,
-              components:
-                {
-                  Background: { drawType: DRAW_FILL },
-                  SizePolicy:
-                    {
-                      horizontalPolicy: PercentOfParent,
-                      verticalPolicy: PercentOfParent,
-                    },
-                  StyleSheet: { styles: "~res:/UI/Styles/ColorStyles.yaml" },
-                },
-            },
-            {
-              class: UIControl,
               name: value,
               input: false,
               classes: fs-15 bold text-color-white,
@@ -619,30 +603,6 @@
                                         },
                                       children:
                                         [
-                                          {
-                                            class: UIControl,
-                                            name: bg,
-                                            input: false,
-                                            components:
-                                              {
-                                                Background:
-                                                  {
-                                                    drawType: DRAW_FILL,
-                                                    color:
-                                                      [
-                                                        1.000000,
-                                                        1.000000,
-                                                        1.000000,
-                                                        0.100000,
-                                                      ],
-                                                  },
-                                                SizePolicy:
-                                                  {
-                                                    horizontalPolicy: PercentOfParent,
-                                                    verticalPolicy: PercentOfParent,
-                                                  },
-                                              },
-                                          },
                                           {
                                             class: UIControl,
                                             name: value,

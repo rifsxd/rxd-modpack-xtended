@@ -1,5 +1,5 @@
 1
-RXD@2x.packed.webp
-30 30
+rxd_hud@2x.packed.webp
+48 34
 1
-1202 2 30 30 0 0 0 frame0
+1200 0 48 34 0 0 0 frame0

@@ -1,5 +1,5 @@
 1
-RXD@2x.packed.webp
+rxd_hud@2x.packed.webp
 126 126
 10
 3390 0 126 126 0 0 0 frame0
