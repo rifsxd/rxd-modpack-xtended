@@ -99,6 +99,19 @@ Prototypes:
         StyleSheet:
             inheritsStylesFromParent: true
             styles: "~res:/UI/Screens/Battle/Minimap.yaml"
+# -   class: "UIControl" ## PRE-UPDATE 10.3
+    # name: "Marker"
+    # scale: [0.800000, 0.800000]
+    # pivot: [0.500000, 0.500000]
+    # input: false
+    # classes: "action-icon-path marker-enemy-here"
+    # components:
+        # Background: {}
+        # SizePolicy:
+            # horizontalPolicy: "PercentOfContent"
+            # verticalPolicy: "PercentOfContent"
+        # StyleSheet:
+            # styles: "~res:/UI/Screens/Battle/Styles/ChatActionStyles.style.yaml;"
 -   class: "UIControl"
     name: "BossModeBossMarker"
     pivot: [0.500000, 0.500000]
@@ -176,6 +189,7 @@ Prototypes:
 -   class: "UIControl"
     name: "Minimap"
     size: [163.000000, 163.000000]
+    scale: [1.500000, 1.500000]                                         
     classes: "minimap-placement=minimap-top-center"
     components:
         Background: {}
