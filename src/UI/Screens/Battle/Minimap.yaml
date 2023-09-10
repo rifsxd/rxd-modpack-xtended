@@ -143,7 +143,7 @@ Prototypes:
     input: false
     components:
         Background:
-            sprite: "~res:/Gfx/UI/BattleScreenHUD/rxd_minimap.psd"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/minimap/MiniMapGrid"
             frame: 0
         Anchor:
             leftAnchorEnabled: true
