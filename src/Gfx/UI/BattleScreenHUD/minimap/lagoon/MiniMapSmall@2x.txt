@@ -1,5 +1,5 @@
 1
 rxd_minimap@2x.packed.webp
-326 326
+512 512
 1
-0 0 326 326 0 0 0 frame0
+0 0 512 512 0 0 0 frame0

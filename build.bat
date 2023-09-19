@@ -127,7 +127,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -230,7 +230,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -334,7 +334,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -426,7 +426,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -518,7 +518,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -584,7 +584,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -596,7 +596,7 @@ ECHO.
 ECHO Decoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe dcp
+..\..\..\bin\dvplgo.exe -mode decompress
 
 color 0c
 
@@ -682,7 +682,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
@@ -694,7 +694,7 @@ ECHO.
 ECHO Decoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe dcp
+..\..\..\bin\dvplgo.exe -mode decompress
 
 color 0c
 
@@ -797,7 +797,7 @@ ECHO.
 ECHO Encoding To LZ4 Compression - DVPL!
 ECHO.
 
-..\..\..\bin\dvplgo.exe cp
+..\..\..\bin\dvplgo.exe -mode compress
 
 color 0c
 
