@@ -1,5 +1,5 @@
 {
-  Header: { version: 151 },
+  Header: { version: 159 },
   ImportedPackages:
     [
       "~res:/UI/Screens/Battle/Tips.yaml",
@@ -60,7 +60,7 @@
                       bottomAnchorEnabled: true,
                       bottomAnchor: 4.000000,
                     },
-                  StyleSheet: { styles: "~res:/UI/Screens/Fonts.yaml" },
+                  StyleSheet: { styles: "~res:/UI/Screens/FontsFs.yaml" },
                 },
             },
           ],
@@ -145,7 +145,7 @@
                     },
                   StyleSheet:
                     {
-                      styles: "~res:/UI/Styles/Clans/ClansStyles.yaml;~res:/UI/Screens/Common/Styles/PlayerNameWithTag.style.yaml;~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml",
+                      styles: "~res:/UI/Styles/Clans/ClansStyles.yaml;~res:/UI/Screens/Common/Styles/PlayerNameWithTag.style.yaml;~res:/UI/Screens/FontsFs.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml",
                     },
                 },
               children:
@@ -157,7 +157,10 @@
                       {
                         UITextComponent: { text: LoooooooongPlayerName },
                         SizePolicy: { verticalPolicy: PercentOfContent },
-                        StyleSheet: { styles: "~res:/UI/Screens/Fonts.yaml" },
+                        StyleSheet:
+                         {
+                            styles: "~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/FontsFs.yaml",
+                          },
                       },
                   },
                   {
@@ -212,7 +215,7 @@
                     },
                   StyleSheet:
                     {
-                      styles: "~res:/UI/Screens/Fonts.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml",
+                      styles: "~res:/UI/Screens/FontsFs.yaml;~res:/UI/Screens/Battle/Styles/BattleLoadingScreenStyles.yaml",
                     },
                 },
             },
@@ -392,7 +395,7 @@
                       horizontalPolicy: PercentOfContent,
                       verticalPolicy: PercentOfContent,
                     },
-                  StyleSheet: { styles: "~res:/UI/Screens/Fonts.yaml" },
+                  StyleSheet: { styles: "~res:/UI/Screens/FontsFs.yaml" },
                 },
             },
           ],
@@ -862,7 +865,7 @@
                                     StyleSheet:
                                       {
                                         inheritsStylesFromParent: true,
-                                        styles: "~res:/UI/Screens/Fonts.yaml",
+                                        styles: "~res:/UI/Screens/FontsFs.yaml",
                                       },
                                   },
                               },
@@ -893,7 +896,7 @@
                                     StyleSheet:
                                       {
                                         inheritsStylesFromParent: true,
-                                        styles: "~res:/UI/Screens/Fonts.yaml",
+                                        styles: "~res:/UI/Screens/FontsFs.yaml",
                                       },
                                   },
                               },
@@ -990,7 +993,7 @@
                                                         },
                                                       StyleSheet:
                                                         {
-                                                          styles: "~res:/UI/Screens/Fonts.yaml",
+                                                          styles: "~res:/UI/Screens/FontsFs.yaml",
                                                         },
                                                     },
                                                 },
@@ -1050,7 +1053,7 @@
                                                         },
                                                       StyleSheet:
                                                         {
-                                                          styles: "~res:/UI/Screens/Fonts.yaml",
+                                                          styles: "~res:/UI/Screens/FontsFs.yaml",
                                                         },
                                                     },
                                                 },

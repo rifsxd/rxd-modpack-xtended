@@ -139,7 +139,7 @@ Prototypes:
             styles: "~res:/UI/Screens/Battle/Minimap.yaml"
 -   class: "UIControl"
     name: "MinimapLayer"
-    size: [163.000000, 163.000000]
+    size: [256.000000, 256.000000]
     input: false
     components:
         Background:
@@ -188,7 +188,7 @@ Prototypes:
                 bottomAnchor: 1.000000
 -   class: "UIControl"
     name: "Minimap"
-    size: [163.000000, 163.000000]
+    size: [256.000000, 256.000000]
     scale: [1.500000, 1.500000]                                         
     classes: "minimap-placement=minimap-top-center"
     components:
