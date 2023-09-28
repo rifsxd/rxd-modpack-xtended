@@ -1,27 +1,27 @@
 # Voice codes:
     # "ru" - Russian Male
-    # "ru2" - Russian Female
+    # "ru_f" - Russian Female
     # "de" - German Male
-    # "de2" - German Female
+    # "de_f" - German Female
     # "en" - American Male
-    # "en2" - American Female
+    # "en_f" - American Female
     # "cn" - Chinese Male
-    # "cn2" - Chinese Female
+    # "cn_f" - Chinese Female
     # "fr" - French Male
-    # "fr2" - French Female
+    # "fr_f" - French Female
     # "en_gb" - British Male
-    # "en_gb2" - British Female
+    # "en_gb_f" - British Female
     # "ja" - Japanese Male (new)
-    # "ja2" - Japanese Female
+    # "ja_f" - Japanese Female
     # "ja-old" - Japanese Male (old)
     # "cs" - Czech Male
-    # "cs2" - Czech Female
+    # "cs_f" - Czech Female
     # "it" - Italian Male
-    # "it2" - Italian Female
+    # "it_f" - Italian Female
     # "pl" - Polish Male
-    # "pl2" - Polish Female
+    # "pl_f" - Polish Female
     # "sv" - Swedish Male
-    # "sv2" - Swedish Female
+    # "sv_f" - Swedish Female
     # "fury" - Fury Crew Voice
     # "sab" - Sabaton Crew Voice
 #-----------------------------------------------------------
@@ -68,7 +68,7 @@ tanks:
     "japan:G09_Hetzer_GuP": "gup"
     "japan:PzVI_GuP": "gup"
     "japan:Firefly_GuP": "gup"
-    "japan:IS-2_GuP": "gup"
+    "japan:IS-_f_GuP": "gup"
 #---- GuP <----<
 #-----------------------------------------------------------
 #---- Fury >--->
