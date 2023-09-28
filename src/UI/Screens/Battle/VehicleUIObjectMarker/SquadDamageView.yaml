@@ -1,0 +1,62 @@
+Header:
+    version: 159
+ImportedPackages:
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectDamageProto.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "SquadDamageView"
+    input: false
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        UIActionComponent:
+            actionsPath: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/SquadDamage.actions"
+    children:
+    -   class: "UIControl"
+        name: "ControlToInsert"
+        position: [34.000000, 46.000000]
+        pivot: [0.500000, 0.500000]
+        input: false
+        components:
+            UIOpacityComponent:
+                opacity: 1.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   prototype: "VehicleUIObjectDamageProto/VehicleUIObjectDamageProto"
+            name: "VehicleUIObjectDamageProto"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   path: "Bg"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children: []
+            -   class: "UIControl"
+                name: "AdditionalDamageIcon"
+                size: [32.000000, 32.000000]
+                input: false
+                components:
+                    UIDynamicAtlasImageComponent:
+                        imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/bg_frame.png"
+                        color: [1.000000, 0.235294, 0.235294, 1.000000]
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -4.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 48.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 5.000000

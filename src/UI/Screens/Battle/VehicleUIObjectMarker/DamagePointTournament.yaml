@@ -1,0 +1,49 @@
+Header:
+    version: 159
+ImportedPackages:
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/SquadDamageView.yaml"
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectDamageProto.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "DamagePointTournament"
+    input: false
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -5.000000
+        LinearLayout:
+            orientation: "LeftToRight"
+            spacing: 1.000000
+        IgnoreLayout: {}
+        SizePolicy:
+            verticalPolicy: "PercentOfMaxChild"
+    children:
+    -   class: "UIControl"
+        name: "DamageMarkers"
+        position: [0.000000, 0.000000]
+        size: [83.000000, 70.000000]
+        input: false
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 1.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                horizontalMin: 66.000000
+                verticalPolicy: "PercentOfChildrenSum"
+                verticalMin: 20.000000
+        children:
+        -   prototype: "VehicleUIObjectDamageProto/VehicleUIObjectDamageProto"
+            name: "PrimaryDamagePoints"
+        -   prototype: "SquadDamageView/SquadDamageView"
+            name: "SquadDamageView"
+        -   prototype: "VehicleUIObjectDamageProto/VehicleUIObjectDamageProto"
+            name: "HealPoints"
+            classes: "damage-tag=damage-enemy"
+            children:
+            -   path: "Bg/Text"
+                components:
+                    UIDynamicAtlasTextComponent:
+                        text: "+1099"
+            -   path: "Bg/CritBadge"
+                visible: false

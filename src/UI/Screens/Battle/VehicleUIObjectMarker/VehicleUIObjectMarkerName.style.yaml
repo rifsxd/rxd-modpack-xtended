@@ -1,0 +1,15 @@
+Header:
+    version: 159
+StyleSheets:
+-   selectors:
+    - ".marker-no-player-name #PlayerNameShadow"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-vehicle-name #VehicleNameShadow"
+    properties:
+        visible: false
+-   selectors:
+    - ".ar #PlayerName"
+    properties:
+        sizePolicy-verticalMin: 22.000000

@@ -1,0 +1,90 @@
+Header:
+    version: 161
+StyleSheets:
+-   selectors:
+    - ".text-marker-nickname"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 13.000000
+        atlasText-lineHeight: 17.000000
+        atlasText-baseLine: 3.000000
+-   selectors:
+    - ".text-marker-nickname.Phone"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 23.000000
+        atlasText-lineHeight: 29.000000
+        atlasText-baseLine: 6.000000
+-   selectors:
+    - ".text-marker-nickname.ar"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/BadiyaLT-Bold.ttf"
+        atlasText-baseLine: 4.000000
+-   selectors:
+    - ".text-marker-nickname.ja"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/IwaGGoPro-Bd.otf"
+-   selectors:
+    - ".text-marker-nickname.ko"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/CoreSans.ttf"
+        atlasText-baseLine: 3.500000
+-   selectors:
+    - ".text-marker-nickname.th"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/SirichanaLT-Bold.ttf"
+        atlasText-fontSize: 16.000000
+-   selectors:
+    - ".text-marker-nickname.vi"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/cinecav_x_ui_bold.ttf"
+        atlasText-fontSize: 11.000000
+        atlasText-baseLine: 4.000000
+-   selectors:
+    - ".text-marker-nickname.zh-Hans"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+        atlasText-baseLine: 4.000000
+-   selectors:
+    - ".text-marker-nickname.zh-Hant"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"
+-   selectors:
+    - ".text-marker-nickname.hi"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/NotoSans-SemiBold.ttf"
+-   selectors:
+    - ".text-marker-nickname.Phone.ar"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/BadiyaLT-Bold.ttf"
+        atlasText-fontSize: 21.000000
+        atlasText-baseLine: 6.000000
+-   selectors:
+    - ".text-marker-nickname.Phone.ja"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/IwaGGoPro-Bd.otf"
+-   selectors:
+    - ".text-marker-nickname.Phone.ko"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/CoreSans.ttf"
+        atlasText-baseLine: 6.000000
+-   selectors:
+    - ".text-marker-nickname.Phone.th"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/SirichanaLT-Bold.ttf"
+        atlasText-fontSize: 25.000000
+-   selectors:
+    - ".text-marker-nickname.Phone.vi"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/cinecav_x_ui_bold.ttf"
+        atlasText-fontSize: 21.000000
+        atlasText-baseLine: 6.000000
+-   selectors:
+    - ".text-marker-nickname.Phone.zh-Hans"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/XinGothic-SC-W6.otf"
+        atlasText-baseLine: 5.000000
+-   selectors:
+    - ".text-marker-nickname.Phone.zh-Hant"
+    properties:
+        atlasText-fontPath: "~res:/Fonts/XinGothic-TC-W6.otf"

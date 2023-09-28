@@ -1,0 +1,101 @@
+Header:
+    version: 160
+ImportedPackages:
+- "~res:/UI/Screens/Battle/DamageInfo/DamageInfoMarker.yaml"
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectDamageProto.yaml"
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/SquadDamageView.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "DamagePoint"
+    input: false
+    components:
+        UIDynamicAtlasComponent:
+            atlasId: "BattleTankMarker"
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -5.000000
+        IgnoreLayout: {}
+        SizePolicy:
+            verticalPolicy: "PercentOfMaxChild"
+    children:
+    -   class: "UIControl"
+        name: "DamageInfo"
+        size: [189.000000, 49.000000]
+        input: false
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 8.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+        children:
+        -   prototype: "DamageInfoMarker/DamageInfoMarker"
+            name: "DetailedDamageResult"
+        -   class: "UIControl"
+            name: "DamageContainer"
+            size: [83.000000, 49.000000]
+            input: false
+            components:
+                LinearLayout:
+                    orientation: "LeftToRight"
+                    spacing: 1.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfFirstChild"
+            children:
+            -   class: "UIControl"
+                name: "DamageMarkers"
+                position: [0.000000, 0.000000]
+                size: [83.000000, 70.000000]
+                input: false
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 1.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        horizontalMin: 66.000000
+                        verticalPolicy: "PercentOfChildrenSum"
+                        verticalMin: 20.000000
+                children:
+                -   prototype: "VehicleUIObjectDamageProto/VehicleUIObjectDamageProto"
+                    name: "PrimaryDamagePoints"
+                -   prototype: "SquadDamageView/SquadDamageView"
+                    name: "SquadDamageView"
+                -   prototype: "VehicleUIObjectDamageProto/VehicleUIObjectDamageProto"
+                    name: "HealPoints"
+                    classes: "damage-tag=damage-enemy"
+                    children:
+                    -   path: "Bg/Text"
+                        components:
+                            UIDynamicAtlasTextComponent:
+                                text: "+1099"
+                    -   path: "Bg/CritBadge"
+                        visible: false
+            -   class: "UIControl"
+                name: "FlameIcon"
+                input: false
+                components:
+                    UIDynamicAtlasImageComponent:
+                        imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_IconFire.psd"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 52.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 50.000000
+            -   class: "UIControl"
+                name: "AmmoBangIcon"
+                input: false
+                components:
+                    UIDynamicAtlasImageComponent:
+                        imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_IconAmmo.psd"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 52.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 50.000000

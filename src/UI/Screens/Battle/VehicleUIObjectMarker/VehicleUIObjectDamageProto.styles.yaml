@@ -1,0 +1,28 @@
+Header:
+    version: 159
+StyleSheets:
+-   selectors:
+    - ".damage-enemy #Bg"
+    properties:
+        sizePolicy-horizontalValue: 66.000000
+        sizePolicy-verticalValue: 20.000000
+-   selectors:
+    - ".damage-ally #Bg"
+    properties:
+        sizePolicy-horizontalValue: 66.000000
+        sizePolicy-verticalValue: 20.000000
+-   selectors:
+    - ".damage-squad #Bg"
+    properties:
+        sizePolicy-horizontalValue: 66.000000
+        sizePolicy-verticalValue: 20.000000
+-   selectors:
+    - ".damage-observer-team1 #Bg"
+    properties:
+        sizePolicy-horizontalValue: 83.000000
+        sizePolicy-verticalValue: 24.000000
+-   selectors:
+    - ".damage-observer-team2 #Bg"
+    properties:
+        sizePolicy-horizontalValue: 83.000000
+        sizePolicy-verticalValue: 24.000000

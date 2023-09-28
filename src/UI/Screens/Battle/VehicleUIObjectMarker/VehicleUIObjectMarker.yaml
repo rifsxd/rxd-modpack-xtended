@@ -1,0 +1,439 @@
+Header:
+    version: 161
+ImportedPackages:
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/DamagePoint.yaml"
+- "~res:/UI/Screens/Battle/GunStatusAtlas.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "VehicleUIObjectMarker"
+    pivot: [0.500000, 1.000000]
+    input: false
+    components:
+        UIDynamicAtlasComponent:
+            atlasId: "BattleTankMarker"
+        LinearLayout:
+            enabled: true
+            orientation: "BottomUp"
+            spacing: 1.000000
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            verticalPolicy: "PercentOfChildrenSum"
+        UIProfilerMarkerComponent:
+            markerName: "UI_TankMarker"
+    children:
+    -   class: "UIControl"
+        name: "ClassIconShadow"
+        input: false
+        components:
+            UIDynamicAtlasImageComponent:
+                imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_IconShadow.psd"
+            Anchor:
+                hCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerHealth.style.yaml"
+        children:
+        -   class: "UIControl"
+            name: "ClassIcon"
+            size: [16.000000, 22.000000]
+            input: false
+            classes: "tank-class=tank-class-light"
+            components:
+                UIDynamicAtlasImageComponent: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerTankClass.style.yaml"
+    -   class: "UIControl"
+        name: "GunNHealthContainer"
+        size: [32.000000, 32.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+            LinearLayout:
+                orientation: "BottomUp"
+            SizePolicy:
+                horizontalPolicy: "PercentOfLastChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerHealth.style.yaml"
+        children:
+        -   class: "UIControl"
+            name: "HealthVertOffset"
+            size: [3.000000, 3.000000]
+            input: false
+        -   prototype: "GunStatusAtlas/GunStatus"
+            name: "GunStatusBattle"
+            size: [70.000000, 3.000000]
+            pivot: [0.500000, 0.000000]
+            classes: "style=regular-style animated-reload"
+            components:
+                UIDynamicAtlasComponent:
+                    atlasId: "BattleTankMarker"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/GunStatusAtlas.style.yaml;~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerHealth.style.yaml"
+            children:
+            -   path: "ShellBack"
+                position: [1.000000, 0.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "Formula"
+                        horizontalFormula: "parent-2"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 2.000000
+                children: []
+            -   path: "ShellBack/ShellItem"
+                classes: "shell lock-enabled"
+                children: []
+        -   class: "UIControl"
+            name: "HealthContainer"
+            input: false
+            classes: "healthBarSize"
+            components:
+                UIDynamicAtlasImageComponent:
+                    imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_HealthBar.psd"
+                    drawType: "ScaleToRect"
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    verticalPolicy: "FixedSize"
+            children:
+            -   class: "UIControl"
+                name: "StatusContainer"
+                position: [-52.000000, -15.000000]
+                size: [52.000000, 42.000000]
+                input: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -52.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -1.000000
+                    LinearLayout:
+                        orientation: "RightToLeft"
+                children:
+                -   class: "UIControl"
+                    name: "SixSense"
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    components:
+                        UIDynamicAtlasImageComponent:
+                            imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/SixSense_little.psd"
+                        Anchor:
+                            leftAnchorEnabled: false
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.500000
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 21.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 42.000000
+                -   class: "UIControl"
+                    name: "SpotEye"
+                    pivot: [0.500000, 0.500000]
+                    input: false
+                    components:
+                        UIDynamicAtlasImageComponent:
+                            imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/SixSense_little.psd"
+                            frame: 3
+                        Anchor:
+                            leftAnchorEnabled: false
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.500000
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 21.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 42.000000
+                -   class: "UIControl"
+                    name: "HealerIconContainer"
+                    visible: true
+                    input: false
+                    components:
+                        UIAnimationComponent:
+                            animations: "ShowHealer,~res:/UI/Screens/Battle/VehicleUIObjectMarker/HealerIconAnimation.animation"
+                        UIOpacityComponent:
+                            opacity: 1.000000
+                        Anchor:
+                            leftAnchorEnabled: false
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -10.000000
+                        LinearLayout:
+                            orientation: "BottomUp"
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 32.000000
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 42.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "HealPlus"
+                        input: false
+                        components:
+                            UIDynamicAtlasImageComponent:
+                                imagePath: "~res:/Gfx/Battle/icons/2020-halloween/icon_plus.png"
+                                drawType: "ScaleProportional"
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 32.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 21.000000
+                    -   class: "UIControl"
+                        name: "HealUp"
+                        input: false
+                        components:
+                            UIDynamicAtlasImageComponent:
+                                imagePath: "~res:/Gfx/Battle/icons/2020-halloween/icon_up.png"
+                                drawType: "ScaleProportional"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                horizontalValue: 32.000000
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 21.000000
+            -   class: "UIControl"
+                name: "HealthBlock"
+                input: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 1.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 1.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 1.000000
+                children:
+                -   class: "UIControl"
+                    name: "HealthRay"
+                    input: false
+                    components:
+                        UIDynamicAtlasFillComponent: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            horizontalMin: 2.000000
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIControl"
+                    name: "HealingHealthRay"
+                    input: false
+                    components:
+                        UIDynamicAtlasFillComponent: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            horizontalMin: 2.000000
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIControl"
+                    name: "HealthBar"
+                    input: false
+                    components:
+                        UIDynamicAtlasFillComponent: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            horizontalMin: 2.000000
+                            verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "HealthValue"
+                size: [66.000000, 14.000000]
+                input: false
+                classes: "text-marker-health-points"
+                components:
+                    UIDynamicAtlasTextComponent:
+                        text: "333/333"
+                        availableCharacters: "1234567890-+/"
+                        dynamic: true
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    StyleSheet:
+                        styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerHealth.style.yaml"
+    -   class: "UIControl"
+        name: "DamagePointAnchor"
+        size: [100.000000, 1.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   prototype: "DamagePoint/DamagePoint"
+            name: "DamagePoint"
+            components:
+                Anchor:
+                    enabled: true
+                    rightAnchorEnabled: true
+                    rightAnchor: -15.000000
+    -   class: "UIControl"
+        name: "DebugStrings"
+        size: [32.000000, 32.000000]
+        visible: false
+        classes: "text-marker-nickname"
+        components:
+            UIDynamicAtlasTextComponent: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/MarkersNameAtlasFonts.style.yaml"
+    -   class: "UIControl"
+        name: "PlayerNameShadow"
+        size: [31.000000, 17.000000]
+        input: false
+        components:
+            UIDynamicAtlasImageComponent:
+                imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_NameShadow.psd"
+                drawType: "ScaleToRect"
+            Anchor:
+                hCenterAnchorEnabled: true
+            LinearLayout:
+                padding: "5"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerName.style.yaml"
+        children:
+        -   class: "UIControl"
+            name: "PlayerName"
+            size: [21.000000, 17.000000]
+            input: false
+            classes: "text-marker-nickname"
+            components:
+                UIDynamicAtlasTextComponent:
+                    text: "hgjh"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/MarkersNameAtlasFonts.style.yaml"
+    -   class: "UIControl"
+        name: "VehicleNameShadow"
+        position: [34.000000, 25.000000]
+        size: [31.000000, 17.000000]
+        input: false
+        components:
+            UIDynamicAtlasImageComponent:
+                imagePath: "~res:/Gfx/Battle/HUD/TankMarkers/OTM_NameShadow.psd"
+                drawType: "ScaleToRect"
+            Anchor:
+                hCenterAnchorEnabled: true
+            LinearLayout:
+                padding: "5.000000"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerName.style.yaml;~res:/UI/Screens/Battle/Fonts.yaml"
+        children:
+        -   class: "UIControl"
+            name: "VehicleName"
+            size: [21.000000, 17.000000]
+            input: false
+            classes: "text-marker-nickname"
+            components:
+                UIDynamicAtlasTextComponent:
+                    text: "hgjh"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/MarkersNameAtlasFonts.style.yaml"
+    -   class: "UIControl"
+        name: "VehicleIconAndLevelContainer"
+        size: [76.000000, 24.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+            StyleSheet:
+                styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerIconAndLevel.style.yaml"
+        children:
+        -   class: "UIControl"
+            name: "VehicleIconContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfMaxChild"
+            children:
+            -   class: "UIControl"
+                name: "VehicleIcon"
+                size: [76.000000, 24.000000]
+                input: false
+                components:
+                    UIDynamicAtlasImageComponent:
+                        imagePath: "~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/_default.psd"
+                        align: ["LEFT", "BOTTOM"]
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "LevelIconContainer"
+            size: [32.000000, 32.000000]
+            input: false
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfMaxChild"
+            children:
+            -   class: "UIControl"
+                name: "LevelIcon"
+                size: [17.000000, 12.000000]
+                input: false
+                components:
+                    UIDynamicAtlasImageComponent:
+                        imagePath: "~res:/Gfx/UI/BattleScreenHUD/Levels.psd"
+                        align: ["HCENTER", "BOTTOM"]
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+    -   class: "UIControl"
+        name: "BossModeRoleContainer"
+        size: [32.000000, 32.000000]
+        input: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   class: "UIControl"
+            name: "BossModeRoleIcon"
+            size: [32.000000, 32.000000]
+            input: false
+            classes: "boss-mode-role=role-healer"
+            components:
+                UIDynamicAtlasImageComponent: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/BossModeRole.style.yaml"

@@ -1,0 +1,13 @@
+animation Pulse
+{
+	Opacity(".", opacity=0.0, time=0.0, interpolation=EASE_IN_EASE_OUT);
+	ChangeProperty(".", "", "visible", true);
+	repeat(4)
+	{
+		Opacity(".", opacity=1.0, time=0.5, interpolation=EASE_IN_EASE_OUT);
+		Opacity(".", opacity=0.5, time=0.5, interpolation=EASE_IN_EASE_OUT);
+	}
+	Opacity(".", opacity=1.0, time=0.5, interpolation=EASE_IN_EASE_OUT);
+	Opacity(".", opacity=0.0, time=0.5, interpolation=EASE_IN_EASE_OUT);
+	ChangeProperty(".", "", "visible", false);
+}

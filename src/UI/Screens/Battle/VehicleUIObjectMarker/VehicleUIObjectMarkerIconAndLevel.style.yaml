@@ -1,0 +1,15 @@
+Header:
+    version: 159
+StyleSheets:
+-   selectors:
+    - ".marker-no-vehicle-icon #VehicleIconAndLevelContainer #VehicleIconContainer #VehicleIcon"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-level-icon #VehicleIconAndLevelContainer #LevelIconContainer #LevelIcon"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-vehicle-icon .marker-no-level-icon #VehicleIconAndLevelContainer"
+    properties:
+        visible: false

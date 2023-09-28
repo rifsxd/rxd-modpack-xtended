@@ -1,6 +1,0 @@
-Header:
-    version: "111"
-StyleSheets:
--   selectors:
-    - ".sight.atgm #rotateControl #reloadAndFuelContainer #reloadTimeContainer #atgm-bg"
-    - ".sight.atgm ? #distanceContainer #atgm-bg"

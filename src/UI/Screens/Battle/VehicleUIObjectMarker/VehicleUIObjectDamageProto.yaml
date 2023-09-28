@@ -1,0 +1,75 @@
+Header:
+    version: 161
+Prototypes:
+-   class: "UIControl"
+    name: "VehicleUIObjectDamageProto"
+    input: false
+    classes: "damage-tag=damage-observer-team2 badge-tag=critical-damage"
+    refreshStylesOnInteract: false
+    components:
+        UIDynamicAtlasComponent:
+            atlasId: "BattleTankMarker"
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+            verticalPolicy: "PercentOfFirstChild"
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectDamageProto.styles.yaml"
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        input: false
+        refreshStylesOnInteract: false
+        components:
+            UIDynamicAtlasImageComponent: {}
+            LinearLayout:
+                spacing: 1.000000
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                verticalPolicy: "FixedSize"
+        children:
+        -   class: "UIControl"
+            name: "spacer"
+            size: [14.000000, 2.000000]
+        -   class: "UIControl"
+            name: "Text"
+            size: [34.000000, 27.000000]
+            input: false
+            classes: "t-17-old bold-old not-localize"
+            components:
+                UIShadowComponent:
+                    blurType: Gauss
+                    color: [1.000000, 0.500000, 0.000000, 1.000000]
+                    indent: 10
+                    canBeDelayed: true
+                UIDynamicAtlasTextComponent:
+                    color: [1.000000, 0.500000, 0.000000, 1.000000]
+                    shadowOffset: [0.900000, 0.900000]
+                    shadowColor: [1.000000, 0.500000, 0.000000, 1.000000]
+                    text: "1099"
+                    align: ["LEFT", "VCENTER"]
+                    availableCharacters: "0123456789+-"
+                    dynamic: true
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: -3.000000
+                    bottomAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens3/FontAtlas.style.yaml"
+        -   class: "UIControl"
+            name: "CritBadge"
+            size: [10.000000, 24.000000]
+            pivot: [0.500000, 0.500000]
+            input: false
+            components:
+                UIDynamicAtlasImageComponent: {}
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                StyleSheet:
+                    styles: "~res:/UI/Screens/Battle/Styles/CritBadgeStyles.yaml"

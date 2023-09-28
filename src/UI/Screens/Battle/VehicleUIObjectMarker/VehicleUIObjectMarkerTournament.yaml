@@ -1,0 +1,214 @@
+Header:
+    version: 161
+ImportedPackages:
+- "~res:/UI/Screens/Battle/GunStatusAtlas.yaml"
+- "~res:/UI/Screens/Battle/VehicleUIObjectMarker/DamagePointTournament.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "VehicleUIObjectMarkerTournament"
+    position: [0.000000, 0.000000]
+    size: [152.000000, 80.000000]
+    pivot: [0.600000, 1.000000]
+    input: false
+    classes: "vis=visible"
+    components:
+        UIDynamicAtlasComponent:
+            atlasId: "BattleTankMarker"
+        LinearLayout:
+            skipInvisible: false
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            horizontalMin: 120.000000
+            verticalPolicy: "PercentOfMaxChild"
+        StyleSheet:
+            styles: "~res:/UI/Screens/Battle/VehicleUIObjectMarker/VehicleUIObjectMarkerTournament.style.yaml"
+    children:
+    -   class: "UIControl"
+        name: "Bulb"
+        input: false
+        components:
+            UIDynamicAtlasImageComponent:
+                imagePath: "~res:/Gfx/UI/BattleScreenHUD/tournament_hud/Bulb.psd"
+            Anchor:
+                bottomAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 32.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 32.000000
+    -   class: "UIControl"
+        name: "MarkerBlock"
+        input: false
+        classes: "team=blue"
+        components:
+            LinearLayout:
+                orientation: "BottomUp"
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 120.000000
+                verticalPolicy: "PercentOfChildrenSum"
+                verticalMin: 80.000000
+        children:
+        -   class: "UIControl"
+            name: "BarBlock"
+            input: false
+            components:
+                UIDynamicAtlasFillComponent:
+                    color: [0.000000, 0.000000, 0.000000, 0.564706]
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: "2.000000"
+                    spacing: 2.000000
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 120.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 14.000000
+            children:
+            -   class: "UIControl"
+                name: "HealthBack"
+                position: [2.000000, 2.000000]
+                size: [116.000000, 4.000000]
+                input: false
+                components:
+                    UIDynamicAtlasFillComponent: {}
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 116.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 4.000000
+                children:
+                -   class: "UIControl"
+                    name: "HealthRay"
+                    size: [116.000000, 4.000000]
+                    input: false
+                    components:
+                        UIDynamicAtlasFillComponent: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIControl"
+                    name: "Health"
+                    size: [116.000000, 4.000000]
+                    input: false
+                    components:
+                        UIDynamicAtlasFillComponent: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+            -   prototype: "GunStatusAtlas/GunStatus"
+                name: "LoadState"
+                position: [2.000000, 8.000000]
+                size: [116.000000, 4.000000]
+                classes: "style=spectator-style"
+                components:
+                    UIDynamicAtlasComponent:
+                        atlasId: "BattleTankMarker"
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 116.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 4.000000
+            -   prototype: "DamagePointTournament/DamagePointTournament"
+                name: "DamagePoint"
+        -   class: "UIControl"
+            name: "Container"
+            input: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: "NameShadow"
+                position: [103.000000, 24.000000]
+                pivot: [0.500000, 1.000000]
+                input: false
+                components:
+                    UIDynamicAtlasTiledImageComponent:
+                        imagePath: "~res:/Gfx/UI/BattleScreenHUD/tournament_hud/shadow-rext.psd"
+                        color: [1.000000, 1.000000, 1.000000, 0.392157]
+                        horizontalStretchCap: 10.000000
+                        verticalStretchCap: 10.000000
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    LinearLayout:
+                        padding: "5.000000"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 24.200001
+                children:
+                -   class: "UIControl"
+                    name: "tankName"
+                    input: false
+                    classes: "t-21-old bold-old"
+                    components:
+                        UIDynamicAtlasTextComponent:
+                            text: "MC-1"
+                            align: ["HCENTER", "VCENTER"]
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        StyleSheet:
+                            styles: "~res:/UI/Screens3/FontAtlas.style.yaml"
+            -   class: "UIControl"
+                name: "NameShadow"
+                size: [207.000000, 24.200001]
+                pivot: [0.500000, 1.000000]
+                input: false
+                components:
+                    UIDynamicAtlasTiledImageComponent:
+                        imagePath: "~res:/Gfx/UI/BattleScreenHUD/tournament_hud/shadow-rext.psd"
+                        color: [1.000000, 1.000000, 1.000000, 0.392157]
+                        horizontalStretchCap: 10.000000
+                        verticalStretchCap: 10.000000
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    LinearLayout:
+                        padding: "5.000000"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 24.200001
+                    StyleSheet:
+                        styles: "~res:/UI/Screens3/FontAtlas.style.yaml"
+                children:
+                -   class: "UIControl"
+                    name: "playerName"
+                    input: false
+                    classes: "t-21-old bold-old"
+                    components:
+                        UIDynamicAtlasTextComponent:
+                            text: "wot236 long name [T44]"
+                            align: ["LEFT", "VCENTER"]
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "playerNumber"
+                    input: false
+                    classes: "t-21-old bold-old"
+                    components:
+                        UIDynamicAtlasTextComponent:
+                            align: ["LEFT", "VCENTER"]
+                            availableCharacters: "1234567890-"
+                            dynamic: true
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -1.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"

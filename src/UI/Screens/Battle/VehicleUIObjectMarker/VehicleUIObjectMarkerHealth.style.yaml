@@ -1,0 +1,75 @@
+Header:
+    version: 161
+StyleSheets:
+-   selectors:
+    - ".marker-vehicle-type-enabled #ClassIconShadow"
+    - ".marker-vehicle-type-disabled #GunNHealthContainer #HealthVertOffset"
+    properties:
+        visible: true
+-   selectors:
+    - ".marker-vehicle-type-enabled #GunNHealthContainer #HealthVertOffset"
+    - ".marker-vehicle-type-disabled #ClassIconShadow"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-health #GunNHealthContainer #HealthContainer #HealthRay"
+    - ".marker-no-health #GunNHealthContainer #HealthContainer #HealthBar"
+    - ".marker-no-health #GunNHealthContainer #HealthContainer #HealthValue"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-health #GunNHealthContainer #HealthContainer"
+    properties:
+        sizePolicy-verticalValue: 0.000000
+-   selectors:
+    - ".marker-no-reload-status #GunNHealthContainer #GunStatusBattle"
+    properties:
+        visible: false
+-   selectors:
+    - ".marker-no-teammate-six-sense #GunNHealthContainer #HealthContainer #SixSense"
+    properties:
+        visible: false
+-   selectors:
+    - ".healthBarSize"
+    properties:
+        sizePolicy-horizontalValue: 70.000000
+        sizePolicy-verticalValue: 14.000000
+-   selectors:
+    - ".healthBarSize.Increased"
+    properties:
+        sizePolicy-horizontalValue: 105.000000
+        sizePolicy-verticalValue: 21.000000
+-   selectors:
+    - ".healthBarSize.Phone"
+    properties:
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 21.000000
+-   selectors:
+    - ".healthBarSize.Phone.Increased"
+    properties:
+        sizePolicy-horizontalValue: 150.000000
+        sizePolicy-verticalValue: 31.000000
+-   selectors:
+    - ".text-marker-health-points"
+    properties:
+        atlasText-color: [0.909804, 0.909804, 0.909804, 1.000000]
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 10.000000
+-   selectors:
+    - ".text-marker-health-points.Increased"
+    properties:
+        atlasText-color: [0.909804, 0.909804, 0.909804, 1.000000]
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 17.000000
+-   selectors:
+    - ".text-marker-health-points.Phone"
+    properties:
+        atlasText-color: [0.909804, 0.909804, 0.909804, 1.000000]
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 17.000000
+-   selectors:
+    - ".text-marker-health-points.Phone.Increased"
+    properties:
+        atlasText-color: [0.909804, 0.909804, 0.909804, 1.000000]
+        atlasText-fontPath: "~res:/Fonts/WarHeliosCondCBold.ttf"
+        atlasText-fontSize: 19.000000

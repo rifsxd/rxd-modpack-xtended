@@ -1,0 +1,23 @@
+Header:
+    version: 159
+StyleSheets:
+-   selectors:
+    - ".role-boss"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/Shared/HUD/bossmode/icon_role-boss_xs.png"
+-   selectors:
+    - ".role-healer"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/Shared/HUD/bossmode/icon_role-healer_xs.png"
+-   selectors:
+    - ".role-killer"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/Shared/HUD/bossmode/icon_role-killer_xs.png"
+-   selectors:
+    - ".role-kamikaze"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/Shared/HUD/bossmode/icon_role-kamikaze_xs.png"
+-   selectors:
+    - ".role-graviton"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/Shared/HUD/bossmode/icon_role-graviton_xs.png"

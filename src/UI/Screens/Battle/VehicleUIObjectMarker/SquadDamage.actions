@@ -1,0 +1,21 @@
+action Shake
+{
+    Wait(0.2);
+    parallel
+    {
+        sequence
+        {
+            ChangeProperty("**/ControlToInsert", "Anchor", "hCenterAnchor", -3, 0.05, SINE_OUT);
+            ChangeProperty("**/ControlToInsert", "Anchor", "hCenterAnchor", 3, 0.05, SINE_OUT);
+            ChangeProperty("**/ControlToInsert", "Anchor", "hCenterAnchor", -2, 0.05, SINE_OUT);
+            ChangeProperty("**/ControlToInsert", "Anchor", "hCenterAnchor", 0, 0.05, SINE_OUT);
+        }
+        sequence
+        {
+            Rotate("**/ControlToInsert", 7.0, 0.05, SINE_OUT);
+            Rotate("**/ControlToInsert", -3.0, 0.05, SINE_OUT);
+            Rotate("**/ControlToInsert", 5.0, 0.05, SINE_OUT);
+            Rotate("**/ControlToInsert", 0.0, 0.05, SINE_OUT);
+        }
+    }
+}

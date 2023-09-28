@@ -1,0 +1,23 @@
+Header:
+    version: 159
+StyleSheets:
+-   selectors:
+    - ".tank-class-light"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconLight.psd"
+-   selectors:
+    - ".tank-class-medium"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconMedium.psd"
+-   selectors:
+    - ".tank-class-heavy"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconHeavy.psd"
+-   selectors:
+    - ".tank-class-spg"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconSPG.psd"
+-   selectors:
+    - ".tank-class-atspg"
+    properties:
+        atlasImage-imagePath: "~res:/Gfx/UI/BattleScreenHUD/OTM_IconAtSPG.psd"
